@@ -1,0 +1,518 @@
+team,season,roster_name,name_norm,pos_roster,jersey,two_way,height_in,weight_lb,dob,age_at_season_start,player_id,match
+ATL,2026-27,Aaron Wiggins,aaron wiggins,F,2,False,77,190,1999-01-02,27,wiggiaa01,exact
+ATL,2026-27,Asa Newell,asa newell,F,14,False,82,220,2005-10-05,21,newelas01,exact
+ATL,2026-27,Buddy Hield,buddy hield,G,8,False,76,220,1992-12-17,33,hieldbu01,exact
+ATL,2026-27,CJ McCollum,cj mccollum,G,3,False,75,190,1991-09-19,35,mccolcj01,exact
+ATL,2026-27,Corey Kispert,corey kispert,F,24,False,78,224,1999-03-03,27,kispeco01,exact
+ATL,2026-27,Devin Carter,devin carter,G,22,False,74,195,2002-03-18,24,cartede02,exact
+ATL,2026-27,Dyson Daniels,dyson daniels,G,5,False,79,199,2003-03-17,23,daniedy01,exact
+ATL,2026-27,Henri Veesaar,henri veesaar,C,13,False,84,225,2004-03-28,22,,none
+ATL,2026-27,Jalen Johnson,jalen johnson,F,1,False,80,219,2001-12-18,24,johnsja05,exact
+ATL,2026-27,Jalen Wilson,jalen wilson,F,12,True,78,220,2000-11-04,25,wilsoja03,exact
+ATL,2026-27,Jock Landale,jock landale,C,31,False,83,255,1995-10-25,30,landajo01,exact
+ATL,2026-27,Keshon Gilbert,keshon gilbert,G,51,True,76,200,2003-06-30,23,gilbeke01,exact
+ATL,2026-27,Kingston Flemings,kingston flemings,G,4,False,76,190,2007-01-03,19,,none
+ATL,2026-27,Luguentz Dort,luguentz dort,G,0,False,76,222,1999-04-19,27,dortlu01,exact
+ATL,2026-27,Mouhamed Gueye,mouhamed gueye,F,18,False,83,210,2002-11-09,23,gueyemo02,exact
+ATL,2026-27,Nickeil Alexander-Walker,nickeil alexander walker,G,7,False,77,205,1998-09-02,28,alexani01,exact
+ATL,2026-27,Onyeka Okongwu,onyeka okongwu,F/C,17,False,82,240,2000-12-11,25,okongon01,exact
+ATL,2026-27,RayJ Dennis,rayj dennis,G,0,True,73,180,2001-03-30,25,dennira01,exact
+ATL,2026-27,Ryan Nembhard,ryan nembhard,G,19,False,71,180,2003-03-10,23,nembhry01,exact
+ATL,2026-27,Zuby Ejiofor,zuby ejiofor,F,20,False,81,245,2004-04-20,22,,none
+BOS,2026-27,Amari Williams,amari williams,F/C,77,True,83,250,2002-01-28,24,william01,exact
+BOS,2026-27,Baylor Scheierman,baylor scheierman,G/F,55,False,78,205,2000-09-26,26,scheiba01,exact
+BOS,2026-27,Chris Cenac Jr.,chris cenac,F/C,12,False,83,240,2007-02-01,19,,none
+BOS,2026-27,Derrick White,derrick white,G,9,False,76,190,1994-07-02,32,whitede01,exact
+BOS,2026-27,Dillon Mitchell,dillon mitchell,F,20,True,80,205,2003-10-03,23,,none
+BOS,2026-27,Hugo González,hugo gonzalez,G/F,28,False,78,200,2006-02-04,20,gonzahu01,exact
+BOS,2026-27,Jayson Tatum,jayson tatum,F,0,False,80,210,1998-03-03,28,tatumja01,exact
+BOS,2026-27,Jordan Walsh,jordan walsh,F,27,False,78,205,2004-03-03,22,walshjo01,exact
+BOS,2026-27,Luka Garza,luka garza,F/C,52,False,82,243,1998-12-27,27,garzalu01,exact
+BOS,2026-27,Mike Conley Jr.,mike conley,G,45,False,73,175,1987-10-11,39,conlemi01,exact
+BOS,2026-27,Milos Uzan,milos uzan,G,29,False,75,175,2002-12-26,23,,none
+BOS,2026-27,Mitchell Robinson,mitchell robinson,C,4,False,84,240,1998-04-01,28,robinmi01,exact
+BOS,2026-27,Neemias Queta,neemias queta,C,88,False,84,248,1999-07-13,27,quetane01,exact
+BOS,2026-27,Paul George,paul george,F,13,False,80,230,1990-05-02,36,georgpa01,exact
+BOS,2026-27,Payton Pritchard,payton pritchard,G,11,False,73,195,1998-01-28,28,pritcpa01,exact
+BOS,2026-27,Ron Harper Jr.,ron harper,G/F,8,False,77,233,2000-04-12,26,harpero02,exact
+BOS,2026-27,Sam Hauser,sam hauser,F,30,False,79,217,1997-12-08,28,hausesa01,exact
+BOS,2026-27,Tucker DeVries,tucker devries,G/F,41,False,79,215,2002-12-07,23,,none
+BRK,2026-27,Ben Saraf,ben saraf,G,77,False,78,200,2006-04-14,20,sarafbe01,exact
+BRK,2026-27,Chaney Johnson,chaney johnson,G/F,31,True,79,220,2002-06-20,24,johnsch06,exact
+BRK,2026-27,Danny Wolf,danny wolf,F,2,False,83,250,2004-05-05,22,wolfda01,exact
+BRK,2026-27,Day'Ron Sharpe,dayron sharpe,C,20,False,82,265,2001-11-06,24,sharpda01,exact
+BRK,2026-27,Drake Powell,drake powell,G/F,4,False,77,195,2005-09-08,21,poweldr01,exact
+BRK,2026-27,Egor Dëmin,egor demin,G,8,False,80,200,2006-03-03,20,demineg01,exact
+BRK,2026-27,Grant Nelson,grant nelson,F/C,16,True,84,215,2002-03-18,24,nelsogr02,exact
+BRK,2026-27,Josh Minott,josh minott,F,0,False,80,205,2002-11-25,23,minotjo01,exact
+BRK,2026-27,Joshua Jefferson,joshua jefferson,F,9,False,81,240,2003-11-21,22,,none
+BRK,2026-27,Julius Randle,julius randle,F,30,False,81,250,1994-11-29,31,randlju01,exact
+BRK,2026-27,Keon Ellis,keon ellis,G,1,False,76,175,2000-01-08,26,elliske01,exact
+BRK,2026-27,Michael Porter Jr.,michael porter,F,17,False,82,218,1998-06-29,28,portemi01,exact
+BRK,2026-27,Mikel Brown Jr.,mikel brown,G,0,False,77,190,2006-04-03,20,,none
+BRK,2026-27,Moritz Wagner,moritz wagner,F/C,13,False,83,245,1997-04-26,29,wagnemo01,exact
+BRK,2026-27,Noah Clowney,noah clowney,F/C,21,False,82,210,2004-07-14,22,clownno01,exact
+BRK,2026-27,Nolan Traoré,nolan traore,G,10,False,75,185,2006-05-28,20,traorno01,exact
+BRK,2026-27,Terance Mann,terance mann,G/F,14,False,78,215,1996-10-18,30,mannte01,exact
+BRK,2026-27,Tyler Bilodeau,tyler bilodeau,F/C,34,True,81,230,2004-04-17,22,,none
+CHI,2026-27,Caleb Wilson,caleb wilson,F,8,False,82,215,2006-07-18,20,,none
+CHI,2026-27,Dailyn Swain,dailyn swain,G,5,False,80,225,2005-07-15,21,,none
+CHI,2026-27,Isaac Okoro,isaac okoro,G/F,35,False,76,225,2001-01-26,25,okorois01,exact
+CHI,2026-27,Jalen Smith,jalen smith,F/C,25,False,80,244,2000-03-16,26,smithja04,exact
+CHI,2026-27,Jaylin Sellers,jaylin sellers,G,22,True,77,205,2003-06-03,23,,none
+CHI,2026-27,Josh Giddey,josh giddey,G,3,False,79,214,2002-10-10,24,giddejo01,exact
+CHI,2026-27,Leonard Miller,leonard miller,F,11,False,82,220,2003-11-26,22,millele01,exact
+CHI,2026-27,Matas Buzelis,matas buzelis,F,14,False,80,196,2004-10-13,22,buzelma01,exact
+CHI,2026-27,Nic Claxton,nic claxton,C,9,False,83,215,1999-04-17,27,claxtni01,exact
+CHI,2026-27,Noa Essengue,noa essengue,F,2,False,80,194,2006-12-18,19,essenno01,exact
+CHI,2026-27,Norman Powell,norman powell,G,24,False,75,215,1993-05-25,33,powelno01,exact
+CHI,2026-27,Patrick Williams,patrick williams,F,44,False,78,235,2001-08-26,25,willipa01,exact
+CHI,2026-27,Rob Dillingham,rob dillingham,G,7,False,74,175,2005-01-04,21,dilliro01,exact
+CHI,2026-27,Tobe Awaka,tobe awaka,F,19,True,80,255,2004-01-30,22,,none
+CHI,2026-27,Tre Jones,tre jones,G,30,False,73,190,2000-01-08,26,jonestr01,exact
+CHI,2026-27,Zach Collins,zach collins,F/C,12,False,81,240,1997-11-19,28,colliza01,exact
+CHO,2026-27,Brandon Miller,brandon miller,G/F,24,False,79,200,2002-11-22,23,millebr02,exact
+CHO,2026-27,Christian Anderson Jr.,christian anderson,G,5,False,72,165,2006-04-02,20,,none
+CHO,2026-27,Coby White,coby white,G,3,False,76,210,1998-11-30,27,whiteco01,exact
+CHO,2026-27,Dorian Finney-Smith,dorian finney smith,F,17,False,79,220,1993-05-04,33,finnedo01,exact
+CHO,2026-27,Grayson Allen,grayson allen,G,8,False,75,198,1995-10-08,31,allengr01,exact
+CHO,2026-27,Hannes Steinbach,hannes steinbach,F,22,False,83,248,2006-05-01,20,,none
+CHO,2026-27,Kon Knueppel,kon knueppel,G/F,7,False,78,215,2005-08-03,21,knuepko01,exact
+CHO,2026-27,Kylan Boswell,kylan boswell,G,18,True,74,200,2005-04-28,21,,none
+CHO,2026-27,Liam McNeeley,liam mcneeley,F,33,False,79,210,2005-10-10,21,mcneeli01,exact
+CHO,2026-27,Michael Ajayi,michael ajayi,F,10,True,79,235,2003-05-23,23,,none
+CHO,2026-27,Moussa Diabaté,moussa diabate,F/C,14,False,82,210,2002-01-21,24,diabamo01,exact
+CHO,2026-27,Naz Reid,naz reid,F/C,0,False,81,264,1999-08-26,27,reidna01,exact
+CHO,2026-27,PJ Hall,pj hall,C,16,True,80,245,2002-02-21,24,hallpj01,exact
+CHO,2026-27,Pat Connaughton,pat connaughton,G,21,False,77,209,1993-01-06,33,connapa01,exact
+CHO,2026-27,Royce O'Neale,royce oneale,F,0,False,78,226,1993-06-05,33,onealro01,exact
+CHO,2026-27,Ryan Kalkbrenner,ryan kalkbrenner,C,11,False,85,256,2002-01-17,24,kalkbry01,exact
+CHO,2026-27,Sion James,sion james,G,4,False,77,220,2002-12-04,23,jamessi01,exact
+CHO,2026-27,Tidjane Salaün,tidjane salaun,F,31,False,82,207,2005-08-10,21,salauti01,exact
+CLE,2026-27,Craig Porter Jr.,craig porter,G,9,False,73,180,2000-02-26,26,portecr01,exact
+CLE,2026-27,Donovan Mitchell,donovan mitchell,G,45,False,74,215,1996-09-07,30,mitchdo01,exact
+CLE,2026-27,Ernest Udeh Jr.,ernest udeh,C,39,True,83,266,2004-01-08,22,,none
+CLE,2026-27,Evan Mobley,evan mobley,C,4,False,83,215,2001-06-18,25,mobleev01,exact
+CLE,2026-27,James Harden,james harden,G,1,False,77,220,1989-08-26,37,hardeja01,exact
+CLE,2026-27,Jarrett Allen,jarrett allen,C,31,False,81,243,1998-04-21,28,allenja01,exact
+CLE,2026-27,Jaylon Tyson,jaylon tyson,G/F,20,False,78,215,2002-12-02,23,tysonja01,exact
+CLE,2026-27,Khalifa Diop,khalifa diop,C,18,False,85,231,2002-01-15,24,,none
+CLE,2026-27,Mario Hezonja,mario hezonja,G/F,33,False,80,220,1995-02-25,31,,none
+CLE,2026-27,Meleek Thomas,meleek thomas,G,15,False,77,185,2006-08-06,20,,none
+CLE,2026-27,Nae'Qwan Tomlin,naeqwan tomlin,F,35,False,80,210,2000-12-10,25,tomlina01,exact
+CLE,2026-27,Peyton Watson,peyton watson,G,8,False,80,200,2002-09-11,24,watsope01,exact
+CLE,2026-27,Riley Minix,riley minix,F,12,True,79,230,2000-09-22,26,minixri01,exact
+CLE,2026-27,Sam Merrill,sam merrill,G,5,False,76,205,1996-05-15,30,merrisa01,exact
+CLE,2026-27,Thomas Bryant,thomas bryant,F/C,3,False,81,248,1997-07-31,29,bryanth01,exact
+CLE,2026-27,Tristan Enaruna,tristan enaruna,F,21,True,79,220,2001-06-26,25,enarutr01,exact
+CLE,2026-27,Tyrese Proctor,tyrese proctor,G,24,False,76,185,2004-04-01,22,proctty01,exact
+DAL,2026-27,Caleb Martin,caleb martin,F,16,False,77,205,1995-09-28,31,martica02,exact
+DAL,2026-27,Cooper Flagg,cooper flagg,F,32,False,81,205,2006-12-21,19,flaggco01,exact
+DAL,2026-27,Daniel Gafford,daniel gafford,F/C,21,False,82,265,1998-10-01,28,gaffoda01,exact
+DAL,2026-27,Dereck Lively II,dereck lively,C,2,False,85,230,2004-02-12,22,livelde01,exact
+DAL,2026-27,Jett Howard,jett howard,G,13,True,80,215,2003-09-14,23,howarje01,exact
+DAL,2026-27,John Poulakidas,john poulakidas,G,1,True,78,205,2003-04-04,23,poulajo01,exact
+DAL,2026-27,Kyrie Irving,kyrie irving,G,11,False,74,195,1992-03-23,34,irvinky01,exact
+DAL,2026-27,Marcus Sasser,marcus sasser,G,8,False,73,195,2000-09-21,26,sassema01,exact
+DAL,2026-27,Max Christie,max christie,G,0,False,77,190,2003-02-10,23,chrisma02,exact
+DAL,2026-27,Morez Johnson Jr.,morez johnson,G,14,False,81,250,2006-01-25,20,,none
+DAL,2026-27,Naji Marshall,naji marshall,F,3,False,78,220,1998-01-24,28,marshna01,exact
+DAL,2026-27,P. J. Washington,pj washington,F,25,False,79,230,1998-08-23,28,washipj01,exact
+DAL,2026-27,Santi Aldama,santi aldama,F/C,34,False,84,215,2001-01-10,25,aldamsa01,exact
+DAL,2026-27,Sergio de Larrea,sergio de larrea,G,55,False,77,175,2005-12-04,20,,none
+DAL,2026-27,Tobi Lawal,tobi lawal,F,33,True,80,215,2003-05-01,23,,none
+DAL,2026-27,Zaccharie Risacher,zaccharie risacher,F,10,False,80,200,2005-04-08,21,risacza01,exact
+DEN,2026-27,Aaron Gordon,aaron gordon,F,32,False,80,235,1995-09-16,31,gordoaa01,exact
+DEN,2026-27,Alpha Diallo,alpha diallo,F,11,False,79,210,1997-06-29,29,,none
+DEN,2026-27,Bryce Hopkins,bryce hopkins,F,13,True,79,225,2002-09-07,24,,none
+DEN,2026-27,Cameron Johnson,cameron johnson,F,23,False,80,210,1996-03-03,30,johnsca02,exact
+DEN,2026-27,Christian Braun,christian braun,G,0,False,78,220,2001-04-17,25,braunch01,exact
+DEN,2026-27,DaRon Holmes II,daron holmes,F,14,False,81,225,2002-09-15,24,holmeda01,exact
+DEN,2026-27,Jamal Murray,jamal murray,G,27,False,76,215,1997-02-23,29,murraja01,exact
+DEN,2026-27,Julian Strawther,julian strawther,G,1,False,78,205,2002-04-18,24,strawju01,exact
+DEN,2026-27,KJ Simpson,kj simpson,G,25,True,74,189,2002-08-08,24,simpskj01,exact
+DEN,2026-27,Marvin Bagley III,marvin bagley,F,3,False,82,235,1999-03-14,27,baglema01,exact
+DEN,2026-27,Nikola Jokić,nikola jokic,C,15,False,83,284,1995-02-19,31,jokicni01,exact
+DEN,2026-27,Spencer Jones,spencer jones,F,21,False,79,225,2001-06-14,25,jonessp01,exact
+DEN,2026-27,Trevon Brazile,trevon brazile,F,7,False,82,220,2003-01-07,23,,none
+DEN,2026-27,Tyus Jones,tyus jones,G,5,False,72,195,1996-05-10,30,jonesty01,exact
+DEN,2026-27,Zeke Nnaji,zeke nnaji,F/C,22,False,82,240,2001-01-09,25,nnajize01,exact
+DET,2026-27,Ausar Thompson,ausar thompson,G/F,9,False,79,205,2003-01-30,23,thompau01,exact
+DET,2026-27,Cade Cunningham,cade cunningham,G,2,False,78,220,2001-09-25,25,cunnica01,exact
+DET,2026-27,Daniss Jenkins,daniss jenkins,G,24,False,76,165,2001-08-17,25,jenkida01,exact
+DET,2026-27,Duncan Robinson,duncan robinson,F,55,False,79,215,1994-04-22,32,robindu01,exact
+DET,2026-27,Ebuka Okorie,ebuka okorie,G,23,False,74,185,2007-04-10,19,,none
+DET,2026-27,Gary Harris,gary harris,G,14,False,76,210,1994-09-14,32,harriga01,exact
+DET,2026-27,Isaiah Joe,isaiah joe,G,17,False,76,165,1999-07-02,27,joeis01,exact
+DET,2026-27,Javonte Green,javonte green,G,31,False,77,205,1993-07-23,33,greenja02,exact
+DET,2026-27,John Collins,john collins,F/C,20,False,81,226,1997-09-23,29,collijo01,exact
+DET,2026-27,Kevin Huerter,kevin huerter,G/F,27,False,78,198,1998-08-27,28,huertke01,exact
+DET,2026-27,Paul Reed,paul reed,F,7,False,81,210,1999-06-26,27,reedpa01,exact
+DET,2026-27,Ron Holland,ron holland,F,5,False,80,206,2005-07-07,21,hollaro01,exact
+DET,2026-27,Taurean Prince,taurean prince,F,12,False,78,218,1994-03-22,32,princta02,exact
+DET,2026-27,Tolu Smith,tolu smith,F,35,False,83,245,2001-07-26,25,smithto05,exact
+DET,2026-27,Ugonna Onyenso,ugonna onyenso,C,34,True,83,225,2004-09-25,22,,none
+GSW,2026-27,Al Horford,al horford,F/C,20,False,80,240,1986-06-03,40,horfoal01,exact
+GSW,2026-27,Brandin Podziemski,brandin podziemski,G,2,False,76,205,2003-02-25,23,podzibr01,exact
+GSW,2026-27,Brandon Williams,brandon williams,G,12,False,73,190,1999-11-22,26,willibr03,exact
+GSW,2026-27,Charles Bassey,charles bassey,F/C,28,False,82,230,2000-10-28,25,bassech01,exact
+GSW,2026-27,Dalen Terry,dalen terry,F,21,False,78,195,2002-07-12,24,terryda01,exact
+GSW,2026-27,De'Anthony Melton,deanthony melton,G,8,False,74,200,1998-05-28,28,meltode01,exact
+GSW,2026-27,Draymond Green,draymond green,F,23,False,78,230,1990-03-04,36,greendr01,exact
+GSW,2026-27,Gary Payton II,gary payton,G,0,False,74,195,1992-12-01,33,paytoga02,exact
+GSW,2026-27,Georges Niang,georges niang,F,32,False,79,230,1993-06-17,33,niangge01,exact
+GSW,2026-27,Gui Santos,gui santos,F,15,False,79,185,2002-06-22,24,santogu01,exact
+GSW,2026-27,Jimmy Butler,jimmy butler,F,10,False,78,230,1989-09-14,37,butleji01,exact
+GSW,2026-27,Kristaps Porziņģis,kristaps porzingis,C,7,False,86,240,1995-08-02,31,porzikr01,exact
+GSW,2026-27,LJ Cryer,lj cryer,G,18,True,72,200,2001-10-09,25,cryerlj01,exact
+GSW,2026-27,Lajae Jones,lajae jones,F,25,False,79,220,2004-05-21,22,,none
+GSW,2026-27,Malevy Leons,malevy leons,F,33,True,81,210,1999-09-23,27,leonsma01,exact
+GSW,2026-27,Moses Moody,moses moody,G,4,False,77,211,2002-05-31,24,moodymo01,exact
+GSW,2026-27,Stephen Curry,stephen curry,G,30,False,74,185,1988-03-14,38,curryst01,exact
+GSW,2026-27,Will Richard,will richard,G,3,False,75,206,2002-12-24,23,richawi02,exact
+GSW,2026-27,Yaxel Lendeborg,yaxel lendeborg,F,1,False,81,240,2002-09-30,24,,none
+HOU,2026-27,Alperen Şengün,alperen sengun,F/C,28,False,83,243,2002-07-25,24,sengual01,exact
+HOU,2026-27,Amen Thompson,amen thompson,G/F,1,False,79,200,2003-01-30,23,thompam01,exact
+HOU,2026-27,Bogdan Bogdanović,bogdan bogdanovic,G,31,False,77,225,1992-08-18,34,bogdabo01,exact
+HOU,2026-27,Bruce Thornton,bruce thornton,G,2,False,74,215,2003-09-14,23,,none
+HOU,2026-27,Clint Capela,clint capela,C,30,False,82,256,1994-05-18,32,capelca01,exact
+HOU,2026-27,Fred VanVleet,fred vanvleet,G,5,False,72,197,1994-02-25,32,vanvlfr01,exact
+HOU,2026-27,Isaiah Crawford,isaiah crawford,F,27,False,78,220,2001-11-01,24,crawfis01,exact
+HOU,2026-27,Jabari Smith Jr.,jabari smith,F,10,False,83,220,2003-05-13,23,smithja05,exact
+HOU,2026-27,Jae'Sean Tate,jaesean tate,F,8,False,76,230,1995-10-28,30,tateja01,exact
+HOU,2026-27,Julian Phillips,julian phillips,F,4,False,78,201,2003-11-05,22,phillju01,exact
+HOU,2026-27,Kevin Durant,kevin durant,F,7,False,83,240,1988-09-29,38,duranke01,exact
+HOU,2026-27,Marcus Smart,marcus smart,G,36,False,75,220,1994-03-06,32,smartma01,exact
+HOU,2026-27,Oscar Tshiebwe,oscar tshiebwe,F/C,35,False,80,255,1999-11-27,26,tshieos01,exact
+HOU,2026-27,Quadir Copeland,quadir copeland,G,25,True,78,220,2003-09-04,23,,none
+HOU,2026-27,Rafael Castro,rafael castro,C,0,True,83,220,2003-03-30,23,,none
+HOU,2026-27,Reed Sheppard,reed sheppard,G,15,False,74,185,2004-06-24,22,sheppre01,exact
+HOU,2026-27,Sean Pedulla,sean pedulla,G,0,True,73,195,2002-10-10,24,pedulse01,exact
+HOU,2026-27,Steven Adams,steven adams,C,12,False,83,265,1993-07-20,33,adamsst01,exact
+HOU,2026-27,Tari Eason,tari eason,F,17,False,80,215,2001-05-10,25,easonta01,exact
+IND,2026-27,Aaron Nesmith,aaron nesmith,G/F,23,False,77,215,1999-10-16,27,nesmiaa01,exact
+IND,2026-27,Andrew Nembhard,andrew nembhard,G,2,False,76,191,2000-01-16,26,nembhan01,exact
+IND,2026-27,Ben Sheppard,ben sheppard,G,26,False,78,190,2001-07-16,25,sheppbe01,exact
+IND,2026-27,Braden Smith,braden smith,G,3,True,70,170,2003-07-25,23,,none
+IND,2026-27,Ivica Zubac,ivica zubac,C,40,False,84,240,1997-03-18,29,zubaciv01,exact
+IND,2026-27,Jalen Slawson,jalen slawson,F,18,True,79,225,1999-10-22,26,slawsja01,exact
+IND,2026-27,Jarace Walker,jarace walker,F,5,False,79,235,2003-09-04,23,walkeja02,exact
+IND,2026-27,Jay Huff,jay huff,C,32,False,85,240,1997-08-25,29,huffja01,exact
+IND,2026-27,Johnny Furphy,johnny furphy,G,12,False,80,200,2004-12-08,21,furphjo01,exact
+IND,2026-27,Kelly Oubre Jr.,kelly oubre,G/F,10,False,80,210,1995-09-12,31,oubreke01,exact
+IND,2026-27,Kobe Brown,kobe brown,F,24,True,79,250,2000-01-01,26,brownko01,exact
+IND,2026-27,Larry Nance Jr.,larry nance,F/C,22,False,78,245,1993-01-01,33,nancela02,exact
+IND,2026-27,Obi Toppin,obi toppin,F,1,False,81,220,1998-03-04,28,toppiob01,exact
+IND,2026-27,Pascal Siakam,pascal siakam,F,43,False,80,245,1994-04-02,32,siakapa01,exact
+IND,2026-27,Quenton Jackson,quenton jackson,G,29,False,76,173,1998-09-15,28,jacksqu01,exact
+IND,2026-27,T. J. McConnell,tj mcconnell,G,9,False,73,190,1992-03-25,34,mccontj01,exact
+IND,2026-27,Tyrese Haliburton,tyrese haliburton,G,0,False,77,185,2000-02-29,26,halibty01,exact
+LAC,2026-27,Baba Miller,baba miller,F,18,False,83,204,2004-02-07,22,,none
+LAC,2026-27,Bradley Beal,bradley beal,G,3,False,76,207,1993-06-28,33,bealbr01,exact
+LAC,2026-27,Brook Lopez,brook lopez,C,11,False,85,282,1988-04-01,38,lopezbr01,exact
+LAC,2026-27,Cam Christie,cam christie,G,24,False,77,190,2005-07-24,21,chrisca02,exact
+LAC,2026-27,Darius Garland,darius garland,G,10,False,73,192,2000-01-26,26,garlada01,exact
+LAC,2026-27,Derrick Jones Jr.,derrick jones,F,5,False,78,210,1997-02-15,29,jonesde02,exact
+LAC,2026-27,Isaiah Jackson,isaiah jackson,F,23,False,80,205,2002-01-10,24,jacksis01,exact
+LAC,2026-27,Johni Broome,johni broome,F,40,False,81,244,2002-07-19,24,broomjo01,exact
+LAC,2026-27,Jordan Miller,jordan miller,G,22,False,77,194,2000-01-23,26,millejo02,exact
+LAC,2026-27,Kawhi Leonard,kawhi leonard,F,2,False,78,225,1991-06-29,35,leonaka01,exact
+LAC,2026-27,Keaton Wagler,keaton wagler,G,1,False,78,175,2007-02-03,19,,none
+LAC,2026-27,Kobe Sanders,kobe sanders,G,4,False,80,207,2002-05-30,24,sandeko01,exact
+LAC,2026-27,Kris Dunn,kris dunn,G,8,False,75,205,1994-03-18,32,dunnkr01,exact
+LAC,2026-27,Nick Martinelli,nick martinelli,F,12,True,79,220,2004-04-20,22,,none
+LAC,2026-27,Yanic Konan Niederhäuser,yanic konan niederhauser,C,14,False,83,242,2003-03-14,23,konanya01,exact
+LAL,2026-27,AK Okereke,ak okereke,F,31,True,79,244,2003-07-02,23,,none
+LAL,2026-27,Adou Thiero,adou thiero,F,1,False,79,220,2004-05-08,22,thierad01,exact
+LAL,2026-27,Arthur Kaluma,arthur kaluma,F,47,True,79,225,2002-03-01,24,,none
+LAL,2026-27,Austin Reaves,austin reaves,G,15,False,77,197,1998-05-29,28,reaveau01,exact
+LAL,2026-27,Bronny James,bronny james,G,9,False,74,210,2004-10-06,22,jamesbr02,exact
+LAL,2026-27,Cameron Carr,cameron carr,G,43,False,77,184,2004-11-21,21,,none
+LAL,2026-27,Chris Mañon,chris manon,G,30,True,76,209,2001-12-09,24,manonch01,exact
+LAL,2026-27,Collin Sexton,collin sexton,G,10,False,75,190,1999-01-04,27,sextoco01,exact
+LAL,2026-27,Dalton Knecht,dalton knecht,G/F,4,False,78,215,2001-04-19,25,knechda01,exact
+LAL,2026-27,Jaden Hardy,jaden hardy,G,7,False,75,198,2002-07-05,24,hardyja02,exact
+LAL,2026-27,Jake LaRavia,jake laravia,F,12,False,79,235,2001-11-03,24,laravja01,exact
+LAL,2026-27,Jarred Vanderbilt,jarred vanderbilt,F,2,False,80,214,1999-04-03,27,vandeja01,exact
+LAL,2026-27,Kevon Looney,kevon looney,C,55,False,81,222,1996-02-06,30,looneke01,exact
+LAL,2026-27,Luka Dončić,luka doncic,G,77,False,80,230,1999-02-28,27,doncilu01,exact
+LAL,2026-27,Matisse Thybulle,matisse thybulle,G/F,26,False,77,201,1997-03-04,29,thybuma01,exact
+LAL,2026-27,Quentin Grimes,quentin grimes,G,5,False,76,210,2000-05-08,26,grimequ01,exact
+LAL,2026-27,Sandro Mamukelashvili,sandro mamukelashvili,F/C,54,False,81,240,1999-05-23,27,mamuksa01,exact
+LAL,2026-27,Walker Kessler,walker kessler,C,14,False,86,245,2001-07-26,25,kesslwa01,exact
+LAL,2026-27,Ziaire Williams,ziaire williams,F,11,False,81,185,2001-09-12,25,willizi02,exact
+MEM,2026-27,Cam Spencer,cam spencer,G,24,False,75,205,2000-04-06,26,spencca01,exact
+MEM,2026-27,Cameron Boozer,cameron boozer,F,27,False,82,250,2007-07-18,19,,none
+MEM,2026-27,Carson Cooper,carson cooper,C,20,True,83,245,2004-04-09,22,,none
+MEM,2026-27,Cedric Coward,cedric coward,G,23,False,78,206,2003-09-11,23,cowarce01,exact
+MEM,2026-27,GG Jackson,gg jackson,F,45,False,81,210,2004-12-17,21,jacksgg01,exact
+MEM,2026-27,Isaiah Stewart,isaiah stewart,F/C,28,False,80,250,2001-05-22,25,stewais01,exact
+MEM,2026-27,Jahmai Mashack,jahmai mashack,G,21,True,76,203,2002-11-10,23,mashaja01,exact
+MEM,2026-27,Javon Small,javon small,G,10,True,73,190,2002-12-19,23,smallja01,exact
+MEM,2026-27,Jaylen Wells,jaylen wells,F,0,False,79,205,2003-08-26,23,wellsja01,exact
+MEM,2026-27,Karim López,karim lopez,F,35,False,80,210,2007-04-12,19,,none
+MEM,2026-27,Kris Murray,kris murray,F,17,False,80,218,2000-08-19,26,murrakr01,exact
+MEM,2026-27,Olivier-Maxence Prosper,olivier maxence prosper,F,18,False,79,230,2002-07-03,24,prospol01,exact
+MEM,2026-27,Quinten Post,quinten post,C,21,False,84,238,2000-03-21,26,postqu01,exact
+MEM,2026-27,Scotty Pippen Jr.,scotty pippen,G,1,False,74,170,2000-11-10,25,pippesc02,exact
+MEM,2026-27,Taylor Hendricks,taylor hendricks,F,22,False,81,215,2003-11-22,22,hendrta01,exact
+MEM,2026-27,Ty Jerome,ty jerome,G/F,2,False,77,195,1997-07-08,29,jeromty01,exact
+MEM,2026-27,Walter Clayton Jr.,walter clayton,G,4,False,76,195,2003-03-06,23,claytwa01,exact
+MEM,2026-27,Zach Edey,zach edey,C,14,False,87,305,2002-05-14,24,edeyza01,exact
+MIA,2026-27,Andrew Wiggins,andrew wiggins,F,22,False,79,210,1995-02-23,31,wiggian01,exact
+MIA,2026-27,Bam Adebayo,bam adebayo,F/C,13,False,81,260,1997-07-18,29,adebaba01,exact
+MIA,2026-27,Bobby Portis,bobby portis,F,95,False,81,250,1995-02-10,31,portibo01,exact
+MIA,2026-27,Davion Mitchell,davion mitchell,G,2,False,72,210,1998-09-05,28,mitchda01,exact
+MIA,2026-27,Dru Smith,dru smith,G,12,False,74,200,1997-12-30,28,smithdr01,exact
+MIA,2026-27,Giannis Antetokounmpo,giannis antetokounmpo,F,7,False,83,243,1994-12-06,31,antetgi01,exact
+MIA,2026-27,Keshad Johnson,keshad johnson,F,16,True,78,230,2001-06-23,25,johnske10,exact
+MIA,2026-27,Klay Thompson,klay thompson,G,11,False,77,220,1990-02-08,36,thompkl01,exact
+MIA,2026-27,Myron Gardner,myron gardner,F,15,False,77,225,2001-05-21,25,gardnmy01,exact
+MIA,2026-27,Nick Richards,nick richards,C,8,False,83,245,1997-11-29,28,richani01,exact
+MIA,2026-27,Nikola Jović,nikola jovic,F,5,False,82,240,2003-06-09,23,jovicni01,exact
+MIA,2026-27,Pelle Larsson,pelle larsson,G,9,False,77,215,2001-02-23,25,larsspe01,exact
+MIA,2026-27,Ryan Conwell,ryan conwell,G,4,False,75,220,2004-06-15,22,,none
+MIA,2026-27,Simone Fontecchio,simone fontecchio,F,0,False,79,220,1995-12-09,30,fontesi01,exact
+MIA,2026-27,Tim Hardaway Jr.,tim hardaway,G/F,10,False,77,205,1992-03-16,34,hardati02,exact
+MIA,2026-27,Tre Donaldson,tre donaldson,G,24,True,74,210,2003-12-11,22,,none
+MIA,2026-27,Vladislav Goldin,vladislav goldin,C,50,True,84,255,2001-05-12,25,goldivl01,exact
+MIL,2026-27,A. J. Green,aj green,G,20,False,76,190,1999-09-27,27,greenaj01,exact
+MIL,2026-27,Bogoljub Marković,bogoljub markovic,F,23,False,83,210,2005-07-12,21,,none
+MIL,2026-27,Brayden Burries,brayden burries,G,0,False,76,205,2005-09-18,21,,none
+MIL,2026-27,Caris LeVert,caris levert,G,12,False,79,205,1994-08-25,32,leverca01,exact
+MIL,2026-27,Cormac Ryan,cormac ryan,G,30,True,77,205,1998-10-26,27,ryanco01,exact
+MIL,2026-27,Gary Trent Jr.,gary trent,G,5,False,77,204,1999-01-18,27,trentga02,exact
+MIL,2026-27,Jaime Jaquez Jr.,jaime jaquez,G/F,24,False,78,225,2001-02-18,25,jaqueja01,exact
+MIL,2026-27,Jericho Sims,jericho sims,C,0,False,82,250,1998-10-20,28,simsje01,exact
+MIL,2026-27,Kam Jones,kam jones,G,39,True,76,200,2002-02-25,24,joneska03,exact
+MIL,2026-27,Kasparas Jakučionis,kasparas jakucionis,G,25,False,77,200,2006-05-29,20,jakucka01,exact
+MIL,2026-27,Kel'el Ware,kelel ware,C,9,False,84,230,2004-04-20,22,wareke01,exact
+MIL,2026-27,Kevin Porter Jr.,kevin porter,G/F,7,False,77,203,2000-05-04,26,porteke02,exact
+MIL,2026-27,Kyle Kuzma,kyle kuzma,F,18,False,80,221,1995-07-24,31,kuzmaky01,exact
+MIL,2026-27,Myles Turner,myles turner,F/C,3,False,83,250,1996-03-24,30,turnemy01,exact
+MIL,2026-27,Nate Ament,nate ament,F,15,False,82,207,2006-12-10,19,,none
+MIL,2026-27,Ousmane Dieng,ousmane dieng,F,21,False,81,185,2003-05-21,23,diengou01,exact
+MIL,2026-27,Pete Nance,pete nance,F,35,False,81,225,2000-02-19,26,nancepe01,exact
+MIL,2026-27,Ryan Rollins,ryan rollins,G,13,False,75,180,2002-07-03,24,rolliry01,exact
+MIL,2026-27,Tyler Herro,tyler herro,G,11,False,77,195,2000-01-20,26,herroty01,exact
+MIN,2026-27,Anthony Edwards,anthony edwards,G,5,False,76,225,2001-08-05,25,edwaran01,exact
+MIN,2026-27,Ayo Dosunmu,ayo dosunmu,G,13,False,76,200,2000-01-17,26,dosunay01,exact
+MIN,2026-27,Bones Hyland,bones hyland,G,8,False,74,169,2000-09-14,26,hylanbo01,exact
+MIN,2026-27,Cody Williams,cody williams,F,9,False,80,190,2004-11-20,21,willico04,exact
+MIN,2026-27,Donte DiVincenzo,donte divincenzo,G,0,False,76,203,1997-01-31,29,divindo01,exact
+MIN,2026-27,Enrique Freeman,enrique freeman,F,25,True,81,220,2000-07-29,26,freemen01,exact
+MIN,2026-27,Isaiah Evans,isaiah evans,F,33,False,78,180,2005-12-06,20,,none
+MIN,2026-27,Jaden McDaniels,jaden mcdaniels,F,3,False,81,185,2000-09-29,26,mcdanja02,exact
+MIN,2026-27,Jaylen Clark,jaylen clark,G,7,False,77,205,2001-10-13,25,clarkja02,exact
+MIN,2026-27,Joan Beringer,joan beringer,C,19,False,83,230,2006-11-11,19,berinjo01,exact
+MIN,2026-27,Jonathan Kuminga,jonathan kuminga,F,24,False,79,225,2002-10-06,24,kuminjo01,exact
+MIN,2026-27,LaMelo Ball,lamelo ball,G,1,False,79,180,2001-08-22,25,ballla01,exact
+MIN,2026-27,Rocco Zikarsky,rocco zikarsky,C,44,True,87,227,2006-07-11,20,zikarro01,exact
+MIN,2026-27,Rudy Gobert,rudy gobert,C,27,False,85,258,1992-06-26,34,goberru01,exact
+MIN,2026-27,Terrence Shannon Jr.,terrence shannon,G/F,4,False,78,215,2000-07-30,26,shannte01,exact
+MIN,2026-27,Trey Lyles,trey lyles,F,41,False,81,234,1995-11-05,30,lylestr01,exact
+MIN,2026-27,Zyon Pullin,zyon pullin,G,15,True,76,206,2001-03-03,25,pullizy01,exact
+NOP,2026-27,Bryce McGowens,bryce mcgowens,G,11,False,78,190,2002-11-08,23,mcgowbr01,exact
+NOP,2026-27,Christian Koloko,christian koloko,C,35,False,83,225,2000-06-20,26,kolokch01,exact
+NOP,2026-27,DeAndre Jordan,deandre jordan,C,6,False,83,265,1988-07-21,38,jordade01,exact
+NOP,2026-27,Dejounte Murray,dejounte murray,G,5,False,76,180,1996-09-19,30,murrade01,exact
+NOP,2026-27,Derik Queen,derik queen,C,22,False,81,250,2004-11-27,21,queende01,exact
+NOP,2026-27,Herbert Jones,herbert jones,F,2,False,79,206,1998-10-06,28,joneshe01,exact
+NOP,2026-27,Jaron Pierre Jr.,jaron pierre,G,10,True,77,210,2002-07-12,24,,none
+NOP,2026-27,Jeremiah Fears,jeremiah fears,G,0,False,75,190,2006-10-14,20,fearsje01,exact
+NOP,2026-27,Jordan Poole,jordan poole,G,3,False,76,194,1999-06-19,27,poolejo01,exact
+NOP,2026-27,Karlo Matković,karlo matkovic,F/C,17,False,82,231,2001-03-30,25,matkoka01,exact
+NOP,2026-27,Kobe Bufkin,kobe bufkin,G,9,False,76,195,2003-09-21,23,bufkiko01,exact
+NOP,2026-27,Malik Dia,malik dia,F,8,True,81,250,2004-02-04,22,,none
+NOP,2026-27,Saddiq Bey,saddiq bey,G/F,41,False,80,215,1999-04-09,27,beysa01,exact
+NOP,2026-27,Taj Gibson,taj gibson,C,67,False,81,232,1985-06-24,41,gibsota01,exact
+NOP,2026-27,Trendon Watford,trendon watford,F,12,False,80,245,2000-09-09,26,watfotr01,exact
+NOP,2026-27,Trey Murphy III,trey murphy,F,25,False,80,206,2000-06-18,26,murphtr02,exact
+NOP,2026-27,Yves Missi,yves missi,C,21,False,83,235,2004-05-14,22,missiyv01,exact
+NOP,2026-27,Zion Williamson,zion williamson,F,1,False,78,284,2000-07-06,26,willizi01,exact
+NYK,2026-27,Andre Drummond,andre drummond,C,0,False,83,279,1993-08-10,33,drumman01,exact
+NYK,2026-27,Jalen Brunson,jalen brunson,G,11,False,74,190,1996-08-31,30,brunsja01,exact
+NYK,2026-27,Jordan Clarkson,jordan clarkson,G,0,False,77,194,1992-06-07,34,clarkjo01,exact
+NYK,2026-27,Jose Alvarado,jose alvarado,G,5,False,72,179,1998-04-12,28,alvarjo01,exact
+NYK,2026-27,Josh Hart,josh hart,F,3,False,77,215,1995-03-06,31,hartjo01,exact
+NYK,2026-27,Karl-Anthony Towns,karl anthony towns,F/C,32,False,84,248,1995-11-15,30,townska01,exact
+NYK,2026-27,Landry Shamet,landry shamet,G,44,False,77,190,1997-03-13,29,shamela01,exact
+NYK,2026-27,Mikal Bridges,mikal bridges,G/F,25,False,78,209,1996-08-30,30,bridgmi01,exact
+NYK,2026-27,Miles McBride,miles mcbride,G,2,False,74,195,2000-09-08,26,mcbrimi01,exact
+NYK,2026-27,Mohamed Diawara,mohamed diawara,F,51,False,81,225,2005-04-29,21,diawamo01,exact
+NYK,2026-27,OG Anunoby,og anunoby,F,8,False,79,240,1997-07-17,29,anunoog01,exact
+NYK,2026-27,Pacôme Dadiet,pacome dadiet,F,4,False,81,210,2005-07-27,21,dadiepa01,exact
+NYK,2026-27,Tyler Kolek,tyler kolek,G,13,False,74,195,2001-03-27,25,kolekty01,exact
+NYK,2026-27,Tyler Nickel,tyler nickel,F,55,False,79,220,2003-09-05,23,,none
+OKC,2026-27,Aday Mara,aday mara,C,15,False,87,255,2005-04-07,21,,none
+OKC,2026-27,Ajay Mitchell,ajay mitchell,G,25,False,76,205,2002-06-25,24,mitchaj01,exact
+OKC,2026-27,Alex Caruso,alex caruso,G,9,False,77,187,1994-02-28,32,carusal01,exact
+OKC,2026-27,Bennett Stirtz,bennett stirtz,G,14,False,76,190,2003-10-03,23,,none
+OKC,2026-27,Brooks Barnhizer,brooks barnhizer,G,23,True,78,227,2002-03-02,24,barnhbr01,exact
+OKC,2026-27,Cason Wallace,cason wallace,G,22,False,76,200,2003-11-07,22,wallaca01,exact
+OKC,2026-27,Chet Holmgren,chet holmgren,F/C,7,False,85,213,2002-05-01,24,holmgch01,exact
+OKC,2026-27,Isaiah Hartenstein,isaiah hartenstein,F/C,55,False,84,267,1998-05-05,28,harteis01,exact
+OKC,2026-27,Jalen Williams,jalen williams,F,8,False,78,220,2001-04-14,25,willija06,exact
+OKC,2026-27,Jared McCain,jared mccain,G,3,False,75,195,2004-02-20,22,mccaija01,exact
+OKC,2026-27,Jaylin Williams,jaylin williams,F,6,False,81,241,2002-06-29,24,willija07,exact
+OKC,2026-27,Josh Dix,josh dix,G,21,True,78,210,2004-06-29,22,,none
+OKC,2026-27,Kenrich Williams,kenrich williams,G/F,34,False,79,207,1994-12-02,31,willike04,exact
+OKC,2026-27,Nikola Topić,nikola topic,G,44,False,78,218,2005-08-10,21,topicni01,exact
+OKC,2026-27,Otega Oweh,otega oweh,G,13,True,76,215,2003-06-21,23,,none
+OKC,2026-27,Shai Gilgeous-Alexander,shai gilgeous alexander,G,2,False,78,200,1998-07-12,28,gilgesh01,exact
+OKC,2026-27,Thomas Sorber,thomas sorber,C,12,False,81,268,2005-12-25,20,,none
+ORL,2026-27,Alex Morales,alex morales,G,30,True,78,210,1997-11-21,28,moralal01,exact
+ORL,2026-27,Anthony Black,anthony black,G,0,False,79,200,2004-01-24,22,blackan01,exact
+ORL,2026-27,Colin Castleton,colin castleton,C,14,True,82,250,2000-05-25,26,castlco01,exact
+ORL,2026-27,Desmond Bane,desmond bane,G,3,False,78,215,1998-06-25,28,banede01,exact
+ORL,2026-27,Franz Wagner,franz wagner,F,22,False,82,220,2001-08-27,25,wagnefr01,exact
+ORL,2026-27,Goga Bitadze,goga bitadze,C,35,False,83,250,1999-07-20,27,bitadgo01,exact
+ORL,2026-27,Izaiyah Nelson,izaiyah nelson,F,25,True,82,218,2003-10-01,23,,none
+ORL,2026-27,Jalen Suggs,jalen suggs,G,4,False,77,205,2001-06-03,25,suggsja01,exact
+ORL,2026-27,Jamal Cain,jamal cain,F,8,False,79,191,1999-03-20,27,cainja01,exact
+ORL,2026-27,Jase Richardson,jase richardson,G,11,False,73,180,2005-10-16,21,richaja02,exact
+ORL,2026-27,Jevon Carter,jevon carter,G,2,False,72,200,1995-09-14,31,carteje01,exact
+ORL,2026-27,Jonathan Isaac,jonathan isaac,F,1,False,82,230,1997-10-03,29,isaacjo01,exact
+ORL,2026-27,Nikola Vučević,nikola vucevic,C,9,False,81,265,1990-10-24,35,vucevni01,exact
+ORL,2026-27,Noah Penda,noah penda,G/F,93,False,79,215,2005-01-07,21,pendano01,exact
+ORL,2026-27,Paolo Banchero,paolo banchero,F,5,False,82,250,2002-11-12,23,banchpa01,exact
+ORL,2026-27,Tristan da Silva,tristan da silva,F,23,False,80,217,2001-05-15,25,dasiltr01,exact
+ORL,2026-27,Wendell Carter Jr.,wendell carter,C,34,False,82,270,1999-04-16,27,cartewe01,exact
+PHI,2026-27,Adem Bona,adem bona,F/C,30,False,82,235,2003-03-28,23,bonaad01,exact
+PHI,2026-27,Anfernee Simons,anfernee simons,G,5,False,75,200,1999-06-08,27,simonan01,exact
+PHI,2026-27,Ariel Hukporti,ariel hukporti,C,55,False,84,246,2002-04-12,24,hukpoar01,exact
+PHI,2026-27,Caleb Love,caleb love,G,9,True,75,212,2001-09-27,25,loveca01,exact
+PHI,2026-27,Dean Wade,dean wade,F,45,False,81,228,1996-11-20,29,wadede01,exact
+PHI,2026-27,Dominick Barlow,dominick barlow,F,25,False,81,224,2003-05-26,23,barlodo01,exact
+PHI,2026-27,Jabari Walker,jabari walker,F,33,False,79,237,2002-07-30,24,walkeja01,exact
+PHI,2026-27,Jaylen Brown,jaylen brown,G/F,7,False,78,223,1996-10-24,29,brownja02,exact
+PHI,2026-27,Joel Embiid,joel embiid,C,21,False,84,270,1994-03-16,32,embiijo01,exact
+PHI,2026-27,Justin Edwards,justin edwards,F,11,False,79,217,2003-12-16,22,edwarju01,exact
+PHI,2026-27,Kentavious Caldwell-Pope,kentavious caldwell pope,G,1,False,77,204,1993-02-18,33,caldwke01,exact
+PHI,2026-27,Labaron Philon Jr.,labaron philon,G,0,False,76,177,2005-11-24,20,,none
+PHI,2026-27,LeBron James,lebron james,F,23,False,81,250,1984-12-30,41,jamesle01,exact
+PHI,2026-27,Rayan Rupert,rayan rupert,G/F,12,True,79,205,2004-05-21,22,ruperra01,exact
+PHI,2026-27,Tyrese Maxey,tyrese maxey,G,0,False,74,200,2000-10-04,26,maxeyty01,exact
+PHI,2026-27,V. J. Edgecombe,vj edgecombe,G,77,False,76,190,2005-07-30,21,edgecvj01,exact
+PHO,2026-27,C. J. Huntley,cj huntley,F,21,True,83,230,2002-01-06,24,huntlcj01,exact
+PHO,2026-27,Collin Gillespie,collin gillespie,G,12,False,73,195,1999-06-25,27,gilleco01,exact
+PHO,2026-27,Devin Booker,devin booker,G,15,False,77,206,1996-10-30,29,bookede01,exact
+PHO,2026-27,Dillon Brooks,dillon brooks,G/F,3,False,79,225,1996-01-22,30,brookdi01,exact
+PHO,2026-27,Haywood Highsmith,haywood highsmith,F,19,False,77,220,1996-12-09,29,highsha01,exact
+PHO,2026-27,Jalen Green,jalen green,G,4,False,76,186,2002-02-09,24,greenja05,exact
+PHO,2026-27,Jamaree Bouyea,jamaree bouyea,G,17,False,74,180,1999-06-27,27,bouyeja01,exact
+PHO,2026-27,Jordan Goodwin,jordan goodwin,G,23,False,75,215,1998-10-23,27,goodwjo01,exact
+PHO,2026-27,Khaman Maluach,khaman maluach,C,10,False,85,250,2006-09-14,20,maluakh01,exact
+PHO,2026-27,Koa Peat,koa peat,F,18,False,80,235,2007-01-20,19,,none
+PHO,2026-27,Koby Brea,koby brea,G,14,True,77,215,2002-11-06,23,breako01,exact
+PHO,2026-27,Luke Kennard,luke kennard,G,8,False,77,206,1996-06-24,30,kennalu01,exact
+PHO,2026-27,Mark Williams,mark williams,C,25,False,85,240,2001-12-16,24,willima07,exact
+PHO,2026-27,Miles Bridges,miles bridges,F,22,False,79,225,1998-03-21,28,bridgmi02,exact
+PHO,2026-27,Oso Ighodaro,oso ighodaro,F,11,False,83,235,2002-07-14,24,ighodos01,exact
+PHO,2026-27,Pat Spencer,pat spencer,G,61,True,74,205,1996-07-04,30,spencpa01,exact
+PHO,2026-27,Rasheer Fleming,rasheer fleming,F,20,False,81,240,2004-07-10,22,flemira01,exact
+PHO,2026-27,Ryan Dunn,ryan dunn,F,0,False,79,216,2003-01-07,23,dunnry01,exact
+POR,2026-27,Branden Carlson,branden carlson,C,10,False,84,220,1999-06-14,27,carlsbr01,exact
+POR,2026-27,Chris Youngblood,chris youngblood,G,11,True,76,220,2002-02-09,24,youngch01,exact
+POR,2026-27,Damian Lillard,damian lillard,G,0,False,74,200,1990-07-15,36,lillada01,exact
+POR,2026-27,Deni Avdija,deni avdija,F,8,False,80,228,2001-01-03,25,avdijde01,exact
+POR,2026-27,Donovan Clingan,donovan clingan,C,23,False,86,280,2004-02-23,22,clingdo01,exact
+POR,2026-27,Hansen Yang,hansen yang,C,16,False,85,270,2005-06-26,21,,none
+POR,2026-27,Ja Morant,ja morant,G,1,False,74,174,1999-08-10,27,moranja01,exact
+POR,2026-27,Jayson Kent,jayson kent,F,29,True,80,215,2002-02-03,24,kentja01,exact
+POR,2026-27,Jeremy Sochan,jeremy sochan,F,4,False,80,230,2003-05-20,23,sochaje01,exact
+POR,2026-27,John Tonje,john tonje,G,2,True,76,218,2001-04-23,25,tonjejo01,exact
+POR,2026-27,Jrue Holiday,jrue holiday,G,5,False,76,220,1990-06-12,36,holidjr01,exact
+POR,2026-27,Micah Potter,micah potter,F/C,9,False,81,248,1998-04-06,28,pottemi01,exact
+POR,2026-27,Robert Williams III,robert williams,F/C,35,False,81,249,1997-10-17,29,williro04,exact
+POR,2026-27,Scoot Henderson,scoot henderson,G,0,False,75,207,2004-02-03,22,hendesc01,exact
+POR,2026-27,Shaedon Sharpe,shaedon sharpe,G,17,False,77,210,2003-05-30,23,sharpsh01,exact
+POR,2026-27,Sidy Cissoko,sidy cissoko,G,91,False,78,220,2004-04-02,22,cissosi01,exact
+POR,2026-27,Toumani Camara,toumani camara,F,33,False,79,230,2000-05-08,26,camarto01,exact
+POR,2026-27,Vít Krejčí,vit krejci,G,27,False,80,195,2000-06-19,26,krejcvi01,exact
+SAC,2026-27,Adam Flagler,adam flagler,G,20,True,73,180,1999-12-01,26,flaglad01,exact
+SAC,2026-27,Alex Karaban,alex karaban,F,33,False,80,220,2002-11-11,23,,none
+SAC,2026-27,Daeqwon Plowden,daeqwon plowden,G/F,29,False,76,216,1998-08-29,28,plowdda01,exact
+SAC,2026-27,Darius Acuff Jr.,darius acuff,G,5,False,74,190,2006-11-16,19,,none
+SAC,2026-27,De'Andre Hunter,deandre hunter,G/F,15,False,79,221,1997-12-02,28,huntede01,exact
+SAC,2026-27,Domantas Sabonis,domantas sabonis,F/C,11,False,82,240,1996-05-03,30,sabondo01,exact
+SAC,2026-27,Dylan Cardwell,dylan cardwell,C,32,False,82,255,2001-12-16,24,cardwdy01,exact
+SAC,2026-27,Emanuel Sharp,emanuel sharp,G,34,False,75,210,2004-03-07,22,,none
+SAC,2026-27,Jonathan Mogbo,jonathan mogbo,F,22,True,81,225,2001-10-29,24,mogbojo01,exact
+SAC,2026-27,Keegan Murray,keegan murray,F,13,False,80,225,2000-08-19,26,murrake02,exact
+SAC,2026-27,Malik Monk,malik monk,G,0,False,75,200,1998-02-04,28,monkma01,exact
+SAC,2026-27,Maxime Raynaud,maxime raynaud,C,42,False,85,250,2003-04-07,23,raynama01,exact
+SAC,2026-27,Nique Clifford,nique clifford,G,10,False,77,175,2002-02-09,24,cliffni01,exact
+SAC,2026-27,Precious Achiuwa,precious achiuwa,F,9,False,80,243,1999-09-19,27,achiupr01,exact
+SAC,2026-27,Zach LaVine,zach lavine,G,8,False,77,200,1995-03-10,31,lavinza01,exact
+SAS,2026-27,Carter Bryant,carter bryant,F,11,False,78,220,2005-11-26,20,bryanca01,exact
+SAS,2026-27,David Jones García,david jones garcia,G,25,True,76,210,2001-11-24,24,jonesda06,exact
+SAS,2026-27,De'Aaron Fox,deaaron fox,G,4,False,75,185,1997-12-20,28,foxde01,exact
+SAS,2026-27,Devin Vassell,devin vassell,G/F,24,False,77,200,2000-08-23,26,vassede01,exact
+SAS,2026-27,Dylan Harper,dylan harper,G,2,False,77,215,2006-03-02,20,harpedy01,exact
+SAS,2026-27,Harrison Barnes,harrison barnes,F,40,False,79,225,1992-05-30,34,barneha02,exact
+SAS,2026-27,Ja'Kobi Gillespie,jakobi gillespie,G,17,True,73,186,2004-03-10,22,,none
+SAS,2026-27,Jayden Quaintance,jayden quaintance,F,22,False,82,255,2007-07-11,19,,none
+SAS,2026-27,Jordan McLaughlin,jordan mclaughlin,G,0,False,71,185,1996-04-09,30,mclaujo01,exact
+SAS,2026-27,Julian Champagnie,julian champagnie,F,30,False,79,217,2001-06-29,25,champju02,exact
+SAS,2026-27,Keldon Johnson,keldon johnson,G/F,3,False,78,220,1999-10-11,27,johnske04,exact
+SAS,2026-27,Luke Kornet,luke kornet,F/C,7,False,85,250,1995-07-15,31,kornelu01,exact
+SAS,2026-27,Maliq Brown,maliq brown,F,15,True,81,225,2003-11-16,22,,none
+SAS,2026-27,Stephon Castle,stephon castle,G,5,False,78,215,2004-11-01,21,castlst01,exact
+SAS,2026-27,Tarris Reed Jr.,tarris reed,C,10,False,83,265,2003-08-05,23,,none
+SAS,2026-27,Tobias Harris,tobias harris,F,23,False,80,226,1992-07-15,34,harrito02,exact
+SAS,2026-27,Victor Wembanyama,victor wembanyama,F/C,1,False,88,235,2004-01-04,22,wembavi01,exact
+TOR,2026-27,Alijah Martin,alijah martin,G,55,False,74,210,2001-12-06,24,martial01,exact
+TOR,2026-27,Allen Graves,allen graves,F,22,False,81,225,2006-07-28,20,,none
+TOR,2026-27,Andre Jackson Jr.,andre jackson,G,44,False,78,209,2001-11-13,24,jacksan01,exact
+TOR,2026-27,Brandon Ingram,brandon ingram,F,3,False,80,190,1997-09-02,29,ingrabr01,exact
+TOR,2026-27,Chucky Hepburn,chucky hepburn,G,24,True,72,190,2003-02-09,23,hepbuch01,exact
+TOR,2026-27,Collin Murray-Boyles,collin murray boyles,F,30,False,79,245,2005-06-10,21,murraco01,exact
+TOR,2026-27,Gradey Dick,gradey dick,G/F,1,False,78,200,2003-11-20,22,dickgr01,exact
+TOR,2026-27,Immanuel Quickley,immanuel quickley,G,5,False,74,190,1999-06-17,27,quickim01,exact
+TOR,2026-27,Ja'Kobe Walter,jakobe walter,G,14,False,76,180,2004-09-04,22,walteja01,exact
+TOR,2026-27,Jaden Bradley,jaden bradley,G,8,True,75,200,2003-09-14,23,,none
+TOR,2026-27,Jakob Pöltl,jakob poltl,C,19,False,84,253,1995-10-15,31,poeltja01,exact
+TOR,2026-27,Jamal Shead,jamal shead,G,23,False,73,200,2002-07-24,24,sheadja01,exact
+TOR,2026-27,Jamison Battle,jamison battle,F,77,False,79,220,2001-05-10,25,battlja01,exact
+TOR,2026-27,Kyle Anderson,kyle anderson,G/F,13,False,80,230,1993-09-20,33,anderky01,exact
+TOR,2026-27,Malachi Smith,malachi smith,G,18,False,76,205,1999-12-06,26,smithma02,exact
+TOR,2026-27,Nate Bittle,nate bittle,C,12,False,84,215,2003-06-03,23,,none
+TOR,2026-27,RJ Barrett,rj barrett,G/F,9,False,78,214,2000-06-14,26,barrerj01,exact
+TOR,2026-27,Scottie Barnes,scottie barnes,G/F,4,False,80,237,2001-08-01,25,barnesc01,exact
+TOR,2026-27,Trayce Jackson-Davis,trayce jackson davis,F,32,False,81,245,2000-02-22,26,jackstr02,exact
+TOR,2026-27,Trey Jemison,trey jemison,C,50,True,82,270,1999-11-28,26,jemistr01,exact
+UTA,2026-27,Ace Bailey,ace bailey,F,19,False,81,200,2006-08-13,20,baileac01,exact
+UTA,2026-27,Blake Hinson,blake hinson,F,25,True,80,230,1999-12-26,26,hinsobl01,exact
+UTA,2026-27,Brice Sensabaugh,brice sensabaugh,F,28,False,78,235,2003-10-30,22,sensabr01,exact
+UTA,2026-27,Darryn Peterson,darryn peterson,G,22,False,78,205,2007-01-17,19,,none
+UTA,2026-27,Harrison Ingram,harrison ingram,F,55,False,77,230,2002-11-27,23,ingraha01,exact
+UTA,2026-27,Isaiah Collier,isaiah collier,G,8,False,76,210,2004-10-08,22,colliis01,exact
+UTA,2026-27,Jaren Jackson Jr.,jaren jackson,F/C,20,False,82,242,1999-09-15,27,jacksja02,exact
+UTA,2026-27,Jaxson Hayes,jaxson hayes,F/C,11,False,84,220,2000-05-23,26,hayesja02,exact
+UTA,2026-27,Josh Green,josh green,G,5,False,78,200,2000-11-16,25,greenjo02,exact
+UTA,2026-27,Josh Okogie,josh okogie,G,21,False,76,213,1998-09-01,28,okogijo01,exact
+UTA,2026-27,Jusuf Nurkić,jusuf nurkic,C,30,False,83,290,1994-08-23,32,nurkiju01,exact
+UTA,2026-27,Keyonte George,keyonte george,G,3,False,76,185,2003-11-08,22,georgke01,exact
+UTA,2026-27,Kyle Filipowski,kyle filipowski,C,2,False,83,250,2003-10-07,23,filipky01,exact
+UTA,2026-27,Lauri Markkanen,lauri markkanen,F/C,23,False,85,240,1997-05-22,29,markkla01,exact
+UTA,2026-27,Mo Bamba,mo bamba,C,44,False,84,231,1998-05-12,28,bambamo01,exact
+UTA,2026-27,Sviatoslav Mykhailiuk,sviatoslav mykhailiuk,G/F,10,False,79,205,1997-06-10,29,mykhasv01,exact
+UTA,2026-27,Tamar Bates,tamar bates,G,0,True,76,195,2003-02-21,23,,none
+UTA,2026-27,Trey Alexander,trey alexander,G,15,True,77,185,2003-05-02,23,alexatr01,exact
+WAS,2026-27,AJ Dybantsa,aj dybantsa,F,4,False,81,210,2007-01-29,19,,none
+WAS,2026-27,Alex Sarr,alex sarr,C,20,False,84,205,2005-04-26,21,sarral01,exact
+WAS,2026-27,Anthony Davis,anthony davis,F/C,23,False,82,253,1993-03-11,33,davisan02,exact
+WAS,2026-27,Bilal Coulibaly,bilal coulibaly,G,0,False,79,195,2004-07-26,22,coulibi01,exact
+WAS,2026-27,Bub Carrington,bub carrington,G,7,False,76,190,2005-07-21,21,carrica01,exact
+WAS,2026-27,Deandre Ayton,deandre ayton,C,8,False,84,252,1998-07-23,28,aytonde01,exact
+WAS,2026-27,Felix Okpara,felix okpara,C,34,True,83,235,2004-04-20,22,,none
+WAS,2026-27,Jamir Watkins,jamir watkins,F,5,True,78,210,2001-07-06,25,watkija01,exact
+WAS,2026-27,Justin Champagnie,justin champagnie,G/F,9,False,78,206,2001-06-29,25,champju01,exact
+WAS,2026-27,Khris Middleton,khris middleton,F,22,False,79,222,1991-08-12,35,middlkh01,exact
+WAS,2026-27,Kyshawn George,kyshawn george,F,18,False,80,200,2003-12-12,22,georgky01,exact
+WAS,2026-27,Trae Young,trae young,G,3,False,74,164,1998-09-19,28,youngtr01,exact
+WAS,2026-27,Tre Johnson,tre johnson,G,12,False,77,190,2006-03-07,20,johnstr03,exact
+WAS,2026-27,Tre Mann,tre mann,G,1,False,76,178,2001-02-03,25,manntr01,exact
+WAS,2026-27,Tristan Vukčević,tristan vukcevic,C,0,False,84,220,2003-03-11,23,vukcetr01,exact
+WAS,2026-27,Will Riley,will riley,F,27,False,81,180,2006-02-10,20,rileywi01,exact

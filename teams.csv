@@ -1,0 +1,31 @@
+team,team_name,conference,division,aliases
+ATL,Atlanta Hawks,East,Southeast,ATL
+BOS,Boston Celtics,East,Atlantic,BOS
+BRK,Brooklyn Nets,East,Atlantic,BKN|BRK|BRO
+CHO,Charlotte Hornets,East,Southeast,CHA|CHO|CHH
+CHI,Chicago Bulls,East,Central,CHI
+CLE,Cleveland Cavaliers,East,Central,CLE
+DAL,Dallas Mavericks,West,Southwest,DAL
+DEN,Denver Nuggets,West,Northwest,DEN
+DET,Detroit Pistons,East,Central,DET
+GSW,Golden State Warriors,West,Pacific,GSW|GS
+HOU,Houston Rockets,West,Southwest,HOU
+IND,Indiana Pacers,East,Central,IND
+LAC,Los Angeles Clippers,West,Pacific,LAC|LA Clippers
+LAL,Los Angeles Lakers,West,Pacific,LAL
+MEM,Memphis Grizzlies,West,Southwest,MEM
+MIA,Miami Heat,East,Southeast,MIA
+MIL,Milwaukee Bucks,East,Central,MIL
+MIN,Minnesota Timberwolves,West,Northwest,MIN
+NOP,New Orleans Pelicans,West,Southwest,NOP|NO
+NYK,New York Knicks,East,Atlantic,NYK|NY
+OKC,Oklahoma City Thunder,West,Northwest,OKC
+ORL,Orlando Magic,East,Southeast,ORL
+PHI,Philadelphia 76ers,East,Atlantic,PHI
+PHO,Phoenix Suns,West,Pacific,PHX|PHO
+POR,Portland Trail Blazers,West,Northwest,POR
+SAC,Sacramento Kings,West,Pacific,SAC
+SAS,San Antonio Spurs,West,Southwest,SAS|SA
+TOR,Toronto Raptors,East,Atlantic,TOR
+UTA,Utah Jazz,West,Northwest,UTA|UTH
+WAS,Washington Wizards,East,Southeast,WAS|WSH
