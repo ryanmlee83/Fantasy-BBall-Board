@@ -1,0 +1,10 @@
+# Per-team 2026-27 pace overrides (spec §3.4).
+#
+# Each team defaults to its 2025-26 implied pace (project.project_team_pace_2627).
+# Add an entry here to override a team, e.g. for a coaching change expected
+# to shift pace:
+#
+# pace_overrides:
+#   BOS: 101.5
+
+pace_overrides: {}
