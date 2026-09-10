@@ -2,7 +2,22 @@
 """Validation suite for the canonical dataset. Exit 1 on any failure."""
 import csv, collections, statistics, sys
 from pathlib import Path
-OUT = Path('/home/claude/work/out')
+
+# Directory holding the canonical CSVs. Order of preference:
+#   1. path given as the first command-line argument
+#   2. ./data/canonical relative to the current working directory
+#   3. the directory this script lives in
+if len(sys.argv) > 1:
+    OUT = Path(sys.argv[1])
+elif (Path.cwd() / 'data' / 'canonical' / 'teams.csv').exists():
+    OUT = Path.cwd() / 'data' / 'canonical'
+else:
+    OUT = Path(__file__).resolve().parent
+
+if not (OUT / 'teams.csv').exists():
+    sys.exit(f'No canonical CSVs found in {OUT}\n'
+             f'Usage: python validate.py [path-to-data/canonical]')
+print(f'Validating: {OUT}')
 
 def load(n): return list(csv.DictReader(open(OUT / n, encoding='utf-8')))
 fails = []
