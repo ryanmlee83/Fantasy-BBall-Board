@@ -67,3 +67,72 @@ def write_vacated_opportunity(table: pd.DataFrame, path: Path | None = None) -> 
     path.parent.mkdir(parents=True, exist_ok=True)
     table.to_csv(path, index=False)
     return path
+
+
+def write_projections(projected: pd.DataFrame, path: Path | None = None) -> Path:
+    """§3 output: 'projected per-game values in all nine categories plus
+    FGA, FTA... and projected GP', one row per rostered player."""
+    path = path or (REPORTS_DIR / "projections.csv")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    projected.to_csv(path)
+    return path
+
+
+def write_punt_report(punt_reports: dict, path: Path | None = None) -> Path:
+    """§4.5: '--punt-report mode that ranks all single-category punts plus
+    the common pairs..., and for each shows the top 30 board and how much
+    each player's rank moves versus the balanced build.'"""
+    path = path or (REPORTS_DIR / "punt_report.md")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    cols = ["team", "pos", "VALUE", "rank_punt", "rank_balanced", "rank_move"]
+    lines = ["# Punt Report (§4.5)\n"]
+    for label, board in punt_reports.items():
+        lines.append(f"## {label}\n")
+        lines.append("```")
+        lines.append(board[cols].round(2).to_string())
+        lines.append("```")
+        lines.append("")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines))
+    return path
+
+
+def write_backtest_report(
+    score_actual: pd.DataFrame,
+    score_proxy: pd.DataFrame,
+    grid_comparison: pd.DataFrame | None,
+    misses_by_category: dict,
+    n_players: int,
+    path: Path | None = None,
+) -> Path:
+    """§8.4 backtest report: per-category MAE/correlation under both
+    minutes scenarios, the regression_k grid-search comparison (if run),
+    and the twenty largest misses in each direction per category."""
+    path = path or (REPORTS_DIR / "backtest.md")
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    lines = [
+        "# Backtest Report (§8.4)\n",
+        f"Projected 2025-26 from 2023-24/2024-25 only, evaluated against what actually happened. "
+        f"{n_players} players in the backtest population.\n",
+        "## Scenario A: actual (known) 2025-26 minutes/GP\n",
+        "```", score_actual.round(4).to_string(), "```", "",
+        "## Scenario B: previous-season minutes/GP as a naive proxy\n",
+        "```", score_proxy.round(4).to_string(), "```", "",
+    ]
+    if grid_comparison is not None:
+        lines += [
+            "## regression_k grid search (§3.3 tuning)\n",
+            "```", grid_comparison.round(4).to_string(), "```", "",
+        ]
+    lines.append("## Twenty largest misses in each direction, per category\n")
+    for cat, misses in misses_by_category.items():
+        lines.append(f"### {cat}\n")
+        lines.append("```")
+        lines.append(misses.round(2).to_string())
+        lines.append("```")
+        lines.append("")
+
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines))
+    return path

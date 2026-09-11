@@ -148,15 +148,22 @@ player_team_seasons = []   # one row per player-team stint (traded players appea
 name_by_id = {}
 for tag, season in SEASONS.items():
     p_all = read_bbref(RAW / f'{tag}p100.txt')
+    a_all = read_bbref(RAW / f'{tag}adv.txt')
+    # Advanced stats keyed by (player, team) so per-stint usage is available for traded
+    # players too -- the adv files carry the same team-split structure as per100.
+    adv_split = {(r['Player-additional'], r['Team']): r for r in a_all if r['Team'] not in MULTI}
     # team-split view: real team codes only. For traded players this is their per-team
     # stints; for everyone else it is their single row. Correct basis for team rollups.
     for r in p_all:
         if r['Team'] in MULTI: continue
+        av = adv_split.get((r['Player-additional'], r['Team']), {})
         player_team_seasons.append({
             'player_id': r['Player-additional'], 'player_name': r['Player'], 'season': season,
             'team': team_canon(r['Team']), 'g': to_num(r['G']), 'mp': to_num(r['MP']),
             'pts_p100': to_num(r['PTS']), 'fga_p100': to_num(r['FGA']), 'fta_p100': to_num(r['FTA']),
             'trb_p100': to_num(r['TRB']), 'ast_p100': to_num(r['AST']), 'tov_p100': to_num(r['TOV']),
+            'stl_p100': to_num(r['STL']), 'blk_p100': to_num(r['BLK']), 'fg3_p100': to_num(r['3P']),
+            'usg_pct': to_num(av.get('USG%')), 'ts_pct': to_num(av.get('TS%')), 'bpm': to_num(av.get('BPM')),
         })
     p = dedup(p_all)
     a = dedup(read_bbref(RAW / f'{tag}adv.txt'))
@@ -323,6 +330,11 @@ for canon in teams_season:
         'mp_vacated': sum(r['mp'] or 0 for r in gone),
         'pct_vacated': round(100 * sum(r['mp'] or 0 for r in gone) / max(1, sum(r['mp'] or 0 for r in prev)), 1),
         'pts_p100_wtd_vacated': round(sum((r['pts_p100'] or 0) * (r['mp'] or 0) for r in gone) / max(1, sum(r['mp'] or 0 for r in gone)), 1),
+        # Spec 3.5 calls for usage-weighted vacancy: minutes tell you playing time freed,
+        # usage tells you shots and possessions freed. They diverge for low-usage minute
+        # eaters vs high-usage bench scorers.
+        'usg_wtd_vacated': round(sum((r['usg_pct'] or 0) * (r['mp'] or 0) for r in gone) / max(1, sum(r['mp'] or 0 for r in gone)), 1),
+        'usg_minutes_vacated': round(sum((r['usg_pct'] or 0) * (r['mp'] or 0) for r in gone) / 100, 0),
         'n_departed': len(gone),
     })
 vac.sort(key=lambda x: -x['pct_vacated'])

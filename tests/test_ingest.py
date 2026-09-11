@@ -69,3 +69,23 @@ def test_join_integrity_catches_a_broken_age(data):
 
 def test_load_canonical_validates_by_default():
     ingest.load_canonical(validate=True)  # should not raise
+
+
+def test_player_team_seasons_carries_per_stint_advanced_stats(data):
+    """player_team_seasons.csv now carries usg_pct, ts_pct, bpm per stint
+    (previously only available season-combined in player_seasons.csv, which
+    drops traded players from team-level work -- see §1.1)."""
+    pts = data["player_team_seasons"]
+    for col in ("usg_pct", "ts_pct", "bpm"):
+        assert col in pts.columns
+
+    # Rate stats are genuinely unbounded at tiny sample sizes -- e.g. a
+    # 1-attempt, 1-make 3-pointer gives ts_pct = 1.5, and low-minute
+    # garbage-time stints post triple-digit usg_pct or |bpm| > 30. That's
+    # real noise, not a data bug, so sanity-check ranges only over stints
+    # with a meaningful sample (mp >= 500, ~1 game/week for a season).
+    meaningful = pts[pts["mp"] >= 500]
+    assert len(meaningful) > 0
+    assert meaningful["usg_pct"].dropna().between(0, 45).all()
+    assert meaningful["ts_pct"].dropna().between(0.3, 0.8).all()
+    assert meaningful["bpm"].dropna().between(-15, 15).all()

@@ -1,0 +1,37 @@
+# League configuration (spec §6). Hand-edited, changes often.
+
+league:
+  teams: 12
+  format: h2h              # h2h | roto
+  categories: [PTS, REB, AST, STL, BLK, 3PM, FG_IMPACT, FT_IMPACT, TOV]
+  roster_slots: {PG: 1, SG: 1, SF: 1, PF: 1, C: 1, G: 1, F: 1, UTIL: 3, BENCH: 3, IL: 2}
+  draft_position: null      # fill when known
+  waiver_type: null         # unlimited | weekly_cap | faab -- unknown; see spec §6 note.
+                            # Left null deliberately: don't hardcode an assumption
+                            # that would block streaming logic later.
+
+valuation:
+  method: z_score           # z_score | g_score -- only z_score is implemented (§9 stage 6)
+  pool_size: 150
+  pool_iterations: 3
+  # All single-category punts plus the pairs named in §4.5 are always included
+  # by src/value.py regardless of this list; this list is for ADDITIONAL
+  # custom punts you want considered.
+  punt_scenarios: []
+
+projection:
+  season_weights: {"2025-26": 0.5, "2024-25": 0.3, "2023-24": 0.2}
+  pace_method: implied       # implied | simple
+  # §9 stage 7: grid-searched per §8.4 ("tune regression_k by grid search
+  # minimizing backtest error") against 2023-24/2024-25 -> 2025-26, one
+  # category at a time (each category's shrinkage is independent -- see
+  # src/backtest.py grid_search_regression_k). Gains were real but modest
+  # (0-11.5% MAE reduction per category; see reports/backtest.md) and every
+  # tuned K came in lower than the spec's guess. That's expected here: the
+  # guesses assume a single noisy season feeding the shrinkage, but this
+  # pipeline's "observed" value is already an MP-weighted 3-season blend
+  # (§3.2), which is inherently less noisy and needs less extra shrinkage.
+  # Spec's original guesses: {STL: 1400, BLK: 1400, TOV: 900, 3PM: 800,
+  # AST: 600, REB: 500, PTS: 500, FG: 900, FT: 1100}.
+  regression_k: {STL: 500, BLK: 400, TOV: 500, 3PM: 100, AST: 100, REB: 200, PTS: 100, FG: 800, FT: 1200}
+  age_curve: default

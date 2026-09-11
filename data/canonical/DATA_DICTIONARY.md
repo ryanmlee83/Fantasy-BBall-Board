@@ -66,7 +66,12 @@ One row per player-**team stint**. Traded players appear once per team; everyone
 appears once. Every row has a real team code — no `2TM` placeholders.
 
 Columns: `player_id`, `player_name`, `season`, `team`, `g`, `mp`, `pts_p100`,
-`fga_p100`, `fta_p100`, `trb_p100`, `ast_p100`, `tov_p100`.
+`fga_p100`, `fta_p100`, `trb_p100`, `ast_p100`, `tov_p100`, `stl_p100`, `blk_p100`,
+`fg3_p100`, `usg_pct`, `ts_pct`, `bpm`.
+
+Per-stint advanced stats (`usg_pct`, `ts_pct`, `bpm`) come from the advanced source
+files, which carry the same team-split structure as the per-100 files. So usage is
+available for traded players on a per-team basis, not only as a season combination.
 
 **Use this file for any team-level rollup** (pace, vacated minutes, team totals).
 Using `player_seasons.csv` instead silently drops every traded player from team sums,
@@ -157,7 +162,9 @@ The strongest quantitative breakout signal derivable from this data.
 | `mp_2526_single_team` | Team's total 2025-26 player-minutes |
 | `mp_vacated` | Minutes belonging to departed players |
 | `pct_vacated` | Percentage |
-| `pts_p100_wtd_vacated` | Minute-weighted per-100 scoring of the departed group — distinguishes losing a star from losing bench filler |
+| `pts_p100_wtd_vacated` | Minute-weighted per-100 scoring of the departed group |
+| `usg_wtd_vacated` | Minute-weighted average usage rate of the departed group |
+| `usg_minutes_vacated` | Usage × minutes, the volume of shots and possessions freed. **This is the metric spec §3.5 calls for.** It ranks differently from raw minutes: a team can vacate many low-usage minutes (little opportunity freed) or fewer high-usage ones (a lot). Observed rank disagreements of up to 9 places between the two |
 | `n_departed` | Headcount |
 
 Observed range 6.2% to 57.6%, so this genuinely discriminates.
