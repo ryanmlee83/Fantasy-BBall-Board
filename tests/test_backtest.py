@@ -51,15 +51,51 @@ def test_actual_minutes_scenario_beats_proxy_on_counting_categories(results):
         assert score_actual.loc[cat, "corr"] > score_proxy.loc[cat, "corr"]
 
 
-def test_percentage_categories_are_minutes_invariant(results):
-    """FG_PCT/FT_PCT don't get pace/minutes-scaled in §3.7 assembly, so
-    both minutes scenarios must score identically on them -- a real
-    difference here would mean a scenario leaked into the rate calc."""
+def test_raw_percentage_rate_is_minutes_invariant(results):
+    """The raw FG_PCT/FT_PCT rate itself doesn't get pace/minutes-scaled in
+    §3.7 assembly, so it must be identical across both minutes scenarios --
+    a real difference here would mean a scenario leaked into the rate calc.
+    (BACKTEST_CATEGORIES no longer scores these raw rates -- see the impact
+    test below -- but the columns still exist on the assembled tables.)"""
+    import numpy as np
+
+    proj_actual = results["projected_actual_minutes"]
+    proj_proxy = results["projected_proxy_minutes"]
+    common = proj_actual.index.intersection(proj_proxy.index)
+    for cat in ["FG_PCT", "FT_PCT"]:
+        a = proj_actual.loc[common, cat].dropna()
+        b = proj_proxy.loc[common, cat].dropna()
+        common_notna = a.index.intersection(b.index)
+        assert np.allclose(a.loc[common_notna], b.loc[common_notna])
+
+
+def test_impact_categories_respond_to_minutes_scenario(results):
+    """§4.2 impact = (rate - pool_mean) * volume, and volume (FGA/FTA)
+    scales with minutes in §3.7 assembly -- so unlike the raw rate,
+    FG_IMPACT/FT_IMPACT must NOT be minutes-invariant between scenarios.
+    This is the behavior the raw-percentage backtest was missing."""
     actual = results["actual"]
     score_actual = backtest.score_backtest(actual, results["projected_actual_minutes"])
     score_proxy = backtest.score_backtest(actual, results["projected_proxy_minutes"])
-    for cat in ["FG_PCT", "FT_PCT"]:
-        assert score_actual.loc[cat, "mae"] == pytest.approx(score_proxy.loc[cat, "mae"])
+    for cat in ["FG_IMPACT", "FT_IMPACT"]:
+        assert score_actual.loc[cat, "mae"] != pytest.approx(score_proxy.loc[cat, "mae"])
+
+
+def test_run_backtest_returns_a_150_player_pool(results):
+    """§4.1 draftable pool, computed from actual 2025-26 outcomes."""
+    assert len(results["pool_ids"]) == 150
+    assert set(results["pool_ids"]) <= set(results["actual"].index)
+
+
+def test_score_backtest_restrict_to_pool_scores_fewer_players(results):
+    actual, proj_actual, pool_ids = (
+        results["actual"], results["projected_actual_minutes"], results["pool_ids"]
+    )
+    full = backtest.score_backtest(actual, proj_actual)
+    pooled = backtest.score_backtest(actual, proj_actual, restrict_to=pool_ids)
+    for cat in backtest.BACKTEST_CATEGORIES:
+        assert pooled.loc[cat, "n"] <= len(pool_ids)
+        assert pooled.loc[cat, "n"] < full.loc[cat, "n"]
 
 
 def test_largest_misses_shape(results):

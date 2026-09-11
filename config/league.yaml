@@ -26,12 +26,15 @@ projection:
   # minimizing backtest error") against 2023-24/2024-25 -> 2025-26, one
   # category at a time (each category's shrinkage is independent -- see
   # src/backtest.py grid_search_regression_k). Gains were real but modest
-  # (0-11.5% MAE reduction per category; see reports/backtest.md) and every
-  # tuned K came in lower than the spec's guess. That's expected here: the
-  # guesses assume a single noisy season feeding the shrinkage, but this
-  # pipeline's "observed" value is already an MP-weighted 3-season blend
-  # (§3.2), which is inherently less noisy and needs less extra shrinkage.
+  # (0-11.5% MAE reduction per category; full table in reports/backtest.md)
+  # and every tuned K came in lower than the spec's guess. That's expected
+  # here: the guesses assume a single noisy season feeding the shrinkage,
+  # but this pipeline's "observed" value is already an MP-weighted 3-season
+  # blend (§3.2), which is inherently less noisy and needs less shrinkage.
+  # FG/FT were re-tuned against §4.2 volume-weighted impact rather than the
+  # raw percentage (FG 800->1000, FT 1200->800) -- valuation never consumes
+  # the raw rate, so that's the actual quantity worth minimizing error on.
   # Spec's original guesses: {STL: 1400, BLK: 1400, TOV: 900, 3PM: 800,
   # AST: 600, REB: 500, PTS: 500, FG: 900, FT: 1100}.
-  regression_k: {STL: 500, BLK: 400, TOV: 500, 3PM: 100, AST: 100, REB: 200, PTS: 100, FG: 800, FT: 1200}
+  regression_k: {STL: 500, BLK: 400, TOV: 500, 3PM: 100, AST: 100, REB: 200, PTS: 100, FG: 1000, FT: 800}
   age_curve: default

@@ -1,40 +1,92 @@
 # Backtest Report (§8.4)
 
-Projected 2025-26 from 2023-24/2024-25 only, evaluated against what actually happened. 405 players in the backtest population.
+Projected 2025-26 from 2023-24/2024-25 only, evaluated against what actually happened. 405 players in the backtest population, 150 in the §4.1 draftable pool (computed from actual 2025-26 outcomes, fixed across both scenarios). FG%/FT% are scored as §4.2 volume-weighted impact (FG_IMPACT/FT_IMPACT), not the raw percentage -- that's what valuation actually consumes, and it's what makes them minutes-sensitive like the counting stats.
 
 ## Scenario A: actual (known) 2025-26 minutes/GP
 
+### Full population
+
 ```
-            n     mae    corr
-category                     
-PTS       405  1.5234  0.9534
-REB       405  0.4994  0.9598
-AST       405  0.4581  0.9374
-STL       405  0.1849  0.8335
-BLK       405  0.1374  0.8821
-3PM       405  0.2578  0.9189
-TOV       405  0.2587  0.9095
-FG_PCT    405  0.0510  0.5762
-FT_PCT    393  0.0784  0.4234
+             n     mae    corr
+category                      
+PTS        405  1.5234  0.9534
+REB        405  0.4994  0.9598
+AST        405  0.4581  0.9374
+STL        405  0.1849  0.8335
+BLK        405  0.1374  0.8821
+3PM        405  0.2578  0.9189
+TOV        405  0.2587  0.9095
+FG_IMPACT  405  0.2822  0.6900
+FT_IMPACT  405  0.1142  0.7323
+```
+
+### Restricted to the §4.1 draftable pool
+
+```
+             n     mae    corr
+category                      
+PTS        150  2.2725  0.8924
+REB        150  0.6497  0.9339
+AST        150  0.6933  0.8997
+STL        150  0.2271  0.6862
+BLK        150  0.1749  0.8796
+3PM        150  0.3405  0.8927
+TOV        150  0.3501  0.8400
+FG_IMPACT  150  0.3606  0.7414
+FT_IMPACT  150  0.1612  0.8131
 ```
 
 ## Scenario B: previous-season minutes/GP as a naive proxy
 
+### Full population
+
 ```
-            n     mae    corr
-category                     
-PTS       405  2.7523  0.8581
-REB       405  0.9618  0.8538
-AST       405  0.7163  0.8473
-STL       405  0.2426  0.6932
-BLK       405  0.1677  0.8292
-3PM       405  0.3608  0.8351
-TOV       405  0.3734  0.8207
-FG_PCT    405  0.0510  0.5762
-FT_PCT    393  0.0784  0.4234
+             n     mae    corr
+category                      
+PTS        405  2.7523  0.8581
+REB        405  0.9618  0.8538
+AST        405  0.7163  0.8473
+STL        405  0.2426  0.6932
+BLK        405  0.1677  0.8292
+3PM        405  0.3608  0.8351
+TOV        405  0.3734  0.8207
+FG_IMPACT  405  0.2919  0.6791
+FT_IMPACT  405  0.1157  0.7224
 ```
 
-## Twenty largest misses in each direction, per category
+### Restricted to the §4.1 draftable pool
+
+```
+             n     mae    corr
+category                      
+PTS        150  3.1635  0.8315
+REB        150  0.8992  0.8662
+AST        150  0.8886  0.8288
+STL        150  0.2680  0.5947
+BLK        150  0.2052  0.8284
+3PM        150  0.4119  0.8339
+TOV        150  0.4421  0.7732
+FG_IMPACT  150  0.3564  0.7377
+FT_IMPACT  150  0.1584  0.8100
+```
+
+## regression_k grid search (§3.3 tuning)
+
+```
+          default_k  default_mae  tuned_k  tuned_mae  improvement_pct
+category                                                             
+PTS             100       1.5234      100     1.5234              0.0
+REB             200       0.4994      200     0.4994              0.0
+AST             100       0.4581      100     0.4581              0.0
+STL             500       0.1849      500     0.1849              0.0
+BLK             400       0.1374      400     0.1374              0.0
+3PM             100       0.2578      100     0.2578              0.0
+TOV             500       0.2587      500     0.2587              0.0
+FG              800       0.2824     1000     0.2822              0.1
+FT             1200       0.1152      800     0.1142              0.9
+```
+
+## Twenty largest misses in each direction, per category (full population)
 
 ### PTS
 
@@ -365,96 +417,96 @@ meltode01  -0.73  underprojected
 jamesle01  -0.72  underprojected
 ```
 
-### FG_PCT
+### FG_IMPACT
 
 ```
            error       direction
 player_id                       
-evbuoto01   0.45   overprojected
-peterdr01   0.34   overprojected
-nfalyda01   0.30   overprojected
-saricda01   0.30   overprojected
-fultzma01   0.27   overprojected
-clarkbr01   0.22   overprojected
-martico01   0.21   overprojected
-jonesdi01   0.20   overprojected
-travelu01   0.18   overprojected
-tysonhu01   0.17   overprojected
-wagnemo01   0.15   overprojected
-lowryky01   0.14   overprojected
-jacksan01   0.14   overprojected
-bouchch01   0.13   overprojected
-klintbo01   0.12   overprojected
-looneke01   0.12   overprojected
-yurtsom01   0.12   overprojected
-castlco01   0.12   overprojected
-hayeski01   0.12   overprojected
-bufkiko01   0.12   overprojected
-ingraha01  -0.38  underprojected
-inglejo01  -0.26  underprojected
-pullizy01  -0.25  underprojected
-flowetr01  -0.24  underprojected
-gordoer01  -0.21  underprojected
-toppija01  -0.21  underprojected
-gillan01   -0.19  underprojected
-simsje01   -0.17  underprojected
-jordade01  -0.17  underprojected
-sarrol01   -0.17  underprojected
-willial06  -0.16  underprojected
-jeffrda01  -0.16  underprojected
-jamesle01  -0.15  underprojected
-salauti01  -0.15  underprojected
-mogbojo01  -0.15  underprojected
-robinmi01  -0.14  underprojected
-labissk01  -0.14  underprojected
-livinch01  -0.13  underprojected
-prospol01  -0.13  underprojected
-williro04  -0.13  underprojected
+adebaba01   0.98   overprojected
+okongon01   0.94   overprojected
+tatumja01   0.93   overprojected
+clarkbr01   0.90   overprojected
+nesmiaa01   0.88   overprojected
+peterdr01   0.87   overprojected
+allengr01   0.85   overprojected
+joneshe01   0.79   overprojected
+bealbr01    0.74   overprojected
+wagnemo01   0.74   overprojected
+moranja01   0.71   overprojected
+hayeski01   0.71   overprojected
+whitede01   0.70   overprojected
+whiteda01   0.67   overprojected
+poolejo01   0.63   overprojected
+fultzma01   0.57   overprojected
+turnemy01   0.56   overprojected
+easonta01   0.55   overprojected
+jovicni01   0.55   overprojected
+wiggiaa01   0.54   overprojected
+jamesle01  -1.88  underprojected
+duranke01  -1.54  underprojected
+curryst01  -1.35  underprojected
+antetgi01  -1.22  underprojected
+willial06  -1.18  underprojected
+derozde01  -1.14  underprojected
+butleji01  -1.05  underprojected
+jeffrda01  -0.98  underprojected
+georgke01  -0.86  underprojected
+leonaka01  -0.83  underprojected
+gillan01   -0.82  underprojected
+prospol01  -0.81  underprojected
+gilgesh01  -0.80  underprojected
+edwaran01  -0.79  underprojected
+jacksgg01  -0.79  underprojected
+durenja01  -0.77  underprojected
+barnesc01  -0.77  underprojected
+colliis01  -0.76  underprojected
+willico04  -0.76  underprojected
+edeyza01   -0.74  underprojected
 ```
 
-### FT_PCT
+### FT_IMPACT
 
 ```
            error       direction
 player_id                       
-klintbo01   0.74   overprojected
-mcculke01   0.38   overprojected
-nancepe01   0.33   overprojected
-sarrol01    0.32   overprojected
-morrimo01   0.29   overprojected
-milleem01   0.28   overprojected
-peterdr01   0.28   overprojected
-nancela02   0.27   overprojected
-furphjo01   0.26   overprojected
-robinmi01   0.22   overprojected
-clarkbr01   0.21   overprojected
-ighodos01   0.21   overprojected
-martico01   0.21   overprojected
-gordoer01   0.21   overprojected
-wisemja01   0.21   overprojected
-anthoco01   0.21   overprojected
-wallake01   0.20   overprojected
-paulch01    0.20   overprojected
-timmedr01   0.20   overprojected
-jonessp01   0.19   overprojected
-greenje02  -0.33  underprojected
-jemistr01  -0.32  underprojected
-inglejo01  -0.30  underprojected
-gibsota01  -0.30  underprojected
-jonesdi01  -0.28  underprojected
-nfalyda01  -0.28  underprojected
-roddyda01  -0.27  underprojected
-livinch01  -0.26  underprojected
-castlco01  -0.26  underprojected
-saricda01  -0.24  underprojected
-howarje01  -0.24  underprojected
-mcderdo01  -0.24  underprojected
-princta02  -0.23  underprojected
-livelde01  -0.23  underprojected
-jeffrda01  -0.21  underprojected
-pullizy01  -0.21  underprojected
-houstca01  -0.20  underprojected
-moorewe01  -0.20  underprojected
-finnedo01  -0.20  underprojected
-travelu01  -0.19  underprojected
+mobleev01   0.57   overprojected
+clarkbr01   0.51   overprojected
+goberru01   0.50   overprojected
+sarrol01    0.41   overprojected
+newtotr01   0.39   overprojected
+martico01   0.36   overprojected
+siakapa01   0.33   overprojected
+tshieos01   0.32   overprojected
+robinmi01   0.31   overprojected
+antetgi01   0.26   overprojected
+ighodos01   0.26   overprojected
+furphjo01   0.24   overprojected
+weslebl01   0.24   overprojected
+smithto05   0.24   overprojected
+russeda01   0.23   overprojected
+eubandr01   0.23   overprojected
+thompau01   0.22   overprojected
+nurkiju01   0.22   overprojected
+harteis01   0.21   overprojected
+colliza01   0.21   overprojected
+georgke01  -0.72  underprojected
+butleji01  -0.67  underprojected
+duranke01  -0.67  underprojected
+leonaka01  -0.60  underprojected
+curryst01  -0.57  underprojected
+derozde01  -0.50  underprojected
+moranja01  -0.47  underprojected
+banchpa01  -0.44  underprojected
+alexani01  -0.43  underprojected
+porteke02  -0.39  underprojected
+roddyda01  -0.36  underprojected
+wembavi01  -0.36  underprojected
+thompam01  -0.36  underprojected
+jeffrda01  -0.34  underprojected
+jamesle01  -0.34  underprojected
+hendesc01  -0.34  underprojected
+markkla01  -0.32  underprojected
+millebr02  -0.32  underprojected
+livelde01  -0.31  underprojected
+jokicni01  -0.31  underprojected
 ```

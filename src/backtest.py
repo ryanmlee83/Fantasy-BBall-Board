@@ -12,13 +12,19 @@ from __future__ import annotations
 
 import pandas as pd
 
-from src import project
+from src import project, value
 
 TARGET_SEASON = "2025-26"
 TRAIN_SEASONS = ["2023-24", "2024-25"]
 MOST_RECENT_TRAIN_SEASON = "2024-25"
 
-BACKTEST_CATEGORIES = ["PTS", "REB", "AST", "STL", "BLK", "3PM", "TOV", "FG_PCT", "FT_PCT"]
+# FG%/FT% are scored as §4.2 volume-weighted impact, not the raw
+# percentage: valuation never consumes the raw rate, and impact is what
+# actually responds to a minutes projection (via the FGA/FTA term) the way
+# the counting stats do -- a raw-percentage MAE is identical whether
+# minutes are known or guessed, which hides exactly the error the minutes
+# scenarios are meant to expose.
+BACKTEST_CATEGORIES = ["PTS", "REB", "AST", "STL", "BLK", "3PM", "TOV", "FG_IMPACT", "FT_IMPACT"]
 
 # §3.3 K grid. Log-ish spacing across the plausible range; the spec's own
 # guesses (500-1400) sit in the middle of it.
@@ -115,16 +121,37 @@ def _projected_table(
     return project.assemble_projection(aged, minutes_cfg, gp_cfg, pace, rosters)
 
 
-def run_backtest(data: dict, config: dict | None = None, regression_k: dict | None = None) -> dict[str, pd.DataFrame]:
+def _draftable_pool_and_baseline(actual_tbl: pd.DataFrame, pool_size: int) -> tuple[list[str], float, float]:
+    """§4.1's draftable pool, computed from actual 2025-26 outcomes -- the
+    real top `pool_size` players that season, fixed once and reused across
+    both minutes scenarios. That fixes the population for the pool-
+    restricted score (so both scenarios are scored on the same players) and
+    the §4.2 baseline for FG/FT impact (so impact differences reflect each
+    player's own projected rate/volume, not pool-mean drift between
+    scenarios or a circularity where a bad projection reshuffles the pool
+    used to grade it)."""
+    pool_ids, _ = value.select_draftable_pool(actual_tbl, pool_size=pool_size)
+    fg_mean, ft_mean = value.pool_percentage_means(actual_tbl, pool_ids)
+    return pool_ids, fg_mean, ft_mean
+
+
+def run_backtest(
+    data: dict, config: dict | None = None, regression_k: dict | None = None
+) -> dict[str, pd.DataFrame | list[str]]:
     """§8.4: project 2025-26 from 2023-24/2024-25 only, under both minutes
     scenarios, and return tables to compare against what actually
-    happened."""
+    happened. Includes `pool_ids`: the actual-outcome draftable pool (§4.1),
+    for restricting the score to players who mattered for the board."""
     config = config or project.load_league_config()
     player_seasons = data["player_seasons"]
+    pool_size = config["valuation"]["pool_size"]
 
     actual = backtest_population(player_seasons)
     player_ids = actual.index.tolist()
     actual_tbl = actual_table(actual, data["team_seasons"])
+
+    pool_ids, fg_mean, ft_mean = _draftable_pool_and_baseline(actual_tbl, pool_size)
+    actual_tbl = value.add_percentage_impact_with_baseline(actual_tbl, fg_mean, ft_mean)
 
     # Scenario A: "known-actual minutes" -- spec's own name, "optimistic".
     minutes_actual = {pid: {"mpg": row["mpg"], "estimated": False} for pid, row in actual.iterrows()}
@@ -132,23 +159,33 @@ def run_backtest(data: dict, config: dict | None = None, regression_k: dict | No
     proj_actual_minutes = _projected_table(
         data, config, player_ids, minutes_actual, gp_actual, actual, regression_k
     )
+    proj_actual_minutes = value.add_percentage_impact_with_baseline(proj_actual_minutes, fg_mean, ft_mean)
 
     # Scenario B: "previous-season minutes as a naive proxy".
     minutes_proxy, gp_proxy = _proxy_minutes_gp(player_seasons, player_ids)
     proj_proxy_minutes = _projected_table(data, config, player_ids, minutes_proxy, gp_proxy, actual, regression_k)
+    proj_proxy_minutes = value.add_percentage_impact_with_baseline(proj_proxy_minutes, fg_mean, ft_mean)
 
     return {
         "actual": actual_tbl,
         "projected_actual_minutes": proj_actual_minutes,
         "projected_proxy_minutes": proj_proxy_minutes,
+        "pool_ids": pool_ids,
     }
 
 
 def score_backtest(
-    actual_tbl: pd.DataFrame, projected_tbl: pd.DataFrame, categories: list[str] = BACKTEST_CATEGORIES
+    actual_tbl: pd.DataFrame,
+    projected_tbl: pd.DataFrame,
+    categories: list[str] = BACKTEST_CATEGORIES,
+    restrict_to: list[str] | None = None,
 ) -> pd.DataFrame:
-    """§8.4: 'Report MAE and correlation per category.'"""
+    """§8.4: 'Report MAE and correlation per category.' `restrict_to`
+    (e.g. the §4.1 draftable pool) scores only that player subset --
+    "errors on players outside the top 150 aren't relevant to the board.\""""
     common = actual_tbl.index.intersection(projected_tbl.index)
+    if restrict_to is not None:
+        common = common.intersection(restrict_to)
     rows = []
     for cat in categories:
         a = actual_tbl.loc[common, cat].astype(float)
@@ -193,13 +230,19 @@ def grid_search_regression_k(
 
     Uses the actual-minutes scenario as the tuning target: that isolates
     rate-projection error from minutes-guessing error, and it's the rate
-    shrinkage this is meant to tune, not the minutes proxy.
+    shrinkage this is meant to tune, not the minutes proxy. FG/FT are tuned
+    against §4.2 impact (fixed actual-outcome baseline, same as
+    score_backtest), matching what valuation actually consumes -- not the
+    raw percentage.
     """
     config = config or project.load_league_config()
     player_seasons = data["player_seasons"]
+    pool_size = config["valuation"]["pool_size"]
     actual = backtest_population(player_seasons)
     player_ids = actual.index.tolist()
     actual_tbl = actual_table(actual, data["team_seasons"])
+    _, fg_mean, ft_mean = _draftable_pool_and_baseline(actual_tbl, pool_size)
+    actual_tbl = value.add_percentage_impact_with_baseline(actual_tbl, fg_mean, ft_mean)
 
     minutes_actual = {pid: {"mpg": row["mpg"], "estimated": False} for pid, row in actual.iterrows()}
     gp_actual = {pid: {"gp": row["g"], "estimated": False} for pid, row in actual.iterrows()}
@@ -215,9 +258,11 @@ def grid_search_regression_k(
     base_k = dict(config["projection"]["regression_k"])
     tuned_k = dict(base_k)
     comparison_rows = []
+    # "FG" -> "FG_IMPACT" (not "FG_PCT" via _OUTPUT_LABEL_BY_COL) -- see docstring.
+    impact_out_label = {"FG": "FG_IMPACT", "FT": "FT_IMPACT"}
 
     for label, col in project.CATEGORY_COLUMNS.items():
-        out_label = project._OUTPUT_LABEL_BY_COL[col]  # e.g. "FG" -> "FG_PCT"
+        out_label = impact_out_label.get(label, project._OUTPUT_LABEL_BY_COL[col])
         best_k, best_mae, default_mae = base_k[label], None, None
         # Always evaluate the exact current default, even if it isn't one
         # of the grid points, so default_mae/improvement_pct are real.
@@ -228,6 +273,8 @@ def grid_search_regression_k(
             shrunk = project.regress_to_mean(blended, baselines, trial_k)
             aged = project.apply_age_curve(shrunk, ages)
             proj = project.assemble_projection(aged, minutes_actual, gp_actual, pace, rosters)
+            if label in impact_out_label:
+                proj = value.add_percentage_impact_with_baseline(proj, fg_mean, ft_mean)
             common = actual_tbl.index.intersection(proj.index)
             a = actual_tbl.loc[common, out_label].astype(float)
             p = proj.loc[common, out_label].astype(float)

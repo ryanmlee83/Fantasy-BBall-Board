@@ -17,24 +17,37 @@ INVERTED_CATEGORIES = {"TOV"}  # §4.3: "Invert the sign on turnovers."
 NAMED_PUNT_PAIRS = [["FT_IMPACT", "TOV"], ["FG_IMPACT", "3PM"], ["BLK", "FG_IMPACT"]]
 
 
-def add_percentage_impact(projected: pd.DataFrame, pool_ids: list[str]) -> pd.DataFrame:
-    """§4.2: FG_impact = (player_FG% - pool_mean_FG%) * player_FGA (same
-    for FT). pool_mean_FG% is volume-weighted (total makes / total
-    attempts across the pool) rather than a plain average of percentages --
+def pool_percentage_means(df: pd.DataFrame, pool_ids: list[str]) -> tuple[float, float]:
+    """§4.2's pool_mean_FG% / pool_mean_FT%: volume-weighted (total makes /
+    total attempts across the pool), not a plain average of percentages --
     otherwise a low-volume shooter's rate would count as much as a star's,
-    which defeats the point of a volume-weighted impact metric. Standardize
-    the impact, never the raw percentage: a zero-attempt player lands at
-    zero impact, the correct answer, and falls out naturally."""
-    pool = projected.loc[pool_ids]
-    fg_makes = pool["FG_PCT"] * pool["FGA"]
-    ft_makes = pool["FT_PCT"] * pool["FTA"]
-    fg_mean = fg_makes.sum() / pool["FGA"].sum()
-    ft_mean = ft_makes.sum() / pool["FTA"].sum()
+    which defeats the point of a volume-weighted impact metric."""
+    pool = df.loc[pool_ids]
+    fg_mean = (pool["FG_PCT"] * pool["FGA"]).sum() / pool["FGA"].sum()
+    ft_mean = (pool["FT_PCT"] * pool["FTA"]).sum() / pool["FTA"].sum()
+    return fg_mean, ft_mean
 
-    out = projected.copy()
+
+def add_percentage_impact_with_baseline(df: pd.DataFrame, fg_mean: float, ft_mean: float) -> pd.DataFrame:
+    """Like add_percentage_impact, but applies an externally supplied
+    (fg_mean, ft_mean) baseline instead of deriving one from `df`'s own
+    pool. Used by the backtest (src/backtest.py) to apply one fixed,
+    actual-outcome baseline across the actual/projected comparison, so
+    IMPACT differences there reflect each player's own projected rate and
+    volume, not pool-mean drift between scenarios."""
+    out = df.copy()
     out["FG_IMPACT"] = (out["FG_PCT"].fillna(0) - fg_mean) * out["FGA"].fillna(0)
     out["FT_IMPACT"] = (out["FT_PCT"].fillna(0) - ft_mean) * out["FTA"].fillna(0)
     return out
+
+
+def add_percentage_impact(projected: pd.DataFrame, pool_ids: list[str]) -> pd.DataFrame:
+    """§4.2: FG_impact = (player_FG% - pool_mean_FG%) * player_FGA (same
+    for FT), standardized -- never the raw percentage. A zero-attempt
+    player lands at zero impact, the correct answer, and falls out
+    naturally."""
+    fg_mean, ft_mean = pool_percentage_means(projected, pool_ids)
+    return add_percentage_impact_with_baseline(projected, fg_mean, ft_mean)
 
 
 def zscore_value(with_impact: pd.DataFrame, pool_ids: list[str], punt: list[str] | None = None) -> pd.DataFrame:

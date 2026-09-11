@@ -98,34 +98,50 @@ def write_punt_report(punt_reports: dict, path: Path | None = None) -> Path:
 
 
 def write_backtest_report(
-    score_actual: pd.DataFrame,
-    score_proxy: pd.DataFrame,
+    score_actual_full: pd.DataFrame,
+    score_actual_pool: pd.DataFrame,
+    score_proxy_full: pd.DataFrame,
+    score_proxy_pool: pd.DataFrame,
     grid_comparison: pd.DataFrame | None,
     misses_by_category: dict,
     n_players: int,
+    n_pool: int,
     path: Path | None = None,
 ) -> Path:
     """§8.4 backtest report: per-category MAE/correlation under both
-    minutes scenarios, the regression_k grid-search comparison (if run),
-    and the twenty largest misses in each direction per category."""
+    minutes scenarios, each reported over the full backtest population and
+    restricted to the §4.1 draftable pool; the full regression_k
+    grid-search comparison (if run); and the twenty largest misses in each
+    direction per category. FG%/FT% are scored as §4.2 volume-weighted
+    impact, not the raw percentage -- see src/backtest.py."""
     path = path or (REPORTS_DIR / "backtest.md")
     path.parent.mkdir(parents=True, exist_ok=True)
 
     lines = [
         "# Backtest Report (§8.4)\n",
         f"Projected 2025-26 from 2023-24/2024-25 only, evaluated against what actually happened. "
-        f"{n_players} players in the backtest population.\n",
+        f"{n_players} players in the backtest population, {n_pool} in the §4.1 draftable pool "
+        f"(computed from actual 2025-26 outcomes, fixed across both scenarios). "
+        f"FG%/FT% are scored as §4.2 volume-weighted impact (FG_IMPACT/FT_IMPACT), not the raw "
+        f"percentage -- that's what valuation actually consumes, and it's what makes them "
+        f"minutes-sensitive like the counting stats.\n",
         "## Scenario A: actual (known) 2025-26 minutes/GP\n",
-        "```", score_actual.round(4).to_string(), "```", "",
+        "### Full population\n",
+        "```", score_actual_full.round(4).to_string(), "```", "",
+        "### Restricted to the §4.1 draftable pool\n",
+        "```", score_actual_pool.round(4).to_string(), "```", "",
         "## Scenario B: previous-season minutes/GP as a naive proxy\n",
-        "```", score_proxy.round(4).to_string(), "```", "",
+        "### Full population\n",
+        "```", score_proxy_full.round(4).to_string(), "```", "",
+        "### Restricted to the §4.1 draftable pool\n",
+        "```", score_proxy_pool.round(4).to_string(), "```", "",
     ]
     if grid_comparison is not None:
         lines += [
             "## regression_k grid search (§3.3 tuning)\n",
             "```", grid_comparison.round(4).to_string(), "```", "",
         ]
-    lines.append("## Twenty largest misses in each direction, per category\n")
+    lines.append("## Twenty largest misses in each direction, per category (full population)\n")
     for cat, misses in misses_by_category.items():
         lines.append(f"### {cat}\n")
         lines.append("```")

@@ -92,24 +92,32 @@ def backtest_cmd(run_grid_search: bool) -> None:
         regression_k = tuned_k
 
     results = backtest.run_backtest(data, config, regression_k)
-    actual, proj_actual, proj_proxy = (
-        results["actual"], results["projected_actual_minutes"], results["projected_proxy_minutes"]
+    actual, proj_actual, proj_proxy, pool_ids = (
+        results["actual"], results["projected_actual_minutes"],
+        results["projected_proxy_minutes"], results["pool_ids"],
     )
-    print(f"\n  backtest population: {len(actual)} players\n")
+    print(f"\n  backtest population: {len(actual)} players; draftable pool (§4.1): {len(pool_ids)}\n")
 
-    score_actual = backtest.score_backtest(actual, proj_actual)
-    print("  Scenario A: actual (known) 2025-26 minutes/GP")
-    print(score_actual.round(4).to_string())
+    score_actual_full = backtest.score_backtest(actual, proj_actual)
+    score_actual_pool = backtest.score_backtest(actual, proj_actual, restrict_to=pool_ids)
+    print("  Scenario A: actual (known) 2025-26 minutes/GP -- full population")
+    print(score_actual_full.round(4).to_string())
+    print("\n  Scenario A -- restricted to the §4.1 draftable pool")
+    print(score_actual_pool.round(4).to_string())
 
-    score_proxy = backtest.score_backtest(actual, proj_proxy)
-    print("\n  Scenario B: previous-season minutes/GP as a naive proxy")
-    print(score_proxy.round(4).to_string())
+    score_proxy_full = backtest.score_backtest(actual, proj_proxy)
+    score_proxy_pool = backtest.score_backtest(actual, proj_proxy, restrict_to=pool_ids)
+    print("\n  Scenario B: previous-season minutes/GP as a naive proxy -- full population")
+    print(score_proxy_full.round(4).to_string())
+    print("\n  Scenario B -- restricted to the §4.1 draftable pool")
+    print(score_proxy_pool.round(4).to_string())
 
     misses_by_category = {
         cat: backtest.largest_misses(actual, proj_actual, cat, n=20) for cat in backtest.BACKTEST_CATEGORIES
     }
     out_path = reports.write_backtest_report(
-        score_actual, score_proxy, grid_comparison, misses_by_category, len(actual)
+        score_actual_full, score_actual_pool, score_proxy_full, score_proxy_pool,
+        grid_comparison, misses_by_category, len(actual), len(pool_ids),
     )
     print(f"\n  wrote {out_path}")
 
