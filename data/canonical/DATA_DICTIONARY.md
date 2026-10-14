@@ -343,7 +343,7 @@ flagging real roster uncertainty and he may be a phantom entry.
   uses. Reconcile against your platform before trusting positional scarcity math.
 - **No 2026-27 projections here.** This is cleaned input only.
 - **Minutes are depth-chart-derived for 29 teams; LAL is hand-reviewed.** See the
-  depth-chart section above. GP remains at the default 82 everywhere except LAL. Spec §3.5
+  depth-chart section above. GP is now projected (see the 2026-10-14 section below). Spec §3.5
   still applies: these are a reviewable first pass, not a substitute for judgment.
 - **25 of 30 teams pass the §3.5 sanity check** after the BBRef roster rebuild, up from 22.
   All five that don't are fully explained, and the cause has flipped from stale rosters to a
@@ -357,3 +357,50 @@ flagging real roster uncertainty and he may be a phantom entry.
   allocator is far worse (MAE 10.4 vs 6.8 mpg, corr 0.32 vs 0.45). It systematically
   promotes small-sample efficiency specialists and demotes high-volume low-efficiency
   starters. Don't let it set minutes; it's an auditor at best.
+
+
+---
+
+## Draft-day changes (2026-10-14)
+
+Made under the project-director handoff, the day before the 2026-10-15 draft. Each is a
+script, so the chain can be rerun from the Sept 21 depth-chart minutes:
+
+```
+python scripts/adjust_starter_minutes.py      # starter rule + promotion rule
+python scripts/reconcile_minutes_with_adp.py  # stale minutes for drafted players
+python scripts/project_games_played.py        # GP from history + config/injuries.yaml
+python -m src.cli build && python -m src.cli board
+python scripts/simulate_punts.py              # optional, ~30 s
+python scripts/build_board_page.py            # -> board/draft_board.html
+```
+
+**`config/minutes.yaml` now means healthy-night minutes.** The healthy rotation must sum
+to 240 per team (25/30 pass; the five that don't are the stale-chart teams SAC, CHO, ATL,
+CHI and LAL's unmodeled Cameron Carr). `mpg × GP` against 240 × 82 is reported as
+coverage only: once GP is projected below 82, the gap is minutes covered by whoever
+replaces injured players, which in H2H arrive through waivers.
+
+**Starter minutes.** Flat 33 for every starter is replaced by each starter's own history
+when it is a stable two-season outlier (up to 37, or down to 26 for starters 31+), and new
+starters with no starter history go halfway from their history to 33. Changes in
+`reports/starter_minutes_adjustments.csv`.
+
+**Stale minutes for drafted players.** Haliburton, Irving and Lillard were at 0 mpg; Trae
+Young 13, Jaylen Brown 15, LaMelo Ball 19, Jalen Duren 0. Players with average ADP ≤ 160
+whose minutes sit 6+ below their history are raised toward it (all the way by ADP 60,
+halfway by ADP 160). Changes in `reports/minutes_adp_reconciliation.csv`.
+
+**Games played** (`scripts/project_games_played.py`): 0.5 × history + 0.5 × 62, minus 1 per
+year past 30, then known injuries from `config/injuries.yaml`. Backtest MAE 15.8 games vs
+25.1 for a flat 82; GP is mostly unpredictable (R² 0.04 with history, age and minutes), so
+the model shrinks hard. LAL hand values kept.
+
+**Two age-curve bugs fixed in `src/project.py`.** The curve multiplied FG% and FT%
+themselves (LeBron .515 → .360), and it was applied as an absolute level rather than the
+change since the blended seasons (cutting a 20-year-old's rates instead of raising them).
+Backtest MAE on the 150-player pool: PTS 2.27 → 2.02, FG impact .361 → .293, FT impact
+.161 → .136; every category but BLK improved.
+
+**ADP and Yahoo positions**: `data/raw/fantasypros_adp_20261014.csv`, matched to
+`player_id` on normalised name + team (11 unmatched, 9 of them free agents).

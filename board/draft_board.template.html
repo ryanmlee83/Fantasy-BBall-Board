@@ -164,6 +164,11 @@ td .meta { color: var(--muted); font-size: 12px; }
 .prow .bar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); opacity: .5; }
 .prow .fill { position: absolute; top: 0; bottom: 0; border-radius: 2px; }
 .prow.off { opacity: .35; }
+.guide { width: 100%; border-collapse: collapse; min-width: 0; font-size: 13px; }
+.guide td { padding: 4px 4px; border-bottom: 1px solid var(--line); }
+.guide td.r { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.guide tr.cur td { background: var(--accent-soft); }
+.guide .bar { display: inline-block; height: 8px; border-radius: 2px; background: var(--accent); vertical-align: middle; }
 .log { margin-top: 10px; max-height: 260px; overflow: auto; font-size: 12px; border-top: 1px solid var(--line); padding-top: 8px; }
 .log div { display: grid; grid-template-columns: 44px 1fr; gap: 6px; padding: 1px 0; }
 .log .mine { color: var(--mine); font-weight: 600; }
@@ -269,6 +274,10 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     </main>
 
     <aside style="display:grid;gap:12px;min-width:0">
+      <section class="panel" aria-labelledby="guideH">
+        <h2 id="guideH">Build guide <small id="guideSub"></small></h2>
+        <div id="guide"></div>
+      </section>
       <section class="panel" aria-labelledby="teamH">
         <h2 id="teamH">Your team <small id="teamSub">0 of 13</small></h2>
         <div class="slots" id="slots"></div>
@@ -494,6 +503,9 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
       el("rookieLine").textContent = "";
     }
 
+    // build guide
+    renderGuide();
+
     // my team
     const benchIds = myIds.filter(id => !base.slotOwner.includes(id));
     el("slots").innerHTML = START_SLOTS.map((s, i) => {
@@ -545,6 +557,36 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
 
     renderMatches();
   }
+
+  // ---------- build guide (from scripts/simulate_punts.py) ----------
+  const LABEL_TO_PUNT = new Map();
+  function renderGuide() {
+    const G = DATA.puntGuide;
+    if (!G) { el("guide").innerHTML = `<p class="hint">No simulation data in this build.</p>`; return; }
+    if (!state.slot) { el("guideSub").textContent = ""; el("guide").innerHTML = `<p class="hint">Set your draft slot to see which build wins most often from there.</p>`; return; }
+    const rows = G.rows.filter(r => r.slot === state.slot).sort((a, b) => b.matchup_win - a.matchup_win);
+    rows.forEach(r => LABEL_TO_PUNT.set(r.build, r.punt));
+    const bal = rows.find(r => r.build === "Balanced");
+    const cur = rows.find(r => r.punt.length === state.punt.length && r.punt.every(c => state.punt.includes(c)));
+    const best = rows[0].matchup_win, worst = rows[rows.length - 1].matchup_win;
+    el("guideSub").textContent = `slot ${state.slot} · ${G.sims} sims`;
+    const show = rows.slice(0, 6);
+    if (cur && !show.includes(cur)) show.push(cur);
+    el("guide").innerHTML = `<table class="guide"><tbody>${show.map(r => {
+      const d = (r.matchup_win - bal.matchup_win) * 100;
+      const w = 6 + 64 * (r.matchup_win - worst) / Math.max(best - worst, 1e-6);
+      return `<tr class="${r === cur ? "cur" : ""}"><td>${esc(r.build)}</td>
+        <td><span class="bar" style="width:${w.toFixed(0)}px"></span></td>
+        <td class="r">${r.build === "Balanced" ? "—" : (d >= 0 ? "+" : "−") + Math.abs(d).toFixed(1)}</td>
+        <td><button type="button" class="mini" data-build="${esc(r.build)}">${r === cur ? "In use" : "Use"}</button></td></tr>`;
+    }).join("")}</tbody></table>
+    <p class="hint" style="margin:6px 0 0">Weekly matchup wins gained over Balanced, in percentage points, from simulated drafts where the other 11 teams pick by ADP. Gaps under about 1.5 points are noise.</p>`;
+  }
+  document.addEventListener("click", e => {
+    const b = e.target.closest("[data-build]"); if (!b) return;
+    const punt = LABEL_TO_PUNT.get(b.dataset.build); if (!punt) return;
+    state.punt = punt.slice(); save(); render();
+  });
 
   // ---------- quick entry ----------
   const norm = s => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z ]/g, " ").replace(/\s+/g, " ").trim();
