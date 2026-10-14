@@ -104,16 +104,40 @@ def test_generate_games_played_config_defaults_to_82(tmp_path, data):
     assert all(v["gp"] == 82 and v["estimated"] is True for v in cfg.values())
 
 
-def test_minutes_sanity_check_flags_most_teams_with_naive_defaults(data):
-    """Naive last-season-MPG defaults, applied independently per player
-    without accounting for teammates, should badly overshoot 240x82 for
-    most rosters -- this is the expected, documented failure mode of
-    skipping the human minutes-editing step (§3.5), not a bug."""
+def test_minutes_sanity_check_discriminates_reviewed_from_naive(data):
+    """The §3.5 check must separate reviewed rosters from naive ones.
+
+    This deliberately does NOT assert how many teams pass. It used to assert
+    fewer than 15, which encoded the state of the project at the time the test
+    was written -- every team still on naive last-season MPG, which overshoots
+    240x82 badly because per-player defaults ignore teammates. That number
+    flips as review proceeds (it is 22 once 29 teams are filled from depth
+    charts), so asserting it means the test fails on progress. The same stale
+    -assumption bug was fixed once already in this file.
+
+    What is actually invariant: the check covers all 30 teams, computes a real
+    percentage against the documented target, and a naive roster overshoots.
+    """
     minutes_cfg = project.load_minutes_config()
     gp_cfg = project.load_games_played_config()
     sanity = project.minutes_sanity_check(data["rosters"], minutes_cfg, gp_cfg)
+
     assert len(sanity) == 30
-    assert sanity["within_3pct"].sum() < 15  # well under half, by construction
+    assert set(sanity.columns) >= {"team", "total_projected_minutes", "target",
+                                   "pct_of_target", "within_3pct"}
+    assert (sanity["target"] == 240 * 82).all()
+    assert (sanity["total_projected_minutes"] > 0).all()
+    assert sanity["within_3pct"].equals(
+        sanity["total_projected_minutes"].between(240 * 82 * 0.97, 240 * 82 * 1.03)
+    )
+
+    # A roster left on naive per-player defaults overshoots, by construction:
+    # summing each player's own last-season MPG ignores that they compete for
+    # the same 240 minutes.
+    naive = {pid: {"mpg": 30.0, "estimated": True} for pid in minutes_cfg}
+    naive_gp = {pid: {"gp": 82, "estimated": True} for pid in gp_cfg}
+    naive_sanity = project.minutes_sanity_check(data["rosters"], naive, naive_gp)
+    assert (naive_sanity["pct_of_target"] > 103).all()
 
 
 def test_project_players_produces_expected_columns_and_no_nulls(data, config):
@@ -122,8 +146,12 @@ def test_project_players_produces_expected_columns_and_no_nulls(data, config):
         assert col in projected.columns
         assert projected[col].notna().all()
     assert len(projected) > 400  # roughly the matched-rostered-player count
-    assert projected["minutes_estimated"].all()  # per this session's explicit instruction
-    assert projected["gp_estimated"].all()
+    # minutes_estimated/gp_estimated track manual-review progress (§3.5) and
+    # legitimately flip from True to False as config/minutes.yaml and
+    # config/games_played.yaml get filled in team by team -- assert they're
+    # present and well-formed, not that they hold any particular value.
+    assert projected["minutes_estimated"].isin([True, False]).all()
+    assert projected["gp_estimated"].isin([True, False]).all()
 
 
 def test_project_players_pts_in_plausible_range(data, config):

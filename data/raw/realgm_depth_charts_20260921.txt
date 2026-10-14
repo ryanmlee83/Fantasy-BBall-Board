@@ -1,0 +1,265 @@
+# RealGM NBA depth charts, retrieved 2026-09-21
+# Source: https://basketball.realgm.com/nba/depth-charts
+# Format: TEAM=<abbrev> ROWS=<n>, then one line per tier row,
+#         pipe-delimited, exactly 6 fields: tier|PG|SG|SF|PF|C
+#         EMPTY marks a blank cell. Names are verbatim as printed (abbreviated).
+# All 30 teams. ATL-MIN captured from the RealGM page directly; NOP-WAS supplied
+# by Ryan as a workbook export of the same source (tiered rows with a stat sub-row
+# under each, "<team> Leaders" closing every section) and converted to this format
+# by scripts/parse_depth_chart_workbook.py.
+
+TEAM=ATL ROWS=6
+Starters|C.J. McCollum|N. Alexander-Walker|Dyson Daniels|Jalen Johnson|Onyeka Okongwu
+Rotation|Ryan Nembhard|Buddy Hield|Luguentz Dort|Asa Newell|Jock Landale
+Rotation|EMPTY|EMPTY|Aaron Wiggins|EMPTY|Mouhamed Gueye
+Rotation|EMPTY|EMPTY|Corey Kispert|EMPTY|EMPTY
+Lim PT|RayJ Dennis|K. Flemings|Zuby Ejiofor|Henri Veesaar|EMPTY
+Lim PT|EMPTY|Keshon Gilbert|Jalen Wilson|EMPTY|EMPTY
+
+TEAM=BOS ROWS=6
+Starters|Derrick White|B. Scheierman|Sam Hauser|Jayson Tatum|Neemias Queta
+Rotation|P. Pritchard|R. Harper, Jr.|Hugo Gonzalez|Paul George|M. Robinson
+Rotation|Mike Conley|EMPTY|EMPTY|Jordan Walsh|Luka Garza
+Rotation|Devin Carter|EMPTY|EMPTY|EMPTY|EMPTY
+Lim PT|EMPTY|Milos Uzan|Tucker DeVries|EMPTY|C. Cenac, Jr.
+Lim PT|EMPTY|EMPTY|D. Mitchell|EMPTY|Amari Williams
+
+TEAM=BRK ROWS=6
+Starters|Egor Demin|Terance Mann|M. Porter, Jr.|Julius Randle|Day'Ron Sharpe
+Rotation|Nolan Traore|Drake Powell|Keon Ellis|Noah Clowney|Moe Wagner
+Rotation|Ben Saraf|EMPTY|EMPTY|Danny Wolf|EMPTY
+Rotation|EMPTY|EMPTY|EMPTY|Josh Minott|EMPTY
+Lim PT|EMPTY|M. Brown Jr.|Tyler Bilodeau|Chaney Johnson|J. Jefferson
+Lim PT|EMPTY|EMPTY|Grant Nelson|EMPTY|EMPTY
+
+TEAM=CHA ROWS=7
+Starters|D. Schroder|Bez Mbeng|Kon Knueppel|Royce O'Neale|Naz Reid
+Rotation|Sion James|Brandon Miller|Liam McNeeley|Grant Williams|Moussa Diabate
+Rotation|EMPTY|Grayson Allen|EMPTY|D. Finney-Smith|R. Kalkbrenner
+Rotation|EMPTY|Coby White|EMPTY|Tidjane Salaun|EMPTY
+Lim PT|EMPTY|C. Anderson, Jr.|P. Connaughton|EMPTY|P.J. Hall
+Lim PT|EMPTY|Kylan Boswell|H. Steinbach|EMPTY|EMPTY
+Lim PT|EMPTY|EMPTY|Michael Ajayi|EMPTY|EMPTY
+
+TEAM=CHI ROWS=6
+Starters|Josh Giddey|Norman Powell|Isaac Okoro|Matas Buzelis|N. Claxton
+Rotation|Tre Jones|EMPTY|EMPTY|P. Williams|Jalen Smith
+Rotation|Rob Dillingham|EMPTY|EMPTY|Leonard Miller|Zach Collins
+Lim PT|EMPTY|Jaylin Sellers|Noa Essengue|Tobe Awaka|EMPTY
+Lim PT|EMPTY|EMPTY|Caleb Wilson|EMPTY|EMPTY
+Lim PT|EMPTY|EMPTY|Dailyn Swain|EMPTY|EMPTY
+
+TEAM=CLE ROWS=5
+Starters|James Harden|Donovan Mitchell|Jaylon Tyson|Evan Mobley|Jarrett Allen
+Rotation|Craig Porter, Jr.|Sam Merrill|EMPTY|Peyton Watson|Thomas Bryant
+Rotation|Tyrese Proctor|EMPTY|EMPTY|Naeqwan Tomlin|EMPTY
+Lim PT|EMPTY|Meleek Thomas|Riley Minix|Khalifa Diop|Ernest Udeh, Jr.
+Lim PT|EMPTY|Mario Hezonja|EMPTY|Tristan Enaruna|EMPTY
+
+TEAM=DAL ROWS=8
+Starters|Marcus Sasser|Max Christie|Naji Marshall|Cooper Flagg|Santi Aldama
+Rotation|EMPTY|EMPTY|Z. Risacher|P. Washington|Daniel Gafford
+Rotation|EMPTY|EMPTY|EMPTY|Caleb Martin|D. Lively II
+Rotation|EMPTY|EMPTY|EMPTY|EMPTY|Moussa Cisse
+Lim PT|EMPTY|Kyrie Irving|M. Johnson, Jr.|EMPTY|EMPTY
+Lim PT|EMPTY|T. Biberovic|S. De Larrea|EMPTY|EMPTY
+Lim PT|EMPTY|Jett Howard|J. Poulakidas|EMPTY|EMPTY
+Lim PT|EMPTY|EMPTY|Tobi Lawal|EMPTY|EMPTY
+
+TEAM=DEN ROWS=6
+Starters|Jamal Murray|Christian Braun|DeMar DeRozan|Aaron Gordon|Nikola Jokic
+Rotation|Tyus Jones|Julian Strawther|Cameron Johnson|Spencer Jones|Marvin Bagley III
+Rotation|EMPTY|EMPTY|EMPTY|EMPTY|Zeke Nnaji
+Lim PT|K.J. Simpson|Lonnie Walker|Trevon Brazile|Cam Whitmore|DaRon Holmes II
+Lim PT|EMPTY|EMPTY|Alpha Diallo|EMPTY|EMPTY
+Lim PT|EMPTY|EMPTY|Bryce Hopkins|EMPTY|EMPTY
+
+TEAM=DET ROWS=7
+Starters|Cade Cunningham|Duncan Robinson|Ausar Thompson|Javonte Green|John Collins
+Rotation|Daniss Jenkins|Isaiah Joe|Taurean Prince|EMPTY|Paul Reed, Jr.
+Rotation|EMPTY|Gary Harris|Kevin Huerter|EMPTY|EMPTY
+Rotation|EMPTY|EMPTY|Ron Holland|EMPTY|EMPTY
+Lim PT|Ebuka Okorie|Chaz Lanier|EMPTY|EMPTY|Tolu Smith
+Lim PT|E.J. Harkless|EMPTY|EMPTY|EMPTY|Isaac Jones
+Lim PT|EMPTY|EMPTY|EMPTY|EMPTY|Ugonna Onyenso
+
+TEAM=GSW ROWS=8
+Starters|Stephen Curry|D. Melton|J. Butler III|Draymond Green|K. Porzingis
+Rotation|B. Podziemski|Dalen Terry|Moses Moody|EMPTY|Al Horford
+Rotation|B. Williams|EMPTY|Gui Santos|EMPTY|Charles Bassey
+Rotation|EMPTY|EMPTY|Will Richard|EMPTY|EMPTY
+Rotation|EMPTY|EMPTY|Gary Payton II|EMPTY|EMPTY
+Lim PT|L.J. Cryer|Nick Boyd|Y. Lendeborg|Malevy Leons|EMPTY
+Lim PT|EMPTY|Obi Agbim|Georges Niang|EMPTY|EMPTY
+Lim PT|EMPTY|EMPTY|Alex Toohey|EMPTY|EMPTY
+
+TEAM=HOU ROWS=8
+Starters|Amen Thompson|Fred VanVleet|Kevin Durant|J. Smith, Jr.|Alperen Sengun
+Rotation|Reed Sheppard|EMPTY|Marcus Smart|EMPTY|Steven Adams
+Rotation|EMPTY|EMPTY|Tari Eason|EMPTY|Oscar Tshiebwe
+Rotation|EMPTY|EMPTY|B. Bogdanovic|EMPTY|Clint Capela
+Lim PT|Sean Pedulla|Bruce Thornton|J. Phillips|EMPTY|Rafael Castro
+Lim PT|EMPTY|EMPTY|Jae'sean Tate|EMPTY|EMPTY
+Lim PT|EMPTY|EMPTY|I. Crawford|EMPTY|EMPTY
+Lim PT|EMPTY|EMPTY|Q. Copeland|EMPTY|EMPTY
+
+TEAM=IND ROWS=6
+Starters|A. Nembhard|Aaron Nesmith|K. Oubre, Jr.|Pascal Siakam|Ivica Zubac
+Rotation|Q. Jackson|Ben Sheppard|Jarace Walker|Obi Toppin|James Huff
+Rotation|T.J. McConnell|EMPTY|Johnny Furphy|L. Nance, Jr.|EMPTY
+Lim PT|T. Haliburton|K. Reeves, Jr.|Kobe Brown|Jalen Slawson|Keba Keita
+Lim PT|Jalen Warley|EMPTY|EMPTY|EMPTY|Rienk Mast
+Lim PT|Braden Smith|EMPTY|EMPTY|EMPTY|EMPTY
+
+TEAM=LAC ROWS=7
+Starters|Darius Garland|Kris Dunn|Brandon Ingram|Kobe Sanders|Brook Lopez
+Rotation|Jordan Miller|Bradley Beal|Rui Hachimura|EMPTY|Isaiah Jackson
+Rotation|Yuki Kawamura|Gradey Dick|Derrick Jones|EMPTY|Y. Niederhauser
+Rotation|EMPTY|EMPTY|Max Strus|EMPTY|EMPTY
+Lim PT|EMPTY|C. Christie|N. Martinelli|EMPTY|Johni Broome
+Lim PT|EMPTY|Keaton Wagler|EMPTY|EMPTY|Baba Miller
+Lim PT|EMPTY|Jalen Pickett|EMPTY|EMPTY|Jamarion Sharp
+
+TEAM=LAL ROWS=8
+Starters|Luka Doncic|Austin Reaves|Z. Williams|J. Vanderbilt|Walker Kessler
+Rotation|EMPTY|Quentin Grimes|M. Thybulle|Dalton Knecht|S. Mamukelashvili
+Rotation|EMPTY|Jake LaRavia|EMPTY|EMPTY|Kevon Looney
+Rotation|EMPTY|Collin Sexton|EMPTY|EMPTY|EMPTY
+Rotation|EMPTY|Jaden Hardy|EMPTY|EMPTY|EMPTY
+Lim PT|Bronny James|Cameron Carr|Adou Thiero|EMPTY|EMPTY
+Lim PT|M. Johnson, Jr.|Chase Ross|AK Okereke|EMPTY|EMPTY
+Lim PT|EMPTY|Chris Manon|Arthur Kaluma|EMPTY|EMPTY
+
+TEAM=MEM ROWS=7
+Starters|Ty Jerome|Cam Spencer|Jerami Grant|Kris Murray|Zach Edey
+Rotation|W. Clayton, Jr.|S. Pippen, Jr.|Jaylen Wells|G.G. Jackson|I. Stewart II
+Rotation|EMPTY|D. Russell|Cedric Coward|EMPTY|T. Hendricks
+Rotation|EMPTY|Jordan Hawkins|Micah Peavy|EMPTY|O. Prosper
+Rotation|EMPTY|EMPTY|EMPTY|EMPTY|Quinten Post
+Lim PT|Javon Small|EMPTY|Cameron Boozer|EMPTY|EMPTY
+Lim PT|Jahmai Mashack|EMPTY|Karim Lopez|EMPTY|EMPTY
+
+TEAM=MIA ROWS=6
+Starters|D. Mitchell|T. Hardaway Jr.|Andrew Wiggins|G. Antetokounmpo|Bam Adebayo
+Rotation|Dru Smith|Klay Thompson|Pelle Larsson|S. Fontecchio|Bobby Portis
+Rotation|EMPTY|EMPTY|EMPTY|EMPTY|Nikola Jovic
+Rotation|EMPTY|EMPTY|EMPTY|EMPTY|Nick Richards
+Lim PT|EMPTY|Ryan Conwell|J'Vonne Hadley|Myron Gardner|V. Goldin
+Lim PT|EMPTY|Tre Donaldson|EMPTY|Keshad Johnson|EMPTY
+
+TEAM=MIL ROWS=6
+Starters|K. Porter, Jr.|Tyler Herro|J. Jaquez, Jr.|Kyle Kuzma|Myles Turner
+Rotation|Ryan Rollins|G. Trent, Jr.|EMPTY|Ousmane Dieng|Kel'el Ware
+Rotation|A.J. Green|Caris LeVert|EMPTY|Pete Nance|Jericho Sims
+Rotation|K. Jakucionis|EMPTY|EMPTY|EMPTY|EMPTY
+Lim PT|Kam Jones|Cormac Ryan|B. Burries|B. Markovic|John Butler
+Lim PT|EMPTY|EMPTY|Nate Ament|EMPTY|Jake Stephens
+
+TEAM=MIN ROWS=6
+Starters|D. DiVincenzo|A. Edwards|J. McDaniels|J. Kuminga|Rudy Gobert
+Rotation|LaMelo Ball|Jaylen Clark|Ayo Dosunmu|EMPTY|EMPTY
+Rotation|Bones Hyland|EMPTY|Cody Williams|EMPTY|EMPTY
+Rotation|EMPTY|EMPTY|T. Shannon, Jr.|EMPTY|EMPTY
+Lim PT|Zyon Pullin|Isaiah Evans|Trey Lyles|E. Freeman|Joan Beringer
+Lim PT|EMPTY|EMPTY|EMPTY|EMPTY|Rocco Zikarsky
+
+TEAM=NOP ROWS=8
+Starters|D. Murray|T. Murphy III|Saddiq Bey|Z. Williamson|Derik Queen
+Rotation|Jeremiah Fears|B. Mathurin|EMPTY|Karlo Matkovic|Yves Missi
+Rotation|EMPTY|Herb Jones|EMPTY|EMPTY|DeAndre Jordan
+Rotation|EMPTY|Jordan Poole|EMPTY|EMPTY|T. Watford
+Rotation|EMPTY|Bryce McGowens|EMPTY|EMPTY|C. Koloko
+Lim PT|EMPTY|A.J. Johnson|Caleb Houstan|EMPTY|EMPTY
+Lim PT|EMPTY|Kobe Bufkin|J. Pierre, Jr.|EMPTY|EMPTY
+Lim PT|EMPTY|EMPTY|Malik Dia|EMPTY|EMPTY
+
+TEAM=NYK ROWS=5
+Starters|Jalen Brunson|Mikal Bridges|Josh Hart|OG Anunoby|K. Towns
+Rotation|Jose Alvarado|Miles McBride|B. Brown, Jr.|EMPTY|Andre Drummond
+Rotation|Tyler Kolek|Landry Shamet|J. Clarkson|EMPTY|James Wiseman
+Rotation|EMPTY|John Konchar|Ochai Agbaji|EMPTY|Drew Eubanks
+Lim PT|EMPTY|EMPTY|Pacome Dadiet|M. Diawara|EMPTY
+
+TEAM=OKC ROWS=6
+Starters|S. Gilgeous-Alexander|Cason Wallace|Jalen Williams|Chet Holmgren|I. Hartenstein
+Rotation|Ajay Mitchell|Jared McCain|EMPTY|Alex Caruso|J. Williams
+Rotation|Nikola Topic|EMPTY|EMPTY|K. Williams|EMPTY
+Lim PT|EMPTY|Bennett Stirtz|B. Barnhizer|Thomas Sorber|Aday Mara
+Lim PT|EMPTY|Otega Oweh|EMPTY|EMPTY|C. Tilly
+Lim PT|EMPTY|Josh Dix|EMPTY|EMPTY|EMPTY
+
+TEAM=ORL ROWS=5
+Starters|Jalen Suggs|Desmond Bane|Franz Wagner|Paolo Banchero|W. Carter, Jr.
+Rotation|Jevon Carter|Anthony Black|Jamal Cain|T. Da Silva|Nikola Vucevic
+Rotation|J. Richardson|EMPTY|EMPTY|Noah Penda|Goga Bitadze
+Lim PT|J.D. Davison|Malaki Branham|EMPTY|Jonathan Isaac|C. Castleton
+Lim PT|EMPTY|Alex Morales|EMPTY|EMPTY|Izaiyah Nelson
+
+TEAM=PHI ROWS=8
+Starters|Tyrese Maxey|V.J. Edgecombe|K. Caldwell-Pope|LeBron James|Joel Embiid
+Rotation|EMPTY|Jaylen Brown|Justin Edwards|D. Barlow|Adem Bona
+Rotation|EMPTY|A. Simons|EMPTY|Dean Wade|EMPTY
+Rotation|EMPTY|EMPTY|EMPTY|Jabari Walker|EMPTY
+Lim PT|Caleb Love|Dillon Jones|Saint Thomas|EMPTY|Ariel Hukporti
+Lim PT|EMPTY|L. Philon, Jr.|Rayan Rupert|EMPTY|Tacko Fall
+Lim PT|EMPTY|Duke Miles|EMPTY|EMPTY|EMPTY
+Lim PT|EMPTY|J. Nelson, Jr.|EMPTY|EMPTY|EMPTY
+
+TEAM=PHO ROWS=6
+Starters|Devin Booker|Jalen Green|Jordan Goodwin|Miles Bridges|Mark Williams
+Rotation|C. Gillespie|EMPTY|Ryan Dunn|Dillon Brooks|Oso Ighodaro
+Rotation|Luke Kennard|EMPTY|EMPTY|H. Highsmith|EMPTY
+Rotation|Jamaree Bouyea|EMPTY|EMPTY|R. Fleming|EMPTY
+Lim PT|EMPTY|Koby Brea|Koa Peat|C.J. Huntley|Khaman Maluach
+Lim PT|EMPTY|EMPTY|Pat Spencer|EMPTY|EMPTY
+
+TEAM=POR ROWS=8
+Starters|Ja Morant|Jrue Holiday|Deni Avdija|Toumani Camara|D. Clingan
+Rotation|S. Henderson|Shaedon Sharpe|Sidy Cissoko|Jeremy Sochan|Micah Potter
+Rotation|Vit Krejci|EMPTY|EMPTY|EMPTY|R. Williams
+Rotation|EMPTY|EMPTY|EMPTY|EMPTY|B. Carlson
+Lim PT|EMPTY|Damian Lillard|EMPTY|EMPTY|Yang Hansen
+Lim PT|EMPTY|Jayson Kent|EMPTY|EMPTY|EMPTY
+Lim PT|EMPTY|C. Youngblood|EMPTY|EMPTY|EMPTY
+Lim PT|EMPTY|John Tonje|EMPTY|EMPTY|EMPTY
+
+TEAM=SAC ROWS=6
+Starters|Emanuel Sharp|Zach LaVine|Keegan Murray|D. Hunter|D. Sabonis
+Rotation|EMPTY|Nique Clifford|D. Plowden|P. Achiuwa|Maxime Raynaud
+Rotation|EMPTY|Malik Monk|EMPTY|EMPTY|Dylan Cardwell
+Lim PT|EMPTY|D. Acuff, Jr.|Alex Karaban|Ben Simmons|EMPTY
+Lim PT|EMPTY|Elfrid Payton|EMPTY|Jonathan Mogbo|EMPTY
+Lim PT|EMPTY|Adam Flagler|EMPTY|EMPTY|EMPTY
+
+TEAM=SAS ROWS=6
+Starters|De'Aaron Fox|Stephon Castle|Devin Vassell|Tobias Harris|V. Wembanyama
+Rotation|Dylan Harper|Taelon Peter|H. Barnes|J. Champagnie|Luke Kornet
+Rotation|EMPTY|EMPTY|Carter Bryant|Keldon Johnson|EMPTY
+Lim PT|J. McLaughlin|Jayden Nunn|D. Jones-Garcia|T. Reed, Jr.|EMPTY
+Lim PT|EMPTY|J. Gillespie|EMPTY|J. Quaintance|EMPTY
+Lim PT|EMPTY|EMPTY|EMPTY|Maliq Brown|EMPTY
+
+TEAM=TOR ROWS=7
+Starters|I. Quickley|R.J. Barrett|Malachi Smith|Scottie Barnes|Jakob Poeltl
+Rotation|Jamal Shead|Ja'Kobe Walter|EMPTY|Kawhi Leonard|EMPTY
+Rotation|EMPTY|EMPTY|EMPTY|C. Murray-Boyles|EMPTY
+Rotation|EMPTY|EMPTY|EMPTY|Kyle Anderson|EMPTY
+Lim PT|Alijah Martin|Chucky Hepburn|Jamison Battle|EMPTY|T. Jackson-Davis
+Lim PT|EMPTY|Jaden Bradley|A. Jackson, Jr.|EMPTY|Nate Bittle
+Lim PT|EMPTY|EMPTY|Allen Graves|EMPTY|Trey Jemison
+
+TEAM=UTA ROWS=7
+Starters|Keyonte George|Ace Bailey|L. Markkanen|J. Jackson, Jr.|Jusuf Nurkic
+Rotation|Isaiah Collier|B. Sensabaugh|Svi Mykhailiuk|EMPTY|K. Filipowski
+Rotation|EMPTY|Josh Okogie|Josh Green|EMPTY|Jaxson Hayes
+Rotation|EMPTY|EMPTY|EMPTY|EMPTY|Mo Bamba
+Lim PT|EMPTY|D. Peterson|Blake Hinson|H. Ingram|EMPTY
+Lim PT|EMPTY|Tamar Bates|EMPTY|EMPTY|EMPTY
+Lim PT|EMPTY|Trey Alexander|EMPTY|EMPTY|EMPTY
+
+TEAM=WAS ROWS=5
+Starters|Bub Carrington|B. Coulibaly|K. Middleton|Anthony Davis|Alex Sarr
+Rotation|Trae Young|Tre Johnson|Will Riley|Kyshawn George|Deandre Ayton
+Rotation|Tre Mann|EMPTY|J. Champagnie|Anthony Gill|T. Vukcevic
+Lim PT|EMPTY|EMPTY|A.J. Dybantsa|Jamir Watkins|Felix Okpara
+Lim PT|EMPTY|EMPTY|KeShawn Murphy|EMPTY|EMPTY

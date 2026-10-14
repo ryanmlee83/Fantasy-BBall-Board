@@ -99,33 +99,78 @@ Correlation between the two methods **0.971**; ratio 0.969.
 
 ---
 
-## `rosters_2627.csv` — 517 rows
+## `rosters_2627.csv` — 598 rows
 
-2026-27 active rosters as of **2026-08-20**, parsed from the Wikipedia roster templates.
-30 teams, 14-20 players each.
+2026-27 rosters as of **2026-10-08**, built by `scripts/build_rosters_from_bbref.py`
+from **Basketball Reference team pages** (`basketball-reference.com/teams/<T>/2027.html`),
+one fetch per team, all 30 verified. This **supersedes the Wikipedia-derived docx parse**
+in `harmonize.py` as the source of roster truth. 30 teams, 17-22 players each.
 
-| column | notes |
+### Why the source changed
+
+The docx was scored against BBRef across 10 teams and came in **92% precise** — but its
+misses were not random. They clustered on recently-transacted players (Kawhi Leonard still
+listed on LAC, Brandon Ingram still on TOR, DeMar DeRozan missing entirely), which is
+exactly the population that matters most for minutes. A point-in-time export of a wiki page
+goes stale silently; this had already been patched by hand twice.
+
+BBRef also carries two things the docx does not:
+- **native `player_id`**, so the crosswalk is a lookup rather than a name match. Name
+  matching has caused three real bugs in this project (Moses Brown / Mikel Brown Jr.; the
+  two Bridges — Mikal/NYK vs Miles/PHO; `V. J. Edgecombe` losing his leading initial to the
+  Roman numeral five). This build had **zero ambiguous name matches**.
+- **height, weight and date of birth**, so `age_at_season_start` — which feeds the §3 age
+  curve — comes from the same fetch. **0 rows are missing a DOB.** The previous build needed
+  a separate research pass for this.
+
+### What changed against the 541-row docx build
+
+| | count |
 |---|---|
-| `team` | Canonical code |
-| `season` | `2026-27` |
-| `roster_name` | As written on the roster |
-| `name_norm` | Normalized form used for matching |
-| `pos_roster` | Wikipedia position (`G`, `F/C`, ...). Coarser than BBRef's `pos` |
-| `jersey` | int. **Not unique per team** — 10 collisions exist in the source, mostly #0 for unsigned rookies. Never use as a key |
-| `two_way` | bool. 74 of 517. Minimal fantasy relevance; filter early |
-| `height_in`, `weight_lb` | int |
-| `dob` | ISO date. More precise than BBRef's integer `age` |
-| `age_at_season_start` | int, computed against 2026-10-21 |
-| `player_id` | BBRef ID, or **empty if unmatched** |
-| `match` | `exact` / `none` / `ambiguous` |
+| rows | 541 → **598** |
+| added | 91 |
+| dropped | 34 |
+| team reassigned | 10 |
+| matched to `player_id` | **485** |
+| no BBRef history (rookie / international / UDFA) | 113 |
 
-440 of 517 matched to BBRef history (394 of 443 standard contracts). The 77 unmatched
-are 28 two-way players and 49 aged 22 or under — rookies and international signings with
-no NBA season in 2023-26. **This is expected, not a defect.**
+The 10 team reassignments are precisely the players the 2026-09-21 session flagged as
+roster-gap suspects, now confirmed: Bennedict Mathurin LAC→NOP, Brandon Ingram TOR→LAC,
+Buddy Hield ATL→CHI, Devin Carter ATL→BOS, Dorian Finney-Smith CHO→ATL, Gradey Dick
+TOR→LAC, Johni Broome LAC→MIL, Jordan Hawkins MEM→CHI, **Kawhi Leonard LAC→TOR**, Ryan
+Nembhard ATL→DEN.
 
----
+Consequential additions (1,000+ minutes in 2025-26, previously on no roster at all):
+DeMar DeRozan (DEN, 2,406 min), Bruce Brown (NYK, 1,998), Rui Hachimura (LAC, 1,927),
+Nicolas Batum (LAC, 1,295).
 
-## `crosswalk_unmatched.csv` — 77 rows
+Two apparent drop/add pairs are **spelling variants, not roster changes** — `Jakob Pöltl` →
+`Jakob Poeltl` and `Sviatoslav Mykhailiuk` → `Svi Mykhailiuk`. Both resolve to the same
+`player_id` (`poeltja01`, `mykhasv01`) and the same team, so the pipeline is unaffected;
+only a naive name-keyed diff is fooled. This is why the diff above says 34 dropped / 91
+added rather than 36 / 93.
+
+### Known gaps in this build
+
+- **`jersey` is empty for every row.** BBRef's roster table does not expose it through a
+  plain fetch. Nothing in the pipeline consumes it — `scripts/validate.py` only prints a
+  duplicate-jersey INFO line — so it is left null rather than fetched from a second source.
+- **`two_way` is not fully sourced.** 505 rows carry the value forward from the docx build
+  and **93 new rows default to `False`**. BBRef does expose two-way status, but it needs its
+  own fetch per team. This field feeds `reports.py`'s standard-contract filter and the
+  `validate.py` counts; it does **not** touch minutes, projections or valuation, so an
+  imperfect value degrades a report line rather than the model. Flagged rather than
+  papered over.
+
+### Derived files regenerated with it
+
+`crosswalk_unmatched.csv` (113 rows, **0 with a fuzzy suggestion** — no unmatched name is a
+near-neighbour of an existing player, which is the guard that caught the Mikel Brown Jr.
+error), `unrostered_players.csv` (119 rows), and `vacated_opportunity.csv`. The test suite
+asserts `crosswalk_unmatched` has exactly as many rows as the roster has unmatched entries,
+so these three must move together — three tests correctly failed when they did not.
+
+## `crosswalk_unmatched.csv` — 113 rows
 
 Roster entries with no `player_id`, each with a `fuzzy_suggestion` column.
 
@@ -143,7 +188,7 @@ loosening the matcher.
 
 ---
 
-## `unrostered_players.csv` — 150 rows
+## `unrostered_players.csv` — 119 rows
 
 Players with a 2025-26 season but no 2026-27 roster spot, sorted by minutes descending.
 Retirements, unsigned free agents, and overseas departures. Worth one read-through:
@@ -174,13 +219,141 @@ The fuzzy-suggestion check above is what guards against that, so keep it passing
 
 ---
 
+## `../raw/realgm_depth_charts_20260921.txt` — depth-chart capture
+
+RealGM depth charts (`basketball.realgm.com/nba/depth-charts`), captured 2026-09-21 and
+checked in so it survives between sessions. Pipe-delimited: `tier|PG|SG|SF|PF|C`, one line
+per tier row, `EMPTY` for a blank cell, preceded by `TEAM=<abbrev> ROWS=<n>`. Names are
+verbatim and often abbreviated (`N. Alexander-Walker`, `R. Harper, Jr.`).
+
+**All 30 teams.** ATL-MIN were captured from the RealGM page directly. NOP-WAS were
+supplied by Ryan as a workbook export of the same source — tiered rows with a stat sub-row
+under each and a `<team> Leaders` block closing every section — converted by
+`scripts/parse_depth_chart_workbook.py`, which anchors on the Leaders title as the section
+boundary rather than guessing from blank rows (several teams' last tier has no stat
+sub-row at all).
+
+`scripts/depth_charts.py` parses it, crosswalks to `player_id`, and allocates minutes.
+`scripts/apply_depth_minutes.py` writes the result into `config/minutes.yaml`.
+The parser validates that every line has exactly 6 fields and that each team's parsed row
+count matches its declared `ROWS=`; a dropped cell is a player whose minutes silently
+vanish, so it raises rather than warns. That check has already caught one bad capture.
+
+### Allocation method
+
+Starters get a **fixed 33 mpg**; the bench splits the remaining 75 by rotation tier
+(weights 1.0 / 0.45 / 0.20 / 0.10 down the Rotation rows), and `Lim PT` gets 0.
+
+Two approaches were tried and rejected first, both worth recording:
+
+- **48 minutes per position, split down a depth curve** (the earlier ESPN-era method).
+  RealGM does not cover positions evenly — DAL lists exactly one PG — so this hands that
+  player 48 mpg. Allocation has to be team-level.
+- **Weighting every tier and normalising the whole team to 240.** Teams list very
+  different numbers of reserves (ATL 8, MIA 6), so normalising across all of them drags
+  deep teams' starters down: Luka came out at 27.5 mpg and Derrick White at 25.0. Real
+  rotations hold starters near 32-35 regardless of bench depth and squeeze the back end.
+
+### Roster gaps this surfaced
+
+Cross-referencing the chart against `rosters_2627.csv` found two real problems.
+
+**Players on the RealGM chart with no roster row at all** — their minutes never reach the
+model, which is precisely why LAC (76.3%), DEN (86.3%) and CHO (86.2%) fail the §3.5
+sanity check:
+
+| player | RealGM team / role | mpg lost |
+|---|---|---|
+| DeMar DeRozan | DEN, **starting SF** | 28.1 |
+| Brandon Ingram | LAC, **starting SF** | 25.6 |
+| Bez Mbeng | CHO, **starting SG** | 24.4 |
+| Rui Hachimura | LAC, rotation | 16.0 |
+| Gradey Dick | LAC, rotation | 10.4 |
+| Yuki Kawamura | LAC, rotation | 10.4 |
+| Moussa Cisse | DAL, rotation | 7.6 |
+| Devin Carter | BOS, rotation | 6.3 |
+
+Adding the other 12 teams extended the same pattern rather than contradicting it:
+Jakob Poeltl (TOR, **starting C**), Emanuel Sharp (SAC, **starting PG**), Anthony Gill
+(WAS), and four NYK rotation players (Bruce Brown Jr., James Wiseman, Ochai Agbaji, Drew
+Eubanks, John Konchar) have no roster row either. Two earlier puzzles resolved themselves:
+**Kawhi Leonard is on TOR**, not LAC, and **Bennedict Mathurin is on NOP**, not LAC — both
+were previously logged as "rostered but missing from their team's chart", which was the
+same staleness seen from the other side. 18 unmatched entries carry 258 mpg in total.
+
+Five of these (Mbeng, Cisse, DeRozan, Hachimura, Kawamura) are exactly the players the
+2026-09-21 `harmonize.py` re-run removed, on the finding that they were "confirmed absent
+from both current docx sources by direct text search — not a parsing gap." That was true
+of the docx and wrong about reality: **the Wikipedia-derived roster docs are stale**, not
+merely differently-parsed. Ingram, Dick and Carter are a second class — on the roster file
+but on the *wrong team*. LAC is the worst affected, missing four rotation players.
+
+This is the second time this class of bug has appeared. The roster docx should not be
+treated as authoritative for team assignment without a current cross-check.
+
+**Rostered players absent from any chart** — set to 0 mpg but deliberately left
+`estimated: true`, because absence is an open question, not a decision. Nine in total.
+Jalen Duren (DET, 28.2 mpg last season) is the notable one: he is the `(FA)`-tagged player
+the harmonize regex fix recovered, and he appears on no team's depth chart, so the tag was
+flagging real roster uncertainty and he may be a phantom entry.
+
+### Name-matching traps hit and fixed
+
+- **`"v"` is both an initial and a Roman numeral.** Stripping suffix tokens anywhere in a
+  name dropped the leading initial of `V. J. Edgecombe`, so PHI's starting SG matched
+  nothing and silently lost 33 mpg. Suffixes are now stripped from the tail only.
+- **The two sources punctuate initials differently** (`V.J.` vs `V. J.`). Leading
+  single-letter tokens are now concatenated so both normalise to `vj`.
+- **One genuine ambiguity, resolved by evidence rather than by loosening the matcher.**
+  OKC lists `J. Williams` at C in the rotation *and* `Jalen Williams` at SF among the
+  starters; since Jalen is already placed, the centre is Jaylin Williams (`willija07`).
+  That sits in `MANUAL_MATCHES` in `scripts/depth_charts.py` with its reasoning. The
+  matcher itself still refuses to guess — it correctly declined to match LAC's
+  `Baba Miller` to the rostered `Jordan Miller`, which is the Mikel Brown Jr. pattern.
+
+### Two config bugs fixed in passing
+
+- **19 rostered players had no `games_played.yaml` entry at all** (the session-2
+  supplemental rows plus the two harmonize recoveries). `minutes_sanity_check` reads a
+  missing GP as **0**, not 82, so those players contributed zero season minutes and their
+  teams looked short for no visible reason — MEM read 81.3% purely from this. Seeded at
+  the spec §3.5 default of 82, flagged `estimated: true`. The same 19 were missing from
+  `minutes.yaml` and were inserted there too.
+- **`Σ mpg = 240` and `Σ(mpg × gp) = 19,680` are mutually incompatible** whenever any
+  player's GP < 82 — mathematically, not approximately. LAL as hand-reviewed sums to 223
+  mpg and 15,375 season minutes (78.1%); at its own GP profile `Σ mpg` would need to be
+  ~285 to reach target. So LAL's shortfall is **not** mainly Cameron Carr's unmodeled
+  minutes and conservative GP as documented earlier — those are second-order. Left
+  unfixed for now (it changes the model's constraint and that's a judgement call), but the
+  sanity check will keep flagging properly-reviewed teams while naive ones look fine.
+
+---
+
 ## Known limitations
 
 - **`pace_simple` is biased high.** Documented, retained for cross-checking only.
-- **Rosters are a 2026-08-20 snapshot.** Trades and camp cuts since are not reflected,
-  and training-camp battles were unresolved at that date.
+- **Rosters are a 2026-10-08 snapshot from Basketball Reference**; see the
+  `rosters_2627.csv` section above. Transactions since are not reflected.
+- **The depth-chart capture is now the stale input, not the rosters.** It dates from
+  2026-09-21 and 11 of its entries put a player on a team the current rosters disagree
+  with, which is the entire remaining cause of the §3.5 sanity misses on SAC, CHO, ATL and
+  CHI. Re-capturing the depth charts is the next refresh, not the rosters.
 - **Positions are coarse.** `pos_roster` is Wikipedia's; `pos` in `player_seasons` is
   BBRef's. Neither reflects fantasy-site eligibility, which is what your league actually
   uses. Reconcile against your platform before trusting positional scarcity math.
 - **No 2026-27 projections here.** This is cleaned input only.
-- **No minutes or games-played projections.** Those are human judgment; see spec §3.5.
+- **Minutes are depth-chart-derived for 29 teams; LAL is hand-reviewed.** See the
+  depth-chart section above. GP remains at the default 82 everywhere except LAL. Spec §3.5
+  still applies: these are a reviewable first pass, not a substitute for judgment.
+- **25 of 30 teams pass the §3.5 sanity check** after the BBRef roster rebuild, up from 22.
+  All five that don't are fully explained, and the cause has flipped from stale rosters to a
+  stale depth chart: SAC 83.4% and CHO 84.1% (RealGM gives a starter's minutes to Emanuel
+  Sharp — a genuine rookie with no BBRef history to project from — and to Bez Mbeng, whom
+  BBRef puts on MIA); ATL 89.8% and CHI 96.7% (Buddy Hield, Ryan Nembhard and Rob
+  Dillingham have since moved); LAL 78.1% unchanged (hand-set GP plus Cameron Carr's
+  unmodeled minutes).
+- **BPM/VORP does not predict minutes.** Tested directly (train 23-24 + 24-25, predict
+  25-26): value above replacement adds +0.006 R² over prior minutes, and as a standalone
+  allocator is far worse (MAE 10.4 vs 6.8 mpg, corr 0.32 vs 0.45). It systematically
+  promotes small-sample efficiency specialists and demotes high-volume low-efficiency
+  starters. Don't let it set minutes; it's an auditor at best.

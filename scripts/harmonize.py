@@ -240,12 +240,12 @@ log.append(f'pace: implied league avg {avg_imp:.2f}')
 # ---------------------------------------------------------------- rosters
 ROSTER_PAT = re.compile(
     r'\[(?P<pos>C|F|G|F/C|G/F|PF|SF|SG|PG)\]\(\S+\)\s*'
-    r'(?P<num>\d{1,2})\s*'
+    r'(?P<num>\d{1,2}|[–—-]{1,2})\s*'
     r'\[(?P<name>[^\]]+)\]\(\S+\)\s*'
-    r'(?P<tw>\(TW\))?\s*'
+    r'(?P<tag>\((?:TW|RFA|FA)\))?\s*'
     r'(?P<ft>\d+)\s*ft\s*(?P<inch>\d+)\s*in[^|]*?'
     r'(?P<wt>\d+)\s*lb[^|]*?'
-    r'(?P<dob>\d{4}-\d{2}-\d{2})')
+    r'(?P<dob>\d{4}-\d{1,2}-\d{1,2})')
 HEAD_PAT = re.compile(r'^\[\*\*([^*]+)\*\*\]', re.M)
 SEASON_START = datetime.date(2026, 10, 21)  # nominal; only used for age_at_season_start
 
@@ -259,21 +259,24 @@ for fname in ['east_rosters_26.docx', 'West_Rosters_26.docx']:
         canon = team_canon(nm)
         found = 0
         for m in ROSTER_PAT.finditer(txt[start:end]):
-            dob = datetime.date.fromisoformat(m.group('dob'))
+            dob_y, dob_m, dob_d = m.group('dob').split('-')
+            dob_iso = f'{dob_y}-{int(dob_m):02d}-{int(dob_d):02d}'
+            dob = datetime.date.fromisoformat(dob_iso)
             age = SEASON_START.year - dob.year - ((SEASON_START.month, SEASON_START.day) < (dob.month, dob.day))
             roster.append({
                 'team': canon, 'season': '2026-27',
                 'roster_name': m.group('name').strip(),
                 'name_norm': norm_name(m.group('name')),
-                'pos_roster': m.group('pos'), 'jersey': int(m.group('num')),
-                'two_way': bool(m.group('tw')),
+                'pos_roster': m.group('pos'),
+                'jersey': int(m.group('num')) if m.group('num').isdigit() else None,
+                'two_way': m.group('tag') == '(TW)',
                 'height_in': int(m.group('ft')) * 12 + int(m.group('inch')),
                 'weight_lb': int(m.group('wt')),
-                'dob': m.group('dob'), 'age_at_season_start': age,
+                'dob': dob_iso, 'age_at_season_start': age,
             })
             found += 1
-        if not (13 <= found <= 21):
-            raise SystemExit(f'FATAL: {canon} parsed {found} players (expected 13-21)')
+        if not (13 <= found <= 22):
+            raise SystemExit(f'FATAL: {canon} parsed {found} players (expected 13-22)')
 teams_seen = {r['team'] for r in roster}
 if len(teams_seen) != 30:
     raise SystemExit(f'FATAL: rosters cover {len(teams_seen)} teams')

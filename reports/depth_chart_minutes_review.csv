@@ -1,0 +1,424 @@
+team,roster_name,tier_label,tier_index,position,mpg,mpg_last,delta_vs_last,mpg_hist,match_kind,all_slots
+ATL,C.J. McCollum,Starters,1,PG,33.0,29.79,3.2,"33, 33, 30",full,Starters/PG
+ATL,Dyson Daniels,Starters,1,SF,33.0,33.16,-0.2,"22, 34, 33",full,Starters/SF
+ATL,Jalen Johnson,Starters,1,PF,33.0,35.17,-2.2,"34, 36, 35",full,Starters/PF
+ATL,N. Alexander-Walker,Starters,1,SG,33.0,33.37,-0.4,"23, 25, 33",initial,Starters/SG
+ATL,Onyeka Okongwu,Starters,1,C,33.0,31.04,2.0,"26, 28, 31",full,Starters/C
+ATL,Asa Newell,Rotation,2,PF,12.3,11.36,0.9,11,full,Rotation/PF
+ATL,Jock Landale,Rotation,2,C,12.3,22.15,-9.8,"14, 12, 22",full,Rotation/C
+ATL,Luguentz Dort,Rotation,2,SF,12.3,26.8,-14.5,"28, 29, 27",full,Rotation/SF
+ATL,Aaron Wiggins,Rotation,3,SF,5.5,21.75,-16.2,"16, 23, 22",full,Rotation/SF
+ATL,Mouhamed Gueye,Rotation,3,C,5.5,15.31,-9.8,"12, 16, 15",full,Rotation/C
+ATL,Corey Kispert,Rotation,4,SF,2.5,18.62,-16.1,"26, 26, 19",full,Rotation/SF
+ATL,Jalen Wilson,Lim PT,6,SF,0.0,15.91,-15.9,"15, 26, 16",full,Lim PT/SF
+BOS,B. Scheierman,Starters,1,SG,33.0,18.56,14.4,"12, 19",initial,Starters/SG
+BOS,Derrick White,Starters,1,PG,33.0,34.09,-1.1,"33, 34, 34",full,Starters/PG
+BOS,Jayson Tatum,Starters,1,PF,33.0,32.62,0.4,"36, 36, 33",full,Starters/PF
+BOS,Neemias Queta,Starters,1,C,33.0,25.34,7.7,"12, 14, 25",full,Starters/C
+BOS,Sam Hauser,Starters,1,SF,33.0,24.79,8.2,"22, 22, 25",full,Starters/SF
+BOS,Hugo Gonzalez,Rotation,2,SF,11.5,14.65,-3.2,15,full,Rotation/SF
+BOS,M. Robinson,Rotation,2,C,11.5,19.58,-8.1,"25, 17, 20",initial,Rotation/C
+BOS,P. Pritchard,Rotation,2,PG,11.5,32.35,-20.8,"22, 28, 32",initial,Rotation/PG
+BOS,Paul George,Rotation,2,PF,11.5,30.68,-19.2,"34, 33, 31",full,Rotation/PF
+BOS,"R. Harper, Jr.",Rotation,2,SG,11.5,10.97,0.5,"4, 17, 11",initial,Rotation/SG
+BOS,Jordan Walsh,Rotation,3,PF,5.2,17.82,-12.6,"9, 8, 18",full,Rotation/PF
+BOS,Luka Garza,Rotation,3,C,5.2,16.2,-11.0,"5, 6, 16",full,Rotation/C
+BOS,Mike Conley,Rotation,3,PG,5.2,18.35,-13.2,"29, 25, 18",full,Rotation/PG
+BOS,Devin Carter,Rotation,4,PG,2.3,18.42,-16.1,"11, 18",full,Rotation/PG
+BOS,Amari Williams,Lim PT,6,C,0.0,6.64,-6.6,7,full,Lim PT/C
+BRK,Day'Ron Sharpe,Starters,1,C,33.0,18.71,14.3,"15, 18, 19",full,Starters/C
+BRK,Egor Demin,Starters,1,PG,33.0,25.15,7.9,25,full,Starters/PG
+BRK,Julius Randle,Starters,1,PF,33.0,33.04,-0.0,"35, 32, 33",full,Starters/PF
+BRK,"M. Porter, Jr.",Starters,1,SF,33.0,32.48,0.5,"32, 34, 32",initial,Starters/SF
+BRK,Terance Mann,Starters,1,SG,33.0,24.27,8.7,"25, 21, 24",full,Starters/SG
+BRK,Drake Powell,Rotation,2,SG,12.3,20.95,-8.6,21,full,Rotation/SG
+BRK,Keon Ellis,Rotation,2,SF,12.3,20.53,-8.2,"17, 24, 21",full,Rotation/SF
+BRK,Moe Wagner,Rotation,2,C,12.3,11.86,0.4,"18, 19, 12",initial,Rotation/C
+BRK,Noah Clowney,Rotation,2,PF,12.3,26.97,-14.7,"16, 23, 27",full,Rotation/PF
+BRK,Nolan Traore,Rotation,2,PG,12.3,22.2,-9.9,22,full,Rotation/PG
+BRK,Ben Saraf,Rotation,3,PG,5.5,20.82,-15.3,21,full,Rotation/PG
+BRK,Danny Wolf,Rotation,3,PF,5.5,20.82,-15.3,21,full,Rotation/PF
+BRK,Josh Minott,Rotation,4,PF,2.5,17.02,-14.5,"3, 6, 17",full,Rotation/PF
+BRK,Grant Nelson,Lim PT,6,SF,0.0,8.75,-8.8,9,full,Lim PT/SF
+CHI,Isaac Okoro,Starters,1,SF,33.0,26.9,6.1,"27, 19, 27",full,Starters/SF
+CHI,Josh Giddey,Starters,1,PG,33.0,32.06,0.9,"25, 30, 32",full,Starters/PG
+CHI,Matas Buzelis,Starters,1,PF,33.0,29.19,3.8,"19, 29",full,Starters/PF
+CHI,N. Claxton,Starters,1,C,33.0,27.83,5.2,"30, 27, 28",initial,Starters/C
+CHI,Norman Powell,Starters,1,SG,33.0,29.6,3.4,"26, 33, 30",full,Starters/SG
+CHI,Jalen Smith,Rotation,2,C,17.2,20.66,-3.5,"17, 15, 21",full,Rotation/C
+CHI,P. Williams,Rotation,2,PF,17.2,20.47,-3.3,"27, 25, 20",initial,Rotation/PF
+CHI,Tre Jones,Rotation,2,PG,17.2,26.95,-9.8,"28, 20, 27",full,Rotation/PG
+CHI,Leonard Miller,Rotation,3,PF,7.8,15.63,-7.8,"3, 2, 16",full,Rotation/PF
+CHI,Zach Collins,Rotation,3,C,7.8,18.4,-10.6,"22, 15, 18",full,Rotation/C
+CHI,Noa Essengue,Lim PT,4,SF,0.0,3.0,-3.0,3,full,Lim PT/SF
+CHO,D. Schroder,Starters,1,PG,33.0,24.24,8.8,"31, 28, 24",initial,Starters/PG
+CHO,Kon Knueppel,Starters,1,SF,33.0,31.49,1.5,31,full,Starters/SF
+CHO,Naz Reid,Starters,1,C,33.0,26.06,6.9,"24, 28, 26",full,Starters/C
+CHO,Royce O'Neale,Starters,1,PF,33.0,28.37,4.6,"25, 24, 28",full,Starters/PF
+CHO,Brandon Miller,Rotation,2,SG,11.1,30.28,-19.2,"32, 34, 30",full,Rotation/SG
+CHO,Grant Williams,Rotation,2,PF,11.1,19.75,-8.6,"28, 30, 20",full,Rotation/PF
+CHO,Liam McNeeley,Rotation,2,SF,11.1,11.87,-0.8,12,full,Rotation/SF
+CHO,Moussa Diabate,Rotation,2,C,11.1,26.01,-14.9,"6, 17, 26",full,Rotation/C
+CHO,Sion James,Rotation,2,PG,11.1,22.48,-11.4,22,full,Rotation/PG
+CHO,Grayson Allen,Rotation,3,SG,5.0,28.76,-23.8,"34, 24, 29",full,Rotation/SG
+CHO,R. Kalkbrenner,Rotation,3,C,5.0,21.43,-16.4,21,initial,Rotation/C
+CHO,Coby White,Rotation,4,SG,2.2,24.98,-22.8,"36, 33, 25",full,Rotation/SG
+CHO,Tidjane Salaun,Rotation,4,PF,2.2,15.54,-13.3,"21, 16",full,Rotation/PF
+CHO,P. Connaughton,Lim PT,5,SF,0.0,7.07,-7.1,"22, 15, 7",initial,Lim PT/SF
+CLE,Donovan Mitchell,Starters,1,SG,33.0,33.46,-0.5,"35, 31, 33",full,Starters/SG
+CLE,Evan Mobley,Starters,1,PF,33.0,31.91,1.1,"31, 31, 32",full,Starters/PF
+CLE,James Harden,Starters,1,PG,33.0,34.83,-1.8,"34, 35, 35",full,Starters/PG
+CLE,Jarrett Allen,Starters,1,C,33.0,27.12,5.9,"32, 28, 27",full,Starters/C
+CLE,Jaylon Tyson,Starters,1,SF,33.0,26.92,6.1,"10, 27",full,Starters/SF
+CLE,"Craig Porter, Jr.",Rotation,2,PG,15.3,17.94,-2.6,"13, 10, 18",full,Rotation/PG
+CLE,Peyton Watson,Rotation,2,PF,15.3,29.59,-14.3,"19, 24, 30",full,Rotation/PF
+CLE,Sam Merrill,Rotation,2,SG,15.3,26.48,-11.2,"18, 20, 26",full,Rotation/SG
+CLE,Thomas Bryant,Rotation,2,C,15.3,12.2,3.1,"12, 15, 12",full,Rotation/C
+CLE,Naeqwan Tomlin,Rotation,3,PF,6.9,15.69,-8.8,"13, 16",full,Rotation/PF
+CLE,Tyrese Proctor,Rotation,3,PG,6.9,10.9,-4.0,11,full,Rotation/PG
+DAL,Cooper Flagg,Starters,1,PF,33.0,33.49,-0.5,33,full,Starters/PF
+DAL,Marcus Sasser,Starters,1,PG,33.0,12.03,21.0,"19, 14, 12",full,Starters/PG
+DAL,Max Christie,Starters,1,SG,33.0,29.14,3.9,"14, 27, 29",full,Starters/SG
+DAL,Naji Marshall,Starters,1,SF,33.0,29.51,3.5,"19, 28, 30",full,Starters/SF
+DAL,Santi Aldama,Starters,1,C,33.0,27.86,5.1,"27, 26, 28",full,Starters/C
+DAL,Daniel Gafford,Rotation,2,C,18.3,21.73,-3.4,"25, 22, 22",full,Rotation/C
+DAL,P. Washington,Rotation,2,PF,18.3,31.0,-12.7,"30, 32, 31",initial,Rotation/PF
+DAL,Z. Risacher,Rotation,2,SF,18.3,22.43,-4.1,"25, 22",initial,Rotation/SF
+DAL,Caleb Martin,Rotation,3,PF,8.2,14.76,-6.6,"27, 27, 15",full,Rotation/PF
+DAL,D. Lively II,Rotation,3,C,8.2,16.43,-8.2,"24, 23, 16",initial,Rotation/C
+DAL,Moussa Cisse,Rotation,4,C,3.7,13.95,-10.2,14,full,Rotation/C
+DAL,Jett Howard,Lim PT,7,SG,0.0,12.64,-12.6,"4, 12, 13",full,Lim PT/SG
+DAL,Kyrie Irving,Lim PT,5,SG,0.0,36.08,-36.1,"35, 36",full,Lim PT/SG
+DEN,Aaron Gordon,Starters,1,PF,33.0,27.92,5.1,"31, 28, 28",full,Starters/PF
+DEN,Christian Braun,Starters,1,SG,33.0,31.8,1.2,"20, 34, 32",full,Starters/SG
+DEN,DeMar DeRozan,Starters,1,SF,33.0,31.25,1.8,"38, 36, 31",full,Starters/SF
+DEN,Jamal Murray,Starters,1,PG,33.0,35.36,-2.4,"32, 36, 35",full,Starters/PG
+DEN,Nikola Jokic,Starters,1,C,33.0,34.85,-1.9,"35, 37, 35",full,Starters/C
+DEN,Cameron Johnson,Rotation,2,SF,13.8,30.5,-16.7,"28, 32, 30",full,Rotation/SF
+DEN,Julian Strawther,Rotation,2,SG,13.8,15.11,-1.3,"11, 21, 15",full,Rotation/SG
+DEN,Marvin Bagley III,Rotation,2,C,13.8,20.02,-6.2,"21, 9, 20",full,Rotation/C
+DEN,Spencer Jones,Rotation,2,PF,13.8,22.14,-8.3,"6, 22",full,Rotation/PF
+DEN,Tyus Jones,Rotation,2,PG,13.8,14.61,-0.8,"29, 27, 15",full,Rotation/PG
+DEN,Zeke Nnaji,Rotation,3,C,6.2,12.04,-5.8,"10, 11, 12",full,Rotation/C
+DEN,Cam Whitmore,Lim PT,4,PF,0.0,16.86,-16.9,"19, 16, 17",full,Lim PT/PF
+DEN,DaRon Holmes II,Lim PT,4,C,0.0,8.4,-8.4,8,full,Lim PT/C
+DEN,Lonnie Walker,Lim PT,4,SG,0.0,23.85,-23.8,"17, 24",full,Lim PT/SG
+DET,Ausar Thompson,Starters,1,SF,33.0,25.97,7.0,"25, 23, 26",full,Starters/SF
+DET,Cade Cunningham,Starters,1,PG,33.0,33.94,-0.9,"33, 35, 34",full,Starters/PG
+DET,Duncan Robinson,Starters,1,SG,33.0,27.44,5.6,"28, 24, 27",full,Starters/SG
+DET,Javonte Green,Starters,1,PF,33.0,17.63,15.4,"26, 18, 18",full,Starters/PF
+DET,John Collins,Starters,1,C,33.0,27.13,5.9,"28, 30, 27",full,Starters/C
+DET,Daniss Jenkins,Rotation,2,PG,14.7,20.21,-5.5,"3, 20",full,Rotation/PG
+DET,Isaiah Joe,Rotation,2,SG,14.7,21.23,-6.5,"19, 22, 21",full,Rotation/SG
+DET,"Paul Reed, Jr.",Rotation,2,C,14.7,13.86,0.8,"19, 10, 14",full,Rotation/C
+DET,Taurean Prince,Rotation,2,SF,14.7,23.5,-8.8,"27, 27, 24",full,Rotation/SF
+DET,Kevin Huerter,Rotation,3,SF,6.6,22.45,-15.8,"24, 24, 22",full,Rotation/SF
+DET,Ron Holland,Rotation,4,SF,2.9,19.88,-17.0,"16, 20",full,Rotation/SF
+DET,Chaz Lanier,Lim PT,5,SG,0.0,7.71,-7.7,8,full,Lim PT/SG
+DET,E.J. Harkless,Lim PT,6,PG,0.0,20.96,-21.0,"14, 21",initial,Lim PT/PG
+DET,Tolu Smith,Lim PT,5,C,0.0,9.13,-9.1,"22, 9",full,Lim PT/C
+GSW,D. Melton,Starters,1,SG,33.0,22.96,10.0,"27, 20, 23",initial,Starters/SG
+GSW,Draymond Green,Starters,1,PF,33.0,27.49,5.5,"27, 29, 27",full,Starters/PF
+GSW,J. Butler III,Starters,1,SF,33.0,31.11,1.9,"34, 32, 31",initial,Starters/SF
+GSW,K. Porzingis,Starters,1,C,33.0,24.03,9.0,"30, 29, 24",initial,Starters/C
+GSW,Stephen Curry,Starters,1,PG,33.0,30.91,2.1,"33, 32, 31",full,Starters/PG
+GSW,Al Horford,Rotation,2,C,13.3,21.53,-8.2,"27, 28, 22",full,Rotation/C
+GSW,B. Podziemski,Rotation,2,PG,13.3,28.45,-15.2,"27, 27, 28",initial,Rotation/PG
+GSW,Dalen Terry,Rotation,2,SG,13.3,11.48,1.8,"12, 14, 11",full,Rotation/SG
+GSW,Moses Moody,Rotation,2,SF,13.3,25.67,-12.4,"18, 22, 26",full,Rotation/SF
+GSW,B. Williams,Rotation,3,PG,6.0,22.17,-16.2,"7, 15, 22",initial,Rotation/PG
+GSW,Charles Bassey,Rotation,3,C,6.0,11.77,-5.8,"11, 10, 12",full,Rotation/C
+GSW,Gui Santos,Rotation,3,SF,6.0,20.51,-14.5,"8, 14, 21",full,Rotation/SF
+GSW,Will Richard,Rotation,4,SF,2.7,19.96,-17.3,20,full,Rotation/SF
+GSW,Gary Payton II,Rotation,5,SF,1.3,15.64,-14.3,"15, 15, 16",full,Rotation/SF
+GSW,Georges Niang,Lim PT,7,SF,0.0,21.48,-21.5,"22, 21",full,Lim PT/SF
+HOU,Alperen Sengun,Starters,1,C,33.0,33.31,-0.3,"32, 32, 33",full,Starters/C
+HOU,Amen Thompson,Starters,1,PG,33.0,37.38,-4.4,"22, 32, 37",full,Starters/PG
+HOU,Fred VanVleet,Starters,1,SG,33.0,35.18,-2.2,"37, 35",full,Starters/SG
+HOU,"J. Smith, Jr.",Starters,1,PF,33.0,35.13,-2.1,"32, 30, 35",initial,Starters/PF
+HOU,Kevin Durant,Starters,1,SF,33.0,36.41,-3.4,"37, 37, 36",full,Starters/SF
+HOU,Marcus Smart,Rotation,2,SF,17.4,28.53,-11.1,"30, 20, 29",full,Rotation/SF
+HOU,Reed Sheppard,Rotation,2,PG,17.4,26.18,-8.8,"13, 26",full,Rotation/PG
+HOU,Steven Adams,Rotation,2,C,17.4,22.81,-5.4,"14, 23",full,Rotation/C
+HOU,Oscar Tshiebwe,Rotation,3,C,7.8,16.59,-8.8,"5, 18, 17",full,Rotation/C
+HOU,Tari Eason,Rotation,3,SF,7.8,25.82,-18.0,"22, 25, 26",full,Rotation/SF
+HOU,B. Bogdanovic,Rotation,4,SF,3.5,19.65,-16.2,"30, 25, 20",initial,Rotation/SF
+HOU,Clint Capela,Rotation,4,C,3.5,12.35,-8.8,"26, 21, 12",full,Rotation/C
+HOU,I. Crawford,Lim PT,7,SF,0.0,6.57,-6.6,"3, 7",initial,Lim PT/SF
+HOU,J. Phillips,Lim PT,5,SF,0.0,8.92,-8.9,"8, 14, 9",initial,Lim PT/SF
+HOU,Jae'sean Tate,Lim PT,6,SF,0.0,8.8,-8.8,"16, 11, 9",full,Lim PT/SF
+HOU,Sean Pedulla,Lim PT,5,PG,0.0,4.43,-4.4,4,full,Lim PT/PG
+IND,A. Nembhard,Starters,1,PG,33.0,31.33,1.7,"25, 29, 31",initial,Starters/PG
+IND,Aaron Nesmith,Starters,1,SG,33.0,29.67,3.3,"28, 25, 30",full,Starters/SG
+IND,Ivica Zubac,Starters,1,C,33.0,30.12,2.9,"26, 33, 30",full,Starters/C
+IND,"K. Oubre, Jr.",Starters,1,SF,33.0,31.48,1.5,"30, 35, 31",initial,Starters/SF
+IND,Pascal Siakam,Starters,1,PF,33.0,33.18,-0.2,"33, 33, 33",full,Starters/PF
+IND,Ben Sheppard,Rotation,2,SG,11.8,21.38,-9.6,"14, 20, 21",full,Rotation/SG
+IND,James Huff,Rotation,2,C,11.8,20.96,-9.2,"2, 12, 21",initial,Rotation/C
+IND,Jarace Walker,Rotation,2,SF,11.8,25.7,-13.9,"10, 16, 26",full,Rotation/SF
+IND,Obi Toppin,Rotation,2,PF,11.8,17.67,-5.9,"21, 20, 18",full,Rotation/PF
+IND,Q. Jackson,Rotation,2,PG,11.8,18.31,-6.5,"4, 14, 18",initial,Rotation/PG
+IND,Johnny Furphy,Rotation,3,SF,5.3,18.37,-13.1,"8, 18",full,Rotation/SF
+IND,"L. Nance, Jr.",Rotation,3,PF,5.3,12.83,-7.5,"20, 19, 13",initial,Rotation/PF
+IND,T.J. McConnell,Rotation,3,PG,5.3,17.2,-11.9,"18, 18, 17",full,Rotation/PG
+IND,Jalen Slawson,Lim PT,4,PF,0.0,23.92,-23.9,"3, 24",full,Lim PT/PF
+IND,Kobe Brown,Lim PT,4,SF,0.0,15.79,-15.8,"9, 7, 16",full,Lim PT/SF
+IND,T. Haliburton,Lim PT,4,PG,0.0,33.58,-33.6,"32, 34",initial,Lim PT/PG
+LAC,Brandon Ingram,Starters,1,SF,33.0,33.82,-0.8,"33, 33, 34",full,Starters/SF
+LAC,Brook Lopez,Starters,1,C,33.0,21.8,11.2,"31, 32, 22",full,Starters/C
+LAC,Darius Garland,Starters,1,PG,33.0,29.87,3.1,"33, 31, 30",full,Starters/PG
+LAC,Kobe Sanders,Starters,1,PF,33.0,19.87,13.1,20,full,Starters/PF
+LAC,Kris Dunn,Starters,1,SG,33.0,27.2,5.8,"19, 24, 27",full,Starters/SG
+LAC,Bradley Beal,Rotation,2,SG,12.5,20.17,-7.7,"33, 32, 20",full,Rotation/SG
+LAC,Isaiah Jackson,Rotation,2,C,12.5,16.51,-4.0,"13, 17, 17",full,Rotation/C
+LAC,Jordan Miller,Rotation,2,PG,12.5,22.08,-9.6,"4, 11, 22",full,Rotation/PG
+LAC,Rui Hachimura,Rotation,2,SF,12.5,28.34,-15.8,"27, 32, 28",full,Rotation/SF
+LAC,Derrick Jones,Rotation,3,SF,5.6,27.0,-21.4,"23, 24, 27",full,Rotation/SF
+LAC,Gradey Dick,Rotation,3,SG,5.6,14.04,-8.4,"21, 29, 14",full,Rotation/SG
+LAC,Y. Niederhauser,Rotation,3,C,5.6,10.34,-4.7,10,initial,Rotation/C
+LAC,Yuki Kawamura,Rotation,3,PG,5.6,11.61,-6.0,"4, 12",full,Rotation/PG
+LAC,Max Strus,Rotation,4,SF,2.5,24.0,-21.5,"32, 25, 24",full,Rotation/SF
+LAC,C. Christie,Lim PT,5,SG,0.0,8.73,-8.7,"5, 9",initial,Lim PT/SG
+LAC,Jalen Pickett,Lim PT,7,SG,0.0,16.14,-16.1,"5, 14, 16",full,Lim PT/SG
+MEM,Cam Spencer,Starters,1,SG,33.0,23.81,9.2,"10, 24",full,Starters/SG
+MEM,Jerami Grant,Starters,1,SF,33.0,29.74,3.3,"34, 32, 30",full,Starters/SF
+MEM,Kris Murray,Starters,1,PF,33.0,23.39,9.6,"22, 15, 23",full,Starters/PF
+MEM,Ty Jerome,Starters,1,PG,33.0,22.6,10.4,"8, 20, 23",full,Starters/PG
+MEM,Zach Edey,Starters,1,C,33.0,25.82,7.2,"21, 26",full,Starters/C
+MEM,G.G. Jackson,Rotation,2,PF,10.6,21.42,-10.8,"26, 16, 21",full,Rotation/PF
+MEM,I. Stewart II,Rotation,2,C,10.6,22.71,-12.1,"31, 20, 23",initial,Rotation/C
+MEM,Jaylen Wells,Rotation,2,SF,10.6,26.39,-15.8,"26, 26",full,Rotation/SF
+MEM,"S. Pippen, Jr.",Rotation,2,SG,10.6,21.2,-10.6,"25, 21, 21",initial,Rotation/SG
+MEM,"W. Clayton, Jr.",Rotation,2,PG,10.6,20.43,-9.8,20,initial,Rotation/PG
+MEM,Cedric Coward,Rotation,3,SF,4.8,25.77,-21.0,26,full,Rotation/SF
+MEM,T. Hendricks,Rotation,3,C,4.8,18.95,-14.2,"21, 25, 19",initial,Rotation/C
+MEM,Micah Peavy,Rotation,4,SF,2.1,14.97,-12.9,15,full,Rotation/SF
+MEM,O. Prosper,Rotation,4,C,2.1,18.57,-16.5,"8, 11, 19",initial,Rotation/C
+MEM,Quinten Post,Rotation,5,C,1.1,17.3,-16.2,"16, 17",full,Rotation/C
+MIA,Andrew Wiggins,Starters,1,SF,33.0,30.34,2.7,"27, 31, 30",full,Starters/SF
+MIA,Bam Adebayo,Starters,1,C,33.0,32.4,0.6,"34, 34, 32",full,Starters/C
+MIA,D. Mitchell,Starters,1,PG,33.0,28.57,4.4,"15, 27, 29",initial,Starters/PG
+MIA,G. Antetokounmpo,Starters,1,PF,33.0,28.86,4.1,"35, 34, 29",initial,Starters/PF
+MIA,T. Hardaway Jr.,Starters,1,SG,33.0,26.59,6.4,"27, 28, 27",initial,Starters/SG
+MIA,Bobby Portis,Rotation,2,C,13.3,24.16,-10.9,"24, 25, 24",full,Rotation/C
+MIA,Dru Smith,Rotation,2,PG,13.3,16.3,-3.0,"15, 19, 16",full,Rotation/PG
+MIA,Klay Thompson,Rotation,2,SG,13.3,21.7,-8.4,"30, 27, 22",full,Rotation/SG
+MIA,Pelle Larsson,Rotation,2,SF,13.3,26.41,-13.1,"14, 26",full,Rotation/SF
+MIA,S. Fontecchio,Rotation,2,PF,13.3,16.76,-3.5,"25, 16, 17",initial,Rotation/PF
+MIA,Nikola Jovic,Rotation,3,C,6.0,17.19,-11.2,"19, 25, 17",full,Rotation/C
+MIA,Nick Richards,Rotation,4,C,2.7,14.6,-11.9,"26, 22, 15",full,Rotation/C
+MIA,Keshad Johnson,Lim PT,6,PF,0.0,8.75,-8.8,"6, 9",full,Lim PT/PF
+MIA,Myron Gardner,Lim PT,5,PF,0.0,9.13,-9.1,9,full,Lim PT/PF
+MIA,V. Goldin,Lim PT,5,C,0.0,2.67,-2.7,3,initial,Lim PT/C
+MIL,"J. Jaquez, Jr.",Starters,1,SF,33.0,28.28,4.7,"28, 21, 28",initial,Starters/SF
+MIL,"K. Porter, Jr.",Starters,1,PG,33.0,33.18,-0.2,"20, 33",initial,Starters/PG
+MIL,Kyle Kuzma,Starters,1,PF,33.0,26.17,6.8,"33, 30, 26",full,Starters/PF
+MIL,Myles Turner,Starters,1,C,33.0,26.93,6.1,"27, 30, 27",full,Starters/C
+MIL,Tyler Herro,Starters,1,SG,33.0,31.3,1.7,"34, 35, 31",full,Starters/SG
+MIL,"G. Trent, Jr.",Rotation,2,SG,12.5,21.18,-8.7,"28, 26, 21",initial,Rotation/SG
+MIL,Kel'el Ware,Rotation,2,C,12.5,22.13,-9.6,"22, 22",full,Rotation/C
+MIL,Ousmane Dieng,Rotation,2,PF,12.5,19.28,-6.8,"11, 11, 19",full,Rotation/PF
+MIL,Ryan Rollins,Rotation,2,PG,12.5,32.11,-19.6,"6, 15, 32",full,Rotation/PG
+MIL,A.J. Green,Rotation,3,PG,5.6,29.1,-23.5,"11, 23, 29",full,Rotation/PG
+MIL,Caris LeVert,Rotation,3,SG,5.6,19.23,-13.6,"29, 25, 19",full,Rotation/SG
+MIL,Jericho Sims,Rotation,3,C,5.6,19.67,-14.1,"13, 12, 20",full,Rotation/C
+MIL,Pete Nance,Rotation,3,PF,5.6,15.68,-10.1,"3, 11, 16",full,Rotation/PF
+MIL,K. Jakucionis,Rotation,4,PG,2.5,17.83,-15.3,18,initial,Rotation/PG
+MIL,Kam Jones,Lim PT,5,PG,0.0,16.65,-16.6,17,full,Lim PT/PG
+MIN,A. Edwards,Starters,1,SG,33.0,35.03,-2.0,"35, 36, 35",initial,Starters/SG
+MIN,D. DiVincenzo,Starters,1,PG,33.0,30.41,2.6,"29, 26, 30",initial,Starters/PG
+MIN,J. Kuminga,Starters,1,PF,33.0,23.06,9.9,"26, 24, 23",initial,Starters/PF
+MIN,J. McDaniels,Starters,1,SF,33.0,31.73,1.3,"29, 32, 32",initial,Starters/SF
+MIN,Rudy Gobert,Starters,1,C,33.0,31.32,1.7,"34, 33, 31",full,Starters/C
+MIN,Ayo Dosunmu,Rotation,2,SF,18.3,27.26,-9.0,"29, 30, 27",full,Rotation/SF
+MIN,Jaylen Clark,Rotation,2,SG,18.3,13.06,5.2,"13, 13",full,Rotation/SG
+MIN,LaMelo Ball,Rotation,2,PG,18.3,28.01,-9.7,"32, 32, 28",full,Rotation/PG
+MIN,Bones Hyland,Rotation,3,PG,8.2,16.58,-8.4,"15, 10, 17",full,Rotation/PG
+MIN,Cody Williams,Rotation,3,SF,8.2,24.34,-16.1,"21, 24",full,Rotation/SF
+MIN,"T. Shannon, Jr.",Rotation,4,SF,3.7,12.51,-8.8,"11, 13",initial,Rotation/SF
+MIN,E. Freeman,Lim PT,5,PF,0.0,9.25,-9.2,"8, 9",initial,Lim PT/PF
+MIN,Joan Beringer,Lim PT,5,C,0.0,7.85,-7.8,8,full,Lim PT/C
+MIN,Trey Lyles,Lim PT,5,SF,0.0,19.55,-19.6,"20, 20",full,Lim PT/SF
+NOP,D. Murray,Starters,1,PG,33.0,27.79,5.2,"36, 33, 28",initial,Starters/PG
+NOP,Derik Queen,Starters,1,C,33.0,24.98,8.0,25,full,Starters/C
+NOP,Saddiq Bey,Starters,1,SF,33.0,31.19,1.8,"33, 31",full,Starters/SF
+NOP,T. Murphy III,Starters,1,SG,33.0,35.47,-2.5,"30, 35, 35",initial,Starters/SG
+NOP,Z. Williamson,Starters,1,PF,33.0,29.69,3.3,"32, 29, 30",initial,Starters/PF
+NOP,B. Mathurin,Rotation,2,SG,13.6,30.0,-16.4,"26, 30, 30",initial,Rotation/SG
+NOP,Jeremiah Fears,Rotation,2,PG,13.6,25.76,-12.2,26,full,Rotation/PG
+NOP,Karlo Matkovic,Rotation,2,PF,13.6,14.71,-1.1,"19, 15",full,Rotation/PF
+NOP,Yves Missi,Rotation,2,C,13.6,19.65,-6.0,"27, 20",full,Rotation/C
+NOP,DeAndre Jordan,Rotation,3,C,6.1,16.58,-10.5,"11, 12, 17",full,Rotation/C
+NOP,Herb Jones,Rotation,3,SG,6.1,28.36,-22.3,"31, 32, 28",initial,Rotation/SG
+NOP,Jordan Poole,Rotation,4,SG,2.7,23.92,-21.2,"30, 29, 24",full,Rotation/SG
+NOP,T. Watford,Rotation,4,C,2.7,16.3,-13.6,"14, 21, 16",initial,Rotation/C
+NOP,Bryce McGowens,Rotation,5,SG,1.4,20.95,-19.6,"15, 2, 21",full,Rotation/SG
+NOP,C. Koloko,Rotation,5,C,1.4,13.22,-11.8,"9, 13",initial,Rotation/C
+NOP,A.J. Johnson,Lim PT,6,SG,0.0,9.46,-9.5,"22, 9",full,Lim PT/SG
+NOP,Caleb Houstan,Lim PT,6,SF,0.0,4.17,-4.2,"14, 14, 4",full,Lim PT/SF
+NOP,Kobe Bufkin,Lim PT,7,SG,0.0,7.44,-7.4,"12, 12, 7",full,Lim PT/SG
+NYK,Jalen Brunson,Starters,1,PG,33.0,35.0,-2.0,"35, 35, 35",full,Starters/PG
+NYK,Josh Hart,Starters,1,SF,33.0,30.21,2.8,"33, 38, 30",full,Starters/SF
+NYK,K. Towns,Starters,1,C,33.0,30.96,2.0,"33, 35, 31",initial,Starters/C
+NYK,Mikal Bridges,Starters,1,SG,33.0,32.83,0.2,"35, 37, 33",full,Starters/SG
+NYK,OG Anunoby,Starters,1,PF,33.0,33.19,-0.2,"34, 37, 33",full,Starters/PF
+NYK,Andre Drummond,Rotation,2,C,11.7,19.54,-7.8,"17, 19, 20",full,Rotation/C
+NYK,"B. Brown, Jr.",Rotation,2,SF,11.7,24.37,-12.7,"28, 22, 24",initial,Rotation/SF
+NYK,Jose Alvarado,Rotation,2,PG,11.7,19.86,-8.2,"18, 24, 20",full,Rotation/PG
+NYK,Miles McBride,Rotation,2,SG,11.7,26.34,-14.6,"20, 25, 26",full,Rotation/SG
+NYK,J. Clarkson,Rotation,3,SF,5.3,17.76,-12.5,"31, 26, 18",initial,Rotation/SF
+NYK,James Wiseman,Rotation,3,C,5.3,14.5,-9.2,"17, 5, 14",full,Rotation/C
+NYK,Landry Shamet,Rotation,3,SG,5.3,22.96,-17.7,"16, 15, 23",full,Rotation/SG
+NYK,Tyler Kolek,Rotation,3,PG,5.3,11.73,-6.4,"7, 12",full,Rotation/PG
+NYK,Drew Eubanks,Rotation,4,C,2.3,13.14,-10.8,"16, 12, 13",full,Rotation/C
+NYK,Ochai Agbaji,Rotation,4,SF,2.3,15.69,-13.4,"21, 27, 16",full,Rotation/SF
+NYK,M. Diawara,Lim PT,5,PF,0.0,9.19,-9.2,9,initial,Lim PT/PF
+NYK,Pacome Dadiet,Lim PT,5,SF,0.0,4.69,-4.7,"6, 5",full,Lim PT/SF
+OKC,Cason Wallace,Starters,1,SG,33.0,26.57,6.4,"21, 28, 27",full,Starters/SG
+OKC,Chet Holmgren,Starters,1,PF,33.0,28.94,4.1,"29, 27, 29",full,Starters/PF
+OKC,I. Hartenstein,Starters,1,C,33.0,24.19,8.8,"25, 28, 24",initial,Starters/C
+OKC,Jalen Williams,Starters,1,SF,33.0,28.36,4.6,"31, 32, 28",full,Starters/SF
+OKC,S. Gilgeous-Alexander,Starters,1,PG,33.0,33.22,-0.2,"34, 34, 33",initial,Starters/PG
+OKC,Ajay Mitchell,Rotation,2,PG,15.3,25.84,-10.5,"17, 26",full,Rotation/PG
+OKC,Alex Caruso,Rotation,2,PF,15.3,18.21,-2.9,"29, 19, 18",full,Rotation/PF
+OKC,J. Williams,Rotation,2,C,15.3,19.65,-4.3,"13, 17, 20",manual,Rotation/C
+OKC,Jared McCain,Rotation,2,SG,15.3,17.31,-2.0,"26, 17",full,Rotation/SG
+OKC,K. Williams,Rotation,3,PF,6.9,15.27,-8.4,"15, 16, 15",initial,Rotation/PF
+OKC,Nikola Topic,Rotation,3,PG,6.9,16.0,-9.1,16,full,Rotation/PG
+OKC,B. Barnhizer,Lim PT,4,SF,0.0,8.7,-8.7,9,initial,Lim PT/SF
+ORL,Desmond Bane,Starters,1,SG,33.0,33.61,-0.6,"34, 32, 34",full,Starters/SG
+ORL,Franz Wagner,Starters,1,SF,33.0,29.97,3.0,"32, 34, 30",full,Starters/SF
+ORL,Jalen Suggs,Starters,1,PG,33.0,27.61,5.4,"27, 29, 28",full,Starters/PG
+ORL,Paolo Banchero,Starters,1,PF,33.0,34.75,-1.8,"35, 34, 35",full,Starters/PF
+ORL,"W. Carter, Jr.",Starters,1,C,33.0,29.33,3.7,"26, 26, 29",initial,Starters/C
+ORL,Anthony Black,Rotation,2,SG,11.8,29.84,-18.0,"17, 24, 30",full,Rotation/SG
+ORL,Jamal Cain,Rotation,2,SF,11.8,12.15,-0.3,"10, 14, 12",full,Rotation/SF
+ORL,Jevon Carter,Rotation,2,PG,11.8,16.36,-4.6,"14, 9, 16",full,Rotation/PG
+ORL,Nikola Vucevic,Rotation,2,C,11.8,28.41,-16.6,"34, 31, 28",full,Rotation/C
+ORL,T. Da Silva,Rotation,2,PF,11.8,24.66,-12.9,"22, 25",initial,Rotation/PF
+ORL,Goga Bitadze,Rotation,3,C,5.3,15.19,-9.9,"15, 20, 15",full,Rotation/C
+ORL,J. Richardson,Rotation,3,PG,5.3,10.87,-5.6,11,initial,Rotation/PG
+ORL,Noah Penda,Rotation,3,PF,5.3,12.83,-7.5,13,full,Rotation/PF
+ORL,C. Castleton,Lim PT,4,C,0.0,5.25,-5.2,"4, 17, 5",initial,Lim PT/C
+ORL,J.D. Davison,Lim PT,4,PG,0.0,7.79,-7.8,"5, 6, 8",full,Lim PT/PG
+ORL,Jonathan Isaac,Lim PT,4,PF,0.0,10.02,-10.0,"16, 15, 10",full,Lim PT/PF
+ORL,Malaki Branham,Lim PT,4,SG,0.0,9.82,-9.8,"21, 9, 10",full,Lim PT/SG
+PHI,Joel Embiid,Starters,1,C,33.0,31.61,1.4,"34, 30, 32",full,Starters/C
+PHI,K. Caldwell-Pope,Starters,1,SF,33.0,21.33,11.7,"32, 30, 21",initial,Starters/SF
+PHI,LeBron James,Starters,1,PF,33.0,33.15,-0.1,"35, 35, 33",full,Starters/PF
+PHI,Tyrese Maxey,Starters,1,PG,33.0,38.01,-5.0,"38, 38, 38",full,Starters/PG
+PHI,V.J. Edgecombe,Starters,1,SG,33.0,34.97,-2.0,35,full,Starters/SG
+PHI,Adem Bona,Rotation,2,C,14.7,17.38,-2.7,"16, 17",full,Rotation/C
+PHI,D. Barlow,Rotation,2,PF,14.7,23.79,-9.1,"13, 11, 24",initial,Rotation/PF
+PHI,Jaylen Brown,Rotation,2,SG,14.7,34.41,-19.7,"33, 34, 34",full,Rotation/SG
+PHI,Justin Edwards,Rotation,2,SF,14.7,15.27,-0.6,"26, 15",full,Rotation/SF
+PHI,A. Simons,Rotation,3,SG,6.6,24.95,-18.4,"34, 33, 25",initial,Rotation/SG
+PHI,Dean Wade,Rotation,3,PF,6.6,22.34,-15.7,"21, 21, 22",full,Rotation/PF
+PHI,Jabari Walker,Rotation,4,PF,2.9,11.91,-9.0,"24, 12, 12",full,Rotation/PF
+PHI,Ariel Hukporti,Lim PT,5,C,0.0,9.22,-9.2,"9, 9",full,Lim PT/C
+PHI,Caleb Love,Lim PT,5,PG,0.0,20.67,-20.7,21,full,Lim PT/PG
+PHI,Dillon Jones,Lim PT,5,SG,0.0,5.57,-5.6,"10, 6",full,Lim PT/SG
+PHI,Rayan Rupert,Lim PT,6,SF,0.0,16.75,-16.8,"16, 9, 17",full,Lim PT/SF
+PHO,Devin Booker,Starters,1,PG,33.0,33.53,-0.5,"36, 37, 34",full,Starters/PG
+PHO,Jalen Green,Starters,1,SG,33.0,25.88,7.1,"32, 33, 26",full,Starters/SG
+PHO,Jordan Goodwin,Starters,1,SF,33.0,22.46,10.5,"19, 19, 22",full,Starters/SF
+PHO,Mark Williams,Starters,1,C,33.0,23.6,9.4,"27, 27, 24",full,Starters/C
+PHO,Miles Bridges,Starters,1,PF,33.0,31.0,2.0,"37, 32, 31",full,Starters/PF
+PHO,C. Gillespie,Rotation,2,PG,14.2,28.52,-14.3,"9, 14, 29",initial,Rotation/PG
+PHO,Dillon Brooks,Rotation,2,PF,14.2,30.39,-16.2,"31, 32, 30",full,Rotation/PF
+PHO,Oso Ighodaro,Rotation,2,C,14.2,22.05,-7.9,"17, 22",full,Rotation/C
+PHO,Ryan Dunn,Rotation,2,SF,14.2,19.36,-5.2,"19, 19",full,Rotation/SF
+PHO,H. Highsmith,Rotation,3,PF,6.4,13.0,-6.6,"21, 25, 13",initial,Rotation/PF
+PHO,Luke Kennard,Rotation,3,PG,6.4,21.55,-15.2,"26, 23, 22",full,Rotation/PG
+PHO,Jamaree Bouyea,Rotation,4,PG,2.8,14.0,-11.2,"11, 12, 14",full,Rotation/PG
+PHO,R. Fleming,Rotation,4,PF,2.8,12.24,-9.4,12,initial,Rotation/PF
+PHO,Khaman Maluach,Lim PT,5,C,0.0,8.93,-8.9,9,full,Lim PT/C
+PHO,Koby Brea,Lim PT,5,SG,0.0,7.0,-7.0,7,full,Lim PT/SG
+PHO,Pat Spencer,Lim PT,6,SF,0.0,18.62,-18.6,"4, 6, 19",full,Lim PT/SF
+POR,D. Clingan,Starters,1,C,33.0,27.19,5.8,"20, 27",initial,Starters/C
+POR,Deni Avdija,Starters,1,SF,33.0,33.32,-0.3,"30, 30, 33",full,Starters/SF
+POR,Ja Morant,Starters,1,PG,33.0,28.45,4.6,"35, 30, 28",full,Starters/PG
+POR,Jrue Holiday,Starters,1,SG,33.0,29.43,3.6,"33, 31, 29",full,Starters/SG
+POR,Toumani Camara,Starters,1,PF,33.0,33.3,-0.3,"25, 33, 33",full,Starters/PF
+POR,Jeremy Sochan,Rotation,2,PF,12.3,10.66,1.6,"30, 25, 11",full,Rotation/PF
+POR,Micah Potter,Rotation,2,C,12.3,19.32,-7.0,"12, 19, 19",full,Rotation/C
+POR,S. Henderson,Rotation,2,PG,12.3,24.93,-12.6,"28, 27, 25",initial,Rotation/PG
+POR,Shaedon Sharpe,Rotation,2,SG,12.3,29.42,-17.1,"33, 31, 29",full,Rotation/SG
+POR,Sidy Cissoko,Rotation,2,SF,12.3,19.13,-6.8,"12, 5, 19",full,Rotation/SF
+POR,R. Williams,Rotation,3,C,5.5,17.08,-11.6,"20, 18, 17",initial,Rotation/C
+POR,Vit Krejci,Rotation,3,PG,5.5,21.42,-15.9,"25, 20, 21",full,Rotation/PG
+POR,B. Carlson,Rotation,4,C,2.5,11.62,-9.1,"8, 12",initial,Rotation/C
+POR,Damian Lillard,Lim PT,5,SG,0.0,36.09,-36.1,"35, 36",full,Lim PT/SG
+POR,John Tonje,Lim PT,8,SG,0.0,7.0,-7.0,7,full,Lim PT/SG
+POR,Yang Hansen,Lim PT,5,C,0.0,6.98,-7.0,7,full,Lim PT/C
+SAC,D. Hunter,Starters,1,PF,33.0,26.13,6.9,"29, 27, 26",initial,Starters/PF
+SAC,D. Sabonis,Starters,1,C,33.0,29.68,3.3,"36, 35, 30",initial,Starters/C
+SAC,Keegan Murray,Starters,1,SF,33.0,34.48,-1.5,"34, 34, 34",full,Starters/SF
+SAC,Zach LaVine,Starters,1,SG,33.0,31.38,1.6,"35, 35, 31",full,Starters/SG
+SAC,D. Plowden,Rotation,2,SF,15.3,26.38,-11.1,"12, 26",initial,Rotation/SF
+SAC,Maxime Raynaud,Rotation,2,C,15.3,26.54,-11.2,27,full,Rotation/C
+SAC,Nique Clifford,Rotation,2,SG,15.3,25.09,-9.8,25,full,Rotation/SG
+SAC,P. Achiuwa,Rotation,2,PF,15.3,23.9,-8.6,"22, 21, 24",initial,Rotation/PF
+SAC,Malik Monk,Rotation,3,SG,6.9,22.0,-15.1,"26, 32, 22",full,Rotation/SG
+SAC,Adam Flagler,Lim PT,6,SG,0.0,5.49,-5.5,"7, 5",full,Lim PT/SG
+SAC,Ben Simmons,Lim PT,4,PF,0.0,21.96,-22.0,"24, 22",full,Lim PT/PF
+SAC,Elfrid Payton,Lim PT,5,SG,0.0,21.29,-21.3,21,full,Lim PT/SG
+SAC,Jonathan Mogbo,Lim PT,5,PF,0.0,6.22,-6.2,"20, 6",full,Lim PT/PF
+SAS,De'Aaron Fox,Starters,1,PG,33.0,30.99,2.0,"36, 36, 31",full,Starters/PG
+SAS,Devin Vassell,Starters,1,SF,33.0,30.51,2.5,"33, 31, 31",full,Starters/SF
+SAS,Stephon Castle,Starters,1,SG,33.0,29.97,3.0,"27, 30",full,Starters/SG
+SAS,Tobias Harris,Starters,1,PF,33.0,27.71,5.3,"34, 32, 28",full,Starters/PF
+SAS,V. Wembanyama,Starters,1,C,33.0,29.16,3.8,"30, 33, 29",initial,Starters/C
+SAS,Dylan Harper,Rotation,2,PG,12.7,22.58,-9.9,23,full,Rotation/PG
+SAS,H. Barnes,Rotation,2,SF,12.7,25.79,-13.1,"29, 27, 26",initial,Rotation/SF
+SAS,J. Champagnie,Rotation,2,PF,12.7,27.63,-14.9,"20, 24, 28",initial,Rotation/PF
+SAS,Luke Kornet,Rotation,2,C,12.7,21.03,-8.3,"16, 19, 21",full,Rotation/C
+SAS,Taelon Peter,Rotation,2,SG,12.7,12.95,-0.2,13,full,Rotation/SG
+SAS,Carter Bryant,Rotation,3,SF,5.7,11.52,-5.8,12,full,Rotation/SF
+SAS,Keldon Johnson,Rotation,3,PF,5.7,23.3,-17.6,"30, 24, 23",full,Rotation/PF
+SAS,J. McLaughlin,Lim PT,4,PG,0.0,6.41,-6.4,"11, 7, 6",initial,Lim PT/PG
+TOR,I. Quickley,Starters,1,PG,33.0,31.87,1.1,"29, 28, 32",initial,Starters/PG
+TOR,Jakob Poeltl,Starters,1,C,33.0,24.98,8.0,"26, 30, 25",full,Starters/C
+TOR,Malachi Smith,Starters,1,SF,33.0,23.93,9.1,24,full,Starters/SF
+TOR,R.J. Barrett,Starters,1,SG,33.0,30.28,2.7,"32, 32, 30",full,Starters/SG
+TOR,Scottie Barnes,Starters,1,PF,33.0,33.51,-0.5,"35, 33, 34",full,Starters/PF
+TOR,Ja'Kobe Walter,Rotation,2,SG,20.5,20.47,0.0,"21, 20",full,Rotation/SG
+TOR,Jamal Shead,Rotation,2,PG,20.5,22.59,-2.1,"20, 23",full,Rotation/PG
+TOR,Kawhi Leonard,Rotation,2,PF,20.5,32.08,-11.6,"34, 32, 32",full,Rotation/PF
+TOR,C. Murray-Boyles,Rotation,3,PF,9.2,21.86,-12.7,22,initial,Rotation/PF
+TOR,Kyle Anderson,Rotation,4,PF,4.1,19.84,-15.7,"23, 16, 20",full,Rotation/PF
+TOR,Alijah Martin,Lim PT,5,PG,0.0,6.35,-6.4,6,full,Lim PT/PG
+TOR,Chucky Hepburn,Lim PT,5,SG,0.0,6.5,-6.5,6,full,Lim PT/SG
+TOR,Jamison Battle,Lim PT,5,SF,0.0,8.48,-8.5,"18, 8",full,Lim PT/SF
+TOR,T. Jackson-Davis,Lim PT,5,C,0.0,9.36,-9.4,"17, 16, 9",initial,Lim PT/C
+TOR,Trey Jemison,Lim PT,7,C,0.0,6.31,-6.3,"23, 10, 6",full,Lim PT/C
+UTA,Ace Bailey,Starters,1,SG,33.0,27.61,5.4,28,full,Starters/SG
+UTA,"J. Jackson, Jr.",Starters,1,PF,33.0,30.29,2.7,"32, 30, 30",initial,Starters/PF
+UTA,Jusuf Nurkic,Starters,1,C,33.0,26.41,6.6,"27, 21, 26",full,Starters/C
+UTA,Keyonte George,Starters,1,PG,33.0,33.07,-0.1,"27, 31, 33",full,Starters/PG
+UTA,L. Markkanen,Starters,1,SF,33.0,34.36,-1.4,"33, 31, 34",initial,Starters/SF
+UTA,B. Sensabaugh,Rotation,2,SG,13.5,23.49,-10.0,"18, 20, 23",initial,Rotation/SG
+UTA,Isaiah Collier,Rotation,2,PG,13.5,25.71,-12.2,"26, 26",full,Rotation/PG
+UTA,K. Filipowski,Rotation,2,C,13.5,23.39,-9.9,"21, 23",initial,Rotation/C
+UTA,Svi Mykhailiuk,Rotation,2,SF,13.5,23.12,-9.6,"10, 20, 23",full,Rotation/SF
+UTA,Jaxson Hayes,Rotation,3,C,6.1,18.29,-12.2,"13, 20, 18",full,Rotation/C
+UTA,Josh Green,Rotation,3,SF,6.1,15.66,-9.6,"26, 28, 16",full,Rotation/SF
+UTA,Josh Okogie,Rotation,3,SG,6.1,17.36,-11.3,"16, 16, 17",full,Rotation/SG
+UTA,Mo Bamba,Rotation,4,C,2.7,11.0,-8.3,"13, 13, 11",full,Rotation/C
+UTA,H. Ingram,Lim PT,5,PF,0.0,3.71,-3.7,"7, 4",initial,Lim PT/PF
+UTA,Trey Alexander,Lim PT,7,SG,0.0,12.33,-12.3,"5, 12",full,Lim PT/SG
+WAS,Alex Sarr,Starters,1,C,33.0,27.19,5.8,"27, 27",full,Starters/C
+WAS,Anthony Davis,Starters,1,PF,33.0,31.3,1.7,"36, 33, 31",full,Starters/PF
+WAS,B. Coulibaly,Starters,1,SG,33.0,26.21,6.8,"27, 33, 26",initial,Starters/SG
+WAS,Bub Carrington,Starters,1,PG,33.0,27.7,5.3,"30, 28",full,Starters/PG
+WAS,K. Middleton,Starters,1,SF,33.0,22.84,10.2,"27, 23, 23",initial,Starters/SF
+WAS,Deandre Ayton,Rotation,2,C,11.0,27.19,-16.2,"32, 30, 27",full,Rotation/C
+WAS,Kyshawn George,Rotation,2,PF,11.0,28.98,-18.0,"26, 29",full,Rotation/PF
+WAS,Trae Young,Rotation,2,PG,11.0,25.6,-14.6,"36, 36, 26",full,Rotation/PG
+WAS,Tre Johnson,Rotation,2,SG,11.0,24.05,-13.0,24,full,Rotation/SG
+WAS,Will Riley,Rotation,2,SF,11.0,22.07,-11.1,22,full,Rotation/SF
+WAS,Anthony Gill,Rotation,3,PF,5.0,17.29,-12.3,"9, 8, 17",full,Rotation/PF
+WAS,J. Champagnie,Rotation,3,SF,5.0,19.96,-15.0,"16, 22, 20",initial,Rotation/SF
+WAS,T. Vukcevic,Rotation,3,C,5.0,13.69,-8.7,"15, 15, 14",initial,Rotation/C
+WAS,Tre Mann,Rotation,3,PG,5.0,12.62,-7.6,"24, 25, 13",full,Rotation/PG
+WAS,Jamir Watkins,Lim PT,4,PF,0.0,20.64,-20.6,21,full,Lim PT/PF
