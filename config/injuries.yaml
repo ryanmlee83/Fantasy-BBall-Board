@@ -1,0 +1,61 @@
+# Known injuries and return-from-injury adjustments, applied on top of the
+# games-played model by scripts/project_games_played.py. Hand-edited.
+#
+# as_of: the date the statuses below were read. Refresh before relying on it.
+# Sources (fetched by this project, 2026-10-14):
+#   - CBS Sports NBA injury report (cbssports.com/nba/injuries)
+#   - Covers NBA injury report (covers.com/sport/basketball/nba/injuries)
+#   - ESPN "Biggest injury returns for the 2026-27 NBA season" (syndicated via abc7.com)
+#   - ClutchPoints on Porzingis
+#
+# Fields (all optional):
+#   games_missed: games expected to be missed from the start of the season, from a
+#                 stated return date. Season opens ~2026-10-21; a team plays ~0.48
+#                 games per calendar day, so days_out * 0.48 ~= games missed.
+#                 The model GP is then scaled by (82 - games_missed) / 82, because the
+#                 model's own injury rate applies to the games that remain.
+#   gp_cap:       hard ceiling on projected GP, for multi-season risk the model can't
+#                 see (age + major tendon/ligament injury, undisclosed illness).
+#   exclude_seasons: history seasons to drop from the GP blend because they were cut
+#                 short by an injury that has since healed (otherwise the model reads a
+#                 one-off injury as chronic fragility).
+#   note:         plain-language status, shown on the draft board.
+
+as_of: 2026-10-14
+
+injuries:
+  # --- long absences: effectively undraftable or late-round stashes ---
+  butleji01:  {games_missed: 42, gp_cap: 35, note: "ACL recovery; out until at least Jan 2, Jan/Feb return called optimistic"}
+  sharpsh01:  {games_missed: 63, note: "Torn meniscus; out until at least Mar 2"}
+  willima07:  {games_missed: 51, note: "Torn labrum, surgery; out until at least Feb 3"}
+  divindo01:  {games_missed: 75, note: "Achilles; out until at least Apr 1"}
+  porzikr01:  {games_missed: 15, gp_cap: 40, note: "Out indefinitely, undisclosed illness; missed ~55% of games the last two seasons"}
+  moodymo01:  {games_missed: 20, note: "Patellar tendon recovery; out until at least Dec 1"}
+  millejo02:  {games_missed: 63, note: "Rotator cuff repair; out until at least Mar 1"}
+  furphjo01:  {games_missed: 82, note: "Torn ACL; out for season"}
+  watkija01:  {games_missed: 75, note: "Torn ACL; out until at least Apr 1"}
+  hukpoar01:  {games_missed: 82, note: "Ruptured Achilles; out for season"}
+
+  # --- short absences at the start of the season ---
+  ingrabr01:  {games_missed: 6, gp_cap: 65, note: "Achilles; out until at least Nov 1"}
+  livelde01:  {games_missed: 10, gp_cap: 55, note: "Foot; out, no timeline"}
+  strusma01:  {games_missed: 6, note: "Plantar fascia tear; out until at least Nov 2"}
+  nurkiju01:  {games_missed: 7, note: "Plantar plate tear; out until at least Nov 4"}
+  stewais01:  {games_missed: 1, note: "Ankle sprain; out until at least Oct 23"}
+  claxtni01:  {games_missed: 3, note: "Hamstring; re-evaluation in two weeks"}
+  knuepko01:  {games_missed: 1, note: "Hamstring; questionable for opening night"}
+  willigr01:  {games_missed: 3, note: "Hamstring; re-evaluated first week of season"}
+  gueyemo02:  {games_missed: 45, note: "Fractured foot, surgery; re-evaluation in 3-4 months"}
+  vukcetr01:  {games_missed: 7, note: "Hip; out until at least Nov 2"}
+  konanya01:  {games_missed: 6, note: "Foot; out until at least Nov 1"}
+  raynama01:  {games_missed: 2, note: "Knee; out until at least Oct 25"}
+  smithdr01:  {games_missed: 5, note: "Calf; out a couple of weeks"}
+  barlodo01:  {games_missed: 5, note: "Back; missed all of preseason, no timetable"}
+
+  # --- returning from major injury: ready, but carry extra risk ---
+  halibty01:  {gp_cap: 65, note: "Returning from Achilles tear (missed all of 2025-26); Indiana may ease him in"}
+  lillada01:  {gp_cap: 55, note: "Returning from Achilles tear at 36; no firm timeline"}
+  irvinky01:  {games_missed: 10, gp_cap: 60, note: "Returning from torn ACL; no firm return date"}
+  tatumja01:  {exclude_seasons: ["2025-26"], gp_cap: 70, note: "Back from Achilles tear (played 16 games late in 2025-26)"}
+  jacksja02:  {gp_cap: 62, note: "Knee surgery (growth removed); no return timeline given"}
+  willija06:  {gp_cap: 65, note: "Recurring hamstring strains; no clearance stated"}

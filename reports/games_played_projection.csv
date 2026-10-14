@@ -1,0 +1,486 @@
+player_id,team,player,age,hist_gp,base_gp,games_missed,gp_cap,gp,injury_note,kept_hand_value
+hukpoar01,PHI,Ariel Hukporti,24,43.1,52.6,82,,0,Ruptured Achilles; out for season,False
+furphjo01,IND,Johnny Furphy,21,40.6,51.3,82,,0,Torn ACL; out for season,False
+divindo01,MIN,Donte DiVincenzo,29,75.8,68.9,75,,10,Achilles; out until at least Apr 1,False
+watkija01,WAS,Jamir Watkins,25,50.0,56.0,75,,10,Torn ACL; out until at least Apr 1,False
+millejo02,LAC,Jordan Miller,26,42.7,52.4,63,,12,Rotator cuff repair; out until at least Mar 1,False
+sharpsh01,POR,Shaedon Sharpe,23,53.0,57.5,63,,13,Torn meniscus; out until at least Mar 2,False
+willima07,PHO,Mark Williams,24,47.0,54.5,51,,21,"Torn labrum, surgery; out until at least Feb 3",False
+butleji01,GSW,Jimmy Butler,37,47.5,47.8,42,35.0,23,"ACL recovery; out until at least Jan 2, Jan/Feb return called optimistic",False
+manonch01,LAL,Chris Manon,24,9.0,35.5,0,,25,,True
+gueyemo02,ATL,Mouhamed Gueye,23,49.6,55.8,45,,25,"Fractured foot, surgery; re-evaluation in 3-4 months",False
+johnsja01,IND,James Johnson,39,10.8,27.4,0,,27,,False
+grayha01,BOS,Hayden Gray,23,1.0,31.5,0,,32,,False
+richmka01,CLE,Kadary Richmond,25,3.0,32.5,0,,32,,False
+essenno01,CHI,Noa Essengue,19,2.0,32.0,0,,32,,False
+hepbuch01,TOR,Chucky Hepburn,23,2.0,32.0,0,,32,,False
+newtotr01,SAC,Tristen Newton,25,3.6,32.8,0,,33,,False
+nelsogr02,BRK,Grant Nelson,24,4.0,33.0,0,,33,,False
+labissk01,WAS,Skal Labissiere,30,3.4,32.7,0,,33,,False
+willima11,SAS,Malik Williams,28,7.0,34.5,0,,34,,False
+milleem01,DEN,Emanuel Miller,26,5.4,33.7,0,,34,,False
+ingraha01,UTA,Harrison Ingram,23,6.2,34.1,0,,34,,False
+pedulse01,HOU,Sean Pedulla,24,7.0,34.5,0,,34,,False
+omierno01,MIN,Norchad Omier,25,6.0,34.0,0,,34,,False
+wheelph02,PHO,Phillip Wheeler,24,5.0,33.5,0,,34,,False
+tonjejo01,POR,John Tonje,25,6.0,34.0,0,,34,,False
+bridgja01,CHI,Jalen Bridges,25,8.0,35.0,0,,35,,False
+thierad01,LAL,Adou Thiero,22,25.0,43.5,0,,35,,True
+keelstr01,WAS,Trevor Keels,23,8.0,35.0,0,,35,,False
+lundyse01,DAL,Seth Lundy,26,9.0,35.5,0,,36,,False
+topicni01,OKC,Nikola Topic,21,10.0,36.0,0,,36,,False
+jonesda06,SAS,David Jones Garcia,24,11.0,36.5,0,,36,,False
+jonescu01,CLE,Curtis Jones,24,10.0,36.0,0,,36,,False
+goldivl01,MIA,Vladislav Goldin,25,9.0,35.5,0,,36,,False
+freemen01,MIN,Enrique Freeman,26,10.7,36.4,0,,36,,False
+chandke01,PHO,Kennedy Chandler,24,11.0,36.5,0,,36,,False
+smithto05,DET,Tolu Smith,26,9.8,35.9,0,,36,,False
+broomjo01,MIL,Johni Broome,24,11.0,36.5,0,,36,,False
+youngja05,MIA,Jahmir Young,26,11.0,36.5,0,,36,,False
+breako01,PHO,Koby Brea,23,12.0,37.0,0,,37,,False
+peterdr01,CHI,Drew Peterson,26,11.1,36.5,0,,37,,False
+slawsja01,IND,Jalen Slawson,26,12.7,37.4,0,,37,,False
+livinch01,WAS,Chris Livingston,23,12.0,37.0,0,,37,,False
+harpero02,BOS,Ron Harper Jr.,26,15.0,38.5,0,,38,,False
+alexatr01,UTA,Trey Alexander,23,14.6,38.3,0,,38,,False
+mbengbe01,MIA,Bez Mbeng,23,15.0,38.5,0,,38,,False
+reeseju01,NOP,Julian Reese,23,13.0,37.5,0,,38,,False
+bufkiko01,NOP,Kobe Bufkin,23,14.4,38.2,0,,38,,False
+mcculke01,NYK,Kevin McCullar Jr.,25,14.6,38.3,0,,38,,False
+smithma02,TOR,Malachi Smith,26,15.0,38.5,0,,38,,False
+livelde01,DAL,Dereck Lively II,22,25.3,43.6,10,55.0,38,"Foot; out, no timeline",False
+kellymi02,GSW,Miles Kelly,23,14.0,38.0,0,,38,,False
+jordade01,NOP,DeAndre Jordan,38,30.0,38.0,0,,38,,False
+swideco01,LAL,Cole Swider,27,13.2,37.6,0,,38,,False
+wisemja01,NYK,James Wiseman,25,14.9,38.5,0,,38,,False
+crawfis01,HOU,Isaiah Crawford,24,14.4,38.2,0,,38,,False
+castlco01,ORL,Colin Castleton,26,13.0,37.5,0,,38,,False
+martija02,POR,Jaylen Martin,22,16.0,39.0,0,,39,,False
+porzikr01,GSW,Kristaps Porzingis,31,40.0,50.0,15,40.0,40,"Out indefinitely, undisclosed illness; missed ~55% of games the last two seasons",False
+blackle01,SAC,Leaky Black,27,18.1,40.1,0,,40,,False
+thybuma01,LAL,Matisse Thybulle,29,32.5,47.2,0,,40,,True
+harklej01,DET,Elijah Harkless,26,20.0,41.0,0,,41,,False
+knoxke01,ORL,Kevin Knox,27,20.8,41.4,0,,41,,False
+tshieos01,HOU,Oscar Tshiebwe,26,19.3,40.6,0,,41,,False
+paytoel01,SAC,Elfrid Payton,32,24.0,41.0,0,,41,,False
+kawamyu01,LAC,Yuki Kawamura,25,19.5,40.8,0,,41,,False
+timmedr01,MIN,Drew Timme,26,20.2,41.1,0,,41,,False
+davisjd01,ORL,JD Davison,24,20.4,41.2,0,,41,,False
+reevean01,MIN,Antonio Reeves,25,22.7,42.4,0,,42,,False
+hayeski01,SAC,Killian Hayes,25,21.7,41.9,0,,42,,False
+flaglad01,SAC,Adam Flagler,26,23.0,42.5,0,,42,,False
+martial01,TOR,Alijah Martin,24,23.0,42.5,0,,42,,False
+robinor01,CHI,Orlando Robinson,26,22.4,42.2,0,,42,,False
+bassech01,GSW,Charles Bassey,25,21.1,41.5,0,,42,,False
+plowdda01,SAC,Daeqwon Plowden,28,22.2,42.1,0,,42,,False
+jemistr01,TOR,Trey Jemison,26,22.9,42.5,0,,42,,False
+william01,BOS,Amari Williams,24,22.0,42.0,0,,42,,False
+bambamo01,UTA,Mo Bamba,28,23.0,42.5,0,,42,,False
+quinole01,MIA,Lester Quinones,25,22.6,42.3,0,,42,,False
+jonesdi01,PHI,Dillon Jones,24,24.6,43.3,0,,43,,False
+bealbr01,LAC,Bradley Beal,33,29.5,42.8,0,,43,,False
+dadiepa01,NYK,Pacome Dadiet,21,24.9,43.4,0,,43,,False
+johnske10,MIA,Keshad Johnson,25,26.0,44.0,0,,44,,False
+moranja01,POR,Ja Morant,27,26.8,44.4,0,,44,,False
+bouyeja01,PHO,Jamaree Bouyea,27,26.3,44.1,0,,44,,False
+holmeda01,DEN,DaRon Holmes,24,25.0,43.5,0,,44,,False
+strusma01,LAC,Max Strus,30,35.0,48.5,6,,45,Plantar fascia tear; out until at least Nov 2,False
+embiijo01,PHI,Joel Embiid,32,32.5,45.2,0,,45,,False
+jeromty01,MEM,Ty Jerome,29,28.9,45.5,0,,45,,False
+vukcetr01,WAS,Tristan Vukcevic,23,37.0,49.5,7,,45,Hip; out until at least Nov 2,False
+millele01,CHI,Leonard Miller,22,30.3,46.1,0,,46,,False
+bradlto01,NYK,Tony Bradley,28,30.9,46.4,0,,46,,False
+mcneeli01,CHO,Liam McNeeley,21,31.0,46.5,0,,46,,False
+nancepe01,MIL,Pete Nance,26,29.0,45.5,0,,46,,False
+nancela02,IND,Larry Nance Jr.,33,36.9,46.5,0,,46,,False
+kolokch01,NOP,Christian Koloko,26,30.8,46.4,0,,46,,False
+murrade01,NOP,Dejounte Murray,30,31.9,47.0,0,,47,,False
+edeyza01,MEM,Zach Edey,24,31.6,46.8,0,,47,,False
+pippesc02,MEM,Scotty Pippen Jr.,25,32.9,47.5,0,,47,,False
+irvinky01,DAL,Kyrie Irving,34,53.2,53.6,10,60.0,47,Returning from torn ACL; no firm return date,False
+willigr01,CHO,Grant Williams,27,38.0,50.0,3,,48,Hamstring; re-evaluated first week of season,False
+horfoal01,GSW,Al Horford,40,53.5,47.8,0,,48,,False
+meltode01,GSW,De'Anthony Melton,28,33.9,48.0,0,,48,,False
+moodymo01,GSW,Moses Moody,24,65.4,63.7,20,,48,Patellar tendon recovery; out until at least Dec 1,False
+laniech01,DET,Chaz Lanier,24,34.0,48.0,0,,48,,False
+jacksqu01,IND,Quenton Jackson,28,33.5,47.8,0,,48,,False
+konanya01,LAC,Yanic Konan Niederhauser,23,41.0,51.5,6,,48,Foot; out until at least Nov 1,False
+georgpa01,BOS,Paul George,36,45.6,47.8,0,,48,,False
+davisan02,WAS,Anthony Davis,33,40.5,48.2,0,,48,,False
+smithdr01,MIA,Dru Smith,28,41.0,51.5,5,,48,Calf; out a couple of weeks,False
+beekmre01,WAS,Reece Beekman,25,36.0,49.0,0,,49,,False
+adamsst01,HOU,Steven Adams,33,41.7,48.9,0,,49,,False
+mcgowbr01,NOP,Bryce McGowens,23,36.7,49.4,0,,49,,False
+bogdabo01,HOU,Bogdan Bogdanovic,34,43.5,48.8,0,,49,,False
+walkelo01,DEN,Lonnie Walker IV,27,35.2,48.6,0,,49,,False
+whitmca01,DEN,Cam Whitmore,22,35.2,48.6,0,,49,,False
+cainja01,ORL,Jamal Cain,27,36.3,49.1,0,,49,,False
+simmobe01,SAC,Ben Simmons,30,36.6,49.3,0,,49,,False
+williro04,POR,Robert Williams,29,36.7,49.4,0,,49,,False
+nurkiju01,UTA,Jusuf Nurkic,32,51.0,54.5,7,,50,Plantar plate tear; out until at least Nov 4,False
+cartede02,BOS,Devin Carter,24,37.2,49.6,0,,50,,False
+cissemo01,DAL,Moussa Cisse,24,38.0,50.0,0,,50,,False
+highsha01,PHO,Haywood Highsmith,29,38.9,50.5,0,,50,,False
+bostobr01,CHI,Brandon Boston Jr.,24,38.0,50.0,0,,50,,False
+peterta01,SAS,Taelon Peter,24,38.0,50.0,0,,50,,False
+pottemi01,POR,Micah Potter,28,38.1,50.0,0,,50,,False
+houstca01,NOP,Caleb Houstan,23,38.2,50.1,0,,50,,False
+carlsbr01,POR,Branden Carlson,27,38.2,50.1,0,,50,,False
+colliza01,CHI,Zach Collins,28,38.0,50.0,0,,50,,False
+joneska03,MIL,Kam Jones,24,37.0,49.5,0,,50,,False
+shannte01,MIN,Terrence Shannon Jr.,26,38.9,50.4,0,,50,,False
+manntr01,WAS,Tre Mann,25,38.6,50.3,0,,50,,False
+hendrta01,MEM,Taylor Hendricks,22,38.4,50.2,0,,50,,False
+jacksis01,LAC,Isaiah Jackson,24,40.8,51.4,0,,51,,False
+johnsaj01,NOP,AJ Johnson,21,40.9,51.4,0,,51,,False
+berinjo01,MIN,Joan Beringer,19,40.0,51.0,0,,51,,False
+chrisca02,LAC,Cam Christie,21,39.2,50.6,0,,51,,False
+barnhbr01,OKC,Brooks Barnhizer,24,40.0,51.0,0,,51,,False
+curryst01,GSW,Stephen Curry,38,57.3,51.6,0,,52,,False
+smartma01,HOU,Marcus Smart,32,45.2,51.6,0,,52,,False
+robinmi01,BOS,Mitchell Robinson,28,41.3,51.6,0,,52,,False
+youngtr01,WAS,Trae Young,28,41.1,51.5,0,,52,,False
+vandeja01,LAL,Jarred Vanderbilt,27,49.1,55.5,0,,52,,True
+yangha01,POR,Yang Hansen,21,43.0,52.5,0,,52,,False
+wagnemo01,BRK,Moritz Wagner,29,43.0,52.5,0,,52,,False
+tomlina01,CLE,Nae'Qwan Tomlin,25,41.9,51.9,0,,52,,False
+connapa01,CHO,Pat Connaughton,33,48.5,52.2,0,,52,,False
+branhma01,ORL,Malaki Branham,23,43.1,52.5,0,,53,,False
+lavinza01,SAC,Zach LaVine,31,46.7,53.4,0,,53,,False
+jamesle01,PHI,LeBron James,41,65.2,52.6,0,,53,,False
+reathdu01,PHO,Duop Reath,30,43.4,52.7,0,,53,,False
+sarafbe01,BRK,Ben Saraf,20,44.0,53.0,0,,53,,False
+gillan01,WAS,Anthony Gill,34,52.8,53.4,0,,53,,False
+smithni01,LAL,Nick Smith Jr.,22,43.2,52.6,0,,53,,False
+middlkh01,WAS,Khris Middleton,35,53.6,52.8,0,,53,,False
+mykhasv01,UTA,Svi Mykhailiuk,29,44.6,53.3,0,,53,,False
+minotjo01,BRK,Josh Minott,23,44.7,53.4,0,,53,,False
+newelas01,ATL,Asa Newell,21,44.0,53.0,0,,53,,False
+jovicni01,MIA,Nikola Jovic,23,46.5,54.2,0,,54,,False
+gardnmy01,MIA,Myron Gardner,25,45.0,53.5,0,,54,,False
+finnedo01,ATL,Dorian Finney-Smith,33,51.0,53.5,0,,54,,False
+kuminjo01,MIN,Jonathan Kuminga,24,46.9,54.5,0,,54,,False
+diengou01,MIL,Ousmane Dieng,23,46.2,54.1,0,,54,,False
+jacksgg01,MEM,GG Jackson II,21,45.8,53.9,0,,54,,False
+pickeja02,LAC,Jalen Pickett,26,45.1,53.5,0,,54,,False
+barlodo01,PHI,Dominick Barlow,23,52.6,57.3,5,,54,"Back; missed all of preseason, no timetable",False
+maluakh01,PHO,Khaman Maluach,20,46.0,54.0,0,,54,,False
+spencpa01,PHO,Pat Spencer,30,45.9,54.0,0,,54,,False
+willibr03,GSW,Brandon Williams,26,46.3,54.1,0,,54,,False
+holidjr01,POR,Jrue Holiday,36,58.9,54.5,0,,54,,False
+cissosi01,POR,Sidy Cissoko,22,46.5,54.2,0,,54,,False
+sabondo01,SAC,Domantas Sabonis,30,46.9,54.5,0,,54,,False
+salauti01,CHO,Tidjane Salaun,21,45.6,53.8,0,,54,,False
+mclaujo01,SAS,Jordan McLaughlin,30,47.0,54.5,0,,54,,False
+gordoaa01,DEN,Aaron Gordon,31,47.9,54.0,0,,54,,False
+conlemi01,BOS,Mike Conley,39,63.5,53.8,0,,54,,False
+markkla01,UTA,Lauri Markkanen,29,46.1,54.0,0,,54,,False
+weslebl01,LAC,Blake Wesley,23,45.1,53.5,0,,54,,False
+leonaka01,TOR,Kawhi Leonard,35,57.2,54.6,0,,55,,False
+hendesc01,POR,Scoot Henderson,22,47.2,54.6,0,,55,,False
+lillada01,POR,Damian Lillard,36,64.0,57.0,0,55.0,55,Returning from Achilles tear at 36; no firm timeline,False
+poeltja01,TOR,Jakob Poeltl,31,50.1,55.0,0,,55,,False
+jamesbr02,LAL,Bronny James,22,36.4,49.2,0,,55,,True
+ingrabr01,LAC,Brandon Ingram,29,56.7,59.4,6,65.0,55,Achilles; out until at least Nov 1,False
+herroty01,MIL,Tyler Herro,26,48.0,55.0,0,,55,,False
+jonessp01,DEN,Spencer Jones,25,47.5,54.8,0,,55,,False
+princta02,DET,Taurean Prince,32,52.6,55.3,0,,55,,False
+jenkida01,DET,Daniss Jenkins,25,47.6,54.8,0,,55,,False
+mogbojo01,SAC,Jonathan Mogbo,24,48.6,55.3,0,,55,,False
+carteje01,ORL,Jevon Carter,31,51.7,55.9,0,,56,,False
+loveca01,PHI,Caleb Love,25,49.0,55.5,0,,56,,False
+wagnefr01,ORL,Franz Wagner,25,49.4,55.7,0,,56,,False
+mccaija01,OKC,Jared McCain,22,50.5,56.2,0,,56,,False
+antetgi01,MIA,Giannis Antetokounmpo,31,52.7,56.4,0,,56,,False
+proctty01,CLE,Tyrese Proctor,22,50.0,56.0,0,,56,,False
+baglema01,DEN,Marvin Bagley III,27,49.3,55.6,0,,56,,False
+mitchaj01,OKC,Ajay Mitchell,24,49.1,55.6,0,,56,,False
+howarje01,DAL,Jett Howard,23,49.1,55.5,0,,56,,False
+poweldw01,DAL,Dwight Powell,35,60.6,56.3,0,,56,,False
+murrake02,SAC,Keegan Murray,26,49.7,55.9,0,,56,,False
+anderky01,TOR,Kyle Anderson,33,55.6,55.8,0,,56,,False
+nesmiaa01,IND,Aaron Nesmith,27,50.4,56.2,0,,56,,False
+shamela01,NYK,Landry Shamet,29,49.7,55.9,0,,56,,False
+clarkjo01,NYK,Jordan Clarkson,34,58.1,56.0,0,,56,,False
+joneshe01,NOP,Herbert Jones,28,49.2,55.6,0,,56,,False
+prospol01,MEM,Olivier-Maxence Prosper,24,50.1,56.0,0,,56,,False
+hylanbo01,MIN,Bones Hyland,26,50.1,56.0,0,,56,,False
+martike04,MIN,KJ Martin,25,49.8,55.9,0,,56,,False
+grantje01,MEM,Jerami Grant,32,53.4,55.7,0,,56,,False
+sassema01,DAL,Marcus Sasser,26,50.3,56.1,0,,56,,False
+demineg01,BRK,Egor Demin,20,52.0,57.0,0,,57,,False
+toppiob01,IND,Obi Toppin,28,52.1,57.0,0,,57,,False
+porteke02,MIL,Kevin Porter Jr.,26,51.9,56.9,0,,57,,False
+watfotr01,NOP,Trendon Watford,25,52.3,57.1,0,,57,,False
+easonta01,HOU,Tari Eason,25,51.5,56.8,0,,57,,False
+garzalu01,BOS,Luka Garza,27,51.2,56.6,0,,57,,False
+walshjo01,BOS,Jordan Walsh,22,51.4,56.7,0,,57,,False
+brownko01,IND,Kobe Brown,26,51.3,56.6,0,,57,,False
+willija06,OKC,Jalen Williams,25,51.4,56.7,0,65.0,57,Recurring hamstring strains; no clearance stated,False
+clownno01,BRK,Noah Clowney,22,51.4,56.7,0,,57,,False
+tateja01,HOU,Jae'Sean Tate,30,51.6,56.8,0,,57,,False
+martica02,DAL,Caleb Martin,31,55.3,57.6,0,,58,,False
+krejcvi01,POR,Vit Krejci,26,54.0,58.0,0,,58,,False
+huntede01,SAC,De'Andre Hunter,28,53.1,57.5,0,,58,,False
+flemira01,PHO,Rasheer Fleming,22,55.0,58.5,0,,58,,False
+greendr01,GSW,Draymond Green,36,65.4,57.7,0,,58,,False
+carusal01,OKC,Alex Caruso,32,58.4,58.2,0,,58,,False
+richaja02,ORL,Jase Richardson,21,54.0,58.0,0,,58,,False
+suggsja01,ORL,Jalen Suggs,25,54.0,58.0,0,,58,,False
+gilleco01,PHO,Collin Gillespie,27,54.7,58.4,0,,58,,False
+aldamsa01,DAL,Santi Aldama,25,53.2,57.6,0,,58,,False
+nnajize01,DEN,Zeke Nnaji,25,54.7,58.4,0,,58,,False
+kolekty01,NYK,Tyler Kolek,25,54.1,58.1,0,,58,,False
+sochaje01,POR,Jeremy Sochan,23,53.0,57.5,0,,58,,False
+jakucka01,MIL,Kasparas Jakucionis,20,53.0,57.5,0,,58,,False
+spencca01,MEM,Cam Spencer,26,54.4,58.2,0,,58,,False
+mcbrimi01,NYK,Miles McBride,26,53.3,57.6,0,,58,,False
+matkoka01,NOP,Karlo Matkovic,25,54.5,58.2,0,,58,,False
+eubandr01,NYK,Drew Eubanks,29,54.3,58.1,0,,58,,False
+willizi01,NOP,Zion Williamson,26,54.0,58.0,0,,58,,False
+drumman01,NYK,Andre Drummond,33,59.3,57.6,0,,58,,False
+ballla01,MIN,LaMelo Ball,25,54.5,58.2,0,,58,,False
+richani01,MIA,Nick Richards,28,54.5,58.2,0,,58,,False
+champju01,WAS,Justin Champagnie,25,56.1,59.0,0,,59,,False
+georgky01,WAS,Kyshawn George,22,55.5,58.8,0,,59,,False
+sarral01,WAS,Alex Sarr,21,55.1,58.6,0,,59,,False
+rolliry01,MIL,Ryan Rollins,24,56.4,59.2,0,,59,,False
+duranke01,HOU,Kevin Durant,38,72.6,59.3,0,,59,,False
+poolejo01,NOP,Jordan Poole,27,55.5,58.8,0,,59,,False
+garlada01,LAC,Darius Garland,26,56.4,59.2,0,,59,,False
+oubreke01,IND,Kelly Oubre Jr.,30,56.6,59.3,0,,59,,False
+phillju01,HOU,Julian Phillips,22,55.7,58.9,0,,59,,False
+santogu01,GSW,Gui Santos,24,55.4,58.7,0,,59,,False
+hawkijo01,CHI,Jordan Hawkins,24,55.7,58.9,0,,59,,False
+ruperra01,PHI,Rayan Rupert,22,55.4,58.7,0,,59,,False
+edwarju01,PHI,Justin Edwards,22,56.5,59.2,0,,59,,False
+goodwjo01,PHO,Jordan Goodwin,27,55.1,58.5,0,,59,,False
+johnsca02,DEN,Cameron Johnson,30,55.7,58.9,0,,59,,False
+harteis01,OKC,Isaiah Hartenstein,28,55.6,58.8,0,,59,,False
+millebr02,CHO,Brandon Miller,23,55.4,58.7,0,,59,,False
+traorno01,BRK,Nolan Traore,20,56.0,59.0,0,,59,,False
+powelno01,CHI,Norman Powell,33,62.2,59.1,0,,59,,False
+stewais01,MEM,Isaiah Stewart,25,59.8,60.9,1,,60,Ankle sprain; out until at least Oct 23,False
+pendano01,ORL,Noah Penda,21,59.0,60.5,0,,60,,False
+terryda01,GSW,Dalen Terry,24,57.7,59.9,0,,60,,False
+paytoga02,GSW,Gary Payton II,33,63.9,60.0,0,,60,,False
+mccontj01,IND,T.J. McConnell,34,65.9,60.0,0,,60,,False
+batumni01,LAC,Nicolas Batum,37,72.4,60.2,0,,60,,False
+hardyja02,LAL,Jaden Hardy,24,60.2,61.1,0,,60,,True
+leverca01,MIL,Caris LeVert,32,62.8,60.4,0,,60,,False
+postqu01,MEM,Quinten Post,26,57.6,59.8,0,,60,,False
+aytonde01,WAS,Deandre Ayton,28,59.0,60.5,0,,60,,False
+johnsja05,ATL,Jalen Johnson,24,58.0,60.0,0,,60,,False
+wolfda01,BRK,Danny Wolf,22,57.0,59.5,0,,60,,False
+coulibi01,WAS,Bilal Coulibaly,22,58.3,60.1,0,,60,,False
+isaacjo01,ORL,Jonathan Isaac,29,58.9,60.5,0,,60,,False
+greenja02,DET,Javonte Green,33,63.2,59.6,0,,60,,False
+strawju01,DEN,Julian Strawther,24,58.0,60.0,0,,60,,False
+bryanth01,CLE,Thomas Bryant,29,57.4,59.7,0,,60,,False
+simonan01,PHI,Anfernee Simons,27,57.7,59.9,0,,60,,False
+wadede01,PHI,Dean Wade,29,58.0,60.0,0,,60,,False
+portecr01,CLE,Craig Porter Jr.,26,57.5,59.8,0,,60,,False
+tysonja01,CLE,Jaylon Tyson,23,58.9,60.4,0,,60,,False
+allengr01,CHO,Grayson Allen,31,59.7,59.9,0,,60,,False
+smithja04,CHI,Jalen Smith,26,57.9,60.0,0,,60,,False
+mccolcj01,ATL,CJ McCollum,35,68.0,60.0,0,,60,,False
+caldwke01,PHI,Kentavious Caldwell-Pope,33,63.8,59.9,0,,60,,False
+quickim01,TOR,Immanuel Quickley,27,58.5,60.2,0,,60,,False
+jackstr02,TOR,Trayce Jackson-Davis,26,58.7,60.4,0,,60,,False
+barrerj01,TOR,RJ Barrett,26,57.5,59.8,0,,60,,False
+murraco01,TOR,Collin Murray-Boyles,21,57.0,59.5,0,,60,,False
+landajo01,ATL,Jock Landale,30,57.8,59.9,0,,60,,False
+simsje01,MIL,Jericho Sims,28,58.4,60.2,0,,60,,False
+sharpda01,BRK,Day'Ron Sharpe,24,58.2,60.1,0,,60,,False
+clarkja02,MIN,Jaylen Clark,25,57.5,59.8,0,,60,,False
+greenja05,PHO,Jalen Green,24,57.0,59.5,0,,60,,False
+knechda01,LAL,Dalton Knecht,25,63.0,62.5,0,,60,,True
+willico04,MIN,Cody Williams,21,60.6,61.3,0,,61,,False
+mathube01,NOP,Bennedict Mathurin,24,60.4,61.2,0,,61,,False
+greenjo02,UTA,Josh Green,25,60.8,61.4,0,,61,,False
+vucevni01,ORL,Nikola Vucevic,35,69.1,60.5,0,,61,,False
+murphtr02,NOP,Trey Murphy III,26,60.3,61.1,0,,61,,False
+wilsoja03,ATL,Jalen Wilson,25,59.3,60.6,0,,61,,False
+thompkl01,MIA,Klay Thompson,36,71.5,60.8,0,,61,,False
+johnstr03,WAS,Tre Johnson,20,60.0,61.0,0,,61,,False
+jacksja02,UTA,Jaren Jackson Jr.,27,59.4,60.7,0,62.0,61,Knee surgery (growth removed); no return timeline given,False
+scheiba01,BOS,Baylor Scheierman,26,59.7,60.9,0,,61,,False
+holmgch01,OKC,Chet Holmgren,24,60.5,61.2,0,,61,,False
+merrisa01,CLE,Sam Merrill,30,59.5,60.8,0,,61,,False
+collijo01,DET,John Collins,29,60.1,61.0,0,,61,,False
+hardeja01,CLE,James Harden,37,73.1,60.5,0,,61,,False
+diabamo01,CHO,Moussa Diabate,24,60.0,61.0,0,,61,,False
+nembhry01,DEN,Ryan Nembhard,23,60.0,61.0,0,,61,,False
+battlja01,TOR,Jamison Battle,25,60.2,61.1,0,,61,,False
+washipj01,DAL,P.J. Washington,28,59.7,60.9,0,,61,,False
+willija07,OKC,Jaylin Williams,24,60.4,61.2,0,,61,,False
+willike04,OKC,Kenrich Williams,31,62.5,61.2,0,,61,,False
+gaffoda01,DAL,Daniel Gafford,28,59.4,60.7,0,,61,,False
+hieldbu01,CHI,Buddy Hield,33,66.9,61.5,0,,61,,False
+wembavi01,SAS,Victor Wembanyama,22,60.0,61.0,0,,61,,False
+harrito02,SAS,Tobias Harris,34,67.4,60.7,0,,61,,False
+willizi02,LAL,Ziaire Williams,25,57.1,59.5,0,,62,,True
+cowarce01,MEM,Cedric Coward,23,62.0,62.0,0,,62,,False
+poweldr01,BRK,Drake Powell,21,63.0,62.5,0,,62,,False
+georgke01,UTA,Keyonte George,22,62.1,62.0,0,,62,,False
+quetane01,BOS,Neemias Queta,27,62.2,62.1,0,,62,,False
+jonestr01,CHI,Tre Jones,26,61.7,61.9,0,,62,,False
+okorois01,CHI,Isaac Okoro,25,61.8,61.9,0,,62,,False
+reedpa01,DET,Paul Reed,27,62.4,62.2,0,,62,,False
+braunch01,DEN,Christian Braun,25,62.1,62.0,0,,62,,False
+whiteco01,CHO,Coby White,26,63.0,62.5,0,,62,,False
+murrakr01,MEM,Kris Murray,26,61.6,61.8,0,,62,,False
+alvarjo01,NYK,Jose Alvarado,28,62.5,62.2,0,,62,,False
+vanvlfr01,HOU,Fred VanVleet,32,65.2,61.6,0,,62,,False
+peavymi01,MEM,Micah Peavy,25,61.0,61.5,0,,62,,False
+sheppbe01,IND,Ben Sheppard,25,62.8,62.4,0,,62,,False
+zubaciv01,IND,Ivica Zubac,29,61.6,61.8,0,,62,,False
+nembhan01,IND,Andrew Nembhard,26,61.6,61.8,0,,62,,False
+lopezbr01,LAC,Brook Lopez,38,77.3,61.7,0,,62,,False
+portibo01,MIA,Bobby Portis,31,64.6,62.3,0,,62,,False
+okogijo01,UTA,Josh Okogie,28,63.0,62.5,0,,62,,False
+monkma01,SAC,Malik Monk,28,64.9,63.5,0,,63,,False
+walteja01,TOR,Ja'Kobe Walter,22,64.5,63.2,0,,63,,False
+willipa01,CHI,Patrick Williams,25,63.5,62.8,0,,63,,False
+reaveau01,LAL,Austin Reaves,28,63.8,62.9,0,,63,,True
+jonesde02,LAC,Derrick Jones Jr.,29,63.3,62.6,0,,63,,False
+capelca01,HOU,Clint Capela,32,68.6,63.3,0,,63,,False
+mobleev01,CLE,Evan Mobley,25,63.8,62.9,0,,63,,False
+watsope01,CLE,Peyton Watson,24,63.4,62.7,0,,63,,False
+derozde01,DEN,DeMar DeRozan,37,77.4,62.7,0,,63,,False
+brookdi01,PHO,Dillon Brooks,30,64.9,63.5,0,,63,,False
+walkeja01,PHI,Jabari Walker,24,64.4,63.2,0,,63,,False
+claxtni01,CHI,Nic Claxton,27,69.7,65.8,3,,63,Hamstring; re-evaluation in two weeks,False
+giddejo01,CHI,Josh Giddey,24,64.0,63.0,0,,63,,False
+maxeyty01,PHI,Tyrese Maxey,25,64.6,63.3,0,,63,,False
+wiggian01,MIA,Andrew Wiggins,31,66.2,63.1,0,,63,,False
+lylestr01,MIN,Trey Lyles,30,64.6,63.3,0,,63,,False
+larsspe01,MIA,Pelle Larsson,25,64.4,63.2,0,,63,,False
+dosunay01,MIN,Ayo Dosunmu,26,63.5,62.8,0,,63,,False
+huffja01,IND,Jay Huff,28,64.2,63.1,0,,63,,False
+hayesja02,UTA,Jaxson Hayes,26,63.8,62.9,0,,63,,False
+colliis01,UTA,Isaiah Collier,22,63.5,62.8,0,,63,,False
+kispeco01,ATL,Corey Kispert,27,63.3,62.6,0,,63,,False
+agbajoc01,NYK,Ochai Agbaji,26,65.8,63.9,0,,64,,False
+brownbr01,NYK,Bruce Brown,30,66.7,64.3,0,,64,,False
+anunoog01,NYK,OG Anunoby,29,65.7,63.9,0,,64,,False
+goberru01,MIN,Rudy Gobert,34,74.8,64.4,0,,64,,False
+hachiru01,LAC,Rui Hachimura,28,65.3,63.6,0,,64,,False
+siakapa01,IND,Pascal Siakam,32,70.4,64.2,0,,64,,False
+dickgr01,LAC,Gradey Dick,22,66.2,64.1,0,,64,,False
+banchpa01,ORL,Paolo Banchero,23,65.8,63.9,0,,64,,False
+portemi01,BRK,Michael Porter Jr.,28,65.3,63.6,0,,64,,False
+bitadgo01,ORL,Goga Bitadze,27,65.4,63.7,0,,64,,False
+bonaad01,PHI,Adem Bona,23,66.1,64.1,0,,64,,False
+kennalu01,PHO,Luke Kennard,30,66.3,64.2,0,,64,,False
+cunnica01,DET,Cade Cunningham,25,65.4,63.7,0,,64,,False
+thompau01,DET,Ausar Thompson,23,66.8,64.4,0,,64,,False
+sensabr01,UTA,Brice Sensabaugh,22,65.2,63.6,0,,64,,False
+kuzmaky01,MIL,Kyle Kuzma,31,68.0,64.0,0,,64,,False
+mannte01,BRK,Terance Mann,30,66.6,64.3,0,,64,,False
+vassede01,SAS,Devin Vassell,26,66.3,64.2,0,,64,,False
+kornelu01,SAS,Luke Kornet,31,68.5,64.2,0,,64,,False
+brownja02,PHI,Jaylen Brown,29,68.4,65.2,0,,65,,False
+jokicni01,DEN,Nikola Jokic,31,69.3,64.7,0,,65,,False
+mitchdo01,CLE,Donovan Mitchell,30,67.3,64.7,0,,65,,False
+allenja01,CLE,Jarrett Allen,28,68.0,65.0,0,,65,,False
+randlju01,BRK,Julius Randle,31,69.4,64.7,0,,65,,False
+halibty01,IND,Tyrese Haliburton,26,71.4,66.7,0,65.0,65,Returning from Achilles tear (missed all of 2025-26); Indiana may ease him in,False
+walkeja02,IND,Jarace Walker,23,67.1,64.5,0,,65,,False
+doncilu01,LAL,Luka Doncic,27,61.0,61.5,0,,65,,True
+sandeko01,LAC,Kobe Sanders,24,68.0,65.0,0,,65,,False
+missiyv01,NOP,Yves Missi,22,68.6,65.3,0,,65,,False
+trentga02,MIL,Gary Trent Jr.,27,68.9,65.5,0,,65,,False
+bookede01,PHO,Devin Booker,29,68.1,65.0,0,,65,,False
+huertke01,DET,Kevin Huerter,28,68.0,65.0,0,,65,,False
+achiupr01,SAC,Precious Achiuwa,27,68.4,65.2,0,,65,,False
+schrode01,CHO,Dennis Schroder,33,73.5,64.8,0,,65,,False
+wiggiaa01,ATL,Aaron Wiggins,27,70.9,66.5,0,,66,,False
+avdijde01,POR,Deni Avdija,25,69.6,65.8,0,,66,,False
+foxde01,SAS,De'Aaron Fox,28,69.4,65.7,0,,66,,False
+bryanca01,SAS,Carter Bryant,20,71.0,66.5,0,,66,,False
+kalkbry01,CHO,Ryan Kalkbrenner,24,69.0,65.5,0,,66,,False
+flaggco01,DAL,Cooper Flagg,19,70.0,66.0,0,,66,,False
+banede01,ORL,Desmond Bane,28,70.1,66.0,0,,66,,False
+cartewe01,ORL,Wendell Carter Jr.,27,70.4,66.2,0,,66,,False
+blackan01,ORL,Anthony Black,22,69.2,65.6,0,,66,,False
+durenja01,DET,Jalen Duren,22,70.6,66.3,0,,66,,False
+richawi02,GSW,Will Richard,23,69.0,65.5,0,,66,,False
+diawamo01,NYK,Mohamed Diawara,21,69.0,65.5,0,,66,,False
+hartjo01,NYK,Josh Hart,31,72.3,66.2,0,,66,,False
+beysa01,NOP,Saddiq Bey,27,69.4,65.7,0,,66,,False
+hardati02,MIA,Tim Hardaway Jr.,34,78.9,66.5,0,,66,,False
+fontesi01,MIA,Simone Fontecchio,30,70.7,66.3,0,,66,,False
+okongon01,ATL,Onyeka Okongwu,25,70.2,66.1,0,,66,,False
+edwaran01,MIN,Anthony Edwards,25,70.0,66.0,0,,66,,False
+claytwa01,MEM,Walter Clayton,23,69.0,65.5,0,,66,,False
+smithja05,HOU,Jabari Smith Jr.,23,70.8,66.4,0,,66,,False
+sheppre01,HOU,Reed Sheppard,22,70.8,66.4,0,,66,,False
+kesslwa01,LAL,Walker Kessler,25,32.7,47.4,0,,66,,True
+murraja01,DEN,Jamal Murray,29,69.4,65.7,0,,66,,False
+marshna01,DAL,Naji Marshall,28,70.9,66.5,0,,66,,False
+robindu01,DET,Duncan Robinson,32,74.3,66.2,0,,66,,False
+harpedy01,SAS,Dylan Harper,20,69.0,65.5,0,,66,,False
+risacza01,DAL,Zaccharie Risacher,21,70.0,66.0,0,,66,,False
+jonesty01,DEN,Tyus Jones,30,71.0,66.5,0,,66,,False
+raynama01,SAC,Maxime Raynaud,23,74.0,68.0,2,,66,Knee; out until at least Oct 25,False
+tatumja01,BOS,Jayson Tatum,28,72.8,67.4,0,70.0,67,Back from Achilles tear (played 16 games late in 2025-26),False
+turnemy01,MIL,Myles Turner,30,72.5,67.2,0,,67,,False
+baileac01,UTA,Ace Bailey,20,72.0,67.0,0,,67,,False
+whitede01,BOS,Derrick White,32,75.9,67.0,0,,67,,False
+jaqueja01,MIL,Jaime Jaquez Jr.,25,72.3,67.2,0,,67,,False
+townska01,NYK,Karl-Anthony Towns,30,71.5,66.8,0,,67,,False
+brunsja01,NYK,Jalen Brunson,30,71.9,67.0,0,,67,,False
+thompam01,HOU,Amen Thompson,23,72.6,67.3,0,,67,,False
+sengual01,HOU,Alperen Sengun,24,71.4,66.7,0,,67,,False
+elliske01,BRK,Keon Ellis,26,71.4,66.7,0,,67,,False
+castlst01,SAS,Stephon Castle,21,72.9,67.4,0,,67,,False
+barneha02,SAS,Harrison Barnes,34,79.5,66.8,0,,67,,False
+gilgesh01,OKC,Shai Gilgeous-Alexander,28,71.8,66.9,0,,67,,False
+barnesc01,TOR,Scottie Barnes,25,71.5,66.8,0,,67,,False
+wellsja01,MEM,Jaylen Wells,23,72.8,67.4,0,,67,,False
+dortlu01,ATL,Luguentz Dort,27,71.6,66.8,0,,67,,False
+wareke01,MIL,Kel'el Ware,22,72.1,67.1,0,,67,,False
+dunnkr01,LAC,Kris Dunn,32,76.4,67.2,0,,67,,False
+mitchda01,MIA,Davion Mitchell,28,71.6,66.8,0,,67,,False
+greenaj01,MIL,A.J. Green,27,72.1,67.0,0,,67,,False
+onealro01,CHO,Royce O'Neale,33,77.3,66.7,0,,67,,False
+bridgmi02,PHO,Miles Bridges,28,71.5,66.8,0,,67,,False
+dunnry01,PHO,Ryan Dunn,23,71.5,66.8,0,,67,,False
+joeis01,DET,Isaiah Joe,27,73.3,67.7,0,,68,,False
+rileywi01,WAS,Will Riley,20,74.0,68.0,0,,68,,False
+adebaba01,MIA,Bam Adebayo,29,74.1,68.0,0,,68,,False
+daniedy01,ATL,Dyson Daniels,23,73.0,67.5,0,,68,,False
+looneke01,LAL,Kevon Looney,30,48.1,55.0,0,,68,,True
+niangge01,GSW,Georges Niang,33,80.2,68.1,0,,68,,False
+gonzahu01,BOS,Hugo Gonzalez,20,74.0,68.0,0,,68,,False
+ighodos01,PHO,Oso Ighodaro,24,74.1,68.1,0,,68,,False
+clingdo01,POR,Donovan Clingan,22,73.2,67.6,0,,68,,False
+edgecvj01,PHI,VJ Edgecombe,21,75.0,68.5,0,,68,,False
+cliffni01,SAC,Nique Clifford,24,75.0,68.5,0,,68,,False
+podzibr01,GSW,Brandin Podziemski,23,75.0,68.5,0,,68,,False
+chrisma02,DAL,Max Christie,23,75.3,68.7,0,,69,,False
+wallaca01,OKC,Cason Wallace,22,75.3,68.7,0,,69,,False
+mcdanja02,MIN,Jaden McDaniels,26,75.5,68.8,0,,69,,False
+hausesa01,BOS,Sam Hauser,28,76.1,69.0,0,,69,,False
+filipky01,UTA,Kyle Filipowski,22,75.1,68.6,0,,69,,False
+dasiltr01,ORL,Tristan Da Silva,25,75.9,68.9,0,,69,,False
+camarto01,POR,Toumani Camara,26,78.4,70.2,0,,70,,False
+buzelma01,CHI,Matas Buzelis,22,78.1,70.1,0,,70,,False
+johnske04,SAS,Keldon Johnson,27,77.9,70.0,0,,70,,False
+reidna01,CHO,Naz Reid,27,78.7,70.3,0,,70,,False
+knuepko01,CHO,Kon Knueppel,21,81.0,71.5,1,,71,Hamstring; questionable for opening night,False
+champju02,SAS,Julian Champagnie,25,80.4,71.2,0,,71,,False
+hollaro01,DET,Ron Holland,21,79.1,70.6,0,,71,,False
+sheadja01,TOR,Jamal Shead,24,79.4,70.7,0,,71,,False
+alexani01,ATL,Nickeil Alexander-Walker,28,80.0,71.0,0,,71,,False
+pritcpa01,BOS,Payton Pritchard,28,79.9,71.0,0,,71,,False
+jamessi01,CHO,Sion James,23,82.0,72.0,0,,72,,False
+fearsje01,NOP,Jeremiah Fears,20,82.0,72.0,0,,72,,False
+bridgmi01,NYK,Mikal Bridges,30,82.0,72.0,0,,72,,False
+queende01,NOP,Derik Queen,21,81.0,71.5,0,,72,,False
+sextoco01,LAL,Collin Sexton,27,68.5,65.2,0,,72,,True
+carrica01,WAS,Bub Carrington,21,82.0,72.0,0,,72,,False
+grimequ01,LAL,Quentin Grimes,26,70.2,66.1,0,,75,,True
+mamuksa01,LAL,Sandro Mamukelashvili,27,67.5,64.8,0,,78,,True
+laravja01,LAL,Jake LaRavia,24,67.8,64.9,0,,80,,True

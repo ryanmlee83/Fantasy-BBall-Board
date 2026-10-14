@@ -1,18 +1,26 @@
 # League configuration (spec §6). Hand-edited, changes often.
 
 league:
+  # Yahoo Prize H2H-Cat league 238445 (settings supplied by Ryan, 2026-10-14)
   teams: 12
   format: h2h              # h2h | roto
   categories: [PTS, REB, AST, STL, BLK, 3PM, FG_IMPACT, FT_IMPACT, TOV]
-  roster_slots: {PG: 1, SG: 1, SF: 1, PF: 1, C: 1, G: 1, F: 1, UTIL: 3, BENCH: 3, IL: 2}
-  draft_position: null      # fill when known
-  waiver_type: null         # unlimited | weekly_cap | faab -- unknown; see spec §6 note.
-                            # Left null deliberately: don't hardcode an assumption
-                            # that would block streaming logic later.
+  roster_slots: {PG: 1, SG: 1, G: 1, SF: 1, PF: 1, F: 1, C: 2, UTIL: 2, BENCH: 3, IL: 3}
+  draft_type: live_snake    # Yahoo "Live Standard Draft", 1-minute pick clock
+  draft_time: 2026-10-15T19:00:00-05:00
+  draft_rounds: 13          # every non-IL slot is drafted
+  draft_position: null      # Yahoo assigns at draft time; the board takes it as input
+  waiver_type: faab         # FAB with continual rolling-list tiebreak, 2-day waivers,
+                            # continuous processing; post-draft players follow waiver rules
+  max_adds_per_week: 4
+  lineups: daily
+  playoffs: {teams: 6, weeks: [20, 21, 22], reseed: true}
+  trade_deadline: 2027-03-04
 
 valuation:
   method: z_score           # z_score | g_score -- only z_score is implemented (§9 stage 6)
-  pool_size: 150
+  pool_size: 150           # backtest / regression_k tuning pool (spec §4.1); keep fixed
+  draft_pool_size: 156     # draft board: 12 teams x 13 drafted roster spots
   pool_iterations: 3
   # All single-category punts plus the pairs named in §4.5 are always included
   # by src/value.py regardless of this list; this list is for ADDITIONAL

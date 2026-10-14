@@ -11,7 +11,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from src import backtest, ingest, project, reports, value
+from src import backtest, draft, ingest, project, reports, value
 
 
 def build() -> None:
@@ -44,8 +44,10 @@ def build() -> None:
     print(f"  minutes.yaml: {len(minutes_cfg)} players, {n_estimated} flagged estimated: true")
     sanity = project.minutes_sanity_check(data["rosters"], minutes_cfg, gp_cfg)
     n_ok = int(sanity["within_3pct"].sum())
-    print(f"  §3.5 sanity check (240x82 +/-3%): {n_ok}/{len(sanity)} teams within range "
-          f"(not rescaled -- see reports/minutes_sanity.csv)")
+    n_healthy = int(sanity["healthy_within_3pct"].sum())
+    print(f"  §3.5 healthy-rotation check (sum of mpg = 240 +/-3%): {n_healthy}/{len(sanity)} teams within range")
+    print(f"  season-minute coverage (mpg x GP vs 240x82, informational): {n_ok}/{len(sanity)} within 3% "
+          f"(see reports/minutes_sanity.csv)")
     sanity_path = project.CONFIG_DIR.parent / "reports" / "minutes_sanity.csv"
     sanity_path.parent.mkdir(parents=True, exist_ok=True)
     sanity.to_csv(sanity_path, index=False)
@@ -122,6 +124,20 @@ def backtest_cmd(run_grid_search: bool) -> None:
     print(f"\n  wrote {out_path}")
 
 
+def board_cmd() -> None:
+    print("== Stage 8: draft board data ==")
+    path = draft.write_board_data()
+    import json
+    board = json.loads(path.read_text(encoding="utf-8"))
+    n_np = sum(1 for p in board["players"] if p.get("np"))
+    print(f"  wrote {path} ({len(board['players'])} players, {n_np} unprojected rookies/new arrivals)")
+    if board["adpUnmatched"]:
+        print(f"  ADP rows with no roster match ({len(board['adpUnmatched'])}, mostly free agents):")
+        for line in board["adpUnmatched"]:
+            print(f"    {line}")
+    print("  next: python scripts/build_board_page.py  (embeds the data into board/draft_board.html)")
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="python -m src.cli")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -129,6 +145,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("punt-report", help="§4.5 Z-score valuation + punt scenarios (stage 6)")
     bt = sub.add_parser("backtest", help="§8.4 backtest (stage 7)")
     bt.add_argument("--grid-search", action="store_true", help="also run the regression_k grid search")
+    sub.add_parser("board", help="draft board data: per-game Z, GP, ADP, positions (stage 8)")
     args = parser.parse_args(argv)
 
     if args.command == "build":
@@ -137,6 +154,8 @@ def main(argv: list[str] | None = None) -> int:
         punt_report_cmd()
     elif args.command == "backtest":
         backtest_cmd(args.grid_search)
+    elif args.command == "board":
+        board_cmd()
     return 0
 
 

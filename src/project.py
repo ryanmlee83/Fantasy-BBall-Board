@@ -386,6 +386,18 @@ def minutes_sanity_check(rosters: pd.DataFrame, minutes_cfg: dict, games_played_
     report["target"] = target
     report["pct_of_target"] = round(100 * report["total_projected_minutes"] / target, 1)
     report["within_3pct"] = report["total_projected_minutes"].between(target * 0.97, target * 1.03)
+    # Decision 2026-10-14: `mpg` means minutes on a night the player plays at
+    # full health, so the binding constraint is the healthy rotation summing
+    # to 240 per game. Season minutes (mpg x GP) fall short of 240 x 82 by
+    # design once GP is projected below 82 -- the gap is minutes absorbed by
+    # whoever covers for injured players, which the board does not try to
+    # predict (in H2H those players arrive via waivers). `within_3pct` above
+    # is kept as an informational coverage figure, not a pass/fail.
+    healthy = matched.assign(
+        mpg=matched["player_id"].map(lambda pid: minutes_cfg.get(pid, {}).get("mpg", 0))
+    ).groupby("team")["mpg"].sum()
+    report["healthy_mpg_total"] = report["team"].map(healthy).round(1)
+    report["healthy_within_3pct"] = report["healthy_mpg_total"].between(240 * 0.97, 240 * 1.03)
     return report.sort_values("pct_of_target").reset_index(drop=True)
 
 
