@@ -159,3 +159,18 @@ def test_project_players_pts_in_plausible_range(data, config):
     # No real NBA rotation player projects negative or absurdly high PTS.
     assert projected["PTS"].min() >= 0
     assert projected["PTS"].max() < 45
+
+
+def test_age_curve_leaves_shooting_percentages_unscaled():
+    """Regression test for the 2026-10-14 bug: the age curve multiplied FG%/FT%
+    themselves, so a 41-year-old's .515 FG% projected as .360."""
+    import pandas as pd
+    shrunk = pd.DataFrame(
+        {f"shrunk_{c}": [0.5, 0.5] for c in project._ALL_COLS}, index=["old", "young"]
+    )
+    ages = pd.Series({"old": 41, "young": 19})
+    aged = project.apply_age_curve(shrunk, ages)
+    for pct_col in ("fg_pct", "ft_pct"):
+        assert (aged[f"aged_{pct_col}"] == 0.5).all()
+    # volume columns still age
+    assert aged.loc["old", "aged_fga_p100"] < 0.5

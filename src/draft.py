@@ -86,7 +86,7 @@ def fallback_positions(bbref_pos: str | None, roster_pos: str | None) -> list[st
     if "G" in rp:
         out += ["PG", "SG"] if not out else (["SG"] if pos == "PG" else ["PG"] if pos == "SG" else ["SG"])
     if "F" in rp:
-        out += ["SF", "PF"] if not out else (["PF"] if pos == "SF" else ["SF"] if pos == "PF" else ["SF"])
+        out += ["SF", "PF"] if not out else (["PF"] if pos in ("SF", "C") else ["SF"] if pos == "PF" else ["SF"])
     if "C" in rp:
         out += ["C"] if pos != "C" else ["PF"]
     seen = []

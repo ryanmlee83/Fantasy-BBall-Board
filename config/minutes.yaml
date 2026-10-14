@@ -4,16 +4,16 @@ minutes:
     mpg: 15.2
   adamsst01:
     estimated: false
-    mpg: 15.9
+    mpg: 12.5
   adebaba01:
     estimated: false
     mpg: 33.0
   agbajoc01:
     estimated: false
-    mpg: 2.2
+    mpg: 2.0
   aldamsa01:
     estimated: false
-    mpg: 30.0
+    mpg: 24.8
   alexani01:
     estimated: false
     mpg: 33.0
@@ -22,16 +22,16 @@ minutes:
     mpg: 0.0
   allengr01:
     estimated: false
-    mpg: 6.2
+    mpg: 18.1
   allenja01:
     estimated: false
     mpg: 30.2
   alvarjo01:
     estimated: false
-    mpg: 11.3
+    mpg: 10.1
   anderky01:
     estimated: false
-    mpg: 4.4
+    mpg: 3.5
   antetgi01:
     estimated: false
     mpg: 33.0
@@ -43,19 +43,19 @@ minutes:
     mpg: 33.0
   aytonde01:
     estimated: false
-    mpg: 13.1
+    mpg: 23.4
   baglema01:
     estimated: false
-    mpg: 13.7
+    mpg: 12.2
   baileac01:
     estimated: false
     mpg: 30.3
   ballla01:
     estimated: false
-    mpg: 19.3
+    mpg: 29.6
   bambamo01:
     estimated: false
-    mpg: 3.0
+    mpg: 2.8
   banchpa01:
     estimated: false
     mpg: 34.6
@@ -64,10 +64,10 @@ minutes:
     mpg: 33.0
   barlodo01:
     estimated: false
-    mpg: 15.3
+    mpg: 9.0
   barneha02:
     estimated: false
-    mpg: 13.1
+    mpg: 8.7
   barnesc01:
     estimated: false
     mpg: 33.0
@@ -79,7 +79,7 @@ minutes:
     mpg: 33.0
   bassech01:
     estimated: false
-    mpg: 7.3
+    mpg: 6.1
   battlja01:
     estimated: false
     mpg: 0.0
@@ -88,7 +88,7 @@ minutes:
     mpg: 0.0
   bealbr01:
     estimated: false
-    mpg: 14.8
+    mpg: 13.9
   beekmre01:
     estimated: true
     mpg: 0.0
@@ -97,22 +97,22 @@ minutes:
     mpg: 0.0
   beysa01:
     estimated: false
-    mpg: 33.0
+    mpg: 16.7
   bitadgo01:
     estimated: false
-    mpg: 5.5
+    mpg: 4.2
   blackan01:
     estimated: false
-    mpg: 12.3
+    mpg: 20.1
   blackle01:
     estimated: true
     mpg: 0.0
   bogdabo01:
     estimated: false
-    mpg: 3.2
+    mpg: 2.5
   bonaad01:
     estimated: false
-    mpg: 15.3
+    mpg: 9.0
   bookede01:
     estimated: false
     mpg: 35.0
@@ -121,7 +121,7 @@ minutes:
     mpg: 0.0
   bouyeja01:
     estimated: false
-    mpg: 3.2
+    mpg: 2.6
   bradlto01:
     estimated: true
     mpg: 0.0
@@ -130,7 +130,7 @@ minutes:
     mpg: 0.0
   braunch01:
     estimated: false
-    mpg: 33.0
+    mpg: 29.3
   breako01:
     estimated: false
     mpg: 0.0
@@ -145,16 +145,16 @@ minutes:
     mpg: 33.0
   brookdi01:
     estimated: false
-    mpg: 16.1
+    mpg: 25.4
   broomjo01:
     estimated: true
     mpg: 0.0
   brownbr01:
     estimated: false
-    mpg: 11.3
+    mpg: 10.1
   brownja02:
     estimated: false
-    mpg: 15.3
+    mpg: 34.3
   brownko01:
     estimated: false
     mpg: 0.0
@@ -163,10 +163,10 @@ minutes:
     mpg: 35.2
   bryanca01:
     estimated: false
-    mpg: 5.9
+    mpg: 3.9
   bryanth01:
     estimated: false
-    mpg: 16.8
+    mpg: 15.6
   bufkiko01:
     estimated: false
     mpg: 0.0
@@ -178,34 +178,34 @@ minutes:
     mpg: 29.0
   cainja01:
     estimated: false
-    mpg: 12.3
+    mpg: 9.4
   caldwke01:
     estimated: false
-    mpg: 26.0
+    mpg: 15.3
   camarto01:
     estimated: false
     mpg: 33.0
   capelca01:
     estimated: false
-    mpg: 3.2
+    mpg: 2.5
   cardwdy01:
     estimated: false
     mpg: 6.9
   carlsbr01:
     estimated: false
-    mpg: 2.8
+    mpg: 1.6
   carrica01:
     estimated: false
-    mpg: 30.8
+    mpg: 21.6
   cartede02:
     estimated: false
-    mpg: 2.8
+    mpg: 1.8
   carteje01:
     estimated: false
-    mpg: 12.3
+    mpg: 9.4
   cartewe01:
     estimated: false
-    mpg: 30.5
+    mpg: 23.4
   carusal01:
     estimated: false
     mpg: 17.4
@@ -217,10 +217,10 @@ minutes:
     mpg: 30.8
   champju01:
     estimated: false
-    mpg: 5.9
+    mpg: 4.1
   champju02:
     estimated: false
-    mpg: 13.1
+    mpg: 21.6
   chandke01:
     estimated: true
     mpg: 0.0
@@ -229,25 +229,25 @@ minutes:
     mpg: 0.0
   chrisma02:
     estimated: false
-    mpg: 30.7
+    mpg: 25.4
   cissemo01:
     estimated: false
-    mpg: 4.5
+    mpg: 3.7
   cissosi01:
     estimated: false
-    mpg: 13.8
+    mpg: 8.1
   clarkja02:
     estimated: false
-    mpg: 19.3
+    mpg: 14.8
   clarkjo01:
     estimated: false
-    mpg: 5.1
+    mpg: 4.6
   claxtni01:
     estimated: false
     mpg: 30.2
   claytwa01:
     estimated: false
-    mpg: 14.7
+    mpg: 12.3
   cliffni01:
     estimated: false
     mpg: 15.2
@@ -259,7 +259,7 @@ minutes:
     mpg: 15.0
   colliis01:
     estimated: false
-    mpg: 15.2
+    mpg: 14.3
   collijo01:
     estimated: false
     mpg: 30.7
@@ -268,16 +268,16 @@ minutes:
     mpg: 9.1
   conlemi01:
     estimated: false
-    mpg: 6.2
+    mpg: 4.1
   connapa01:
     estimated: false
     mpg: 0.0
   coulibi01:
     estimated: false
-    mpg: 31.0
+    mpg: 21.8
   cowarce01:
     estimated: false
-    mpg: 6.7
+    mpg: 21.6
   crawfis01:
     estimated: false
     mpg: 0.0
@@ -298,7 +298,7 @@ minutes:
     mpg: 33.0
   dasiltr01:
     estimated: false
-    mpg: 12.3
+    mpg: 9.4
   davisan02:
     estimated: false
     mpg: 33.0
@@ -316,22 +316,22 @@ minutes:
     mpg: 33.0
   diabamo01:
     estimated: false
-    mpg: 13.7
+    mpg: 18.7
   diawamo01:
     estimated: false
     mpg: 0.0
   dickgr01:
     estimated: false
-    mpg: 6.6
+    mpg: 6.2
   diengou01:
     estimated: false
-    mpg: 14.9
+    mpg: 9.5
   dilliro01:
     estimated: false
     mpg: 7.8
   divindo01:
     estimated: false
-    mpg: 30.8
+    mpg: 23.6
   doncilu01:
     estimated: false
     mpg: 36.0
@@ -340,25 +340,25 @@ minutes:
     mpg: 12.1
   dosunay01:
     estimated: false
-    mpg: 19.3
+    mpg: 25.7
   drumman01:
     estimated: false
-    mpg: 11.3
+    mpg: 17.3
   dunnkr01:
     estimated: false
-    mpg: 26.0
+    mpg: 24.3
   dunnry01:
     estimated: false
-    mpg: 16.1
+    mpg: 12.9
   duranke01:
     estimated: false
     mpg: 36.5
   durenja01:
     estimated: false
-    mpg: 28.5
+    mpg: 27.4
   easonta01:
     estimated: false
-    mpg: 7.1
+    mpg: 16.7
   edeyza01:
     estimated: false
     mpg: 27.2
@@ -370,7 +370,7 @@ minutes:
     mpg: 35.6
   edwarju01:
     estimated: false
-    mpg: 15.3
+    mpg: 9.0
   elliske01:
     estimated: false
     mpg: 15.0
@@ -385,13 +385,13 @@ minutes:
     mpg: 0.0
   eubandr01:
     estimated: false
-    mpg: 2.2
+    mpg: 2.0
   fearsje01:
     estimated: false
-    mpg: 14.3
+    mpg: 20.8
   filipky01:
     estimated: false
-    mpg: 15.2
+    mpg: 19.3
   finnedo01:
     estimated: true
     mpg: 0.0
@@ -403,10 +403,10 @@ minutes:
     mpg: 0.0
   flemira01:
     estimated: false
-    mpg: 3.2
+    mpg: 2.6
   fontesi01:
     estimated: false
-    mpg: 15.2
+    mpg: 13.6
   foxde01:
     estimated: false
     mpg: 33.0
@@ -415,10 +415,10 @@ minutes:
     mpg: 0.0
   furphjo01:
     estimated: false
-    mpg: 5.5
+    mpg: 3.2
   gaffoda01:
     estimated: false
-    mpg: 22.3
+    mpg: 18.5
   gardnmy01:
     estimated: false
     mpg: 0.0
@@ -427,16 +427,16 @@ minutes:
     mpg: 33.0
   garzalu01:
     estimated: false
-    mpg: 6.2
+    mpg: 4.1
   georgke01:
     estimated: false
     mpg: 33.0
   georgky01:
     estimated: false
-    mpg: 13.1
+    mpg: 20.8
   georgpa01:
     estimated: false
-    mpg: 13.8
+    mpg: 28.9
   gibsota01:
     estimated: true
     mpg: 0.0
@@ -451,10 +451,10 @@ minutes:
     mpg: 33.0
   gillan01:
     estimated: false
-    mpg: 5.9
+    mpg: 4.1
   gilleco01:
     estimated: false
-    mpg: 16.1
+    mpg: 19.6
   goberru01:
     estimated: false
     mpg: 33.0
@@ -463,34 +463,34 @@ minutes:
     mpg: 0.0
   gonzahu01:
     estimated: false
-    mpg: 13.8
+    mpg: 9.1
   goodwjo01:
     estimated: false
-    mpg: 27.0
+    mpg: 21.6
   gordoaa01:
     estimated: false
     mpg: 28.1
   grantje01:
     estimated: false
-    mpg: 33.0
+    mpg: 27.6
   grayha01:
     estimated: true
     mpg: 0.0
   greenaj01:
     estimated: false
-    mpg: 6.7
+    mpg: 20.7
   greendr01:
     estimated: false
     mpg: 28.2
   greenja02:
     estimated: false
-    mpg: 8.0
+    mpg: 20.1
   greenja05:
     estimated: false
     mpg: 30.8
   greenjo02:
     estimated: false
-    mpg: 6.9
+    mpg: 6.5
   grimequ01:
     estimated: false
     mpg: 31.0
@@ -499,16 +499,16 @@ minutes:
     mpg: 5.4
   hachiru01:
     estimated: false
-    mpg: 14.8
+    mpg: 22.9
   halibty01:
     estimated: false
-    mpg: 0.0
+    mpg: 33.0
   hallpj01:
     estimated: false
     mpg: 0.0
   hardati02:
     estimated: false
-    mpg: 27.1
+    mpg: 24.2
   hardeja01:
     estimated: false
     mpg: 35.0
@@ -520,10 +520,10 @@ minutes:
     mpg: 0.0
   harpedy01:
     estimated: false
-    mpg: 13.1
+    mpg: 21.8
   harpero02:
     estimated: false
-    mpg: 13.8
+    mpg: 9.1
   harriga01:
     estimated: false
     mpg: 6.6
@@ -538,22 +538,22 @@ minutes:
     mpg: 33.0
   hausesa01:
     estimated: false
-    mpg: 28.3
+    mpg: 18.6
   hawkijo01:
     estimated: true
     mpg: 0.0
   hayesja02:
     estimated: false
-    mpg: 6.9
+    mpg: 6.5
   hayeski01:
     estimated: true
     mpg: 0.0
   hendesc01:
     estimated: false
-    mpg: 13.8
+    mpg: 8.1
   hendrta01:
     estimated: false
-    mpg: 6.7
+    mpg: 5.6
   hepbuch01:
     estimated: false
     mpg: 0.0
@@ -565,7 +565,7 @@ minutes:
     mpg: 0.0
   highsha01:
     estimated: false
-    mpg: 7.3
+    mpg: 5.8
   hinsobl01:
     estimated: false
     mpg: 0.0
@@ -574,7 +574,7 @@ minutes:
     mpg: 29.9
   hollaro01:
     estimated: false
-    mpg: 3.7
+    mpg: 2.9
   holmeda01:
     estimated: false
     mpg: 0.0
@@ -583,7 +583,7 @@ minutes:
     mpg: 30.7
   horfoal01:
     estimated: false
-    mpg: 16.1
+    mpg: 22.1
   houstca01:
     estimated: false
     mpg: 0.0
@@ -592,10 +592,10 @@ minutes:
     mpg: 0.0
   huertke01:
     estimated: false
-    mpg: 8.4
+    mpg: 6.5
   huffja01:
     estimated: false
-    mpg: 12.2
+    mpg: 7.0
   hukpoar01:
     estimated: false
     mpg: 0.0
@@ -607,7 +607,7 @@ minutes:
     mpg: 0.0
   hylanbo01:
     estimated: false
-    mpg: 8.7
+    mpg: 6.7
   ighodos01:
     estimated: false
     mpg: 16.1
@@ -619,7 +619,7 @@ minutes:
     mpg: 0.0
   irvinky01:
     estimated: false
-    mpg: 0.0
+    mpg: 35.6
   isaacjo01:
     estimated: false
     mpg: 0.0
@@ -628,22 +628,22 @@ minutes:
     mpg: 0.0
   jacksgg01:
     estimated: false
-    mpg: 14.7
+    mpg: 12.3
   jacksis01:
     estimated: false
-    mpg: 14.8
+    mpg: 13.9
   jacksja02:
     estimated: false
     mpg: 33.0
   jacksqu01:
     estimated: false
-    mpg: 12.2
+    mpg: 7.0
   jackstr02:
     estimated: false
     mpg: 0.0
   jakucka01:
     estimated: false
-    mpg: 3.0
+    mpg: 1.9
   jamesbr02:
     estimated: false
     mpg: 0.0
@@ -652,7 +652,7 @@ minutes:
     mpg: 33.0
   jamessi01:
     estimated: false
-    mpg: 13.7
+    mpg: 6.1
   jaqueja01:
     estimated: false
     mpg: 29.1
@@ -661,19 +661,19 @@ minutes:
     mpg: 0.0
   jenkida01:
     estimated: false
-    mpg: 18.8
+    mpg: 14.5
   jeromty01:
     estimated: false
     mpg: 26.4
   joeis01:
     estimated: false
-    mpg: 18.8
+    mpg: 14.5
   johnsaj01:
     estimated: false
     mpg: 0.0
   johnsca02:
     estimated: false
-    mpg: 13.7
+    mpg: 24.1
   johnsch06:
     estimated: false
     mpg: 0.0
@@ -685,13 +685,13 @@ minutes:
     mpg: 35.4
   johnske04:
     estimated: false
-    mpg: 5.9
+    mpg: 3.9
   johnske10:
     estimated: false
     mpg: 0.0
   johnstr03:
     estimated: false
-    mpg: 13.1
+    mpg: 9.2
   jokicni01:
     estimated: false
     mpg: 35.6
@@ -703,13 +703,13 @@ minutes:
     mpg: 0.0
   jonesde02:
     estimated: false
-    mpg: 6.6
+    mpg: 6.2
   jonesdi01:
     estimated: false
     mpg: 0.0
   joneshe01:
     estimated: false
-    mpg: 6.4
+    mpg: 3.2
   jonesis01:
     estimated: false
     mpg: 0.0
@@ -718,25 +718,25 @@ minutes:
     mpg: 0.0
   jonessp01:
     estimated: false
-    mpg: 13.7
+    mpg: 12.2
   jonestr01:
     estimated: false
     mpg: 20.1
   jonesty01:
     estimated: false
-    mpg: 13.7
+    mpg: 12.2
   jordade01:
     estimated: false
-    mpg: 6.4
+    mpg: 3.2
   jovicni01:
     estimated: false
-    mpg: 6.9
+    mpg: 6.2
   kalkbry01:
     estimated: false
-    mpg: 6.2
+    mpg: 2.8
   kawamyu01:
     estimated: false
-    mpg: 6.6
+    mpg: 6.2
   keelstr01:
     estimated: true
     mpg: 0.0
@@ -745,7 +745,7 @@ minutes:
     mpg: 0.0
   kennalu01:
     estimated: false
-    mpg: 7.3
+    mpg: 5.8
   kentja01:
     estimated: false
     mpg: 0.0
@@ -766,25 +766,25 @@ minutes:
     mpg: 33.0
   kolekty01:
     estimated: false
-    mpg: 5.1
+    mpg: 4.6
   kolokch01:
     estimated: false
-    mpg: 1.5
+    mpg: 0.8
   konanya01:
     estimated: false
-    mpg: 6.6
+    mpg: 6.2
   kornelu01:
     estimated: false
-    mpg: 13.1
+    mpg: 8.7
   krejcvi01:
     estimated: false
-    mpg: 6.2
+    mpg: 3.6
   kuminjo01:
     estimated: false
     mpg: 28.3
   kuzmaky01:
     estimated: false
-    mpg: 27.6
+    mpg: 17.6
   labissk01:
     estimated: true
     mpg: 0.0
@@ -799,25 +799,25 @@ minutes:
     mpg: 30.0
   larsspe01:
     estimated: false
-    mpg: 15.2
+    mpg: 13.6
   lavinza01:
     estimated: false
     mpg: 33.0
   leonaka01:
     estimated: false
-    mpg: 22.2
+    mpg: 32.0
   leonsma01:
     estimated: false
     mpg: 0.0
   leverca01:
     estimated: false
-    mpg: 6.7
+    mpg: 4.3
   lillada01:
     estimated: false
-    mpg: 0.0
+    mpg: 34.9
   livelde01:
     estimated: false
-    mpg: 10.0
+    mpg: 8.3
   livinch01:
     estimated: true
     mpg: 0.0
@@ -847,7 +847,7 @@ minutes:
     mpg: 28.0
   manntr01:
     estimated: false
-    mpg: 5.9
+    mpg: 4.1
   manonch01:
     estimated: false
     mpg: 0.0
@@ -856,13 +856,13 @@ minutes:
     mpg: 33.0
   marshna01:
     estimated: false
-    mpg: 30.9
+    mpg: 25.6
   martial01:
     estimated: false
     mpg: 0.0
   martica02:
     estimated: false
-    mpg: 10.0
+    mpg: 8.3
   martija02:
     estimated: true
     mpg: 0.0
@@ -874,10 +874,10 @@ minutes:
     mpg: 0.0
   mathube01:
     estimated: false
-    mpg: 14.3
+    mpg: 22.2
   matkoka01:
     estimated: false
-    mpg: 14.3
+    mpg: 7.2
   maxeyty01:
     estimated: false
     mpg: 37.0
@@ -886,7 +886,7 @@ minutes:
     mpg: 0.0
   mcbrimi01:
     estimated: false
-    mpg: 11.3
+    mpg: 10.1
   mccaija01:
     estimated: false
     mpg: 17.4
@@ -895,7 +895,7 @@ minutes:
     mpg: 33.0
   mccontj01:
     estimated: false
-    mpg: 5.5
+    mpg: 3.2
   mcculke01:
     estimated: true
     mpg: 0.0
@@ -904,31 +904,31 @@ minutes:
     mpg: 33.0
   mcgowbr01:
     estimated: false
-    mpg: 1.5
+    mpg: 0.8
   mclaujo01:
     estimated: false
     mpg: 0.0
   mcneeli01:
     estimated: false
-    mpg: 13.7
+    mpg: 6.1
   meltode01:
     estimated: false
-    mpg: 28.8
+    mpg: 24.1
   merrisa01:
     estimated: false
-    mpg: 16.8
+    mpg: 15.6
   middlkh01:
     estimated: false
-    mpg: 26.0
+    mpg: 18.3
   millebr02:
     estimated: false
-    mpg: 13.7
+    mpg: 31.9
   milleem01:
     estimated: true
     mpg: 0.0
   millejo02:
     estimated: false
-    mpg: 14.8
+    mpg: 13.9
   millele01:
     estimated: false
     mpg: 9.1
@@ -940,13 +940,13 @@ minutes:
     mpg: 3.0
   missiyv01:
     estimated: false
-    mpg: 14.3
+    mpg: 19.1
   mitchaj01:
     estimated: false
     mpg: 17.4
   mitchda01:
     estimated: false
-    mpg: 30.5
+    mpg: 27.3
   mitchdo01:
     estimated: false
     mpg: 33.0
@@ -961,7 +961,7 @@ minutes:
     mpg: 6.9
   moodymo01:
     estimated: false
-    mpg: 16.1
+    mpg: 13.5
   moralal01:
     estimated: false
     mpg: 0.0
@@ -973,7 +973,7 @@ minutes:
     mpg: 35.3
   murraco01:
     estimated: false
-    mpg: 10.0
+    mpg: 16.9
   murrade01:
     estimated: false
     mpg: 33.0
@@ -985,16 +985,16 @@ minutes:
     mpg: 34.4
   murrakr01:
     estimated: false
-    mpg: 26.5
+    mpg: 22.1
   mykhasv01:
     estimated: false
-    mpg: 15.2
+    mpg: 14.3
   nancela02:
     estimated: false
-    mpg: 5.5
+    mpg: 3.2
   nancepe01:
     estimated: false
-    mpg: 6.7
+    mpg: 4.3
   nelsogr02:
     estimated: false
     mpg: 0.0
@@ -1018,13 +1018,13 @@ minutes:
     mpg: 0.0
   nnajize01:
     estimated: false
-    mpg: 6.2
+    mpg: 5.5
   nurkiju01:
     estimated: false
     mpg: 26.0
   okogijo01:
     estimated: false
-    mpg: 6.9
+    mpg: 6.5
   okongon01:
     estimated: false
     mpg: 31.4
@@ -1036,7 +1036,7 @@ minutes:
     mpg: 0.0
   onealro01:
     estimated: false
-    mpg: 26.8
+    mpg: 12.0
   oubreke01:
     estimated: false
     mpg: 33.0
@@ -1045,22 +1045,22 @@ minutes:
     mpg: 0.0
   paytoga02:
     estimated: false
-    mpg: 1.6
+    mpg: 1.3
   peavymi01:
     estimated: false
-    mpg: 2.9
+    mpg: 2.4
   pedulse01:
     estimated: false
     mpg: 0.0
   pendano01:
     estimated: false
-    mpg: 5.5
+    mpg: 4.2
   peterdr01:
     estimated: true
     mpg: 0.0
   peterta01:
     estimated: false
-    mpg: 13.1
+    mpg: 8.7
   phillju01:
     estimated: false
     mpg: 0.0
@@ -1069,22 +1069,22 @@ minutes:
     mpg: 0.0
   pippesc02:
     estimated: false
-    mpg: 14.7
+    mpg: 19.2
   plowdda01:
     estimated: false
     mpg: 15.2
   podzibr01:
     estimated: false
-    mpg: 16.1
+    mpg: 24.3
   poeltja01:
     estimated: false
     mpg: 26.8
   poolejo01:
     estimated: false
-    mpg: 2.8
+    mpg: 16.2
   portecr01:
     estimated: false
-    mpg: 16.8
+    mpg: 15.6
   porteke02:
     estimated: false
     mpg: 30.4
@@ -1093,16 +1093,16 @@ minutes:
     mpg: 33.0
   portibo01:
     estimated: false
-    mpg: 15.2
+    mpg: 21.7
   porzikr01:
     estimated: false
     mpg: 26.0
   postqu01:
     estimated: false
-    mpg: 1.5
+    mpg: 1.3
   pottemi01:
     estimated: false
-    mpg: 13.8
+    mpg: 8.1
   poulajo01:
     estimated: false
     mpg: 0.0
@@ -1117,16 +1117,16 @@ minutes:
     mpg: 33.0
   princta02:
     estimated: false
-    mpg: 15.2
+    mpg: 14.5
   pritcpa01:
     estimated: false
-    mpg: 13.8
+    mpg: 28.5
   proctty01:
     estimated: false
-    mpg: 7.6
+    mpg: 7.0
   prospol01:
     estimated: false
-    mpg: 2.9
+    mpg: 2.4
   pullizy01:
     estimated: false
     mpg: 0.0
@@ -1156,7 +1156,7 @@ minutes:
     mpg: 32.0
   reedpa01:
     estimated: false
-    mpg: 12.0
+    mpg: 18.8
   reeseju01:
     estimated: true
     mpg: 0.0
@@ -1168,34 +1168,34 @@ minutes:
     mpg: 29.8
   richaja02:
     estimated: false
-    mpg: 5.5
+    mpg: 4.2
   richani01:
     estimated: false
-    mpg: 3.1
+    mpg: 2.8
   richawi02:
     estimated: false
-    mpg: 3.3
+    mpg: 2.8
   richmka01:
     estimated: true
     mpg: 0.0
   rileywi01:
     estimated: false
-    mpg: 13.1
+    mpg: 9.2
   risacza01:
     estimated: false
-    mpg: 22.3
+    mpg: 18.5
   robindu01:
     estimated: false
-    mpg: 26.1
+    mpg: 20.2
   robinmi01:
     estimated: false
-    mpg: 13.8
+    mpg: 19.0
   robinor01:
     estimated: true
     mpg: 0.0
   rolliry01:
     estimated: false
-    mpg: 14.9
+    mpg: 23.7
   ruperra01:
     estimated: false
     mpg: 0.0
@@ -1210,13 +1210,13 @@ minutes:
     mpg: 35.1
   salauti01:
     estimated: false
-    mpg: 2.7
+    mpg: 1.2
   sandeko01:
     estimated: false
-    mpg: 26.4
+    mpg: 24.7
   santogu01:
     estimated: false
-    mpg: 7.3
+    mpg: 6.1
   sarafbe01:
     estimated: false
     mpg: 6.7
@@ -1225,40 +1225,40 @@ minutes:
     mpg: 30.1
   sassema01:
     estimated: false
-    mpg: 24.0
+    mpg: 19.9
   scheiba01:
     estimated: false
-    mpg: 24.5
+    mpg: 16.1
   schrode01:
     estimated: false
-    mpg: 26.0
+    mpg: 11.6
   sengual01:
     estimated: false
     mpg: 33.0
   sensabr01:
     estimated: false
-    mpg: 15.2
+    mpg: 14.3
   sextoco01:
     estimated: false
     mpg: 21.0
   shamela01:
     estimated: false
-    mpg: 5.1
+    mpg: 4.6
   shannte01:
     estimated: false
-    mpg: 3.9
+    mpg: 3.0
   sharpda01:
     estimated: false
     mpg: 25.7
   sharpsh01:
     estimated: false
-    mpg: 13.8
+    mpg: 8.1
   sheadja01:
     estimated: false
-    mpg: 22.2
+    mpg: 17.7
   sheppbe01:
     estimated: false
-    mpg: 12.2
+    mpg: 7.0
   sheppre01:
     estimated: false
     mpg: 15.9
@@ -1270,13 +1270,13 @@ minutes:
     mpg: 0.0
   simonan01:
     estimated: false
-    mpg: 6.9
+    mpg: 21.7
   simpskj01:
     estimated: false
     mpg: 0.0
   simsje01:
     estimated: false
-    mpg: 6.7
+    mpg: 4.3
   slawsja01:
     estimated: false
     mpg: 0.0
@@ -1285,10 +1285,10 @@ minutes:
     mpg: 0.0
   smartma01:
     estimated: false
-    mpg: 15.9
+    mpg: 12.5
   smithdr01:
     estimated: false
-    mpg: 15.2
+    mpg: 13.6
   smithja04:
     estimated: false
     mpg: 20.1
@@ -1297,28 +1297,28 @@ minutes:
     mpg: 33.0
   smithma02:
     estimated: false
-    mpg: 33.0
+    mpg: 26.3
   smithto05:
     estimated: false
     mpg: 0.0
   sochaje01:
     estimated: false
-    mpg: 13.8
+    mpg: 8.1
   spencca01:
     estimated: false
-    mpg: 25.7
+    mpg: 21.5
   spencpa01:
     estimated: false
     mpg: 0.0
   stewais01:
     estimated: false
-    mpg: 14.7
+    mpg: 18.9
   strawju01:
     estimated: false
-    mpg: 13.7
+    mpg: 12.2
   strusma01:
     estimated: false
-    mpg: 3.0
+    mpg: 2.8
   suggsja01:
     estimated: false
     mpg: 30.5
@@ -1330,7 +1330,7 @@ minutes:
     mpg: 36.2
   terryda01:
     estimated: false
-    mpg: 16.1
+    mpg: 13.5
   thierad01:
     estimated: false
     mpg: 0.0
@@ -1342,7 +1342,7 @@ minutes:
     mpg: 28.8
   thompkl01:
     estimated: false
-    mpg: 15.2
+    mpg: 20.7
   thybuma01:
     estimated: false
     mpg: 7.0
@@ -1351,7 +1351,7 @@ minutes:
     mpg: 0.0
   tomlina01:
     estimated: false
-    mpg: 7.6
+    mpg: 7.0
   tonjejo01:
     estimated: false
     mpg: 0.0
@@ -1360,7 +1360,7 @@ minutes:
     mpg: 7.9
   toppiob01:
     estimated: false
-    mpg: 12.2
+    mpg: 7.0
   townska01:
     estimated: false
     mpg: 33.0
@@ -1369,16 +1369,16 @@ minutes:
     mpg: 15.0
   trentga02:
     estimated: false
-    mpg: 14.9
+    mpg: 9.5
   tshieos01:
     estimated: false
-    mpg: 7.1
+    mpg: 5.6
   turnemy01:
     estimated: false
     mpg: 30.6
   tysonja01:
     estimated: false
-    mpg: 26.5
+    mpg: 24.6
   vandeja01:
     estimated: false
     mpg: 5.0
@@ -1390,13 +1390,13 @@ minutes:
     mpg: 33.0
   vucevni01:
     estimated: false
-    mpg: 12.3
+    mpg: 24.0
   vukcetr01:
     estimated: false
-    mpg: 5.9
+    mpg: 4.1
   wadede01:
     estimated: false
-    mpg: 6.9
+    mpg: 4.0
   wagnefr01:
     estimated: false
     mpg: 33.0
@@ -1405,10 +1405,10 @@ minutes:
     mpg: 15.0
   walkeja01:
     estimated: false
-    mpg: 3.0
+    mpg: 1.8
   walkeja02:
     estimated: false
-    mpg: 12.2
+    mpg: 7.0
   walkelo01:
     estimated: false
     mpg: 0.0
@@ -1417,28 +1417,28 @@ minutes:
     mpg: 30.0
   walshjo01:
     estimated: false
-    mpg: 6.2
+    mpg: 4.1
   walteja01:
     estimated: false
-    mpg: 22.2
+    mpg: 17.7
   wareke01:
     estimated: false
-    mpg: 14.9
+    mpg: 21.4
   washipj01:
     estimated: false
-    mpg: 22.3
+    mpg: 18.5
   watfotr01:
     estimated: false
-    mpg: 2.8
+    mpg: 1.4
   watkija01:
     estimated: false
     mpg: 0.0
   watsope01:
     estimated: false
-    mpg: 16.8
+    mpg: 23.5
   wellsja01:
     estimated: false
-    mpg: 14.7
+    mpg: 12.3
   wembavi01:
     estimated: false
     mpg: 33.0
@@ -1450,7 +1450,7 @@ minutes:
     mpg: 0.0
   whiteco01:
     estimated: false
-    mpg: 2.7
+    mpg: 24.5
   whitede01:
     estimated: false
     mpg: 34.0
@@ -1468,13 +1468,13 @@ minutes:
     mpg: 0.0
   willibr03:
     estimated: false
-    mpg: 7.3
+    mpg: 6.1
   willico04:
     estimated: false
-    mpg: 8.7
+    mpg: 6.7
   willigr01:
     estimated: false
-    mpg: 13.7
+    mpg: 6.1
   willija06:
     estimated: false
     mpg: 31.5
@@ -1495,7 +1495,7 @@ minutes:
     mpg: 20.1
   williro04:
     estimated: false
-    mpg: 6.2
+    mpg: 3.6
   willizi01:
     estimated: false
     mpg: 31.1
@@ -1507,7 +1507,7 @@ minutes:
     mpg: 0.0
   wisemja01:
     estimated: false
-    mpg: 5.1
+    mpg: 4.6
   wolfda01:
     estimated: false
     mpg: 6.7
@@ -1522,7 +1522,7 @@ minutes:
     mpg: 0.0
   youngtr01:
     estimated: false
-    mpg: 13.1
+    mpg: 36.0
   zikarro01:
     estimated: false
     mpg: 0.0

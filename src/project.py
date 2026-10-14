@@ -305,16 +305,41 @@ def _interp_curve(curve: list[tuple[float, float]], age: float) -> float:
     return curve[-1][1]
 
 
+# Season weights 0.5 / 0.3 / 0.2 on seasons ending 1, 2 and 3 years before the
+# projected season: the blend is observed ~1.7 years younger than age at season start.
+OBSERVED_AGE_LAG = 1.7
+
+
 def apply_age_curve(shrunk: pd.DataFrame, ages: pd.Series) -> pd.DataFrame:
-    """§3.6: apply the age curve to the shrunk per-100 rates."""
+    """§3.6: apply the age curve to the shrunk per-100 rates.
+
+    Shooting percentages (fg_pct, ft_pct) pass through unchanged. The curves
+    are multipliers on per-100 *volume*; applied to a percentage they turned
+    LeBron James's .515 FG% into .360 and Stephen Curry's .923 FT% into .792,
+    and shaved 3-10% off every player under 25 or over 28 (fixed 2026-10-14).
+    Age still reaches FG/FT impact through attempts (fga_p100 / fta_p100),
+    which do decline with age.
+
+    The multiplier is curve(age) / curve(age - 1.7): the change in level since
+    the blended seasons were played (also fixed 2026-10-14; previously the
+    absolute level, which penalised young players and double-counted aging)."""
     out = shrunk.copy()
     for col in _ALL_COLS:
         curve = AGE_CURVE_BY_LABEL[_LABEL_BY_COL[col]]
+        is_percentage = _OUTPUT_LABEL_BY_COL.get(col) in RATE_OUTPUT_LABELS
         shrunk_col = f"shrunk_{col}"
         adj = []
         for pid, val in out[shrunk_col].items():
             age = ages.get(pid)
-            mult = _interp_curve(curve, age) if age is not None and not pd.isna(age) else 1.0
+            if is_percentage or age is None or pd.isna(age):
+                mult = 1.0
+            else:
+                # The curve is a level relative to peak. The blended rate was
+                # observed at an average of OBSERVED_AGE_LAG years younger, so
+                # the correction is the change in level between the two ages,
+                # not the level itself -- otherwise a 20-year-old's rate is cut
+                # 8% instead of rising, and a 38-year-old's aging is counted twice.
+                mult = _interp_curve(curve, age) / _interp_curve(curve, age - OBSERVED_AGE_LAG)
             adj.append(val * mult if not pd.isna(val) else val)
         out[f"aged_{col}"] = adj
     return out
