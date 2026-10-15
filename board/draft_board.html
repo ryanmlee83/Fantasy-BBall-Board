@@ -85,6 +85,12 @@ select, .btn { border: 1px solid var(--line); background: var(--panel-2); border
 .catchip { border: 1px solid var(--line); background: var(--panel-2); border-radius: 999px; padding: 3px 10px;
   font-family: var(--display); font-weight: 600; font-size: 15px; letter-spacing: .03em; }
 .catchip[aria-pressed="true"] { background: var(--bad-soft); border-color: var(--neg); text-decoration: line-through; color: var(--neg); }
+.skiprow { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: -2px 0 10px; }
+.skiprow .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-right: 2px; }
+.skipchip { border: 1px solid var(--line); background: var(--panel-2); border-radius: 6px; padding: 2px 10px;
+  font-family: var(--display); font-weight: 600; font-size: 15px; letter-spacing: .03em; min-width: 40px; }
+.skipchip[aria-pressed="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); text-decoration: line-through; }
+.skiprow .hint .warn { color: var(--neg); font-weight: 600; }
 .hint { font-size: 13px; color: var(--muted); }
 .hint b { color: var(--ink); }
 
@@ -244,6 +250,11 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     <main style="display:grid;gap:12px;min-width:0">
       <section class="panel" aria-labelledby="suggH">
         <h2 id="suggH">Best available <small id="suggSub"></small></h2>
+        <div class="skiprow" role="group" aria-label="Skip positions in recommendations">
+          <span class="lbl">Skip</span>
+          <span id="skipChips" style="display:flex;gap:6px;flex-wrap:wrap"></span>
+          <span class="hint" id="skipHint">Tap a position to leave it out of these recommendations.</span>
+        </div>
         <div class="sugg" id="sugg"></div>
         <div class="waitline" id="waitLine"></div>
         <div class="waitline" id="rookieLine"></div>
@@ -321,6 +332,8 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
   const TEAMS = DATA.league.teams, ROUNDS = DATA.league.rounds, POOL = DATA.poolSize;
   const START_SLOTS = ["PG", "SG", "G", "SF", "PF", "F", "C", "C", "UTIL", "UTIL"];
   const ELIG = { PG: ["PG", "G", "UTIL"], SG: ["SG", "G", "UTIL"], SF: ["SF", "F", "UTIL"], PF: ["PF", "F", "UTIL"], C: ["C", "UTIL"] };
+  // which player positions can fill each roster slot
+  const ELIG_INV = { PG: ["PG"], SG: ["SG"], G: ["PG", "SG"], SF: ["SF"], PF: ["PF"], F: ["SF", "PF"], C: ["C"] };
   const STORE_KEY = "prize20-draft-238445";
 
   const players = DATA.players;
@@ -328,9 +341,10 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
   const projected = players.filter(p => !p.np);
 
   // ---------- state ----------
-  let state = { slot: null, picks: [], punt: [], mode: "floor" };
+  let state = { slot: null, picks: [], punt: [], mode: "floor", skip: [] };
   try { const s = JSON.parse(localStorage.getItem(STORE_KEY) || "null"); if (s && Array.isArray(s.picks)) state = Object.assign(state, s); } catch (e) {}
   state.picks = state.picks.filter(pk => byId.has(pk.id));
+  if (!Array.isArray(state.skip)) state.skip = [];
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {} };
 
   let posFilter = "ALL", showAll = false, limit = 150;
@@ -468,14 +482,27 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     const slotsLeft = state.slot ? ctx.mine.filter(n => n >= ctx.pickNo).length : ROUNDS - myIds.length;
     const openStart = START_SLOTS.length - base.n;
     const urgent = openStart > 0 && slotsLeft <= openStart + 1;
+    // positions the user chose to skip: anyone eligible at a skipped position is left out
+    const skipped = p => (p.pos || []).some(x => state.skip.includes(x));
+    const recAvail = state.skip.length ? avail.filter(p => !skipped(p)) : avail;
+    el("skipChips").innerHTML = ["PG", "SG", "SF", "PF", "C"].map(x =>
+      `<button type="button" class="skipchip" data-skip="${x}" aria-pressed="${state.skip.includes(x)}" title="${state.skip.includes(x) ? "Show" : "Hide"} players eligible at ${x}">${x}</button>`).join("");
+    if (state.skip.length) {
+      const hidden = avail.length - recAvail.length;
+      const openSkipped = START_SLOTS.filter((s, i) => !base.slotOwner[i] && s !== "UTIL" && [...(ELIG_INV[s] || [])].every(x => state.skip.includes(x)));
+      el("skipHint").innerHTML = `Hiding ${hidden} player${hidden === 1 ? "" : "s"} eligible at ${state.skip.join(" or ")}. <button type="button" class="mini" id="skipClear">Show all</button>` +
+        (openSkipped.length && slotsLeft <= openStart + 2 ? ` <span class="warn">Careful: ${slotsLeft} pick${slotsLeft === 1 ? "" : "s"} left and you still need ${[...new Set(openSkipped)].join(", ")}.</span>` : "");
+    } else {
+      el("skipHint").textContent = "Tap a position to leave it out of these recommendations.";
+    }
     const fillInfo = new Map();
-    const scanFill = avail.slice(0, 60);
+    const scanFill = recAvail.slice(0, 60);
     for (const p of scanFill) {
       const m = matchStarters([...myIds, p.id]);
       if (m.n > base.n) { const i = m.slotOwner.indexOf(p.id); fillInfo.set(p.id, START_SLOTS[i]); }
     }
-    let pool = avail;
-    if (urgent) pool = avail.filter(p => fillInfo.has(p.id)).concat(avail.filter(p => !fillInfo.has(p.id)));
+    let pool = recAvail;
+    if (urgent) pool = recAvail.filter(p => fillInfo.has(p.id)).concat(recAvail.filter(p => !fillInfo.has(p.id)));
     const top = pool.slice(0, 6);
     el("suggSub").textContent = state.mode === "floor" ? "score = value above replacement × games played" : "score = value above replacement per game";
     el("sugg").innerHTML = top.map((p, i) => {
@@ -494,9 +521,9 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     // can-wait line: strong values whose ADP says they'll be there at the target pick
     if (ctx.target) {
       const topScore = top.length ? score.get(top[0].id) : 0;
-      const wait = avail.slice(0, 40).filter(p => (p.adp == null || p.adp > ctx.target + 8) && score.get(p.id) > topScore * 0.6 && !top.includes(p)).slice(0, 4);
+      const wait = recAvail.slice(0, 40).filter(p => (p.adp == null || p.adp > ctx.target + 8) && score.get(p.id) > topScore * 0.6 && !top.includes(p)).slice(0, 4);
       el("waitLine").innerHTML = wait.length ? `Also likely there at #${ctx.target}: ${wait.map(p => `<b>${esc(p.name)}</b> (${f1(score.get(p.id))}, ADP ${p.adp ?? "—"})`).join(" · ")}` : "";
-      const rook = players.filter(p => p.np && !T.has(p.id) && p.adp != null && p.adp <= ctx.target + 12).sort((a, b) => a.adp - b.adp).slice(0, 4);
+      const rook = players.filter(p => p.np && !T.has(p.id) && !skipped(p) && p.adp != null && p.adp <= ctx.target + 12).sort((a, b) => a.adp - b.adp).slice(0, 4);
       el("rookieLine").innerHTML = rook.length ? `Unprojected rookies going around here: ${rook.map(p => `<b>${esc(p.name)}</b> (${p.team}, ${p.pos.join("/")}, ADP ${p.adp})`).join(" · ")}. The model has no NBA history for them, so they never appear above.` : "";
     } else {
       el("waitLine").textContent = state.slot ? "" : "Set your draft slot to see who will last to your next pick.";
@@ -622,6 +649,13 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
   slotSel.addEventListener("change", () => { state.slot = slotSel.value ? +slotSel.value : null; save(); render(); });
   el("modeFloor").addEventListener("click", () => { state.mode = "floor"; save(); render(); });
   el("modePG").addEventListener("click", () => { state.mode = "pergame"; save(); render(); });
+  document.addEventListener("click", e => {
+    if (e.target.closest("#skipClear")) { state.skip = []; save(); render(); return; }
+    const b = e.target.closest("[data-skip]"); if (!b) return;
+    const x = b.dataset.skip;
+    state.skip = state.skip.includes(x) ? state.skip.filter(y => y !== x) : [...state.skip, x];
+    save(); render();
+  });
   el("catChips").addEventListener("click", e => {
     const b = e.target.closest("[data-cat]"); if (!b) return;
     const c = b.dataset.cat;
