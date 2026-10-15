@@ -699,21 +699,28 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
   const dlg = el("pasteDlg");
   el("pasteBtn").addEventListener("click", () => { el("pasteResult").textContent = ""; if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", ""); });
   el("pasteCancel").addEventListener("click", () => dlg.close ? dlg.close() : dlg.removeAttribute("open"));
+  // Yahoo lists picks as "(3) Ryan - Allen, Jarrett (CLE - C)": turn "Last, First"
+  // into "First Last" so the name matches. Commas inside the (TEAM - POS) part are left alone.
+  const swapLastFirst = line => line.replace(/(^|\s-\s|\)\s)((?:(?!\s-\s)[^,()])+?),\s*([^,()]+?)(?=\s*\(|\s*$)/g,
+    (m, pre, last, first) => `${pre}${first} ${last}`);
   el("pasteApply").addEventListener("click", () => {
     const mineName = norm(el("pasteMineName").value || "");
-    const lines = el("pasteText").value.split(/\n+/).map(l => l.trim()).filter(Boolean);
+    const lines = el("pasteText").value.split(/\n+/).map(l => l.trim()).filter(l => l && !/^round\s+\d+$/i.test(l));
     const sortedIdx = searchIndex.slice().sort((a, b) => b.n.length - a.n.length);
-    let added = 0; const missed = [];
+    let added = 0, mineCount = 0; const missed = [];
     for (const line of lines) {
-      const nl = " " + norm(line) + " ";
+      const nl = " " + norm(swapLastFirst(line)) + " ";
       const hit = sortedIdx.find(({ n }) => nl.includes(" " + n + " "));
       if (!hit) { missed.push(line); continue; }
       if (state.picks.some(pk => pk.id === hit.p.id)) continue;
-      state.picks.push({ id: hit.p.id, mine: !!mineName && nl.includes(" " + mineName + " ") });
-      added++;
+      // team name counts only outside the player's own name ("Ryan" must not claim Ryan Rollins)
+      const rest = nl.replace(" " + hit.n + " ", " ");
+      const mine = !!mineName && rest.includes(" " + mineName + " ");
+      state.picks.push({ id: hit.p.id, mine });
+      added++; if (mine) mineCount++;
     }
     save(); render();
-    el("pasteResult").textContent = `Marked ${added} pick${added === 1 ? "" : "s"}.` + (missed.length ? ` No match for ${missed.length}: ${missed.slice(0, 5).join(" | ")}${missed.length > 5 ? " …" : ""}` : "");
+    el("pasteResult").textContent = `Marked ${added} pick${added === 1 ? "" : "s"}${mineName ? ` (${mineCount} yours)` : ""}.` + (missed.length ? ` No match for ${missed.length}: ${missed.slice(0, 5).join(" | ")}${missed.length > 5 ? " …" : ""}` : "");
   });
 
   // footer
