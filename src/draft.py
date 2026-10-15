@@ -180,7 +180,9 @@ def build_board_data() -> dict:
     # ADP-listed players with no projection (rookies / no NBA history)
     projected_ids = set(valued.index)
     for _, a in adp.iterrows():
-        if a["team_c"] == "FA":
+        if a["team_c"] == "FA" or pd.isna(a["roster_name"]):
+            # only players on a current NBA roster: an ADP row with no roster
+            # match is a free agent or a waived player (Yuki Kawamura, 2026-10-12)
             continue
         pid = a["player_id"] if pd.notna(a["player_id"]) else None
         if pid is not None and pid in projected_ids:

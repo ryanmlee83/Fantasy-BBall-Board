@@ -404,3 +404,14 @@ Backtest MAE on the 150-player pool: PTS 2.27 → 2.02, FG impact .361 → .293,
 
 **ADP and Yahoo positions**: `data/raw/fantasypros_adp_20261014.csv`, matched to
 `player_id` on normalised name + team (11 unmatched, 9 of them free agents).
+
+**Roster audit (2026-10-15, before the draft).** Basketball Reference's 2026-27 transactions
+log shows no trades since the 2026-10-08 snapshot, only waivers of fringe players and
+Exhibit 10 camp signings. Eight team pages (BOS, CLE, LAC, NOP, DEN, MIA, GSW, WAS) were
+re-fetched and diffed against `rosters_2627.csv`: every difference was one of those
+waivers or camp signings. The 16 waived players were removed (Jaylen Martin, Lester
+Quinones, J'Vonne Hadley, Kadary Richmond, Curtis Jones, William Kyle III, Christian Koloko,
+Caleb Houstan, Miles Kelly, Skal Labissiere, Dain Dainja, Yuki Kawamura, Chucky Hepburn,
+Lonnie Walker IV, RJ Davis, Isaac McKneely). `crosswalk_unmatched.csv`,
+`unrostered_players.csv` and `vacated_opportunity.csv` were updated to match. Camp signings
+were not added; none are fantasy-relevant. No top-200 board rank moved.

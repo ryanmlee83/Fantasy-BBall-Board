@@ -29,14 +29,15 @@ etienty01,Tyson Etienne,BRK,380.0,15.83
 payneca01,Cameron Payne,PHI,374.0,17.0
 robinje02,Jeremiah Robinson-Earl,2TM,361.0,16.41
 olynyke01,Kelly Olynyk,SAS,360.0,8.57
+kolokch01,Christian Koloko,,357.0,13.22
 liddeej01,E.J. Liddell,BRK,349.0,13.42
 johnsch06,Chaney Johnson,BRK,348.0,20.47
 liveris01,Isaiah Livers,PHO,347.0,9.64
 olbrila01,Lachlan Olbrich,CHI,344.0,9.3
 burtoty01,Tyler Burton,MEM,307.0,25.58
 cryerlj01,LJ Cryer,GSW,292.0,16.22
-waterli01,Lindy Waters III,SAS,285.0,7.12
 hinsobl01,Blake Hinson,UTA,285.0,20.36
+waterli01,Lindy Waters III,SAS,285.0,7.12
 leonsma01,Malevy Leons,GSW,276.0,11.04
 ryanco01,Cormac Ryan,MIL,271.0,24.64
 simpskj01,KJ Simpson,2TM,257.0,12.85
@@ -49,6 +50,7 @@ lawsoaj01,A.J. Lawson,TOR,226.0,9.42
 willilu01,Lucas Williamson,MEM,224.0,32.0
 okanito01,Toby Okani,MEM,217.0,36.17
 hallpj01,PJ Hall,2TM,214.0,11.26
+kawamyu01,Yuki Kawamura,CHI,209.0,11.61
 dennira01,RayJ Dennis,3TM,206.0,12.12
 mathega01,Garrison Mathews,IND,196.0,13.07
 beaucma01,MarJon Beauchamp,PHI,196.0,14.0
@@ -66,6 +68,7 @@ inglejo01,Joe Ingles,MIN,153.0,5.67
 antetth01,Thanasis Antetokounmpo,MIL,148.0,4.35
 biyombi01,Bismack Biyombo,SAS,141.0,5.64
 mccluma01,Mac McClung,2TM,135.0,12.27
+kellymi02,Miles Kelly,DAL,134.0,9.57
 curryse01,Seth Curry,GSW,133.0,13.3
 lowryky01,Kyle Lowry,PHI,118.0,8.43
 yurtsom01,Omer Yurtseven,GSW,104.0,11.56
@@ -73,17 +76,20 @@ travelu01,Luke Travers,CLE,103.0,8.58
 baldwpa01,Patrick Baldwin Jr.,3TM,102.0,11.33
 willial06,Alondes Williams,WAS,101.0,25.25
 gibsota01,Taj Gibson,MEM,97.0,9.7
-cookeja01,Javonte Cooke,POR,94.0,4.95
 bouchch01,Chris Boucher,BOS,94.0,10.44
+cookeja01,Javonte Cooke,POR,94.0,4.95
+jonescu01,Curtis Jones,DEN,88.0,8.8
 juzanjo01,Johnny Juzang,MIN,88.0,4.19
 washity02,TyTy Washington Jr.,LAC,88.0,5.5
 enarutr01,Tristan Enaruna,CLE,85.0,9.44
 odurojo01,Josh Oduro,NOP,82.0,27.33
-gordoer01,Eric Gordon,PHI,74.0,12.33
+houstca01,Caleb Houstan,ATL,75.0,4.17
 gilbeke01,Keshon Gilbert,2TM,74.0,18.5
-templga01,Garrett Temple,TOR,73.0,3.32
+gordoer01,Eric Gordon,PHI,74.0,12.33
 roddyda01,David Roddy,DEN,73.0,14.6
+templga01,Garrett Temple,TOR,73.0,3.32
 klintbo01,Bobi Klintman,DET,71.0,5.92
+richmka01,Kadary Richmond,WAS,67.0,22.33
 morrimo01,Monte Morris,IND,65.0,10.83
 sandfpa01,Payton Sandfort,OKC,63.0,15.75
 bantoda01,Dalano Banton,2TM,62.0,10.33
@@ -99,10 +105,11 @@ dickihu01,Hunter Dickinson,NOP,42.0,8.4
 saricda01,Dario Šarić,SAC,41.0,8.2
 huntlcj01,CJ Huntley,PHO,40.0,10.0
 sarrol01,Olivier Sarr,CLE,39.0,9.75
+labissk01,Skal Labissière,WAS,38.0,12.67
+jonesis01,Isaac Jones,2TM,36.0,5.14
 shulgma01,Max Shulga,BOS,36.0,3.27
 fultzma01,Markelle Fultz,TOR,36.0,7.2
 zikarro01,Rocco Zikarsky,MIN,36.0,7.2
-jonesis01,Isaac Jones,2TM,36.0,5.14
 telfoja01,Jahmyl Telfort,LAC,32.0,4.0
 sallihu01,Hunter Sallis,PHI,26.0,3.71
 searsma01,Mark Sears,MIL,26.0,3.71
@@ -113,8 +120,9 @@ clarkbr01,Brandon Clarke,MEM,20.0,10.0
 toppija01,Jacob Toppin,ATL,17.0,3.4
 boehebu01,Buddy Boeheim,OKC,15.0,3.75
 nfalyda01,N'Faly Dante,ATL,15.0,3.75
+hepbuch01,Chucky Hepburn,TOR,13.0,6.5
 evbuoto01,Tosan Evbuomwan,NYK,8.0,1.6
-umudest01,Stanley Umude,SAS,7.0,3.5
 jonesco02,Colby Jones,DET,7.0,7.0
+umudest01,Stanley Umude,SAS,7.0,3.5
 flowetr01,Trentyn Flowers,CHI,6.0,3.0
 brownda04,Darius Brown II,CLE,3.0,3.0
