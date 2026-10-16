@@ -1,0 +1,9 @@
+# Second league: Yahoo High Score (settings supplied by Ryan, 2026-10-16).
+# The board for it is board/highscore_board.html; scoring weights are editable on the page.
+league:
+  teams: 10
+  format: high_score        # weekly H2H; each starter's single best game of the week counts
+  draft_type: standard      # snake
+  roster_slots: {G: 2, FC: 3, UTIL: 1, BENCH: 4}   # G = PG/SG eligible, FC = SF/PF/C eligible
+  scoring: {PTS: 1, REB: 1, AST: 2, STL: 3, BLK: 3}  # Yahoo High Score defaults; no turnovers
+  # Format reference: help.yahoo.com/kb/SLN37162.html and nba.com/news/how-to-play-yahoo-high-score
