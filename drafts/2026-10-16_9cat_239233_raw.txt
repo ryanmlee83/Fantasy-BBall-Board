@@ -1,0 +1,827 @@
+130	
+D. DeRozan
+D. DeRozan
+Q
+SF,PF
+DEN
+Mike's Matchless Team
+129	
+K. Porter Jr.
+K. Porter Jr.
+Q
+PG,SG
+MIL
+Your Team
+128	
+Y. Missi
+Y. Missi
+C
+NOP
+Alan Bolduc's Super Team
+127	
+J. Kuminga
+J. Kuminga
+SF,PF
+MIN
+King Plaid
+126	
+W. Carter Jr.
+W. Carter Jr.
+C
+ORL
+Jayden Daniels
+125	
+A. Dosunmu
+A. Dosunmu
+P
+PG,SG
+MIN
+ZL's Best Team
+124	
+Y. Lendeborg
+Y. Lendeborg
+PF
+GSW
+paul's Glorious Team
+123	
+J. Jaquez Jr.
+J. Jaquez Jr.
+Q
+SG,SF,PF
+MIL
+Sonny Styles
+122	
+K. Maluach
+K. Maluach
+C
+PHX
+Pure Magic
+121	
+G. Santos
+G. Santos
+SF,PF
+GSW
+Frank's First-Rate Team
+Round 12
+120	
+K. George
+K. George
+SG,SF,PF
+WAS
+Frank's First-Rate Team
+119	
+E. Dëmin
+E. Dëmin
+PG,SG
+BKN
+Pure Magic
+118	
+B. Simmons
+B. Simmons
+Q
+PG
+SAC
+Sonny Styles
+117	
+B. Ingram
+B. Ingram
+O
+SG,SF,PF
+LAC
+paul's Glorious Team
+116	
+J. Collins
+J. Collins
+PF,C
+DET
+ZL's Best Team
+115	
+M. Turner
+M. Turner
+Q
+C
+MIL
+Jayden Daniels
+114	
+D. Mitchell
+D. Mitchell
+PG
+MIA
+King Plaid
+113	
+K. Murray
+K. Murray
+SF,PF
+SAC
+Alan Bolduc's Super Team
+112	
+C. Wallace
+C. Wallace
+Q
+PG,SG,SF
+OKC
+Your Team
+111	
+C. McCollum
+C. McCollum
+Q
+PG,SG
+ATL
+Mike's Matchless Team
+Round 11
+110	
+A. Gordon
+A. Gordon
+PF,C
+DEN
+Mike's Matchless Team
+109	
+N. Queta
+N. Queta
+C
+BOS
+Your Team
+108	
+T. Jerome
+T. Jerome
+PG,SG
+MEM
+Alan Bolduc's Super Team
+107	
+J. Champagnie
+J. Champagnie
+Q
+SF,PF
+SAS
+King Plaid
+106	
+M. Bridges
+M. Bridges
+Q
+PF
+PHX
+Jayden Daniels
+105	
+J. Hart
+J. Hart
+Q
+SG,SF
+NYK
+ZL's Best Team
+104	
+C. Murray-Boyles
+C. Murray-Boyles
+PF,C
+TOR
+paul's Glorious Team
+103	
+N. Claxton
+N. Claxton
+Q
+C
+CHI
+Sonny Styles
+102	
+B. Podziemski
+B. Podziemski
+PG,SG
+GSW
+Pure Magic
+101	
+R. Barrett
+R. Barrett
+SG,SF,PF
+TOR
+Frank's First-Rate Team
+Round 10
+100	
+D. Acuff Jr.
+D. Acuff Jr.
+Q
+PG
+SAC
+Frank's First-Rate Team
+99	
+R. Rollins
+R. Rollins
+Q
+PG,SG
+MIL
+Pure Magic
+98	
+I. Hartenstein
+I. Hartenstein
+C
+OKC
+Sonny Styles
+97	
+J. Morant
+J. Morant
+PG
+POR
+paul's Glorious Team
+96	
+D. Sharpe
+D. Sharpe
+C
+BKN
+ZL's Best Team
+95	
+J. Smith Jr.
+J. Smith Jr.
+PF,C
+HOU
+Jayden Daniels
+94	
+D. Peterson
+D. Peterson
+SG
+UTA
+King Plaid
+93	
+I. Quickley
+I. Quickley
+PG,SG
+TOR
+Alan Bolduc's Super Team
+92	
+D. Queen
+D. Queen
+PF,C
+NOP
+Your Team
+91	
+Z. LaVine
+Z. LaVine
+Q
+PG,SG,SF
+SAC
+Mike's Matchless Team
+Round 9
+90	
+N. Powell
+N. Powell
+SG,SF
+CHI
+Mike's Matchless Team
+89	
+J. Suggs
+J. Suggs
+PG,SG
+ORL
+Your Team
+88	
+J. McDaniels
+J. McDaniels
+SF
+MIN
+Alan Bolduc's Super Team
+87	
+V. Edgecombe
+V. Edgecombe
+PG,SG
+PHI
+King Plaid
+86	
+C. White
+C. White
+Q
+PG,SG
+CHA
+Jayden Daniels
+85	
+D. Harper
+D. Harper
+PG,SG
+SAS
+ZL's Best Team
+84	
+C. Coward
+C. Coward
+SG,SF
+MEM
+paul's Glorious Team
+83	
+N. Reid
+N. Reid
+PF,C
+CHA
+Sonny Styles
+82	
+M. Bridges
+M. Bridges
+SF,PF
+NYK
+Pure Magic
+81	
+A. Wiggins
+A. Wiggins
+SG,SF,PF
+MIA
+Frank's First-Rate Team
+Round 8
+80	
+Z. Edey
+Z. Edey
+C
+MEM
+Frank's First-Rate Team
+79	
+J. Allen
+J. Allen
+C
+CLE
+Pure Magic
+78	
+A. Dybantsa
+A. Dybantsa
+SF
+WAS
+Sonny Styles
+77	
+D. Lillard
+D. Lillard
+PG
+POR
+paul's Glorious Team
+76	
+P. George
+P. George
+SF,PF
+BOS
+ZL's Best Team
+75	
+C. Wilson
+C. Wilson
+PF
+CHI
+Jayden Daniels
+74	
+R. Gobert
+R. Gobert
+C
+MIN
+King Plaid
+73	
+K. Ware
+K. Ware
+C
+MIL
+Alan Bolduc's Super Team
+72	
+A. Thompson
+A. Thompson
+SG,SF,PF
+DET
+Your Team
+71	
+Z. Williamson
+Z. Williamson
+PF,C
+NOP
+Mike's Matchless Team
+Round 7
+70	
+J. Green
+J. Green
+Q
+SG,SF
+PHX
+Mike's Matchless Team
+69	
+D. Fox
+D. Fox
+PG
+SAS
+Your Team
+68	
+P. Pritchard
+P. Pritchard
+PG
+BOS
+Alan Bolduc's Super Team
+67	
+A. Sarr
+A. Sarr
+C
+WAS
+King Plaid
+66	
+D. Murray
+D. Murray
+Q
+PG
+NOP
+Jayden Daniels
+65	
+O. Anunoby
+O. Anunoby
+SF,PF
+NYK
+ZL's Best Team
+64	
+K. Irving
+K. Irving
+Q
+PG
+DAL
+paul's Glorious Team
+63	
+J. Randle
+J. Randle
+PF
+BKN
+Sonny Styles
+62	
+C. Boozer
+C. Boozer
+PF
+MEM
+Pure Magic
+61	
+D. Garland
+D. Garland
+PG
+LAC
+Frank's First-Rate Team
+Round 6
+60	
+K. George
+K. George
+PG,SG
+UTA
+Frank's First-Rate Team
+59	
+F. Wagner
+F. Wagner
+SF,PF
+ORL
+Pure Magic
+58	
+M. Porter Jr.
+M. Porter Jr.
+SF,PF
+BKN
+Sonny Styles
+57	
+S. Castle
+S. Castle
+PG,SG
+SAS
+paul's Glorious Team
+56	
+J. Embiid
+J. Embiid
+Q
+C
+PHI
+ZL's Best Team
+55	
+M. Buzelis
+M. Buzelis
+SF,PF
+CHI
+Jayden Daniels
+54	
+D. Avdija
+D. Avdija
+SG,SF,PF
+POR
+King Plaid
+53	
+N. Alexander-Walker
+N. Alexander-Walker
+PG,SG
+ATL
+Alan Bolduc's Super Team
+52	
+D. Daniels
+D. Daniels
+Q
+SG,SF
+ATL
+Your Team
+51	
+P. Siakam
+P. Siakam
+PF,C
+IND
+Mike's Matchless Team
+Round 5
+50	
+T. Herro
+T. Herro
+Q
+PG,SG
+MIL
+Mike's Matchless Team
+49	
+L. James
+L. James
+Q
+SF,PF
+PHI
+Your Team
+48	
+O. Okongwu
+O. Okongwu
+Q
+C
+ATL
+Alan Bolduc's Super Team
+47	
+K. Knueppel
+K. Knueppel
+Q
+SG,SF
+CHA
+King Plaid
+46	
+J. Jackson Jr.
+J. Jackson Jr.
+PF,C
+UTA
+Jayden Daniels
+45	
+D. Clingan
+D. Clingan
+C
+POR
+ZL's Best Team
+44	
+J. Williams
+J. Williams
+SF,PF
+OKC
+paul's Glorious Team
+43	
+J. Harden
+J. Harden
+PG,SG
+CLE
+Sonny Styles
+42	
+D. Bane
+D. Bane
+SG,SF
+ORL
+Pure Magic
+41	
+A. Davis
+A. Davis
+Q
+PF,C
+WAS
+Frank's First-Rate Team
+Round 4
+40	
+I. Zubac
+I. Zubac
+C
+IND
+Frank's First-Rate Team
+39	
+D. White
+D. White
+PG,SG
+BOS
+Pure Magic
+38	
+T. Murphy III
+T. Murphy III
+SG,SF
+NOP
+Sonny Styles
+37	
+L. Markkanen
+L. Markkanen
+SF,PF
+UTA
+paul's Glorious Team
+36	
+J. Brown
+J. Brown
+Q
+SG,SF,PF
+PHI
+ZL's Best Team
+35	
+K. Leonard
+K. Leonard
+SG,SF,PF
+TOR
+Jayden Daniels
+34	
+P. Banchero
+P. Banchero
+PF
+ORL
+King Plaid
+33	
+C. Holmgren
+C. Holmgren
+Q
+PF,C
+OKC
+Alan Bolduc's Super Team
+32	
+W. Kessler
+W. Kessler
+C
+LAL
+Your Team
+31	
+B. Miller
+B. Miller
+SF,PF
+CHA
+Mike's Matchless Team
+Round 3
+30	
+J. Duren
+J. Duren
+C
+DET
+Mike's Matchless Team
+29	
+E. Mobley
+E. Mobley
+PF,C
+CLE
+Your Team
+28	
+B. Adebayo
+B. Adebayo
+Q
+PF,C
+MIA
+Alan Bolduc's Super Team
+27	
+D. Sabonis
+D. Sabonis
+Q
+PF,C
+SAC
+King Plaid
+26	
+L. Ball
+L. Ball
+PG
+MIN
+Jayden Daniels
+25	
+D. Booker
+D. Booker
+Q
+PG,SG
+PHX
+ZL's Best Team
+24	
+A. Reaves
+A. Reaves
+PG,SG,SF
+LAL
+paul's Glorious Team
+23	
+S. Curry
+S. Curry
+PG
+GSW
+Sonny Styles
+22	
+J. Brunson
+J. Brunson
+PG
+NYK
+Pure Magic
+21	
+J. Giddey
+J. Giddey
+PG,SG
+CHI
+Frank's First-Rate Team
+Round 2
+20	
+A. Şengün
+A. Şengün
+PF,C
+HOU
+Frank's First-Rate Team
+19	
+A. Thompson
+A. Thompson
+PG,SG
+HOU
+Pure Magic
+18	
+J. Murray
+J. Murray
+PG
+DEN
+Sonny Styles
+17	
+K. Durant
+K. Durant
+SG,SF,PF
+HOU
+paul's Glorious Team
+16	
+J. Johnson
+J. Johnson
+Q
+SF,PF
+ATL
+ZL's Best Team
+15	
+T. Young
+T. Young
+PG
+WAS
+Jayden Daniels
+14	
+K. Towns
+K. Towns
+PF,C
+NYK
+King Plaid
+13	
+D. Mitchell
+D. Mitchell
+PG,SG
+CLE
+Alan Bolduc's Super Team
+12	
+S. Barnes
+S. Barnes
+SF,PF,C
+TOR
+Your Team
+11	
+C. Flagg
+C. Flagg
+Q
+SG,SF,PF
+DAL
+Mike's Matchless Team
+Round 1
+10	
+A. Edwards
+A. Edwards
+PG,SG
+MIN
+Mike's Matchless Team
+9	
+T. Haliburton
+T. Haliburton
+PG,SG
+IND
+Your Team
+8	
+J. Tatum
+J. Tatum
+SF,PF
+BOS
+Alan Bolduc's Super Team
+7	
+C. Cunningham
+C. Cunningham
+PG,SG
+DET
+King Plaid
+6	
+G. Antetokounmpo
+G. Antetokounmpo
+PF,C
+MIA
+Jayden Daniels
+5	
+T. Maxey
+T. Maxey
+PG
+PHI
+ZL's Best Team
+4	
+L. Dončić
+L. Dončić
+Q
+PG,SG
+LAL
+paul's Glorious Team
+3	
+S. Gilgeous-Alexander
+S. Gilgeous-Alexander
+PG
+OKC
+Sonny Styles
+2	
+V. Wembanyama
+V. Wembanyama
+C
+SAS
+Pure Magic
+1	
+N. Jokić
+N. Jokić
+C
+DEN
+Frank's First-Rate Team

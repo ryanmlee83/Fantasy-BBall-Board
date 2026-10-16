@@ -74,7 +74,8 @@ def parse_room(text: str) -> list[dict]:
             no, name = int(lines[i]), lines[i + 1]
             j = i + 3
             status = None
-            if lines[j] in {"Q", "O", "D", "GTD", "INJ", "IL", "DTD", "SUSP", "NA"}:
+            # anything that isn't a position list is a status tag (Q, O, P, GTD, INJ, ...)
+            if not re.fullmatch(r"(?:PG|SG|SF|PF|C|G|F|FC|Util)(?:,(?:PG|SG|SF|PF|C|G|F|FC|Util))*", lines[j]):
                 status = lines[j]
                 j += 1
             pos, nba, team = lines[j], lines[j + 1], lines[j + 2]

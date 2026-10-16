@@ -1,3 +1,5 @@
 draft_id,date,league,format,teams,rounds,your_team,your_slot,board_commit,notes
-2026-10-14_9cat_238445,2026-10-14,Yahoo 238445 (Prize 20),h2h_9cat,12,13,Ryan,3,7e3e5f3,"Board used through round 7, autodraft after. Possibly a mock; the league draft was set for 2026-10-15."
+2026-10-14_9cat_238445,2026-10-14,Yahoo 238445 (Prize 20),h2h_9cat,12,13,Ryan,3,7e3e5f3,"Practice draft (the real Prize 20 draft was 2026-10-15). Board used through round 7, autodraft after."
+2026-10-15_9cat_238445_prize20,2026-10-15,Yahoo 238445 (Prize 20),h2h_9cat,12,13,,1,14825c4,The real paid draft. Ryan missed it and was autodrafted from slot 1. Results not saved yet; paste them to add.
 2026-10-16_highscore,2026-10-16,Yahoo High Score (10-team),high_score,10,10,Your Team,8,d743c21,"Board followed except OG Anunoby at #53 (board had Embiid/Fox), plus Anthony Davis at #33 and Zion at #48 over the board's top. Cooper Flagg missed in the board log at #12."
+2026-10-16_9cat_239233,2026-10-16,Yahoo 239233,h2h_9cat,10,13,Your Team,9,b81aff5,"Punt FT% from slot 9 on the 10-team board. Simulated weekly win rate 69.6%, 1st of 10 (next 61.3%)."

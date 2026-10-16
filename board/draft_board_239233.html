@@ -89,7 +89,7 @@ select, .btn { border: 1px solid var(--line); background: var(--panel-2); border
 .skiprow .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-right: 2px; }
 .skipchip { border: 1px solid var(--line); background: var(--panel-2); border-radius: 6px; padding: 2px 10px;
   font-family: var(--display); font-weight: 600; font-size: 15px; letter-spacing: .03em; min-width: 40px; }
-.skipchip[aria-pressed="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); text-decoration: line-through; }
+.skipchip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 .skiprow .hint .warn { color: var(--neg); font-weight: 600; }
 .hint { font-size: 13px; color: var(--muted); }
 .hint b { color: var(--ink); }
@@ -250,10 +250,10 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     <main style="display:grid;gap:12px;min-width:0">
       <section class="panel" aria-labelledby="suggH">
         <h2 id="suggH">Best available <small id="suggSub"></small></h2>
-        <div class="skiprow" role="group" aria-label="Skip positions in recommendations">
-          <span class="lbl">Skip</span>
+        <div class="skiprow" role="group" aria-label="Show only these positions in recommendations">
+          <span class="lbl">Only</span>
           <span id="skipChips" style="display:flex;gap:6px;flex-wrap:wrap"></span>
-          <span class="hint" id="skipHint">Tap a position to leave it out of these recommendations.</span>
+          <span class="hint" id="skipHint">Tap positions to recommend only players eligible there.</span>
         </div>
         <div class="sugg" id="sugg"></div>
         <div class="waitline" id="waitLine"></div>
@@ -341,10 +341,11 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
   const projected = players.filter(p => !p.np);
 
   // ---------- state ----------
-  let state = { slot: null, picks: [], punt: [], mode: "floor", skip: [] };
+  let state = { slot: null, picks: [], punt: [], mode: "floor", only: [] };
   try { const s = JSON.parse(localStorage.getItem(STORE_KEY) || "null"); if (s && Array.isArray(s.picks)) state = Object.assign(state, s); } catch (e) {}
   state.picks = state.picks.filter(pk => byId.has(pk.id));
-  if (!Array.isArray(state.skip)) state.skip = [];
+  if (!Array.isArray(state.only)) state.only = [];
+  delete state.skip;
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {} };
 
   let posFilter = "ALL", showAll = false, limit = 150;
@@ -482,18 +483,17 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     const slotsLeft = state.slot ? ctx.mine.filter(n => n >= ctx.pickNo).length : ROUNDS - myIds.length;
     const openStart = START_SLOTS.length - base.n;
     const urgent = openStart > 0 && slotsLeft <= openStart + 1;
-    // positions the user chose to skip: anyone eligible at a skipped position is left out
-    const skipped = p => (p.pos || []).some(x => state.skip.includes(x));
-    const recAvail = state.skip.length ? avail.filter(p => !skipped(p)) : avail;
+    // "only" positions: when any are selected, recommend only players eligible at one of them
+    const skipped = p => state.only.length > 0 && !(p.pos || []).some(x => state.only.includes(x));
+    const recAvail = state.only.length ? avail.filter(p => !skipped(p)) : avail;
     el("skipChips").innerHTML = ["PG", "SG", "SF", "PF", "C"].map(x =>
-      `<button type="button" class="skipchip" data-skip="${x}" aria-pressed="${state.skip.includes(x)}" title="${state.skip.includes(x) ? "Show" : "Hide"} players eligible at ${x}">${x}</button>`).join("");
-    if (state.skip.length) {
-      const hidden = avail.length - recAvail.length;
-      const openSkipped = START_SLOTS.filter((s, i) => !base.slotOwner[i] && s !== "UTIL" && [...(ELIG_INV[s] || [])].every(x => state.skip.includes(x)));
-      el("skipHint").innerHTML = `Hiding ${hidden} player${hidden === 1 ? "" : "s"} eligible at ${state.skip.join(" or ")}. <button type="button" class="mini" id="skipClear">Show all</button>` +
-        (openSkipped.length && slotsLeft <= openStart + 2 ? ` <span class="warn">Careful: ${slotsLeft} pick${slotsLeft === 1 ? "" : "s"} left and you still need ${[...new Set(openSkipped)].join(", ")}.</span>` : "");
+      `<button type="button" class="skipchip" data-skip="${x}" aria-pressed="${state.only.includes(x)}" title="${state.only.includes(x) ? "Stop limiting to" : "Recommend only"} players eligible at ${x}">${x}</button>`).join("");
+    if (state.only.length) {
+      const openUncovered = START_SLOTS.filter((s, i) => !base.slotOwner[i] && s !== "UTIL" && !(ELIG_INV[s] || []).some(x => state.only.includes(x)));
+      el("skipHint").innerHTML = `Recommending only ${state.only.join(" / ")} (${recAvail.length} available). <button type="button" class="mini" id="skipClear">Show all</button>` +
+        (openUncovered.length && slotsLeft <= openStart + 2 ? ` <span class="warn">Careful: ${slotsLeft} pick${slotsLeft === 1 ? "" : "s"} left and you still need ${[...new Set(openUncovered)].join(", ")}.</span>` : "");
     } else {
-      el("skipHint").textContent = "Tap a position to leave it out of these recommendations.";
+      el("skipHint").textContent = "Tap positions to recommend only players eligible there.";
     }
     const fillInfo = new Map();
     const scanFill = recAvail.slice(0, 60);
@@ -650,10 +650,10 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
   el("modeFloor").addEventListener("click", () => { state.mode = "floor"; save(); render(); });
   el("modePG").addEventListener("click", () => { state.mode = "pergame"; save(); render(); });
   document.addEventListener("click", e => {
-    if (e.target.closest("#skipClear")) { state.skip = []; save(); render(); return; }
+    if (e.target.closest("#skipClear")) { state.only = []; save(); render(); return; }
     const b = e.target.closest("[data-skip]"); if (!b) return;
     const x = b.dataset.skip;
-    state.skip = state.skip.includes(x) ? state.skip.filter(y => y !== x) : [...state.skip, x];
+    state.only = state.only.includes(x) ? state.only.filter(y => y !== x) : [...state.only, x];
     save(); render();
   });
   el("catChips").addEventListener("click", e => {
