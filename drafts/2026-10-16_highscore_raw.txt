@@ -1,0 +1,630 @@
+100	
+J. Hart
+J. Hart
+Q
+G,FC
+NYK
+Its a DMB Thing's Grand Team
+99	
+J. Suggs
+J. Suggs
+G
+ORL
+Sam's Sensational Team
+98	
+R. Barrett
+R. Barrett
+G,FC
+TOR
+T N's Top-Notch Team
+97	
+J. Smith Jr.
+J. Smith Jr.
+FC
+HOU
+Bryan's Best Team
+96	
+I. Quickley
+I. Quickley
+G
+TOR
+DDD's Dazzling Team
+95	
+C. White
+C. White
+Q
+G
+CHA
+Shane's Slam-Dunk Team
+94	
+A. Wiggins
+A. Wiggins
+G,FC
+MIA
+Camden's Nice Team
+93	
+D. Queen
+D. Queen
+FC
+NOP
+Your Team
+92	
+B. Ingram
+B. Ingram
+O
+G,FC
+LAC
+Kelsey's Sensational Team
+91	
+B. Podziemski
+B. Podziemski
+G
+GSW
+Jamare's Splendid Team
+Round 9
+90	
+A. Dybantsa
+A. Dybantsa
+FC
+WAS
+Jamare's Splendid Team
+89	
+D. Sharpe
+D. Sharpe
+FC
+BKN
+Kelsey's Sensational Team
+88	
+N. Powell
+N. Powell
+G,FC
+CHI
+Your Team
+87	
+T. Jerome
+T. Jerome
+G
+MEM
+Camden's Nice Team
+86	
+J. McDaniels
+J. McDaniels
+FC
+MIN
+Shane's Slam-Dunk Team
+85	
+J. Allen
+J. Allen
+FC
+CLE
+DDD's Dazzling Team
+84	
+C. Coward
+C. Coward
+G,FC
+MEM
+Bryan's Best Team
+83	
+R. Gobert
+R. Gobert
+FC
+MIN
+T N's Top-Notch Team
+82	
+M. Bridges
+M. Bridges
+FC
+NYK
+Sam's Sensational Team
+81	
+P. Pritchard
+P. Pritchard
+G
+BOS
+Its a DMB Thing's Grand Team
+Round 8
+80	
+C. Wilson
+C. Wilson
+FC
+CHI
+Its a DMB Thing's Grand Team
+79	
+P. George
+P. George
+FC
+BOS
+Sam's Sensational Team
+78	
+V. Edgecombe
+V. Edgecombe
+G
+PHI
+T N's Top-Notch Team
+77	
+J. Randle
+J. Randle
+FC
+BKN
+Bryan's Best Team
+76	
+K. Ware
+K. Ware
+FC
+MIL
+DDD's Dazzling Team
+75	
+Z. Edey
+Z. Edey
+FC
+MEM
+Shane's Slam-Dunk Team
+74	
+N. Reid
+N. Reid
+FC
+CHA
+Camden's Nice Team
+73	
+J. Morant
+J. Morant
+G
+POR
+Your Team
+72	
+A. Thompson
+A. Thompson
+G,FC
+DET
+Kelsey's Sensational Team
+71	
+D. Fox
+D. Fox
+G
+SAS
+Jamare's Splendid Team
+Round 7
+70	
+T. Herro
+T. Herro
+Q
+G
+MIL
+Jamare's Splendid Team
+69	
+D. Daniels
+D. Daniels
+Q
+G,FC
+ATL
+Kelsey's Sensational Team
+68	
+S. Castle
+S. Castle
+G
+SAS
+Your Team
+67	
+D. Lillard
+D. Lillard
+G
+POR
+Camden's Nice Team
+66	
+M. Porter Jr.
+M. Porter Jr.
+FC
+BKN
+Shane's Slam-Dunk Team
+65	
+R. Rollins
+R. Rollins
+Q
+G
+MIL
+DDD's Dazzling Team
+64	
+K. Knueppel
+K. Knueppel
+Q
+G,FC
+CHA
+Bryan's Best Team
+63	
+D. Harper
+D. Harper
+G
+SAS
+T N's Top-Notch Team
+62	
+D. Murray
+D. Murray
+Q
+G
+NOP
+Sam's Sensational Team
+61	
+M. Buzelis
+M. Buzelis
+FC
+CHI
+Its a DMB Thing's Grand Team
+Round 6
+60	
+N. Alexander-Walker
+N. Alexander-Walker
+G
+ATL
+Its a DMB Thing's Grand Team
+59	
+D. Garland
+D. Garland
+G
+LAC
+Sam's Sensational Team
+58	
+P. Siakam
+P. Siakam
+FC
+IND
+T N's Top-Notch Team
+57	
+A. Sarr
+A. Sarr
+FC
+WAS
+Bryan's Best Team
+56	
+C. Boozer
+C. Boozer
+FC
+MEM
+DDD's Dazzling Team
+55	
+I. Zubac
+I. Zubac
+FC
+IND
+Shane's Slam-Dunk Team
+54	
+J. Embiid
+J. Embiid
+Q
+FC
+PHI
+Camden's Nice Team
+53	
+O. Anunoby
+O. Anunoby
+FC
+NYK
+Your Team
+52	
+F. Wagner
+F. Wagner
+FC
+ORL
+Kelsey's Sensational Team
+51	
+O. Okongwu
+O. Okongwu
+Q
+FC
+ATL
+Jamare's Splendid Team
+Round 5
+50	
+D. Bane
+D. Bane
+G,FC
+ORL
+Jamare's Splendid Team
+49	
+K. George
+K. George
+G
+UTA
+Kelsey's Sensational Team
+48	
+Z. Williamson
+Z. Williamson
+FC
+NOP
+Your Team
+47	
+D. Clingan
+D. Clingan
+FC
+POR
+Camden's Nice Team
+46	
+D. Avdija
+D. Avdija
+G,FC
+POR
+Shane's Slam-Dunk Team
+45	
+J. Jackson Jr.
+J. Jackson Jr.
+FC
+UTA
+DDD's Dazzling Team
+44	
+D. White
+D. White
+G
+BOS
+Bryan's Best Team
+43	
+K. Irving
+K. Irving
+Q
+G
+DAL
+T N's Top-Notch Team
+42	
+W. Kessler
+W. Kessler
+FC
+LAL
+Sam's Sensational Team
+41	
+J. Williams
+J. Williams
+FC
+OKC
+Its a DMB Thing's Grand Team
+Round 4
+40	
+K. Leonard
+K. Leonard
+G,FC
+TOR
+Its a DMB Thing's Grand Team
+39	
+B. Miller
+B. Miller
+FC
+CHA
+Sam's Sensational Team
+38	
+P. Banchero
+P. Banchero
+FC
+ORL
+T N's Top-Notch Team
+37	
+D. Sabonis
+D. Sabonis
+Q
+FC
+SAC
+Bryan's Best Team
+36	
+J. Harden
+J. Harden
+G
+CLE
+DDD's Dazzling Team
+35	
+J. Duren
+J. Duren
+FC
+DET
+Shane's Slam-Dunk Team
+34	
+C. Holmgren
+C. Holmgren
+Q
+FC
+OKC
+Camden's Nice Team
+33	
+A. Davis
+A. Davis
+Q
+FC
+WAS
+Your Team
+32	
+L. Markkanen
+L. Markkanen
+FC
+UTA
+Kelsey's Sensational Team
+31	
+T. Murphy III
+T. Murphy III
+G,FC
+NOP
+Jamare's Splendid Team
+Round 3
+30	
+E. Mobley
+E. Mobley
+FC
+CLE
+Jamare's Splendid Team
+29	
+B. Adebayo
+B. Adebayo
+Q
+FC
+MIA
+Kelsey's Sensational Team
+28	
+J. Brown
+J. Brown
+Q
+G,FC
+PHI
+Your Team
+27	
+D. Booker
+D. Booker
+Q
+G
+PHX
+Camden's Nice Team
+26	
+A. Şengün
+A. Şengün
+FC
+HOU
+Shane's Slam-Dunk Team
+25	
+A. Thompson
+A. Thompson
+G
+HOU
+DDD's Dazzling Team
+24	
+A. Reaves
+A. Reaves
+G,FC
+LAL
+Bryan's Best Team
+23	
+S. Curry
+S. Curry
+G
+GSW
+T N's Top-Notch Team
+22	
+J. Murray
+J. Murray
+G
+DEN
+Sam's Sensational Team
+21	
+J. Giddey
+J. Giddey
+G
+CHI
+Its a DMB Thing's Grand Team
+Round 2
+20	
+K. Towns
+K. Towns
+FC
+NYK
+Its a DMB Thing's Grand Team
+19	
+S. Barnes
+S. Barnes
+FC
+TOR
+Sam's Sensational Team
+18	
+J. Brunson
+J. Brunson
+G
+NYK
+T N's Top-Notch Team
+17	
+D. Mitchell
+D. Mitchell
+G
+CLE
+Bryan's Best Team
+16	
+L. James
+L. James
+Q
+FC
+PHI
+DDD's Dazzling Team
+15	
+J. Johnson
+J. Johnson
+Q
+FC
+ATL
+Shane's Slam-Dunk Team
+14	
+L. Ball
+L. Ball
+G
+MIN
+Camden's Nice Team
+13	
+T. Young
+T. Young
+G
+WAS
+Your Team
+12	
+C. Flagg
+C. Flagg
+Q
+G,FC
+DAL
+Kelsey's Sensational Team
+11	
+T. Haliburton
+T. Haliburton
+G
+IND
+Jamare's Splendid Team
+Round 1
+10	
+K. Durant
+K. Durant
+G,FC
+HOU
+Jamare's Splendid Team
+9	
+T. Maxey
+T. Maxey
+G
+PHI
+Kelsey's Sensational Team
+8	
+J. Tatum
+J. Tatum
+FC
+BOS
+Your Team
+7	
+A. Edwards
+A. Edwards
+G
+MIN
+Camden's Nice Team
+6	
+C. Cunningham
+C. Cunningham
+G
+DET
+Shane's Slam-Dunk Team
+5	
+S. Gilgeous-Alexander
+S. Gilgeous-Alexander
+G
+OKC
+DDD's Dazzling Team
+4	
+L. Dončić
+L. Dončić
+Q
+G
+LAL
+Bryan's Best Team
+3	
+G. Antetokounmpo
+G. Antetokounmpo
+FC
+MIA
+T N's Top-Notch Team
+2	
+V. Wembanyama
+V. Wembanyama
+FC
+SAS
+Sam's Sensational Team
+1	
+N. Jokić
+N. Jokić
+FC
+DEN
+Its a DMB Thing's Grand Team

@@ -12,11 +12,17 @@ Model (chosen by backtest, 2026-10-14 -- train on 2023-24 + 2024-25, predict
            weights 0.5 / 0.3 / 0.2 (2025-26 / 2024-25 / 2023-24), renormalised
            over the seasons present -- a season missed entirely to injury is
            absent, not zero, and the return is handled in config/injuries.yaml
-    gp   = 0.5 * hist + 0.5 * 62 - 1.0 * max(age - 30, 0)
+    gp   = 0.6 * hist + 0.4 * 54 - 1.0 * max(age - 30, 0)
     gp   = gp * (82 - games_missed) / 82, capped by any gp_cap   [injuries.yaml]
     clipped to [10, 78]
 
-Backtest MAE (games): flat 82 -> 25.1, last season -> 18.0, this -> 15.8.
+Backtest MAE (games): flat 82 -> 25.1, last season -> 18.0, this -> 15.6.
+Recalibrated 2026-10-16 (was 0.5 * hist + 0.5 * 62): a wider grid found the
+old prior overprojected rotation players by ~8 games, for chronic absentees
+and everyone else alike. The new setting is the lowest-MAE point in the grid,
+cuts the bias to +5 (2025-26 was hit by an unusual cluster of Achilles tears,
+so the remaining bias is partly that season), and weights each player's own
+history more, which is where the extra penalty for a Joel Embiid comes from.
 Games played is mostly unpredictable from history (an OLS with history, age
 and minutes reaches R^2 0.04), so the model shrinks hard toward the mean.
 That is the honest answer: history moves a projection by a few games, not by
@@ -40,8 +46,8 @@ CONFIG = ROOT / "config"
 REPORTS = ROOT / "reports"
 
 SEASON_WEIGHTS = {"2025-26": 0.5, "2024-25": 0.3, "2023-24": 0.2}
-SHRINK = 0.5
-PRIOR_GP = 62.0
+SHRINK = 0.4
+PRIOR_GP = 54.0
 AGE_PENALTY_PER_YEAR = 1.0
 AGE_PENALTY_FROM = 30
 GP_MIN, GP_MAX = 10, 78
