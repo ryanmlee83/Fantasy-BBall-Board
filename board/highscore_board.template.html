@@ -24,6 +24,8 @@
   --bad-soft: #fbe5e0;
   --good-soft: #dff3ee;
   --mine: #1f4fd1;
+  --value: #8a3fc4;
+  --value-soft: #f1e6fa;
   --display: "Saira Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
@@ -33,14 +35,14 @@
     --bg: #0d1118; --panel: #151a24; --panel-2: #1a2030; --ink: #e5e9f1; --muted: #8e98ab;
     --line: #262e3f; --accent: #7d9cff; --accent-ink: #0d1118; --accent-soft: #1d2848;
     --pos: #2cc3a6; --neg: #ff7b62; --warn: #e3a948; --warn-soft: #33281a; --bad-soft: #3a211d;
-    --good-soft: #15302b; --mine: #7d9cff; color-scheme: dark;
+    --good-soft: #15302b; --mine: #7d9cff; --value: #c99bf0; --value-soft: #2c1f3b; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0d1118; --panel: #151a24; --panel-2: #1a2030; --ink: #e5e9f1; --muted: #8e98ab;
   --line: #262e3f; --accent: #7d9cff; --accent-ink: #0d1118; --accent-soft: #1d2848;
   --pos: #2cc3a6; --neg: #ff7b62; --warn: #e3a948; --warn-soft: #33281a; --bad-soft: #3a211d;
-  --good-soft: #15302b; --mine: #7d9cff; color-scheme: dark;
+  --good-soft: #15302b; --mine: #7d9cff; --value: #c99bf0; --value-soft: #2c1f3b; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -131,6 +133,12 @@ select, .btn { border: 1px solid var(--line); background: var(--panel-2); border
 .tag.there { background: var(--good-soft); border-color: transparent; color: var(--pos); }
 .tag.fill { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
 .tag.inj { background: var(--bad-soft); border-color: transparent; color: var(--neg); }
+.card.value { border-color: var(--value); box-shadow: 0 0 0 1px var(--value) inset; }
+.tag.value { background: var(--value-soft); border-color: transparent; color: var(--value); }
+tr.p.val td:first-child { box-shadow: inset 3px 0 0 var(--value); }
+.valhead { font-family: var(--display); font-weight: 700; font-size: 16px; letter-spacing: .02em; color: var(--value); margin: 12px 0 6px;
+  display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.valhead small { font-family: var(--body); font-weight: 500; font-size: 12px; color: var(--muted); letter-spacing: 0; }
 .waitline { font-size: 13px; color: var(--muted); margin-top: 8px; }
 .waitline b { color: var(--ink); font-weight: 600; }
 
@@ -263,6 +271,10 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
           <span class="hint" id="skipHint">Tap a slot type to recommend only players eligible there.</span>
         </div>
         <div class="sugg" id="sugg"></div>
+        <div id="valueWrap" hidden>
+          <div class="valhead">Value picks <small>In the board's top 20 available, but the market takes them at least a round later. +N is how many spots later.</small></div>
+          <div class="sugg" id="valueSugg"></div>
+        </div>
         <div class="waitline" id="waitLine"></div>
         <div class="waitline" id="rookieLine"></div>
       </section>
@@ -468,6 +480,21 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     // "only" toggles: when any are selected, recommend only players eligible there
     const skipped = p => state.only.length > 0 && !groups(p).some(g => state.only.includes(g));
     const recAvail = state.only.length ? avail.filter(p => !skipped(p)) : avail;
+
+    // value spotlight: top-20 available by board score whose ADP rank among the same
+    // available players is at least a round later than their board rank
+    const VALUE_TOP = 20, VALUE_GAP = TEAMS;
+    const adpRank = new Map(players.filter(p => !T.has(p.id) && !skipped(p))
+      .sort((a, b) => (a.adp ?? 999) - (b.adp ?? 999)).map((p, i) => [p.id, i + 1]));
+    const valueInfo = new Map();
+    recAvail.slice(0, VALUE_TOP).forEach((p, i) => {
+      const a = adpRank.get(p.id), gap = a - (i + 1);
+      if (gap >= VALUE_GAP) valueInfo.set(p.id, { b: i + 1, a, gap });
+    });
+    const valueTag = p => {
+      const v = valueInfo.get(p.id);
+      return v ? `<span class="tag value" title="Board ranks him #${v.b} available; ADP ranks him #${v.a} available">Value +${v.gap}</span>` : "";
+    };
     el("skipChips").innerHTML = [["G", "Guards"], ["FC", "Frontcourt"]].map(([x, t]) =>
       `<button type="button" class="skipchip" data-skip="${x}" aria-pressed="${state.only.includes(x)}" title="${state.only.includes(x) ? "Stop limiting to" : "Recommend only"} ${t.toLowerCase()}">${x}</button>`).join("");
     el("skipHint").innerHTML = state.only.length
@@ -487,23 +514,28 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     if (urgent) pool = recAvail.filter(p => fillInfo.has(p.id)).concat(recAvail.filter(p => !fillInfo.has(p.id)));
     const top = pool.slice(0, 6);
     el("suggSub").textContent = state.mode === "floor" ? "score = best-game value above replacement × healthy weeks" : "score = best-game value above replacement, healthy week";
-    el("sugg").innerHTML = top.map((p, i) => {
+    const cardHtml = (p, cls) => {
       const g = gm.get(p.id), fill = fillInfo.get(p.id);
-      return `<div class="card ${i === 0 ? "best" : ""}">
+      return `<div class="card ${cls}">
         <div class="top"><div><div class="nm">${esc(p.name)}</div><div class="sub">${p.team} · ${(p.pos || []).join("/")} · ${p.mpg} mpg · ${p.gp} gp</div></div>
           <div class="score num">${f1(score.get(p.id))}</div></div>
-        <div class="tags">${availTag(p, ctx)}${fill ? `<span class="tag fill">Fills ${fill === "UTIL" ? "Util" : fill}</span>` : ""}${p.adp != null ? `<span class="tag">ADP ${p.adp}</span>` : ""}${p.inj ? `<span class="tag inj" title="${esc(p.inj)}">Injury</span>` : ""}</div>
+        <div class="tags">${valueTag(p)}${availTag(p, ctx)}${fill ? `<span class="tag fill">Fills ${fill === "UTIL" ? "Util" : fill}</span>` : ""}${p.adp != null ? `<span class="tag">ADP ${p.adp}</span>` : ""}${p.inj ? `<span class="tag inj" title="${esc(p.inj)}">Injury</span>` : ""}</div>
         ${breakdown(p)}
         <div class="line">Avg ${g.mu.toFixed(1)} · best game in a week ≈ ${g.best.toFixed(1)} · swing ±${g.sd.toFixed(1)}</div>
         <div class="line">${statLine(p)}</div>
         ${p.inj ? `<div class="sub">${esc(p.inj)}</div>` : ""}
         <div class="acts"><button type="button" class="mini mine" data-mine="${p.id}">Mine</button><button type="button" class="mini" data-take="${p.id}">Taken</button></div>
       </div>`;
-    }).join("");
+    };
+    el("sugg").innerHTML = top.map((p, i) => cardHtml(p, i === 0 ? "best" : "")).join("");
+
+    const valuePicks = recAvail.filter(p => valueInfo.has(p.id) && !top.includes(p)).slice(0, 3);
+    el("valueSugg").innerHTML = valuePicks.map(p => cardHtml(p, "value")).join("");
+    el("valueWrap").hidden = !valuePicks.length;
 
     if (ctx.target) {
       const topScore = top.length ? score.get(top[0].id) : 0;
-      const wait = recAvail.slice(0, 40).filter(p => (p.adp == null || p.adp > ctx.target + 6) && score.get(p.id) > topScore * 0.6 && !top.includes(p)).slice(0, 4);
+      const wait = recAvail.slice(0, 40).filter(p => (p.adp == null || p.adp > ctx.target + 6) && score.get(p.id) > topScore * 0.6 && !top.includes(p) && !valuePicks.includes(p)).slice(0, 4);
       el("waitLine").innerHTML = wait.length ? `Also likely there at #${ctx.target}: ${wait.map(p => `<b>${esc(p.name)}</b> (${f1(score.get(p.id))}, ADP ${p.adp ?? "—"})`).join(" · ")}` : "";
       const rook = players.filter(p => p.np && !T.has(p.id) && !skipped(p) && p.adp != null && p.adp <= ctx.target + 10).sort((a, b) => a.adp - b.adp).slice(0, 4);
       el("rookieLine").innerHTML = rook.length ? `Unprojected rookies going around here: ${rook.map(p => `<b>${esc(p.name)}</b> (${p.team}, ${p.pos.join("/")}, ADP ${p.adp})`).join(" · ")}. The model has no NBA history for them, so they never appear above.` : "";
@@ -549,9 +581,9 @@ dialog textarea { width: 100%; min-height: 220px; border: 1px solid var(--line);
     const npList = players.filter(p => p.np && (showAll || !T.has(p.id)));
     el("rows").innerHTML = list.slice(0, limit).map(p => {
       const t = T.get(p.id), g = gm.get(p.id);
-      return `<tr class="p ${t ? "taken" : ""} ${t && t.mine ? "mine" : ""}">
+      return `<tr class="p ${t ? "taken" : ""} ${t && t.mine ? "mine" : ""} ${!t && valueInfo.has(p.id) ? "val" : ""}">
         <td class="rk">${rankAll.get(p.id)}</td>
-        <td><div class="nm">${esc(p.name)} ${p.inj ? `<span class="tag inj" title="${esc(p.inj)}">Inj</span>` : ""}</div>
+        <td><div class="nm">${esc(p.name)} ${t ? "" : valueTag(p)} ${p.inj ? `<span class="tag inj" title="${esc(p.inj)}">Inj</span>` : ""}</div>
             <div class="meta">${p.team} · ${(p.pos || []).join("/")}${p.posSrc === "bbref" ? "*" : ""} · ${groups(p).join("/")}${t ? ` · pick #${t.no}${t.mine ? " (yours)" : ""}` : ""}</div></td>
         <td class="scorecell num">${f1(score.get(p.id))}</td>
         <td class="r num">${p.adp ?? "—"}</td>
