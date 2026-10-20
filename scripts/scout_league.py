@@ -72,6 +72,7 @@ def main():
     ap.add_argument("--variant", action="append", default=[])
     ap.add_argument("--weeks", type=int, default=6000)
     ap.add_argument("--backfill", type=float, default=0.5)
+    ap.add_argument("--mpg", action="append", default=[], help='minutes override, e.g. "Jake LaRavia=24": scales his per-game stats')
     ap.add_argument("--replace", action="append", default=[], help="my players a free agent could replace (default: lowest board value)")
     ap.add_argument("--seed", type=int, default=20261020)
     a = ap.parse_args()
@@ -127,6 +128,14 @@ def main():
         st["FGP"], st["FTP"] = fgm / st["FGA"], ftm / st["FTA"]
         line[pid] = dict(st, gp=float(np.mean([q["gp"] for q in peers])), team=p["team"])
         notes[pid] = f"rookie stand-in: average of {len(peers)} projected {grp}s with ADP {adp - 12:.0f}-{adp + 12:.0f}"
+    for spec in a.mpg:
+        nm, m = spec.rsplit("=", 1)
+        pid = by_name[nm]["id"]
+        f = float(m) / mpg_used[pid]
+        for k in ["PTS", "REB", "AST", "STL", "BLK", "3PM", "TOV", "FGA", "FTA"]:
+            line[pid][k] *= f
+        notes[pid] = f"minutes set to {m} (was {mpg_used[pid]})"
+        mpg_used[pid] = float(m)
     free = sorted([p for p in proj if p["id"] not in drafted], key=lambda p: -value[p["id"]])
     sub_keys = ["PTS", "REB", "AST", "STL", "BLK", "3PM", "TOV", "FGA", "FTA"]
     top_free = free[:10]
@@ -275,7 +284,8 @@ def main():
 
     # best undrafted players for my team, against each player they could replace
     my_active = rosters[me]
-    targets = [by_name[nm]["id"] for nm in a.replace] or [min(my_active, key=lambda pid: value.get(pid, -99))]
+    # "OPEN" means an empty active spot (a player just moved to IL): the free agent is a pure add
+    targets = [None if nm == "OPEN" else by_name[nm]["id"] for nm in a.replace] or [min(my_active, key=lambda pid: value.get(pid, -99))]
     base_e = np.mean([exp_cats[teams.index(me), j] for j in range(n) if teams[j] != me])
     fa = []
     for p in free[:120]:
@@ -285,7 +295,7 @@ def main():
         gains = {}
         for t_id in targets:
             tv = totals([x for x in my_active if x != t_id] + [p["id"]])
-            gains[P[t_id]["name"]] = float(np.mean([compare(tv, T[tb])[1] for tb in teams if tb != me]) - base_e)
+            gains["open spot" if t_id is None else P[t_id]["name"]] = float(np.mean([compare(tv, T[tb])[1] for tb in teams if tb != me]) - base_e)
         best = max(gains, key=gains.get)
         fa.append({"name": p["name"], "nba": p["team"], "pos": p["pos"], "gp": p["gp"], "mpg": mpg_used[p["id"]], "note": notes.get(p["id"], ""),
                    "adp": p.get("adp"), "inj": p.get("inj", ""), "games_hist": seas_g, "gain": gains[best],
@@ -300,7 +310,7 @@ def main():
                              "p_week": float(p_week[teams.index(me), teams.index(tb)]),
                              "per": pair_cats[tb]} for tb in teams if tb != me},
         "variants": variants,
-        "free_agents": {"targets": [P[t]["name"] for t in targets], "list": fa[:40]},
+        "free_agents": {"targets": ["open spot" if t is None else P[t]["name"] for t in targets], "list": fa[:40]},
         "backfill": a.backfill,
         "notes": notes,
     }
