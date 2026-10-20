@@ -32,7 +32,7 @@ NOTES = {
     "Μαριος's Nice Team": dict(
         identity="Shai Gilgeous-Alexander plus a deep frontcourt (Adebayo, Okongwu, Naz Reid, Derik Queen). Good at nearly everything except threes.",
         key_players="Shai Gilgeous-Alexander, Onyeka Okongwu, Bam Adebayo, Desmond Bane, Trae Young, VJ Edgecombe",
-        risks="The healthiest roster in the league, so its edge is games played. Trae Young is projected for under 50 games. AJ Dybantsa is a rookie stand-in.",
+        risks="The second-healthiest roster in the league, so much of its edge is games played. Trae Young is projected for under 50 games. AJ Dybantsa is a rookie stand-in.",
         vs_me="Tough, but it depends on you. They win FG%, FT%, ST and TO; you win 3PTM. Much of their edge is health: if you fill your injured players' weeks from waivers, this becomes close to even."),
     "OJ7": dict(
         identity="Guard-heavy shooting build that gives up the boards. Best in the league at FT%, 3PTM and AST, last in REB, near the bottom in BLK and FG%.",
@@ -48,7 +48,7 @@ NOTES = {
         identity="Volume scoring with real size. Most points in the league and top three in rebounds (Duren, Gobert, Turner), but weak at FT%, ST and TO.",
         key_players="Anthony Edwards, Stephen Curry, Jalen Duren, Jalen Williams, Paolo Banchero, Rudy Gobert",
         risks="Stephen Curry (under 50 games), Ja Morant (about 40) and Jalen Williams (recurring hamstring) are all health questions. The team name is an ellipsis on Yahoo; Edwards was its first pick.",
-        vs_me="Even. You edge AST, they edge FG%, and the other seven categories are close to coin flips."),
+        vs_me="Even. You edge AST; they edge FG% and PTS; the other six categories are close to coin flips."),
     "Dominykas's Expert Team": dict(
         identity="Nikola Jokić-centered passing and efficiency. Top three in FG% and AST, weak at 3PTM, ST and BLK.",
         key_players="Nikola Jokić, Devin Booker, Domantas Sabonis, LeBron James, Kyrie Irving, Paul George",
@@ -57,7 +57,7 @@ NOTES = {
     ME: dict(
         identity="High-usage guards (Dončić, Ball, Giddey, Keyonte George, Coby White) with injury-prone bigs (Embiid, Robinson, Poeltl). Strong in 3PTM, AST and PTS, solid in REB and BLK, last in TO and 10th in FG%.",
         key_players="Luka Dončić, Jaren Jackson Jr., LaMelo Ball, Joel Embiid, Josh Giddey, Mitchell Robinson",
-        risks="Third-fewest games of your own players in the league: Embiid, Robinson, Poeltl and LaMelo all miss a lot of time. Brandon Ingram is on IL until at least Nov 1.",
+        risks="Your drafted players play the second-fewest games in the league: Embiid, Robinson, Poeltl and LaMelo all miss a lot of time. Brandon Ingram is on IL until at least Nov 1.",
         vs_me=""),
     "MVP": dict(
         identity="Playmakers and pests (Cunningham, Daniels, Castle, Fox) with Holmgren, Davis and Şengün inside. Top three in AST and ST; weak at FT% and TO.",
