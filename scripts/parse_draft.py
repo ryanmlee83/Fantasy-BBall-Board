@@ -1,8 +1,9 @@
 """Parse a pasted Yahoo draft into picks matched to player_id.
 
-Handles both formats Ryan has pasted so far:
+Handles the three formats Ryan has pasted so far:
   * results page:  "(3) Ryan - Allen, Jarrett (CLE - C)" under "Round N" headers
   * draft room:    blocks of  pick# / "J. Hart" / "J. Hart" / [status] / positions / NBA team / fantasy team
+  * team blocks:   a fantasy team name line, then "1.<tab>(3)<tab>Luka Dončić (LAL - PG,SG)" per pick
 
 Draft-room names are first initial + surname, so a name alone can be ambiguous
 (the project's standing lesson: Moses Brown / Mikel Brown Jr., Mikal / Miles
@@ -66,6 +67,25 @@ def parse_results(text: str) -> list[dict]:
     return picks
 
 
+PICK_IN_BLOCK = re.compile(r"^\d+\.\s+\((\d+)\)\s+(.+?) \((\w+) - ([A-Z,]+)\)$")
+
+
+def parse_blocks(text: str) -> list[dict]:
+    """Team-by-team results: a header line names the fantasy team, each pick line carries the overall pick."""
+    picks, team = [], None
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        m = PICK_IN_BLOCK.match(line)
+        if m:
+            overall, name, nba, pos = m.groups()
+            picks.append({"overall": int(overall), "fantasy_team": team, "name": name, "nba": nba, "pos": pos})
+        else:
+            team = line
+    return sorted(picks, key=lambda p: p["overall"])
+
+
 def parse_room(text: str) -> list[dict]:
     lines = [l.strip() for l in text.splitlines()]
     picks, i = [], 0
@@ -95,6 +115,13 @@ def match(picks: list[dict], board: dict) -> pd.DataFrame:
         nba = TEAM_ALIASES.get(k["nba"], k["nba"])
         hits = [p for p in by_team.get(nba, []) if name_matches(k["name"], p["name"])]
         note = ""
+        if not hits and len(tokens(k["name"])[0]) > 1:
+            # full first name given: a player who changed teams after the board's roster snapshot
+            # can be matched league-wide, but only when exactly one player has that full name
+            full = [p for p in board["players"] if tokens(p["name"]) == tokens(k["name"])]
+            if len(full) == 1:
+                hits = full
+                note = f"team differs: board {full[0]['team']}, Yahoo {nba}"
         if len(hits) > 1:
             hits = sorted(hits, key=lambda p: p.get("adp") or p.get("adpAvg") or 999)
             note = f"ambiguous ({' / '.join(h['name'] for h in hits)}); took earlier ADP"
@@ -108,7 +135,7 @@ def main() -> None:
     raw, teams = Path(sys.argv[1]), int(sys.argv[2])
     out = Path(sys.argv[3])
     text = raw.read_text(encoding="utf-8")
-    picks = parse_results(text) or parse_room(text)
+    picks = parse_results(text) or parse_blocks(text) or parse_room(text)
     for p in picks:
         if "overall" not in p:
             p["overall"] = (p["round"] - 1) * teams + p["slot_in_round"]

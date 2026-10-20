@@ -1,0 +1,472 @@
+<style>
+/* Layout: a scouting report read top to bottom. Takeaway and four figures first, then your
+   matchups, the league, the full grid, every team's card, your moves, and the method. */
+#dash-root { --dash-gutter: clamp(16px, 3vw, 32px); }
+.zs { max-width: 1240px; margin-inline: auto; display: grid; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); color: var(--color-fg); --zs-me: var(--color-fg); }
+.zs-head { display: grid; gap: var(--cds-gap-sm); }
+.zs-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; text-wrap: balance; }
+.zs-take { margin: 0; font-size: var(--cds-font-size-body); max-width: 72ch; line-height: 1.5; }
+.zs-take b { font-weight: var(--cds-font-weight-medium); }
+.zs-fill { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm); margin-top: var(--cds-gap-xs); }
+.zs-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .06em; }
+.zs-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+.zs-seg button { font: inherit; font-size: var(--cds-font-size-caption); border: 0; background: var(--color-panel); color: var(--color-fg); padding: var(--cds-pad-xs) var(--cds-pad-md); cursor: pointer; }
+.zs-seg button + button { border-left: 1px solid var(--color-border-line); }
+.zs-seg button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); font-weight: var(--cds-font-weight-medium); }
+.zs-seg button:focus-visible { outline: 2px solid var(--zs-me); outline-offset: -2px; }
+.zs-hint { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); max-width: 60ch; }
+
+.zs-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: var(--cds-gap-md); }
+.zs-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; }
+.zs-tile .zs-k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.zs-tile .zs-v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.1; font-variant-numeric: tabular-nums; min-height: 1.1em; }
+.zs-tile .zs-s { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+
+.zs-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); min-width: 0; }
+.zs-h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); text-wrap: balance; }
+.zs-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); max-width: 90ch; line-height: 1.5; }
+.zs-scroll { overflow-x: auto; min-width: 0; }
+.zs-table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.zs-table th { text-align: right; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.zs-table td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.zs-table th.zs-l, .zs-table td.zs-l { text-align: left; }
+.zs-table td.zs-heat { text-align: center; min-width: 2.6rem; }
+.zs-table tr.zs-me td { font-weight: var(--cds-font-weight-medium); box-shadow: inset 0 -2px 0 var(--zs-me); }
+.zs-table td.zs-wrap { white-space: normal; min-width: 14rem; text-align: left; color: var(--color-fg-muted); }
+.zs-bar { display: inline-grid; grid-template-columns: 3.2rem 5rem; align-items: center; gap: var(--cds-gap-xs); }
+.zs-bar i { display: block; height: .5rem; border-radius: 999px; background: var(--cds-chart-grid); position: relative; overflow: hidden; }
+.zs-bar i b { position: absolute; top: 0; bottom: 0; border-radius: 999px; }
+.zs-bar i::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--cds-chart-axis); }
+
+.zs-grid { border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.zs-grid th { font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs); white-space: nowrap; }
+.zs-grid thead th { writing-mode: vertical-rl; transform: rotate(180deg); text-align: left; vertical-align: bottom; height: 7.5rem; }
+.zs-grid tbody th { text-align: right; padding-right: var(--cds-pad-sm); }
+.zs-grid td { text-align: center; min-width: 2.7rem; padding: var(--cds-pad-xs); border: 1px solid var(--color-bg); }
+.zs-grid .zs-me-h { color: var(--color-fg); box-shadow: inset 0 -2px 0 var(--zs-me); }
+.zs-grid td.zs-diag { color: var(--color-fg-muted); }
+
+.zs-teams { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.zs-team { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+.zs-team.zs-mine { box-shadow: inset 0 3px 0 var(--zs-me); }
+.zs-team-top { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-sm); }
+.zs-team-name { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); min-width: 0; overflow-wrap: anywhere; }
+.zs-rank { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); color: var(--color-fg-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.zs-team p { margin: 0; font-size: var(--cds-font-size-caption); line-height: 1.5; }
+.zs-team .zs-sub { color: var(--color-fg-muted); }
+.zs-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.zs-chip { font-size: var(--cds-font-size-caption); padding: 0 var(--cds-pad-sm); border-radius: 999px; line-height: 1.7; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.zs-vs { display: grid; gap: var(--cds-gap-xs); border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-sm); }
+.zs-vs-score { font-size: var(--cds-font-size-body); font-variant-numeric: tabular-nums; }
+.zs-team details { border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-sm); }
+.zs-team summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.zs-team summary:focus-visible { outline: 2px solid var(--zs-me); outline-offset: 2px; }
+.zs-k2 { color: var(--color-fg-muted); }
+
+.zs-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: var(--cds-gap-md); }
+.zs-method { font-size: var(--cds-font-size-caption); line-height: 1.6; color: var(--color-fg-muted); max-width: 90ch; }
+.zs-method ul { margin: 0; padding-left: 1.2em; display: grid; gap: var(--cds-gap-xs); }
+.zs-method b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.zs-failed { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: 4rem; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.zs-failed::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.zs [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.zs [data-dash-source-state=empty] { color: transparent; }
+</style>
+
+<div class="zs" id="zs">
+  <header class="zs-head" id="top">
+    <h1 class="zs-title">Zalgiris Scouting Report</h1>
+    <p class="zs-take" id="takeaway">
+      <b>Chop'em Down</b> projects
+      <b><span id="tk-rank" class="dash-skeleton" data-source="league" data-field="power_rank">—</span><span id="tk-rank-suf"></span> of <span id="tk-n" data-source="settings" data-field="value" data-where="key=teams">—</span></b>,
+      winning <b><span id="tk-cats" class="dash-skeleton" data-source="league" data-field="exp_cats">—</span> of 9 categories</b> in an average week.
+      Toughest matchups: <b id="tk-hard1" class="dash-skeleton" data-source="matchups" data-field="short">—</b> and <b id="tk-hard2" class="dash-skeleton" data-source="matchups" data-field="short">—</b>.
+      Easiest: <b id="tk-easy1" class="dash-skeleton" data-source="matchups" data-field="short">—</b> and <b id="tk-easy2" class="dash-skeleton" data-source="matchups" data-field="short">—</b>.
+    </p>
+    <div class="zs-fill">
+      <span class="zs-lbl" id="fill-lbl">Missed weeks filled from waivers</span>
+      <div class="zs-seg" role="group" aria-labelledby="fill-lbl">
+        <button type="button" id="fill-none" data-fill="none" aria-pressed="false">None</button>
+        <button type="button" id="fill-half" data-fill="half" aria-pressed="true">Half</button>
+        <button type="button" id="fill-all" data-fill="all" aria-pressed="false">All</button>
+      </div>
+      <span class="zs-hint">How often a manager replaces an injured player's week with a waiver pickup. Half is the central case; your team moves more than any other with this setting.</span>
+    </div>
+  </header>
+
+  <section class="zs-tiles" id="outlook" aria-label="Your outlook">
+    <div class="zs-tile"><span class="zs-k">Projected finish</span>
+      <span class="zs-v"><span id="t-rank" class="dash-skeleton" data-source="league" data-field="power_rank">—</span><span id="t-rank-suf"></span></span>
+      <span class="zs-s">of <span id="t-n1" data-source="settings" data-field="value" data-where="key=teams">—</span>, by categories won per week</span></div>
+    <div class="zs-tile"><span class="zs-k">Categories won per week</span>
+      <span class="zs-v" id="t-cats" data-source="league" data-field="exp_cats">—</span>
+      <span class="zs-s">of 9, against an average opponent</span></div>
+    <div class="zs-tile"><span class="zs-k">Chance to win the week</span>
+      <span class="zs-v" id="t-week" data-source="league" data-field="p_week">—</span>
+      <span class="zs-s">taking 5 or more categories</span></div>
+    <div class="zs-tile"><span class="zs-k">Games your players play</span>
+      <span class="zs-v" id="t-games" data-source="league" data-field="own_games">—</span>
+      <span class="zs-s">per week before any waiver fill-ins; <span id="t-games-rank" data-source="league" data-field="own_games_rank">—</span><span id="t-games-suf"></span> most of <span id="t-n2" data-source="settings" data-field="value" data-where="key=teams">—</span></span></div>
+  </section>
+
+  <section class="zs-card" id="matchups">
+    <h2 class="zs-h2">Your matchups, toughest first</h2>
+    <p class="zs-note">Expected categories per week, you against them, and your chance of taking each category. Every category counts in this league's standings, so a 5–4 week is five wins and four losses. Green is yours, red is theirs. Low and high are your expected categories across the three injury settings.</p>
+    <div class="zs-scroll">
+      <table class="zs-table" id="mu-table" data-source="matchups" data-row-key="opponent,fill">
+        <thead><tr>
+          <th class="zs-l" data-field="short">Opponent</th><th data-field="my_cats">You</th><th data-field="their_cats">Them</th><th data-field="p_week">Win week</th>
+          <th data-field="p_FG">FG%</th><th data-field="p_FT">FT%</th><th data-field="p_3PTM">3PTM</th><th data-field="p_PTS">PTS</th><th data-field="p_REB">REB</th><th data-field="p_AST">AST</th><th data-field="p_ST">ST</th><th data-field="p_BLK">BLK</th><th data-field="p_TO">TO</th>
+          <th data-field="low">Low</th><th data-field="high">High</th>
+        </tr></thead>
+        <tbody id="mu-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="zs-card" id="league">
+    <h2 class="zs-h2">The league at a glance</h2>
+    <p class="zs-note">Teams in order of expected categories won per week against the rest of the league. Category columns show each team's rank, 1 to 12: green is a strength, red a weakness. Own games counts games by drafted players before any waiver fill-ins.</p>
+    <div class="zs-scroll">
+      <table class="zs-table" id="lg-table" data-source="league" data-row-key="team,fill">
+        <thead><tr>
+          <th data-field="power_rank">#</th><th class="zs-l" data-field="short">Team</th><th data-field="exp_cats">Cats / week</th><th data-field="p_week">Win week</th><th data-field="own_games">Own games</th>
+          <th data-field="rank_FG">FG%</th><th data-field="rank_FT">FT%</th><th data-field="rank_3PTM">3PTM</th><th data-field="rank_PTS">PTS</th><th data-field="rank_REB">REB</th><th data-field="rank_AST">AST</th><th data-field="rank_ST">ST</th><th data-field="rank_BLK">BLK</th><th data-field="rank_TO">TO</th>
+        </tr></thead>
+        <tbody id="lg-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="zs-card" id="grid">
+    <h2 class="zs-h2">Every head-to-head</h2>
+    <p class="zs-note">Read across a row: expected categories that team wins per week against the team in each column. Above 4.5 is a favorable matchup. Your row and column are underlined.</p>
+    <div class="zs-scroll" id="grid-box" data-source="grid scouting"></div>
+  </section>
+
+  <section id="teams" aria-labelledby="teams-h" style="display:grid;gap:var(--cds-gap-md)">
+    <h2 class="zs-h2" id="teams-h">Team by team</h2>
+    <p class="zs-note">Each team's build, the players it leans on, its risks, and how it lines up against you. Chips show category ranks of 1 to 3 (strengths) and 10 to 12 (weaknesses). Open a roster for every player's projected games, minutes and board value.</p>
+    <div class="zs-teams" id="team-cards"></div>
+  </section>
+
+  <section class="zs-two" id="moves">
+    <div class="zs-card">
+      <h2 class="zs-h2">What your moves are worth</h2>
+      <p class="zs-note">Your expected categories per week and league finish under each roster. The November line assumes Brandon Ingram returns from IL and takes Wendell Carter Jr.'s spot.</p>
+      <div class="zs-scroll">
+        <table class="zs-table" id="mv-table" data-source="moves" data-row-key="label,fill">
+          <thead><tr><th class="zs-l" data-field="label">Roster</th><th data-field="exp_cats">Cats / week</th><th data-field="p_week">Win week</th><th data-field="league_rank">Finish</th><th class="zs-l" data-field="detail">Changes</th></tr></thead>
+          <tbody id="mv-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="zs-card">
+      <h2 class="zs-h2">Best undrafted players for you</h2>
+      <p class="zs-note">Change in your categories won per week, by which of your players he replaces. All were undrafted; some may have been picked up since, so check Yahoo's free-agent list. Minutes are the board's projections and are worth checking against the first week of games.</p>
+      <div class="zs-scroll">
+        <table class="zs-table" id="fa-table" data-source="free_agents" data-row-key="player">
+          <thead><tr><th class="zs-l" data-field="player">Player</th><th class="zs-l" data-field="nba">Team</th><th data-field="gain_kgeorge">For K. George</th><th data-field="gain_carter">For Carter</th><th data-field="gain_poeltl">For Poeltl</th><th data-field="mpg">MPG</th><th data-field="games_last3">Games, last 3 seasons</th><th class="zs-l" data-field="note">Note</th></tr></thead>
+          <tbody id="fa-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="zs-card" id="method">
+    <h2 class="zs-h2">How this was built</h2>
+    <div class="zs-method">
+      <p style="margin:0 0 var(--cds-gap-sm)">Every roster was played through <b id="m-weeks" data-source="settings" data-field="value" data-where="key=weeks">—</b> simulated weeks of box scores for each injury setting, using the draft board's projections: per-possession rates from three seasons, minutes from depth charts, and projected games played. Each NBA team plays a three- or four-game week most of the time, and an injured player misses whole weeks. Makes and attempts are simulated separately, so FG% and FT% come out of real shot volume. Each pair of teams is compared week by week, category by category.</p>
+      <ul>
+        <li><b>Rosters are as drafted</b>, plus your Mitchell Robinson pickup with Brandon Ingram on IL. Other managers' moves since the draft aren't included. Kevin Porter Jr. (OJ7) was waived by the Bucks and is treated as a waiver pickup.</li>
+        <li><b>Missed weeks.</b> With <span id="m-il" data-source="settings" data-field="value" data-where="key=il">—</span> IL slots and <span id="m-adds" data-source="settings" data-field="value" data-where="key=adds">—</span> adds a week, managers replace long injuries with waiver players. The setting above controls how often: none, half or all of the time, with the replacement playing like an average top-40 free agent.</li>
+        <li><b><span id="m-rookies" data-source="settings" data-field="value" data-where="key=rookies">—</span> rookies with no NBA history</b> use stand-ins: the average projected player at the same position drafted around the same spot.</li>
+        <li><b>Veteran minutes.</b> Five players kept the board's flat starter minutes despite a recent drop; here they get a blend of their last two seasons. Only Brook Lopez and Tobias Harris change much, and both are undrafted.</li>
+        <li><b>Not modelled:</b> the real NBA schedule (a four-game week against a three-game week matters a lot in that week), the daily cap of 11 starters, and projection error itself. The gaps between teams are small, so treat close matchups as coin flips.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<script>
+// best and worst opponent for every team and setting, from the head-to-head grid
+dash.calc("extremes", {
+  inputs: ["grid", "scouting"],
+  title: "Best and worst matchup per team",
+  description: "For each team and injury setting, the opponent it is expected to win the most and fewest categories against.",
+  fn: (grid, scouting) => {
+    const short = Object.fromEntries(scouting.map((s) => [s.team, s.short]));
+    const out = [];
+    for (const fill of ["none", "half", "all"]) {
+      for (const team of Object.keys(short)) {
+        const rows = grid.filter((g) => g.team === team && g.fill === fill);
+        if (!rows.length) continue;
+        const best = rows.reduce((a, b) => (b.exp_cats > a.exp_cats ? b : a));
+        const worst = rows.reduce((a, b) => (b.exp_cats < a.exp_cats ? b : a));
+        out.push({ team, fill, best_vs: short[best.opponent], best_cats: best.exp_cats, worst_vs: short[worst.opponent], worst_cats: worst.exp_cats });
+      }
+    }
+    return out;
+  },
+});
+</script>
+
+<script>
+(() => {
+  const ME = "Chop'em Down";
+  const CATS = [["FG", "FG%"], ["FT", "FT%"], ["3PTM", "3PTM"], ["PTS", "PTS"], ["REB", "REB"], ["AST", "AST"], ["ST", "ST"], ["BLK", "BLK"], ["TO", "TO"]];
+  const enc = (s) => String(s).replace(/%/g, "%25").replace(/&/g, "%26").replace(/=/g, "%3D");
+  const where = (o) => Object.entries(o).map(([k, v]) => enc(k) + "=" + enc(v)).join("&");
+  const key2 = (a, b) => encodeURIComponent(a) + "," + encodeURIComponent(b);
+  const pct = d3.format(".0%"), f2 = d3.format(".2f"), f1 = d3.format(".1f"), sgn = d3.format("+.2f");
+  const suf = (n) => { const v = n % 100; return ["th", "st", "nd", "rd"][(v - 20) % 10] || ["th", "st", "nd", "rd"][v] || "th"; };
+  const tint = (s) => {
+    const a = Math.round(Math.min(1, Math.abs(s)) * 50);
+    return s >= 0 ? `color-mix(in srgb, var(--color-ok) ${a}%, transparent)` : `color-mix(in srgb, var(--color-bad) ${a}%, transparent)`;
+  };
+  const el = (tag, attrs = {}, text) => {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) { if (v !== undefined && v !== null) n.setAttribute(k, v); }
+    if (text !== undefined) n.textContent = text;
+    return n;
+  };
+  const fillOf = () => dash.params().fill || "half";
+  const root = document.getElementById("zs");
+  if (dash.colors && dash.colors[0]) root.style.setProperty("--zs-me", dash.colors[0]);
+
+  document.querySelectorAll(".zs-seg button").forEach((b) => b.addEventListener("click", () => dash.setParams({ fill: b.dataset.fill })));
+
+  const failed = (box) => { box.replaceChildren(el("div", { class: "zs-failed" }, "Failed to load")); };
+  const setMark = (id, source, field, w, text) => {
+    const n = document.getElementById(id);
+    if (!n) return;
+    n.setAttribute("data-source", source);
+    n.setAttribute("data-field", field);
+    if (w) n.setAttribute("data-where", w); else n.removeAttribute("data-where");
+    n.textContent = text;
+    n.classList.remove("dash-skeleton");
+  };
+
+  dash.onData(() => {
+    const fill = fillOf();
+    document.querySelectorAll(".zs-seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.fill === fill)));
+    const D = Object.fromEntries(["league", "matchups", "grid", "scouting", "rosters", "moves", "free_agents", "settings", "extremes"].map((id) => [id, dash.data(id)]));
+    const ok = (id) => D[id].status === "ok";
+
+    // ---- headline and takeaway
+    if (ok("league")) {
+      const me = D.league.data.find((r) => r.team === ME && r.fill === fill);
+      const w = where({ team: ME, fill });
+      setMark("t-rank", "league", "power_rank", w, String(me.power_rank));
+      document.getElementById("t-rank-suf").textContent = suf(me.power_rank);
+      setMark("tk-rank", "league", "power_rank", w, String(me.power_rank));
+      document.getElementById("tk-rank-suf").textContent = suf(me.power_rank);
+      setMark("t-cats", "league", "exp_cats", w, f2(me.exp_cats));
+      setMark("tk-cats", "league", "exp_cats", w, f2(me.exp_cats));
+      setMark("t-week", "league", "p_week", w, pct(me.p_week));
+      setMark("t-games", "league", "own_games", w, f1(me.own_games));
+      setMark("t-games-rank", "league", "own_games_rank", w, String(me.own_games_rank));
+      document.getElementById("t-games-suf").textContent = suf(me.own_games_rank);
+    }
+    if (ok("matchups")) {
+      const byRank = (r) => D.matchups.data.find((m) => m.fill === fill && m.tough_rank === r);
+      [["tk-hard1", 1], ["tk-hard2", 2], ["tk-easy1", 11], ["tk-easy2", 10]].forEach(([id, r]) => {
+        const m = byRank(r);
+        if (m) setMark(id, "matchups", "short", where({ tough_rank: r, fill }), m.short);
+      });
+    }
+
+    // ---- your matchups
+    const muBody = document.getElementById("mu-body");
+    if (ok("matchups")) {
+      const rows = D.matchups.data.filter((m) => m.fill === fill).sort((a, b) => a.tough_rank - b.tough_rank);
+      muBody.replaceChildren(...rows.map((m) => {
+        const tr = el("tr", { "data-key": key2(m.opponent, m.fill) });
+        tr.append(el("td", { class: "zs-l" }, m.short));
+        const you = el("td");
+        const bar = el("span", { class: "zs-bar" });
+        bar.append(el("span", {}, f2(m.my_cats)));
+        const track = el("i");
+        const d = m.my_cats - 4.5, w = Math.min(50, Math.abs(d) / 0.6 * 50);
+        const fillEl = el("b");
+        fillEl.style.left = d >= 0 ? "50%" : (50 - w) + "%";
+        fillEl.style.width = w + "%";
+        fillEl.style.background = d >= 0 ? "var(--color-ok)" : "var(--color-bad)";
+        track.append(fillEl);
+        bar.append(track);
+        you.append(bar);
+        tr.append(you, el("td", {}, f2(m.their_cats)), el("td", {}, pct(m.p_week)));
+        for (const [k] of CATS) {
+          const p = m["p_" + k];
+          const td = el("td", { class: "zs-heat" }, pct(p));
+          td.style.background = tint((p - 0.5) * 2.2);
+          tr.append(td);
+        }
+        tr.append(el("td", {}, f2(m.low)), el("td", {}, f2(m.high)));
+        return tr;
+      }));
+    } else if (D.matchups.status === "error") failed(muBody);
+
+    // ---- league table
+    const lgBody = document.getElementById("lg-body");
+    if (ok("league")) {
+      const rows = D.league.data.filter((r) => r.fill === fill).sort((a, b) => a.power_rank - b.power_rank);
+      lgBody.replaceChildren(...rows.map((r) => {
+        const tr = el("tr", { "data-key": key2(r.team, r.fill), class: r.is_me ? "zs-me" : null });
+        tr.append(el("td", {}, String(r.power_rank)), el("td", { class: "zs-l" }, r.short), el("td", {}, f2(r.exp_cats)), el("td", {}, pct(r.p_week)), el("td", {}, f1(r.own_games)));
+        for (const [k] of CATS) {
+          const rk = r["rank_" + k];
+          const td = el("td", { class: "zs-heat" }, String(rk));
+          td.style.background = tint((6.5 - rk) / 5.5);
+          tr.append(td);
+        }
+        return tr;
+      }));
+    } else if (D.league.status === "error") failed(lgBody);
+
+    // ---- head-to-head grid
+    const gridBox = document.getElementById("grid-box");
+    if (ok("grid") && ok("league") && ok("scouting")) {
+      const order = D.league.data.filter((r) => r.fill === fill).sort((a, b) => a.power_rank - b.power_rank).map((r) => r.team);
+      const short = Object.fromEntries(D.scouting.data.map((s) => [s.team, s.short]));
+      const val = new Map(D.grid.data.filter((g) => g.fill === fill).map((g) => [g.team + "\u0000" + g.opponent, g.exp_cats]));
+      const t = el("table", { class: "zs-grid" });
+      const hr = el("tr");
+      hr.append(el("th"));
+      order.forEach((o) => hr.append(el("th", { scope: "col", class: o === ME ? "zs-me-h" : null }, short[o])));
+      const thead = el("thead"); thead.append(hr);
+      const tbody = el("tbody");
+      order.forEach((a) => {
+        const tr = el("tr");
+        tr.append(el("th", { scope: "row", class: a === ME ? "zs-me-h" : null }, short[a]));
+        order.forEach((b) => {
+          if (a === b) { tr.append(el("td", { class: "zs-diag" }, "·")); return; }
+          const v = val.get(a + "\u0000" + b);
+          const td = el("td", { class: (a === ME || b === ME) ? "zs-me-h" : null }, v === undefined ? "" : f2(v));
+          if (v !== undefined) td.style.background = tint((v - 4.5) / 0.6);
+          tr.append(td);
+        });
+        tbody.append(tr);
+      });
+      t.append(thead, tbody);
+      gridBox.replaceChildren(t);
+    } else if (D.grid.status === "error") failed(gridBox);
+
+    // ---- team cards
+    const cards = document.getElementById("team-cards");
+    if (ok("scouting") && ok("league") && ok("matchups") && ok("rosters") && ok("extremes")) {
+      const lg = new Map(D.league.data.filter((r) => r.fill === fill).map((r) => [r.team, r]));
+      const mu = new Map(D.matchups.data.filter((m) => m.fill === fill).map((m) => [m.opponent, m]));
+      const ex = new Map(D.extremes.data.filter((e) => e.fill === fill).map((e) => [e.team, e]));
+      const order = [...D.scouting.data].sort((a, b) => lg.get(a.team).power_rank - lg.get(b.team).power_rank);
+      cards.replaceChildren(...order.map((s) => {
+        const L = lg.get(s.team), W = where({ team: s.team, fill }), WS = where({ team: s.team });
+        const card = el("article", { class: "zs-team" + (s.team === ME ? " zs-mine" : ""), id: "team-" + s.slot });
+        const top = el("div", { class: "zs-team-top" });
+        top.append(el("h3", { class: "zs-team-name" }, s.team === "…" ? "… (Edwards's team)" : s.team));
+        const rk = el("span", { class: "zs-rank" });
+        rk.append(el("span", { "data-source": "league", "data-field": "power_rank", "data-where": W }, String(L.power_rank)), document.createTextNode(suf(L.power_rank) + " · "),
+          el("span", { "data-source": "league", "data-field": "exp_cats", "data-where": W }, f2(L.exp_cats)), document.createTextNode(" cats"));
+        top.append(rk);
+        card.append(top);
+        const sub = el("p", { class: "zs-sub" });
+        sub.append(document.createTextNode("Drafted from slot "), el("span", { "data-source": "scouting", "data-field": "slot", "data-where": WS }, String(s.slot)));
+        card.append(sub);
+        card.append(el("p", { "data-source": "scouting", "data-field": "identity", "data-where": WS }, s.identity));
+        const chips = el("div", { class: "zs-chips" });
+        CATS.forEach(([k, lab]) => {
+          const r = L["rank_" + k];
+          if (r <= 3 || r >= 10) {
+            const c = el("span", { class: "zs-chip" });
+            c.style.background = tint((6.5 - r) / 5.5);
+            c.append(document.createTextNode(lab + " "), el("span", { "data-source": "league", "data-field": "rank_" + k, "data-where": W }, String(r)), document.createTextNode(suf(r)));
+            chips.append(c);
+          }
+        });
+        card.append(chips);
+        const kp = el("p");
+        kp.append(el("span", { class: "zs-k2" }, "Leans on: "), el("span", { "data-source": "scouting", "data-field": "key_players", "data-where": WS }, s.key_players));
+        card.append(kp);
+        const rp = el("p");
+        rp.append(el("span", { class: "zs-k2" }, "Risks: "), el("span", { "data-source": "scouting", "data-field": "risks", "data-where": WS }, s.risks));
+        card.append(rp);
+        const E = ex.get(s.team);
+        if (E) {
+          const ep = el("p", { class: "zs-sub" });
+          ep.append(document.createTextNode("Best matchup: "), el("span", { "data-source": "extremes", "data-field": "best_vs", "data-where": W }, E.best_vs),
+            document.createTextNode(" ("), el("span", { "data-source": "extremes", "data-field": "best_cats", "data-where": W }, f2(E.best_cats)),
+            document.createTextNode("). Worst: "), el("span", { "data-source": "extremes", "data-field": "worst_vs", "data-where": W }, E.worst_vs),
+            document.createTextNode(" ("), el("span", { "data-source": "extremes", "data-field": "worst_cats", "data-where": W }, f2(E.worst_cats)), document.createTextNode(")."));
+          card.append(ep);
+        }
+        if (s.team !== ME) {
+          const m = mu.get(s.team);
+          const vs = el("div", { class: "zs-vs" });
+          const sc = el("div", { class: "zs-vs-score" });
+          const MW = where({ opponent: s.team, fill });
+          sc.append(document.createTextNode("Against you: "), el("b", { "data-source": "matchups", "data-field": "my_cats", "data-where": MW }, f2(m.my_cats)),
+            document.createTextNode(" – "), el("b", { "data-source": "matchups", "data-field": "their_cats", "data-where": MW }, f2(m.their_cats)),
+            document.createTextNode(" · you win the week "), el("span", { "data-source": "matchups", "data-field": "p_week", "data-where": MW }, pct(m.p_week)));
+          vs.append(sc, el("p", { "data-source": "scouting", "data-field": "vs_me", "data-where": WS }, s.vs_me));
+          card.append(vs);
+        }
+        const det = el("details");
+        det.append(el("summary", {}, "Roster"));
+        const box = el("div", { class: "zs-scroll" });
+        const tbl = el("table", { class: "zs-table", "data-source": "rosters", "data-row-key": "player" });
+        const h = el("tr");
+        [["pick", "Pick"], ["player", "Player", 1], ["nba", "NBA", 1], ["pos", "Pos", 1], ["gp", "GP"], ["mpg", "MPG"], ["value", "Value"], ["flag", "Note", 1]].forEach(([f, lab, left]) => h.append(el("th", { "data-field": f, class: left ? "zs-l" : null }, lab)));
+        const th = el("thead"); th.append(h);
+        const tb = el("tbody");
+        D.rosters.data.filter((r) => r.team === s.team).sort((a, b) => (a.pick ?? 999) - (b.pick ?? 999)).forEach((r) => {
+          const tr = el("tr");
+          tr.append(el("td", {}, r.pick == null ? "" : String(r.pick)), el("td", { class: "zs-l" }, r.player), el("td", { class: "zs-l" }, r.nba), el("td", { class: "zs-l" }, r.pos),
+            el("td", {}, String(r.gp)), el("td", {}, r.mpg == null ? "" : f1(r.mpg)), el("td", {}, r.value == null ? "" : f1(r.value)), el("td", { class: "zs-wrap" }, r.flag || ""));
+          tb.append(tr);
+        });
+        tbl.append(th, tb);
+        box.append(tbl);
+        det.append(box);
+        card.append(det);
+        return card;
+      }));
+    } else if (D.scouting.status === "error") failed(cards);
+
+    // ---- moves
+    const mvBody = document.getElementById("mv-body");
+    if (ok("moves")) {
+      const rows = D.moves.data.filter((r) => r.fill === fill);
+      mvBody.replaceChildren(...rows.map((r) => {
+        const tr = el("tr", { "data-key": key2(r.label, r.fill), class: r.label === "Current roster" ? "zs-me" : null });
+        tr.append(el("td", { class: "zs-l" }, r.label), el("td", {}, f2(r.exp_cats)), el("td", {}, pct(r.p_week)), el("td", {}, r.league_rank + suf(r.league_rank)), el("td", { class: "zs-wrap" }, r.detail));
+        return tr;
+      }));
+    } else if (D.moves.status === "error") failed(mvBody);
+
+    const faBody = document.getElementById("fa-body");
+    if (ok("free_agents")) {
+      faBody.replaceChildren(...D.free_agents.data.map((r) => {
+        const tr = el("tr");
+        tr.append(el("td", { class: "zs-l" }, r.player), el("td", { class: "zs-l" }, r.nba + " " + r.pos));
+        [r.gain_kgeorge, r.gain_carter, r.gain_poeltl].forEach((g) => {
+          const td = el("td", { class: "zs-heat" }, sgn(g));
+          td.style.background = tint(g / 0.15);
+          tr.append(td);
+        });
+        tr.append(el("td", {}, f1(r.mpg)), el("td", {}, r.games_last3), el("td", { class: "zs-wrap" }, r.note || ""));
+        return tr;
+      }));
+    } else if (D.free_agents.status === "error") failed(faBody);
+
+    // ---- method numbers
+    if (ok("settings")) {
+      const v = Object.fromEntries(D.settings.data.map((r) => [r.key, r.value]));
+      setMark("m-weeks", "settings", "value", "key=weeks", d3.format(",")(v.weeks));
+      setMark("m-il", "settings", "value", "key=il", String(v.il));
+      setMark("m-adds", "settings", "value", "key=adds", String(v.adds));
+      setMark("m-rookies", "settings", "value", "key=rookies", String(v.rookies));
+      ["tk-n", "t-n1", "t-n2"].forEach((id) => setMark(id, "settings", "value", "key=teams", String(v.teams)));
+    }
+  });
+})();
+</script>

@@ -1,0 +1,7726 @@
+{
+ "league": "Zalgiris 260146",
+ "my_team": "Chop'em Down",
+ "weeks_simulated": 6000,
+ "cats": [
+  "FG%",
+  "FT%",
+  "3PM",
+  "PTS",
+  "REB",
+  "AST",
+  "STL",
+  "BLK",
+  "TO"
+ ],
+ "teams": [
+  {
+   "name": "Dominykas's Expert Team",
+   "slot": 1,
+   "means": {
+    "FG%": 0.496762989377681,
+    "FT%": 0.7918208435904956,
+    "3PM": 67.42366666666666,
+    "PTS": 698.69945178052,
+    "REB": 263.85616666666664,
+    "AST": 180.48283333333333,
+    "STL": 42.4575,
+    "BLK": 24.367833333333333,
+    "TO": 81.89583333333333,
+    "G": 45.8725
+   },
+   "cat_win": {
+    "FG%": 0.6500833333333333,
+    "FT%": 0.5087348484848485,
+    "3PM": 0.43164393939393936,
+    "PTS": 0.5609090909090908,
+    "REB": 0.635469696969697,
+    "AST": 0.7483484848484848,
+    "STL": 0.4544393939393938,
+    "BLK": 0.33978030303030304,
+    "TO": 0.4281060606060606
+   },
+   "exp_cats_vs_field": 4.757515151515151,
+   "p_week_vs_field": 0.5734469696969696,
+   "roster": [
+    {
+     "name": "Nikola Jokic",
+     "nba": "DEN",
+     "pos": [
+      "C"
+     ],
+     "pick": 1,
+     "gp": 62,
+     "mpg": 35.6,
+     "value": 10.21,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      79,
+      70,
+      65
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.87,
+      "REB": 2.54,
+      "AST": 2.96,
+      "STL": 1.31,
+      "BLK": 0.1,
+      "3PM": -0.09,
+      "TOV": -1.83,
+      "FG_IMPACT": 2.51,
+      "FT_IMPACT": 0.35
+     }
+    },
+    {
+     "name": "Devin Booker",
+     "nba": "PHO",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 24,
+     "gp": 62,
+     "mpg": 35.0,
+     "value": 3.63,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      75,
+      64
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.52,
+      "REB": -0.84,
+      "AST": 1.2,
+      "STL": -0.62,
+      "BLK": -0.78,
+      "3PM": 0.42,
+      "TOV": -1.2,
+      "FG_IMPACT": -0.67,
+      "FT_IMPACT": 2.0
+     }
+    },
+    {
+     "name": "Domantas Sabonis",
+     "nba": "SAC",
+     "pos": [
+      "C",
+      "PF"
+     ],
+     "pick": 25,
+     "gp": 50,
+     "mpg": 35.1,
+     "value": 3.4,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82,
+      70,
+      19
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.31,
+      "REB": 2.93,
+      "AST": 1.25,
+      "STL": -0.7,
+      "BLK": -0.46,
+      "3PM": -1.13,
+      "TOV": -1.41,
+      "FG_IMPACT": 2.02,
+      "FT_IMPACT": -1.0
+     }
+    },
+    {
+     "name": "LeBron James",
+     "nba": "PHI",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 48,
+     "gp": 50,
+     "mpg": 33.0,
+     "value": 3.07,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      71,
+      70,
+      60
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.81,
+      "REB": 0.14,
+      "AST": 1.62,
+      "STL": 0.3,
+      "BLK": -0.25,
+      "3PM": -0.06,
+      "TOV": -1.48,
+      "FG_IMPACT": 0.75,
+      "FT_IMPACT": -0.58
+     }
+    },
+    {
+     "name": "Kyrie Irving",
+     "nba": "DAL",
+     "pos": [
+      "PG"
+     ],
+     "pick": 49,
+     "gp": 43,
+     "mpg": 35.6,
+     "value": 3.86,
+     "inj": "Returning from torn ACL; no firm return date",
+     "note": "",
+     "games_hist": [
+      58,
+      50
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.31,
+      "REB": -0.53,
+      "AST": 0.41,
+      "STL": 0.49,
+      "BLK": -0.5,
+      "3PM": 1.23,
+      "TOV": -0.04,
+      "FG_IMPACT": -0.22,
+      "FT_IMPACT": 1.42
+     }
+    },
+    {
+     "name": "Paul George",
+     "nba": "BOS",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 72,
+     "gp": 43,
+     "mpg": 28.9,
+     "value": 1.69,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      74,
+      41,
+      37
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.3,
+      "REB": -0.67,
+      "AST": -0.4,
+      "STL": 0.64,
+      "BLK": -0.61,
+      "3PM": 0.64,
+      "TOV": 0.41,
+      "FG_IMPACT": -0.68,
+      "FT_IMPACT": 0.42
+     }
+    },
+    {
+     "name": "Ryan Rollins",
+     "nba": "MIL",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 73,
+     "gp": 55,
+     "mpg": 23.7,
+     "value": 0.98,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      13,
+      56,
+      74
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.83,
+      "REB": -1.08,
+      "AST": 0.04,
+      "STL": 0.36,
+      "BLK": -0.7,
+      "3PM": 0.09,
+      "TOV": 0.02,
+      "FG_IMPACT": -0.26,
+      "FT_IMPACT": 0.06
+     }
+    },
+    {
+     "name": "Jabari Smith Jr.",
+     "nba": "HOU",
+     "pos": [
+      "C",
+      "PF"
+     ],
+     "pick": 96,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 1.88,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      76,
+      57,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.45,
+      "REB": 0.45,
+      "AST": -1.16,
+      "STL": -1.19,
+      "BLK": 0.33,
+      "3PM": 0.42,
+      "TOV": 0.96,
+      "FG_IMPACT": -0.69,
+      "FT_IMPACT": -0.03
+     }
+    },
+    {
+     "name": "CJ McCollum",
+     "nba": "ATL",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 97,
+     "gp": 57,
+     "mpg": 31.0,
+     "value": 1.9,
+     "inj": "",
+     "note": "minutes cut from the flat 33 to 31.0 (veteran with a recent drop: 29.8, 32.7 mpg)",
+     "games_hist": [
+      66,
+      56,
+      76
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.55,
+      "REB": -0.93,
+      "AST": 0.13,
+      "STL": -0.64,
+      "BLK": -0.48,
+      "3PM": 1.31,
+      "TOV": 0.13,
+      "FG_IMPACT": -0.91,
+      "FT_IMPACT": -0.2
+     }
+    },
+    {
+     "name": "Neemias Queta",
+     "nba": "BOS",
+     "pos": [
+      "C"
+     ],
+     "pick": 120,
+     "gp": 59,
+     "mpg": 26.9,
+     "value": 2.52,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      28,
+      62,
+      76
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.16,
+      "REB": 0.99,
+      "AST": -1.14,
+      "STL": -0.76,
+      "BLK": 1.27,
+      "3PM": -1.75,
+      "TOV": 1.12,
+      "FG_IMPACT": 1.83,
+      "FT_IMPACT": -0.68
+     }
+    },
+    {
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": [
+      "PG"
+     ],
+     "pick": 121,
+     "gp": 65,
+     "mpg": 27.3,
+     "value": -0.25,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      72,
+      74,
+      70
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.48,
+      "REB": -1.43,
+      "AST": 0.75,
+      "STL": -0.37,
+      "BLK": -0.96,
+      "3PM": -0.45,
+      "TOV": 0.51,
+      "FG_IMPACT": -0.16,
+      "FT_IMPACT": -0.5
+     }
+    },
+    {
+     "name": "Jonathan Kuminga",
+     "nba": "MIN",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 144,
+     "gp": 50,
+     "mpg": 28.3,
+     "value": 0.21,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      74,
+      47,
+      36
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.01,
+      "REB": -0.03,
+      "AST": -0.65,
+      "STL": -0.52,
+      "BLK": -0.36,
+      "3PM": -0.65,
+      "TOV": 0.01,
+      "FG_IMPACT": -0.07,
+      "FT_IMPACT": -1.16
+     }
+    },
+    {
+     "name": "Jimmy Butler",
+     "nba": "GSW",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 145,
+     "gp": 21,
+     "mpg": 33.0,
+     "value": 1.42,
+     "inj": "ACL recovery; out until at least Jan 2, Jan/Feb return called optimistic",
+     "note": "",
+     "games_hist": [
+      60,
+      55,
+      38
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.32,
+      "REB": -0.31,
+      "AST": 0.54,
+      "STL": 0.74,
+      "BLK": -0.84,
+      "3PM": -0.94,
+      "TOV": 0.6,
+      "FG_IMPACT": 0.35,
+      "FT_IMPACT": 1.31
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 3,
+    "FT%": 6,
+    "3PM": 9,
+    "PTS": 6,
+    "REB": 3,
+    "AST": 2,
+    "STL": 8,
+    "BLK": 9,
+    "TO": 8
+   }
+  },
+  {
+   "name": "Z - 12T",
+   "slot": 2,
+   "means": {
+    "FG%": 0.4888018454597183,
+    "FT%": 0.8006901985629753,
+    "3PM": 68.1665,
+    "PTS": 651.5846931836154,
+    "REB": 268.87266666666665,
+    "AST": 139.243,
+    "STL": 44.061166666666665,
+    "BLK": 35.14383333333333,
+    "TO": 76.57816666666666,
+    "G": 45.93833333333333
+   },
+   "cat_win": {
+    "FG%": 0.5490833333333334,
+    "FT%": 0.5839090909090909,
+    "3PM": 0.44855303030303034,
+    "PTS": 0.3775,
+    "REB": 0.6825,
+    "AST": 0.2623560606060606,
+    "STL": 0.5165909090909091,
+    "BLK": 0.7492196969696969,
+    "TO": 0.5593560606060606
+   },
+   "exp_cats_vs_field": 4.729068181818182,
+   "p_week_vs_field": 0.5488787878787879,
+   "roster": [
+    {
+     "name": "Victor Wembanyama",
+     "nba": "SAS",
+     "pos": [
+      "C"
+     ],
+     "pick": 2,
+     "gp": 58,
+     "mpg": 33.0,
+     "value": 10.32,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      71,
+      46,
+      64
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.82,
+      "REB": 2.61,
+      "AST": -0.03,
+      "STL": 0.69,
+      "BLK": 5.86,
+      "3PM": 0.76,
+      "TOV": -1.73,
+      "FG_IMPACT": 0.45,
+      "FT_IMPACT": 0.38
+     }
+    },
+    {
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": [
+      "PG",
+      "SF",
+      "SG"
+     ],
+     "pick": 23,
+     "gp": 63,
+     "mpg": 32.0,
+     "value": 3.23,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82,
+      73,
+      51
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.34,
+      "REB": -0.73,
+      "AST": 0.59,
+      "STL": -0.14,
+      "BLK": -0.69,
+      "3PM": 0.56,
+      "TOV": -0.52,
+      "FG_IMPACT": -0.22,
+      "FT_IMPACT": 1.23
+     }
+    },
+    {
+     "name": "Trey Murphy III",
+     "nba": "NOP",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 26,
+     "gp": 58,
+     "mpg": 35.3,
+     "value": 4.98,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      57,
+      53,
+      66
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.72,
+      "REB": -0.17,
+      "AST": -0.2,
+      "STL": 0.94,
+      "BLK": -0.34,
+      "3PM": 1.64,
+      "TOV": 0.31,
+      "FG_IMPACT": -0.61,
+      "FT_IMPACT": 0.99
+     }
+    },
+    {
+     "name": "Franz Wagner",
+     "nba": "ORL",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 47,
+     "gp": 51,
+     "mpg": 33.0,
+     "value": 3.19,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      72,
+      60,
+      34
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.09,
+      "REB": -0.12,
+      "AST": 0.14,
+      "STL": 0.48,
+      "BLK": -0.59,
+      "3PM": -0.06,
+      "TOV": -0.19,
+      "FG_IMPACT": -0.34,
+      "FT_IMPACT": 0.94
+     }
+    },
+    {
+     "name": "Matas Buzelis",
+     "nba": "CHI",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 50,
+     "gp": 68,
+     "mpg": 29.0,
+     "value": 2.59,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      80,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.2,
+      "REB": -0.07,
+      "AST": -0.97,
+      "STL": -1.03,
+      "BLK": 1.52,
+      "3PM": 0.53,
+      "TOV": 0.06,
+      "FG_IMPACT": -0.45,
+      "FT_IMPACT": -0.04
+     }
+    },
+    {
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 71,
+     "gp": 50,
+     "mpg": 33.0,
+     "value": 2.74,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      42,
+      77,
+      33
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.83,
+      "REB": -0.46,
+      "AST": 0.38,
+      "STL": -0.69,
+      "BLK": -0.88,
+      "3PM": 1.31,
+      "TOV": -0.32,
+      "FG_IMPACT": -0.51,
+      "FT_IMPACT": 1.06
+     }
+    },
+    {
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 74,
+     "gp": 67,
+     "mpg": 33.0,
+     "value": 3.04,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      72,
+      82,
+      73
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.53,
+      "REB": -0.45,
+      "AST": -0.77,
+      "STL": 0.68,
+      "BLK": 0.52,
+      "3PM": -0.29,
+      "TOV": 0.51,
+      "FG_IMPACT": 0.19,
+      "FT_IMPACT": 0.08
+     }
+    },
+    {
+     "name": "Day'Ron Sharpe",
+     "nba": "BRK",
+     "pos": [
+      "C"
+     ],
+     "pick": 95,
+     "gp": 57,
+     "mpg": 25.7,
+     "value": 2.24,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      61,
+      50,
+      62
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.94,
+      "REB": 1.39,
+      "AST": -0.51,
+      "STL": 0.67,
+      "BLK": 0.4,
+      "3PM": -1.52,
+      "TOV": -0.17,
+      "FG_IMPACT": 1.22,
+      "FT_IMPACT": -1.1
+     }
+    },
+    {
+     "name": "Josh Hart",
+     "nba": "NYK",
+     "pos": [
+      "SF",
+      "SG"
+     ],
+     "pick": 98,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 2.47,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      81,
+      77,
+      66
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.99,
+      "REB": 0.77,
+      "AST": 0.45,
+      "STL": 0.34,
+      "BLK": -0.79,
+      "3PM": -0.48,
+      "TOV": 0.21,
+      "FG_IMPACT": 0.14,
+      "FT_IMPACT": -0.25
+     }
+    },
+    {
+     "name": "Isaiah Hartenstein",
+     "nba": "OKC",
+     "pos": [
+      "C"
+     ],
+     "pick": 119,
+     "gp": 55,
+     "mpg": 29.3,
+     "value": 3.02,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      75,
+      57,
+      47
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.13,
+      "REB": 1.91,
+      "AST": -0.08,
+      "STL": 0.28,
+      "BLK": 0.85,
+      "3PM": -1.75,
+      "TOV": 0.19,
+      "FG_IMPACT": 1.63,
+      "FT_IMPACT": -1.18
+     }
+    },
+    {
+     "name": "Ajay Mitchell",
+     "nba": "OKC",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 122,
+     "gp": 51,
+     "mpg": 17.4,
+     "value": -0.7,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      36,
+      57
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.51,
+      "REB": -1.54,
+      "AST": -0.8,
+      "STL": -0.81,
+      "BLK": -0.94,
+      "3PM": -0.99,
+      "TOV": 1.41,
+      "FG_IMPACT": -0.08,
+      "FT_IMPACT": 0.38
+     }
+    },
+    {
+     "name": "Cameron Johnson",
+     "nba": "DEN",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 143,
+     "gp": 55,
+     "mpg": 24.1,
+     "value": 0.27,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      58,
+      57,
+      54
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.03,
+      "REB": -1.14,
+      "AST": -0.9,
+      "STL": -1.27,
+      "BLK": -0.77,
+      "3PM": 0.17,
+      "TOV": 1.41,
+      "FG_IMPACT": -0.2,
+      "FT_IMPACT": 0.36
+     }
+    },
+    {
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": [
+      "C",
+      "PF",
+      "SF"
+     ],
+     "pick": 146,
+     "gp": 57,
+     "mpg": 18.5,
+     "value": -1.37,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      73,
+      57,
+      56
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.59,
+      "REB": -0.78,
+      "AST": -1.38,
+      "STL": -1.34,
+      "BLK": -0.19,
+      "3PM": -0.79,
+      "TOV": 1.31,
+      "FG_IMPACT": -0.41,
+      "FT_IMPACT": -0.58
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 4,
+    "FT%": 4,
+    "3PM": 8,
+    "PTS": 10,
+    "REB": 2,
+    "AST": 11,
+    "STL": 6,
+    "BLK": 1,
+    "TO": 4
+   }
+  },
+  {
+   "name": "Chop'em Down",
+   "slot": 3,
+   "means": {
+    "FG%": 0.47657263994323085,
+    "FT%": 0.7880362014621202,
+    "3PM": 76.8235,
+    "PTS": 712.4514653105931,
+    "REB": 260.31583333333333,
+    "AST": 166.11716666666666,
+    "STL": 42.69866666666667,
+    "BLK": 30.673166666666667,
+    "TO": 88.94433333333333,
+    "G": 45.8565
+   },
+   "cat_win": {
+    "FG%": 0.39710606060606063,
+    "FT%": 0.4771439393939394,
+    "3PM": 0.6519090909090909,
+    "PTS": 0.6013787878787878,
+    "REB": 0.6077500000000001,
+    "AST": 0.5993257575757576,
+    "STL": 0.46321212121212113,
+    "BLK": 0.6108560606060606,
+    "TO": 0.28482575757575757
+   },
+   "exp_cats_vs_field": 4.693507575757576,
+   "p_week_vs_field": 0.5575454545454546,
+   "roster": [
+    {
+     "name": "Luka Doncic",
+     "nba": "LAL",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 3,
+     "gp": 65,
+     "mpg": 36.0,
+     "value": 7.77,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      70,
+      50,
+      64
+     ],
+     "added": false,
+     "z": {
+      "PTS": 2.69,
+      "REB": 0.78,
+      "AST": 2.16,
+      "STL": 1.82,
+      "BLK": -0.38,
+      "3PM": 2.25,
+      "TOV": -2.52,
+      "FG_IMPACT": -0.58,
+      "FT_IMPACT": -0.21
+     }
+    },
+    {
+     "name": "Josh Giddey",
+     "nba": "CHI",
+     "pos": [
+      "PG",
+      "SG",
+      "SF"
+     ],
+     "pick": 22,
+     "gp": 60,
+     "mpg": 33.0,
+     "value": 3.43,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      80,
+      70,
+      54
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.01,
+      "REB": 1.03,
+      "AST": 2.22,
+      "STL": 0.39,
+      "BLK": -0.13,
+      "3PM": 0.1,
+      "TOV": -1.93,
+      "FG_IMPACT": -0.65,
+      "FT_IMPACT": -0.13
+     }
+    },
+    {
+     "name": "LaMelo Ball",
+     "nba": "MIN",
+     "pos": [
+      "PG"
+     ],
+     "pick": 27,
+     "gp": 54,
+     "mpg": 29.6,
+     "value": 3.83,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      22,
+      47,
+      72
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.06,
+      "REB": -0.39,
+      "AST": 1.85,
+      "STL": 0.9,
+      "BLK": -0.84,
+      "3PM": 2.35,
+      "TOV": -1.71,
+      "FG_IMPACT": -2.17,
+      "FT_IMPACT": 0.99
+     }
+    },
+    {
+     "name": "Jaren Jackson Jr.",
+     "nba": "UTA",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 46,
+     "gp": 57,
+     "mpg": 33.0,
+     "value": 4.26,
+     "inj": "Knee surgery (growth removed); no return timeline given",
+     "note": "",
+     "games_hist": [
+      66,
+      74,
+      48
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.07,
+      "REB": 0.09,
+      "AST": -0.86,
+      "STL": 0.71,
+      "BLK": 1.81,
+      "3PM": 0.31,
+      "TOV": -0.59,
+      "FG_IMPACT": -0.07,
+      "FT_IMPACT": -0.11
+     }
+    },
+    {
+     "name": "Keyonte George",
+     "nba": "UTA",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 51,
+     "gp": 59,
+     "mpg": 33.0,
+     "value": 1.86,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      75,
+      67,
+      54
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.72,
+      "REB": -0.85,
+      "AST": 1.17,
+      "STL": -0.32,
+      "BLK": -0.89,
+      "3PM": 1.05,
+      "TOV": -1.66,
+      "FG_IMPACT": -1.64,
+      "FT_IMPACT": 1.22
+     }
+    },
+    {
+     "name": "Joel Embiid",
+     "nba": "PHI",
+     "pos": [
+      "C"
+     ],
+     "pick": 70,
+     "gp": 39,
+     "mpg": 33.0,
+     "value": 3.47,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      39,
+      19,
+      38
+     ],
+     "added": false,
+     "z": {
+      "PTS": 2.07,
+      "REB": 1.12,
+      "AST": 0.27,
+      "STL": -0.98,
+      "BLK": 1.03,
+      "3PM": -0.34,
+      "TOV": -1.55,
+      "FG_IMPACT": 0.57,
+      "FT_IMPACT": 1.33
+     }
+    },
+    {
+     "name": "Alex Sarr",
+     "nba": "WAS",
+     "pos": [
+      "C",
+      "PF"
+     ],
+     "pick": 75,
+     "gp": 55,
+     "mpg": 30.1,
+     "value": 2.84,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      67,
+      48
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.0,
+      "REB": 0.85,
+      "AST": -0.48,
+      "STL": -0.44,
+      "BLK": 2.45,
+      "3PM": -0.22,
+      "TOV": -0.04,
+      "FG_IMPACT": -0.46,
+      "FT_IMPACT": -1.21
+     }
+    },
+    {
+     "name": "Coby White",
+     "nba": "CHO",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 94,
+     "gp": 59,
+     "mpg": 24.5,
+     "value": -0.19,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      79,
+      74,
+      50
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.46,
+      "REB": -1.25,
+      "AST": -0.27,
+      "STL": -1.54,
+      "BLK": -1.06,
+      "3PM": 0.34,
+      "TOV": 0.22,
+      "FG_IMPACT": -0.66,
+      "FT_IMPACT": 0.65
+     }
+    },
+    {
+     "name": "Norman Powell",
+     "nba": "CHI",
+     "pos": [
+      "SG",
+      "SF"
+     ],
+     "pick": 99,
+     "gp": 56,
+     "mpg": 30.8,
+     "value": 2.43,
+     "inj": "",
+     "note": "minutes cut from the flat 33 to 30.8 (veteran with a recent drop: 29.6, 32.6 mpg)",
+     "games_hist": [
+      76,
+      60,
+      58
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.83,
+      "REB": -1.03,
+      "AST": -0.85,
+      "STL": -0.03,
+      "BLK": -0.87,
+      "3PM": 1.27,
+      "TOV": 0.28,
+      "FG_IMPACT": -0.28,
+      "FT_IMPACT": 0.46
+     }
+    },
+    {
+     "name": "Brandon Ingram",
+     "nba": "LAC",
+     "pos": [
+      "SG",
+      "SF",
+      "PF"
+     ],
+     "pick": 118,
+     "gp": 52,
+     "mpg": 33.0,
+     "value": 1.59,
+     "inj": "Achilles; out until at least Nov 1",
+     "note": "on IL (not counted)",
+     "games_hist": [],
+     "added": false,
+     "il": true,
+     "z": null
+    },
+    {
+     "name": "Kyshawn George",
+     "nba": "WAS",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 123,
+     "gp": 55,
+     "mpg": 20.8,
+     "value": -0.52,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      48
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.4,
+      "REB": -0.97,
+      "AST": -0.58,
+      "STL": -0.84,
+      "BLK": -0.13,
+      "3PM": -0.23,
+      "TOV": 0.53,
+      "FG_IMPACT": -0.88,
+      "FT_IMPACT": -0.06
+     }
+    },
+    {
+     "name": "Jakob Poeltl",
+     "nba": "TOR",
+     "pos": [
+      "C"
+     ],
+     "pick": 142,
+     "gp": 51,
+     "mpg": 26.8,
+     "value": 1.57,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      50,
+      57,
+      46
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.98,
+      "REB": 0.75,
+      "AST": -0.83,
+      "STL": -0.53,
+      "BLK": 0.58,
+      "3PM": -1.75,
+      "TOV": 0.64,
+      "FG_IMPACT": 2.19,
+      "FT_IMPACT": -1.33
+     }
+    },
+    {
+     "name": "Wendell Carter Jr.",
+     "nba": "ORL",
+     "pos": [
+      "C"
+     ],
+     "pick": 147,
+     "gp": 64,
+     "mpg": 23.4,
+     "value": -0.03,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      55,
+      68,
+      78
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.41,
+      "REB": 0.07,
+      "AST": -1.16,
+      "STL": -1.21,
+      "BLK": -0.28,
+      "3PM": -1.0,
+      "TOV": 1.23,
+      "FG_IMPACT": 0.25,
+      "FT_IMPACT": -0.31
+     }
+    },
+    {
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": [
+      "C"
+     ],
+     "pick": null,
+     "gp": 46,
+     "mpg": 19.0,
+     "value": 0.11,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      31,
+      17,
+      60
+     ],
+     "added": true,
+     "z": {
+      "PTS": -2.14,
+      "REB": 0.62,
+      "AST": -1.58,
+      "STL": -0.58,
+      "BLK": 0.67,
+      "3PM": -1.75,
+      "TOV": 1.73,
+      "FG_IMPACT": 1.2,
+      "FT_IMPACT": -1.75
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 10,
+    "FT%": 7,
+    "3PM": 3,
+    "PTS": 4,
+    "REB": 5,
+    "AST": 4,
+    "STL": 7,
+    "BLK": 4,
+    "TO": 12
+   }
+  },
+  {
+   "name": "Μαριος's Nice Team",
+   "slot": 4,
+   "means": {
+    "FG%": 0.4863147962765566,
+    "FT%": 0.8044891726276931,
+    "3PM": 63.136833333333335,
+    "PTS": 667.7388149566933,
+    "REB": 243.671,
+    "AST": 158.716,
+    "STL": 45.489333333333335,
+    "BLK": 30.230833333333333,
+    "TO": 77.79233333333333,
+    "G": 45.941
+   },
+   "cat_win": {
+    "FG%": 0.5219015151515152,
+    "FT%": 0.6155075757575756,
+    "3PM": 0.32275000000000004,
+    "PTS": 0.4404848484848484,
+    "REB": 0.44259848484848485,
+    "AST": 0.5101666666666667,
+    "STL": 0.5759696969696969,
+    "BLK": 0.6014621212121212,
+    "TO": 0.532310606060606
+   },
+   "exp_cats_vs_field": 4.5631515151515165,
+   "p_week_vs_field": 0.5113636363636364,
+   "roster": [
+    {
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": [
+      "PG"
+     ],
+     "pick": 4,
+     "gp": 65,
+     "mpg": 33.0,
+     "value": 9.69,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      75,
+      76,
+      68
+     ],
+     "added": false,
+     "z": {
+      "PTS": 2.44,
+      "REB": -0.57,
+      "AST": 1.13,
+      "STL": 1.69,
+      "BLK": 0.26,
+      "3PM": 0.04,
+      "TOV": -0.36,
+      "FG_IMPACT": 1.4,
+      "FT_IMPACT": 2.43
+     }
+    },
+    {
+     "name": "Trae Young",
+     "nba": "WAS",
+     "pos": [
+      "PG"
+     ],
+     "pick": 21,
+     "gp": 46,
+     "mpg": 36.0,
+     "value": 2.9,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      54,
+      76,
+      15
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.37,
+      "REB": -1.22,
+      "AST": 3.54,
+      "STL": 0.8,
+      "BLK": -0.97,
+      "3PM": 1.26,
+      "TOV": -3.25,
+      "FG_IMPACT": -1.77,
+      "FT_IMPACT": 1.63
+     }
+    },
+    {
+     "name": "Bam Adebayo",
+     "nba": "MIA",
+     "pos": [
+      "C",
+      "PF"
+     ],
+     "pick": 28,
+     "gp": 66,
+     "mpg": 33.0,
+     "value": 4.22,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      71,
+      78,
+      73
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.44,
+      "REB": 1.62,
+      "AST": -0.11,
+      "STL": 0.49,
+      "BLK": 0.17,
+      "3PM": -0.49,
+      "TOV": 0.02,
+      "FG_IMPACT": -0.15,
+      "FT_IMPACT": -0.52
+     }
+    },
+    {
+     "name": "Desmond Bane",
+     "nba": "ORL",
+     "pos": [
+      "SG",
+      "SF"
+     ],
+     "pick": 45,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 3.9,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      42,
+      69,
+      82
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.52,
+      "REB": -0.58,
+      "AST": 0.28,
+      "STL": 0.13,
+      "BLK": -0.52,
+      "3PM": 0.59,
+      "TOV": -0.28,
+      "FG_IMPACT": -0.19,
+      "FT_IMPACT": 1.26
+     }
+    },
+    {
+     "name": "Onyeka Okongwu",
+     "nba": "ATL",
+     "pos": [
+      "C"
+     ],
+     "pick": 52,
+     "gp": 64,
+     "mpg": 31.4,
+     "value": 4.3,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      55,
+      74,
+      74
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.36,
+      "REB": 1.05,
+      "AST": -0.58,
+      "STL": 0.1,
+      "BLK": 0.84,
+      "3PM": -0.27,
+      "TOV": 0.55,
+      "FG_IMPACT": 0.8,
+      "FT_IMPACT": -0.39
+     }
+    },
+    {
+     "name": "Naz Reid",
+     "nba": "CHO",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 69,
+     "gp": 69,
+     "mpg": 29.8,
+     "value": 3.26,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      81,
+      80,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.32,
+      "REB": 0.24,
+      "AST": -0.85,
+      "STL": -0.23,
+      "BLK": 0.76,
+      "3PM": 0.71,
+      "TOV": 0.41,
+      "FG_IMPACT": -0.27,
+      "FT_IMPACT": -0.36
+     }
+    },
+    {
+     "name": "VJ Edgecombe",
+     "nba": "PHI",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 76,
+     "gp": 67,
+     "mpg": 33.0,
+     "value": 3.28,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      75
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.23,
+      "REB": -0.24,
+      "AST": 0.11,
+      "STL": 1.19,
+      "BLK": -0.38,
+      "3PM": 0.27,
+      "TOV": 0.23,
+      "FG_IMPACT": -0.97,
+      "FT_IMPACT": 0.26
+     }
+    },
+    {
+     "name": "AJ Dybantsa",
+     "nba": "WAS",
+     "pos": [
+      "SF"
+     ],
+     "pick": 93,
+     "gp": 59,
+     "mpg": null,
+     "value": null,
+     "inj": "",
+     "note": "rookie stand-in: average of 7 projected wings with ADP 66-90",
+     "games_hist": [],
+     "added": false,
+     "z": null
+    },
+    {
+     "name": "Derik Queen",
+     "nba": "NOP",
+     "pos": [
+      "C",
+      "PF"
+     ],
+     "pick": 100,
+     "gp": 70,
+     "mpg": 29.0,
+     "value": 2.99,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      81
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.52,
+      "REB": 1.02,
+      "AST": 0.22,
+      "STL": 0.61,
+      "BLK": 0.82,
+      "3PM": -1.41,
+      "TOV": -0.99,
+      "FG_IMPACT": 0.22,
+      "FT_IMPACT": -0.25
+     }
+    },
+    {
+     "name": "Collin Murray-Boyles",
+     "nba": "TOR",
+     "pos": [
+      "C",
+      "PF"
+     ],
+     "pick": 117,
+     "gp": 56,
+     "mpg": 16.9,
+     "value": -0.88,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      57
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.84,
+      "REB": -0.83,
+      "AST": -1.22,
+      "STL": -1.14,
+      "BLK": -0.01,
+      "3PM": -1.46,
+      "TOV": 1.51,
+      "FG_IMPACT": 0.52,
+      "FT_IMPACT": -0.61
+     }
+    },
+    {
+     "name": "Ayo Dosunmu",
+     "nba": "MIN",
+     "pos": [
+      "PG",
+      "SF",
+      "SG"
+     ],
+     "pick": 124,
+     "gp": 60,
+     "mpg": 25.7,
+     "value": 0.9,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      76,
+      46,
+      69
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.85,
+      "REB": -1.23,
+      "AST": -0.31,
+      "STL": -0.72,
+      "BLK": -0.71,
+      "3PM": -0.19,
+      "TOV": 0.96,
+      "FG_IMPACT": 0.23,
+      "FT_IMPACT": 0.28
+     }
+    },
+    {
+     "name": "Peyton Watson",
+     "nba": "CLE",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 141,
+     "gp": 60,
+     "mpg": 23.5,
+     "value": -0.01,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      80,
+      68,
+      54
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.26,
+      "REB": -0.88,
+      "AST": -1.2,
+      "STL": -0.97,
+      "BLK": 0.82,
+      "3PM": -0.73,
+      "TOV": 1.14,
+      "FG_IMPACT": -0.08,
+      "FT_IMPACT": -0.64
+     }
+    },
+    {
+     "name": "Pelle Larsson",
+     "nba": "MIA",
+     "pos": [
+      "SG",
+      "PG"
+     ],
+     "pick": 148,
+     "gp": 60,
+     "mpg": 13.6,
+     "value": -2.77,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      55,
+      70
+     ],
+     "added": false,
+     "z": {
+      "PTS": -2.06,
+      "REB": -1.71,
+      "AST": -1.15,
+      "STL": -1.99,
+      "BLK": -1.09,
+      "3PM": -1.23,
+      "TOV": 1.77,
+      "FG_IMPACT": -0.06,
+      "FT_IMPACT": -0.05
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 5,
+    "FT%": 2,
+    "3PM": 11,
+    "PTS": 8,
+    "REB": 8,
+    "AST": 6,
+    "STL": 5,
+    "BLK": 6,
+    "TO": 6
+   }
+  },
+  {
+   "name": "MVP",
+   "slot": 5,
+   "means": {
+    "FG%": 0.4775171100008382,
+    "FT%": 0.7745645134528703,
+    "3PM": 64.2785,
+    "PTS": 689.7953464959077,
+    "REB": 251.79316666666668,
+    "AST": 168.70616666666666,
+    "STL": 46.95133333333333,
+    "BLK": 29.136333333333333,
+    "TO": 83.52716666666667,
+    "G": 45.912333333333336
+   },
+   "cat_win": {
+    "FG%": 0.40814393939393945,
+    "FT%": 0.3648409090909091,
+    "3PM": 0.34805303030303025,
+    "PTS": 0.5250151515151515,
+    "REB": 0.5231818181818181,
+    "AST": 0.6352272727272728,
+    "STL": 0.6286969696969696,
+    "BLK": 0.5463181818181818,
+    "TO": 0.38849242424242425
+   },
+   "exp_cats_vs_field": 4.367969696969697,
+   "p_week_vs_field": 0.47328030303030305,
+   "roster": [
+    {
+     "name": "Cade Cunningham",
+     "nba": "DET",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 5,
+     "gp": 61,
+     "mpg": 34.4,
+     "value": 4.46,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      62,
+      70,
+      64
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.41,
+      "REB": -0.21,
+      "AST": 2.69,
+      "STL": 0.65,
+      "BLK": 0.05,
+      "3PM": 0.39,
+      "TOV": -2.67,
+      "FG_IMPACT": -0.84,
+      "FT_IMPACT": 0.76
+     }
+    },
+    {
+     "name": "Alperen Sengun",
+     "nba": "HOU",
+     "pos": [
+      "C",
+      "PF"
+     ],
+     "pick": 20,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 3.26,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      63,
+      76,
+      72
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.6,
+      "REB": 1.41,
+      "AST": 0.84,
+      "STL": 0.5,
+      "BLK": 0.53,
+      "3PM": -1.29,
+      "TOV": -1.19,
+      "FG_IMPACT": 0.86,
+      "FT_IMPACT": -1.86
+     }
+    },
+    {
+     "name": "Chet Holmgren",
+     "nba": "OKC",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 29,
+     "gp": 58,
+     "mpg": 30.7,
+     "value": 4.91,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82,
+      32,
+      69
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.15,
+      "REB": 1.2,
+      "AST": -0.93,
+      "STL": -1.01,
+      "BLK": 2.85,
+      "3PM": -0.22,
+      "TOV": 0.34,
+      "FG_IMPACT": 0.94,
+      "FT_IMPACT": -0.14
+     }
+    },
+    {
+     "name": "Anthony Davis",
+     "nba": "WAS",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 44,
+     "gp": 43,
+     "mpg": 33.0,
+     "value": 4.22,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      76,
+      51,
+      20
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.99,
+      "REB": 2.03,
+      "AST": -0.35,
+      "STL": 0.02,
+      "BLK": 2.17,
+      "3PM": -1.22,
+      "TOV": -0.06,
+      "FG_IMPACT": 0.98,
+      "FT_IMPACT": -0.31
+     }
+    },
+    {
+     "name": "Dyson Daniels",
+     "nba": "ATL",
+     "pos": [
+      "PG",
+      "SF",
+      "SG"
+     ],
+     "pick": 53,
+     "gp": 65,
+     "mpg": 33.0,
+     "value": 4.63,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      61,
+      76,
+      76
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.84,
+      "REB": 0.14,
+      "AST": 0.65,
+      "STL": 4.13,
+      "BLK": -0.27,
+      "3PM": -1.07,
+      "TOV": 0.19,
+      "FG_IMPACT": 0.18,
+      "FT_IMPACT": -1.06
+     }
+    },
+    {
+     "name": "Stephon Castle",
+     "nba": "SAS",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 68,
+     "gp": 65,
+     "mpg": 30.8,
+     "value": 0.95,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      81,
+      68
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.14,
+      "REB": -0.37,
+      "AST": 1.42,
+      "STL": 0.54,
+      "BLK": -0.75,
+      "3PM": -0.36,
+      "TOV": -1.52,
+      "FG_IMPACT": -0.74,
+      "FT_IMPACT": -0.93
+     }
+    },
+    {
+     "name": "De'Aaron Fox",
+     "nba": "SAS",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 77,
+     "gp": 63,
+     "mpg": 33.0,
+     "value": 3.49,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      74,
+      62,
+      72
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.79,
+      "REB": -0.76,
+      "AST": 1.02,
+      "STL": 1.33,
+      "BLK": -0.7,
+      "3PM": 0.39,
+      "TOV": -0.69,
+      "FG_IMPACT": -0.4,
+      "FT_IMPACT": -0.21
+     }
+    },
+    {
+     "name": "Brandin Podziemski",
+     "nba": "GSW",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 92,
+     "gp": 67,
+     "mpg": 24.3,
+     "value": 0.47,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      74,
+      64,
+      82
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.08,
+      "REB": -0.56,
+      "AST": -0.34,
+      "STL": -0.35,
+      "BLK": -0.99,
+      "3PM": -0.13,
+      "TOV": 0.98,
+      "FG_IMPACT": -0.51,
+      "FT_IMPACT": -0.21
+     }
+    },
+    {
+     "name": "Andrew Wiggins",
+     "nba": "MIA",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 101,
+     "gp": 60,
+     "mpg": 30.5,
+     "value": 1.95,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      71,
+      60,
+      68
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.19,
+      "REB": -0.5,
+      "AST": -0.71,
+      "STL": -0.22,
+      "BLK": 0.3,
+      "3PM": 0.29,
+      "TOV": 0.59,
+      "FG_IMPACT": -0.47,
+      "FT_IMPACT": -0.21
+     }
+    },
+    {
+     "name": "Quentin Grimes",
+     "nba": "LAL",
+     "pos": [
+      "SG",
+      "SF"
+     ],
+     "pick": 116,
+     "gp": 75,
+     "mpg": 31.0,
+     "value": 1.37,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      51,
+      75,
+      75
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.44,
+      "REB": -0.78,
+      "AST": -0.35,
+      "STL": -0.1,
+      "BLK": -0.66,
+      "3PM": 0.42,
+      "TOV": 0.19,
+      "FG_IMPACT": -0.72,
+      "FT_IMPACT": 0.16
+     }
+    },
+    {
+     "name": "Bennedict Mathurin",
+     "nba": "NOP",
+     "pos": [
+      "SG",
+      "SF"
+     ],
+     "pick": 125,
+     "gp": 58,
+     "mpg": 22.2,
+     "value": -0.94,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      59,
+      72,
+      54
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.79,
+      "REB": -0.84,
+      "AST": -1.14,
+      "STL": -1.46,
+      "BLK": -0.91,
+      "3PM": -0.65,
+      "TOV": 0.65,
+      "FG_IMPACT": -0.62,
+      "FT_IMPACT": 0.65
+     }
+    },
+    {
+     "name": "Saddiq Bey",
+     "nba": "NOP",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 140,
+     "gp": 63,
+     "mpg": 16.7,
+     "value": -1.64,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      63,
+      72
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.51,
+      "REB": -1.21,
+      "AST": -1.38,
+      "STL": -1.79,
+      "BLK": -1.2,
+      "3PM": -0.66,
+      "TOV": 2.01,
+      "FG_IMPACT": -0.45,
+      "FT_IMPACT": 0.29
+     }
+    },
+    {
+     "name": "Ace Bailey",
+     "nba": "UTA",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 149,
+     "gp": 65,
+     "mpg": 30.3,
+     "value": 1.42,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      72
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.27,
+      "REB": -0.52,
+      "AST": -0.91,
+      "STL": -0.22,
+      "BLK": 0.13,
+      "3PM": 0.44,
+      "TOV": 0.34,
+      "FG_IMPACT": -0.77,
+      "FT_IMPACT": -0.22
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 9,
+    "FT%": 11,
+    "3PM": 10,
+    "PTS": 7,
+    "REB": 7,
+    "AST": 3,
+    "STL": 2,
+    "BLK": 7,
+    "TO": 10
+   }
+  },
+  {
+   "name": "…",
+   "slot": 6,
+   "means": {
+    "FG%": 0.4846842864373901,
+    "FT%": 0.7802059581026972,
+    "3PM": 73.812,
+    "PTS": 734.9386873181724,
+    "REB": 263.81416666666667,
+    "AST": 153.6065,
+    "STL": 40.303666666666665,
+    "BLK": 30.404166666666665,
+    "TO": 83.985,
+    "G": 45.893
+   },
+   "cat_win": {
+    "FG%": 0.5014318181818183,
+    "FT%": 0.4069090909090909,
+    "3PM": 0.5874242424242424,
+    "PTS": 0.6880757575757577,
+    "REB": 0.6381439393939394,
+    "AST": 0.449969696969697,
+    "STL": 0.3655,
+    "BLK": 0.6044924242424243,
+    "TO": 0.3790909090909091
+   },
+   "exp_cats_vs_field": 4.621037878787879,
+   "p_week_vs_field": 0.5378257575757576,
+   "roster": [
+    {
+     "name": "Anthony Edwards",
+     "nba": "MIN",
+     "pos": [
+      "PG",
+      "SF",
+      "SG"
+     ],
+     "pick": 6,
+     "gp": 64,
+     "mpg": 35.6,
+     "value": 5.73,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      79,
+      79,
+      61
+     ],
+     "added": false,
+     "z": {
+      "PTS": 2.12,
+      "REB": -0.23,
+      "AST": 0.26,
+      "STL": 1.03,
+      "BLK": 0.04,
+      "3PM": 1.91,
+      "TOV": -1.51,
+      "FG_IMPACT": -0.66,
+      "FT_IMPACT": 0.62
+     }
+    },
+    {
+     "name": "Stephen Curry",
+     "nba": "GSW",
+     "pos": [
+      "PG"
+     ],
+     "pick": 19,
+     "gp": 48,
+     "mpg": 33.0,
+     "value": 3.94,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      74,
+      70,
+      43
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.37,
+      "REB": -0.85,
+      "AST": 0.61,
+      "STL": -0.28,
+      "BLK": -0.65,
+      "3PM": 2.73,
+      "TOV": -0.99,
+      "FG_IMPACT": -0.9,
+      "FT_IMPACT": 1.92
+     }
+    },
+    {
+     "name": "Jalen Duren",
+     "nba": "DET",
+     "pos": [
+      "C"
+     ],
+     "pick": 30,
+     "gp": 64,
+     "mpg": 27.4,
+     "value": 3.46,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      61,
+      78,
+      70
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.13,
+      "REB": 1.92,
+      "AST": -0.79,
+      "STL": -0.84,
+      "BLK": 0.54,
+      "3PM": -1.76,
+      "TOV": 0.09,
+      "FG_IMPACT": 2.67,
+      "FT_IMPACT": -1.04
+     }
+    },
+    {
+     "name": "Jalen Williams",
+     "nba": "OKC",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 43,
+     "gp": 52,
+     "mpg": 31.5,
+     "value": 3.43,
+     "inj": "Recurring hamstring strains; no clearance stated",
+     "note": "",
+     "games_hist": [
+      71,
+      69,
+      33
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.54,
+      "REB": -0.48,
+      "AST": 0.64,
+      "STL": 1.08,
+      "BLK": -0.26,
+      "3PM": -0.28,
+      "TOV": -0.07,
+      "FG_IMPACT": 0.2,
+      "FT_IMPACT": 0.26
+     }
+    },
+    {
+     "name": "Paolo Banchero",
+     "nba": "ORL",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 54,
+     "gp": 61,
+     "mpg": 34.6,
+     "value": 1.52,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      80,
+      46,
+      72
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.24,
+      "REB": 0.81,
+      "AST": 0.69,
+      "STL": -0.64,
+      "BLK": -0.12,
+      "3PM": -0.25,
+      "TOV": -1.59,
+      "FG_IMPACT": -0.79,
+      "FT_IMPACT": -1.09
+     }
+    },
+    {
+     "name": "Rudy Gobert",
+     "nba": "MIN",
+     "pos": [
+      "C"
+     ],
+     "pick": 67,
+     "gp": 62,
+     "mpg": 33.0,
+     "value": 2.28,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      76,
+      72,
+      76
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.97,
+      "REB": 2.13,
+      "AST": -1.15,
+      "STL": -0.97,
+      "BLK": 1.66,
+      "3PM": -1.76,
+      "TOV": 0.82,
+      "FG_IMPACT": 2.23,
+      "FT_IMPACT": -2.75
+     }
+    },
+    {
+     "name": "Ja Morant",
+     "nba": "POR",
+     "pos": [
+      "PG"
+     ],
+     "pick": 78,
+     "gp": 38,
+     "mpg": 31.1,
+     "value": 1.39,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      9,
+      50,
+      20
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.93,
+      "REB": -0.83,
+      "AST": 1.83,
+      "STL": 0.45,
+      "BLK": -0.73,
+      "3PM": -0.16,
+      "TOV": -2.11,
+      "FG_IMPACT": -1.17,
+      "FT_IMPACT": 1.02
+     }
+    },
+    {
+     "name": "Miles Bridges",
+     "nba": "PHO",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 91,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 2.56,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      69,
+      64,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.35,
+      "REB": 0.24,
+      "AST": -0.27,
+      "STL": -0.96,
+      "BLK": -0.29,
+      "3PM": 0.43,
+      "TOV": 0.34,
+      "FG_IMPACT": -0.78,
+      "FT_IMPACT": 0.43
+     }
+    },
+    {
+     "name": "Andrew Nembhard",
+     "nba": "IND",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 102,
+     "gp": 59,
+     "mpg": 33.0,
+     "value": 1.56,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      65,
+      57
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.39,
+      "REB": -1.12,
+      "AST": 1.44,
+      "STL": 0.49,
+      "BLK": -0.99,
+      "3PM": -0.2,
+      "TOV": -0.45,
+      "FG_IMPACT": -0.61,
+      "FT_IMPACT": 0.23
+     }
+    },
+    {
+     "name": "RJ Barrett",
+     "nba": "TOR",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 115,
+     "gp": 56,
+     "mpg": 33.0,
+     "value": 0.78,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      58,
+      58,
+      57
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.75,
+      "REB": -0.05,
+      "AST": 0.1,
+      "STL": -0.78,
+      "BLK": -0.66,
+      "3PM": 0.14,
+      "TOV": -0.41,
+      "FG_IMPACT": -0.08,
+      "FT_IMPACT": -1.65
+     }
+    },
+    {
+     "name": "Myles Turner",
+     "nba": "MIL",
+     "pos": [
+      "C"
+     ],
+     "pick": 126,
+     "gp": 65,
+     "mpg": 30.6,
+     "value": 3.11,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      77,
+      72,
+      71
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.41,
+      "REB": 0.14,
+      "AST": -1.2,
+      "STL": -1.04,
+      "BLK": 2.15,
+      "3PM": 0.4,
+      "TOV": 0.69,
+      "FG_IMPACT": -0.1,
+      "FT_IMPACT": -0.47
+     }
+    },
+    {
+     "name": "Jerami Grant",
+     "nba": "MEM",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 139,
+     "gp": 52,
+     "mpg": 27.6,
+     "value": 0.13,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      54,
+      47,
+      57
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.24,
+      "REB": -1.16,
+      "AST": -0.97,
+      "STL": -1.17,
+      "BLK": -0.17,
+      "3PM": 0.32,
+      "TOV": 0.4,
+      "FG_IMPACT": -0.94,
+      "FT_IMPACT": 0.36
+     }
+    },
+    {
+     "name": "Julian Champagnie",
+     "nba": "SAS",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 150,
+     "gp": 70,
+     "mpg": 21.6,
+     "value": -0.14,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      74,
+      82,
+      82
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.51,
+      "REB": -0.8,
+      "AST": -1.32,
+      "STL": -1.23,
+      "BLK": -0.53,
+      "3PM": 0.18,
+      "TOV": 1.63,
+      "FG_IMPACT": -0.66,
+      "FT_IMPACT": 0.29
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 7,
+    "FT%": 10,
+    "3PM": 4,
+    "PTS": 1,
+    "REB": 4,
+    "AST": 8,
+    "STL": 10,
+    "BLK": 5,
+    "TO": 11
+   }
+  },
+  {
+   "name": "Benius's Marvelous Team",
+   "slot": 7,
+   "means": {
+    "FG%": 0.4977542472238535,
+    "FT%": 0.7840251137253429,
+    "3PM": 72.2445,
+    "PTS": 727.3634015479244,
+    "REB": 242.63933333333333,
+    "AST": 155.05466666666666,
+    "STL": 39.6665,
+    "BLK": 22.302666666666667,
+    "TO": 76.794,
+    "G": 45.84433333333333
+   },
+   "cat_win": {
+    "FG%": 0.6641060606060606,
+    "FT%": 0.44475,
+    "3PM": 0.5522348484848485,
+    "PTS": 0.6633030303030303,
+    "REB": 0.4326287878787879,
+    "AST": 0.47104545454545454,
+    "STL": 0.33861363636363634,
+    "BLK": 0.24825757575757573,
+    "TO": 0.5565757575757576
+   },
+   "exp_cats_vs_field": 4.371515151515151,
+   "p_week_vs_field": 0.46740909090909083,
+   "roster": [
+    {
+     "name": "Giannis Antetokounmpo",
+     "nba": "MIA",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 7,
+     "gp": 52,
+     "mpg": 31.0,
+     "value": 3.19,
+     "inj": "",
+     "note": "minutes cut from the flat 33 to 31.0 (veteran with a recent drop: 28.9, 34.2 mpg)",
+     "games_hist": [
+      73,
+      67,
+      36
+     ],
+     "added": false,
+     "z": {
+      "PTS": 2.4,
+      "REB": 2.09,
+      "AST": 1.16,
+      "STL": -0.21,
+      "BLK": 0.49,
+      "3PM": -1.38,
+      "TOV": -1.74,
+      "FG_IMPACT": 3.33,
+      "FT_IMPACT": -4.89
+     }
+    },
+    {
+     "name": "Jamal Murray",
+     "nba": "DEN",
+     "pos": [
+      "PG"
+     ],
+     "pick": 18,
+     "gp": 63,
+     "mpg": 35.7,
+     "value": 5.43,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      59,
+      67,
+      75
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.2,
+      "REB": -0.73,
+      "AST": 1.37,
+      "STL": -0.0,
+      "BLK": -0.47,
+      "3PM": 1.24,
+      "TOV": -0.33,
+      "FG_IMPACT": -0.27,
+      "FT_IMPACT": 1.29
+     }
+    },
+    {
+     "name": "Jalen Brunson",
+     "nba": "NYK",
+     "pos": [
+      "PG"
+     ],
+     "pick": 31,
+     "gp": 65,
+     "mpg": 35.2,
+     "value": 3.74,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      77,
+      65,
+      74
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.63,
+      "REB": -1.14,
+      "AST": 1.41,
+      "STL": -0.65,
+      "BLK": -1.05,
+      "3PM": 0.88,
+      "TOV": -0.59,
+      "FG_IMPACT": -0.43,
+      "FT_IMPACT": 0.89
+     }
+    },
+    {
+     "name": "Darius Garland",
+     "nba": "LAC",
+     "pos": [
+      "PG"
+     ],
+     "pick": 42,
+     "gp": 55,
+     "mpg": 33.0,
+     "value": 2.7,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      57,
+      75,
+      45
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.58,
+      "REB": -1.3,
+      "AST": 1.5,
+      "STL": 0.56,
+      "BLK": -1.0,
+      "3PM": 1.15,
+      "TOV": -1.3,
+      "FG_IMPACT": -0.68,
+      "FT_IMPACT": 0.75
+     }
+    },
+    {
+     "name": "Michael Porter Jr.",
+     "nba": "BRK",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 55,
+     "gp": 61,
+     "mpg": 33.0,
+     "value": 3.28,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      81,
+      77,
+      52
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.56,
+      "REB": 0.35,
+      "AST": -0.81,
+      "STL": -0.79,
+      "BLK": -0.48,
+      "3PM": 1.29,
+      "TOV": 0.36,
+      "FG_IMPACT": -0.11,
+      "FT_IMPACT": 0.26
+     }
+    },
+    {
+     "name": "Cedric Coward",
+     "nba": "MEM",
+     "pos": [
+      "SF",
+      "SG"
+     ],
+     "pick": 66,
+     "gp": 59,
+     "mpg": 21.6,
+     "value": 0.02,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      62
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.98,
+      "REB": -0.5,
+      "AST": -0.77,
+      "STL": -1.35,
+      "BLK": -0.64,
+      "3PM": -0.38,
+      "TOV": 0.78,
+      "FG_IMPACT": -0.28,
+      "FT_IMPACT": 0.37
+     }
+    },
+    {
+     "name": "Jarrett Allen",
+     "nba": "CLE",
+     "pos": [
+      "C"
+     ],
+     "pick": 79,
+     "gp": 62,
+     "mpg": 30.2,
+     "value": 3.9,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      77,
+      82,
+      56
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.22,
+      "REB": 1.58,
+      "AST": -0.89,
+      "STL": -0.26,
+      "BLK": 0.56,
+      "3PM": -1.76,
+      "TOV": 0.72,
+      "FG_IMPACT": 2.73,
+      "FT_IMPACT": -1.09
+     }
+    },
+    {
+     "name": "Zach LaVine",
+     "nba": "SAC",
+     "pos": [
+      "PG",
+      "SF",
+      "SG"
+     ],
+     "pick": 90,
+     "gp": 49,
+     "mpg": 33.0,
+     "value": 1.56,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      25,
+      74,
+      39
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.56,
+      "REB": -0.98,
+      "AST": -0.36,
+      "STL": -0.93,
+      "BLK": -0.92,
+      "3PM": 1.08,
+      "TOV": -0.31,
+      "FG_IMPACT": 0.01,
+      "FT_IMPACT": 0.67
+     }
+    },
+    {
+     "name": "John Collins",
+     "nba": "DET",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 103,
+     "gp": 58,
+     "mpg": 30.7,
+     "value": 2.58,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      40,
+      69
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.13,
+      "REB": 0.45,
+      "AST": -1.28,
+      "STL": -0.46,
+      "BLK": 0.39,
+      "3PM": -0.24,
+      "TOV": 0.27,
+      "FG_IMPACT": 0.93,
+      "FT_IMPACT": -0.07
+     }
+    },
+    {
+     "name": "Jaime Jaquez Jr.",
+     "nba": "MIL",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 114,
+     "gp": 65,
+     "mpg": 29.1,
+     "value": 0.64,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      75,
+      66,
+      75
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.56,
+      "REB": -0.41,
+      "AST": 0.02,
+      "STL": -0.39,
+      "BLK": -0.73,
+      "3PM": -0.91,
+      "TOV": 0.08,
+      "FG_IMPACT": 0.08,
+      "FT_IMPACT": -0.16
+     }
+    },
+    {
+     "name": "Aaron Gordon",
+     "nba": "DEN",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 127,
+     "gp": 49,
+     "mpg": 28.1,
+     "value": 0.51,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      73,
+      51,
+      36
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.54,
+      "REB": -0.28,
+      "AST": -0.51,
+      "STL": -1.5,
+      "BLK": -0.59,
+      "3PM": -0.5,
+      "TOV": 1.02,
+      "FG_IMPACT": 0.57,
+      "FT_IMPACT": -0.59
+     }
+    },
+    {
+     "name": "Devin Vassell",
+     "nba": "SAS",
+     "pos": [
+      "SG",
+      "SF"
+     ],
+     "pick": 138,
+     "gp": 61,
+     "mpg": 33.0,
+     "value": 2.51,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      64,
+      67
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.07,
+      "REB": -0.74,
+      "AST": -0.43,
+      "STL": 0.14,
+      "BLK": -0.48,
+      "3PM": 0.99,
+      "TOV": 0.96,
+      "FG_IMPACT": -0.89,
+      "FT_IMPACT": 0.12
+     }
+    },
+    {
+     "name": "Tari Eason",
+     "nba": "HOU",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 151,
+     "gp": 52,
+     "mpg": 16.7,
+     "value": -0.67,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      22,
+      57,
+      60
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.79,
+      "REB": -0.76,
+      "AST": -1.48,
+      "STL": -0.53,
+      "BLK": -0.52,
+      "3PM": -0.83,
+      "TOV": 1.58,
+      "FG_IMPACT": -0.38,
+      "FT_IMPACT": -0.13
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 2,
+    "FT%": 9,
+    "3PM": 5,
+    "PTS": 2,
+    "REB": 9,
+    "AST": 7,
+    "STL": 12,
+    "BLK": 12,
+    "TO": 5
+   }
+  },
+  {
+   "name": "Du po 50",
+   "slot": 8,
+   "means": {
+    "FG%": 0.4685375013740938,
+    "FT%": 0.7976421729919463,
+    "3PM": 77.15166666666667,
+    "PTS": 704.1889108252253,
+    "REB": 228.65333333333334,
+    "AST": 150.0085,
+    "STL": 48.24966666666667,
+    "BLK": 22.369333333333334,
+    "TO": 82.23766666666667,
+    "G": 45.8655
+   },
+   "cat_win": {
+    "FG%": 0.2960757575757576,
+    "FT%": 0.5579015151515151,
+    "3PM": 0.6685606060606061,
+    "PTS": 0.5825454545454546,
+    "REB": 0.28512878787878787,
+    "AST": 0.4034393939393939,
+    "STL": 0.679469696969697,
+    "BLK": 0.2467272727272727,
+    "TO": 0.4161818181818182
+   },
+   "exp_cats_vs_field": 4.136030303030304,
+   "p_week_vs_field": 0.41210606060606064,
+   "roster": [
+    {
+     "name": "Jayson Tatum",
+     "nba": "BOS",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 8,
+     "gp": 65,
+     "mpg": 36.2,
+     "value": 5.77,
+     "inj": "Back from Achilles tear (played 16 games late in 2025-26)",
+     "note": "",
+     "games_hist": [
+      74,
+      72,
+      16
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.61,
+      "REB": 1.05,
+      "AST": 0.74,
+      "STL": 0.28,
+      "BLK": -0.36,
+      "3PM": 1.66,
+      "TOV": -0.96,
+      "FG_IMPACT": -0.97,
+      "FT_IMPACT": 0.45
+     }
+    },
+    {
+     "name": "Amen Thompson",
+     "nba": "HOU",
+     "pos": [
+      "PG",
+      "SF",
+      "SG"
+     ],
+     "pick": 17,
+     "gp": 65,
+     "mpg": 33.0,
+     "value": 3.52,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      62,
+      69,
+      79
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.25,
+      "REB": 0.62,
+      "AST": 0.28,
+      "STL": 1.3,
+      "BLK": 0.16,
+      "3PM": -1.44,
+      "TOV": -0.26,
+      "FG_IMPACT": 0.89,
+      "FT_IMPACT": -0.63
+     }
+    },
+    {
+     "name": "Lauri Markkanen",
+     "nba": "UTA",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 32,
+     "gp": 49,
+     "mpg": 33.0,
+     "value": 3.68,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      55,
+      47,
+      42
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.13,
+      "REB": 0.31,
+      "AST": -1.02,
+      "STL": -0.45,
+      "BLK": -0.4,
+      "3PM": 1.23,
+      "TOV": 0.72,
+      "FG_IMPACT": -0.58,
+      "FT_IMPACT": 1.44
+     }
+    },
+    {
+     "name": "Jaylen Brown",
+     "nba": "PHI",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 41,
+     "gp": 63,
+     "mpg": 34.3,
+     "value": 2.86,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      70,
+      63,
+      71
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.71,
+      "REB": 0.18,
+      "AST": 0.39,
+      "STL": 0.26,
+      "BLK": -0.54,
+      "3PM": 0.35,
+      "TOV": -1.61,
+      "FG_IMPACT": -0.3,
+      "FT_IMPACT": -0.48
+     }
+    },
+    {
+     "name": "Nickeil Alexander-Walker",
+     "nba": "ATL",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 56,
+     "gp": 70,
+     "mpg": 33.0,
+     "value": 3.46,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82,
+      82,
+      78
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.01,
+      "REB": -0.97,
+      "AST": -0.17,
+      "STL": 0.42,
+      "BLK": -0.2,
+      "3PM": 1.21,
+      "TOV": 0.2,
+      "FG_IMPACT": -0.78,
+      "FT_IMPACT": 0.58
+     }
+    },
+    {
+     "name": "Cameron Boozer",
+     "nba": "MEM",
+     "pos": [
+      "PF"
+     ],
+     "pick": 65,
+     "gp": 62,
+     "mpg": null,
+     "value": null,
+     "inj": "",
+     "note": "rookie stand-in: average of 9 projected wings with ADP 44-68",
+     "games_hist": [],
+     "added": false,
+     "z": null
+    },
+    {
+     "name": "Julius Randle",
+     "nba": "BRK",
+     "pos": [
+      "PF"
+     ],
+     "pick": 80,
+     "gp": 62,
+     "mpg": 33.0,
+     "value": 1.59,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      46,
+      69,
+      79
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.49,
+      "REB": 0.3,
+      "AST": 0.37,
+      "STL": -0.65,
+      "BLK": -0.86,
+      "3PM": -0.28,
+      "TOV": -0.98,
+      "FG_IMPACT": -0.12,
+      "FT_IMPACT": 0.06
+     }
+    },
+    {
+     "name": "Caleb Wilson",
+     "nba": "CHI",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 89,
+     "gp": 59,
+     "mpg": null,
+     "value": null,
+     "inj": "",
+     "note": "rookie stand-in: average of 7 projected wings with ADP 67-91",
+     "games_hist": [],
+     "added": false,
+     "z": null
+    },
+    {
+     "name": "Jalen Green",
+     "nba": "PHO",
+     "pos": [
+      "SF",
+      "SG"
+     ],
+     "pick": 104,
+     "gp": 56,
+     "mpg": 30.8,
+     "value": 0.76,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82,
+      82,
+      32
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.51,
+      "REB": -0.62,
+      "AST": -0.31,
+      "STL": -0.34,
+      "BLK": -0.71,
+      "3PM": 0.92,
+      "TOV": -0.54,
+      "FG_IMPACT": -1.62,
+      "FT_IMPACT": 0.07
+     }
+    },
+    {
+     "name": "Cason Wallace",
+     "nba": "OKC",
+     "pos": [
+      "PG",
+      "SF",
+      "SG"
+     ],
+     "pick": 113,
+     "gp": 67,
+     "mpg": 30.0,
+     "value": 3.57,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82,
+      68,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.29,
+      "REB": -0.97,
+      "AST": -0.54,
+      "STL": 3.06,
+      "BLK": -0.31,
+      "3PM": -0.18,
+      "TOV": 1.26,
+      "FG_IMPACT": -0.48,
+      "FT_IMPACT": 0.06
+     }
+    },
+    {
+     "name": "Jeremiah Fears",
+     "nba": "NOP",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 128,
+     "gp": 71,
+     "mpg": 20.8,
+     "value": -0.88,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.96,
+      "REB": -1.22,
+      "AST": -0.54,
+      "STL": -0.23,
+      "BLK": -0.75,
+      "3PM": -0.67,
+      "TOV": 0.27,
+      "FG_IMPACT": -0.77,
+      "FT_IMPACT": 0.06
+     }
+    },
+    {
+     "name": "Reed Sheppard",
+     "nba": "HOU",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 137,
+     "gp": 64,
+     "mpg": 15.9,
+     "value": -0.62,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      52,
+      82
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.64,
+      "REB": -1.69,
+      "AST": -0.93,
+      "STL": -0.53,
+      "BLK": -0.55,
+      "3PM": -0.04,
+      "TOV": 1.43,
+      "FG_IMPACT": -0.68,
+      "FT_IMPACT": 0.05
+     }
+    },
+    {
+     "name": "Anthony Black",
+     "nba": "ORL",
+     "pos": [
+      "PG",
+      "SG",
+      "SF"
+     ],
+     "pick": 152,
+     "gp": 63,
+     "mpg": 20.1,
+     "value": -1.14,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      69,
+      78,
+      64
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.43,
+      "REB": -1.37,
+      "AST": -0.69,
+      "STL": -0.26,
+      "BLK": -0.4,
+      "3PM": -0.8,
+      "TOV": 0.71,
+      "FG_IMPACT": -0.57,
+      "FT_IMPACT": -0.45
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 12,
+    "FT%": 5,
+    "3PM": 2,
+    "PTS": 5,
+    "REB": 10,
+    "AST": 10,
+    "STL": 1,
+    "BLK": 11,
+    "TO": 9
+   }
+  },
+  {
+   "name": "Θανος's Neat Team",
+   "slot": 9,
+   "means": {
+    "FG%": 0.48223411737716376,
+    "FT%": 0.8028360775498015,
+    "3PM": 71.85083333333333,
+    "PTS": 666.4445934985363,
+    "REB": 227.67283333333333,
+    "AST": 162.76533333333333,
+    "STL": 39.97666666666667,
+    "BLK": 24.443166666666666,
+    "TO": 74.38516666666666,
+    "G": 45.8995
+   },
+   "cat_win": {
+    "FG%": 0.46897727272727274,
+    "FT%": 0.5994242424242423,
+    "3PM": 0.53925,
+    "PTS": 0.4352575757575758,
+    "REB": 0.2921969696969697,
+    "AST": 0.5639469696969696,
+    "STL": 0.3557878787878788,
+    "BLK": 0.3473333333333333,
+    "TO": 0.6155151515151513
+   },
+   "exp_cats_vs_field": 4.217689393939394,
+   "p_week_vs_field": 0.42293181818181813,
+   "roster": [
+    {
+     "name": "Tyrese Maxey",
+     "nba": "PHI",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 9,
+     "gp": 60,
+     "mpg": 37.0,
+     "value": 6.95,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      70,
+      52,
+      70
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.86,
+      "REB": -0.87,
+      "AST": 1.24,
+      "STL": 2.07,
+      "BLK": -0.15,
+      "3PM": 1.49,
+      "TOV": -0.47,
+      "FG_IMPACT": -1.15,
+      "FT_IMPACT": 1.7
+     }
+    },
+    {
+     "name": "Kevin Durant",
+     "nba": "HOU",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 16,
+     "gp": 57,
+     "mpg": 36.5,
+     "value": 3.97,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      75,
+      62,
+      78
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.26,
+      "REB": -0.29,
+      "AST": 0.18,
+      "STL": -0.98,
+      "BLK": 0.36,
+      "3PM": 0.54,
+      "TOV": -1.17,
+      "FG_IMPACT": 0.86,
+      "FT_IMPACT": 1.17
+     }
+    },
+    {
+     "name": "Evan Mobley",
+     "nba": "CLE",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 33,
+     "gp": 60,
+     "mpg": 33.0,
+     "value": 4.17,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      50,
+      71,
+      65
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.39,
+      "REB": 1.48,
+      "AST": -0.15,
+      "STL": -0.43,
+      "BLK": 1.99,
+      "3PM": -0.69,
+      "TOV": -0.1,
+      "FG_IMPACT": 1.37,
+      "FT_IMPACT": -1.94
+     }
+    },
+    {
+     "name": "Deni Avdija",
+     "nba": "POR",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 40,
+     "gp": 63,
+     "mpg": 33.0,
+     "value": 2.4,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      75,
+      72,
+      66
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.73,
+      "REB": 0.56,
+      "AST": 0.77,
+      "STL": -0.38,
+      "BLK": -0.2,
+      "3PM": 0.11,
+      "TOV": -1.75,
+      "FG_IMPACT": -0.28,
+      "FT_IMPACT": -0.22
+     }
+    },
+    {
+     "name": "Ivica Zubac",
+     "nba": "IND",
+     "pos": [
+      "C"
+     ],
+     "pick": 57,
+     "gp": 59,
+     "mpg": 33.0,
+     "value": 3.27,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      80,
+      48
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.15,
+      "REB": 2.48,
+      "AST": -0.75,
+      "STL": -1.54,
+      "BLK": 0.9,
+      "3PM": -1.75,
+      "TOV": 0.27,
+      "FG_IMPACT": 2.45,
+      "FT_IMPACT": -1.13
+     }
+    },
+    {
+     "name": "Damian Lillard",
+     "nba": "POR",
+     "pos": [
+      "PG"
+     ],
+     "pick": 64,
+     "gp": 54,
+     "mpg": 34.9,
+     "value": 4.05,
+     "inj": "Returning from Achilles tear at 36; no firm timeline",
+     "note": "",
+     "games_hist": [
+      73,
+      58
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.09,
+      "REB": -0.71,
+      "AST": 1.34,
+      "STL": -0.18,
+      "BLK": -1.0,
+      "3PM": 1.41,
+      "TOV": -0.82,
+      "FG_IMPACT": -1.26,
+      "FT_IMPACT": 2.49
+     }
+    },
+    {
+     "name": "Payton Pritchard",
+     "nba": "BOS",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 81,
+     "gp": 70,
+     "mpg": 28.5,
+     "value": 1.94,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82,
+      80,
+      79
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.51,
+      "REB": -0.96,
+      "AST": 0.11,
+      "STL": -1.03,
+      "BLK": -1.07,
+      "3PM": 0.93,
+      "TOV": 1.08,
+      "FG_IMPACT": -0.41,
+      "FT_IMPACT": 0.36
+     }
+    },
+    {
+     "name": "Dylan Harper",
+     "nba": "SAS",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 88,
+     "gp": 63,
+     "mpg": 21.8,
+     "value": 0.01,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      69
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.99,
+      "REB": -1.11,
+      "AST": -0.1,
+      "STL": -0.79,
+      "BLK": -0.72,
+      "3PM": -0.8,
+      "TOV": 0.8,
+      "FG_IMPACT": 0.04,
+      "FT_IMPACT": -0.08
+     }
+    },
+    {
+     "name": "Khaman Maluach",
+     "nba": "PHO",
+     "pos": [
+      "C"
+     ],
+     "pick": 105,
+     "gp": 49,
+     "mpg": 0.0,
+     "value": -4.46,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      46
+     ],
+     "added": false,
+     "z": {
+      "PTS": -3.13,
+      "REB": -2.43,
+      "AST": -1.98,
+      "STL": -3.36,
+      "BLK": -1.34,
+      "3PM": -1.77,
+      "TOV": 2.76,
+      "FG_IMPACT": 0.0,
+      "FT_IMPACT": 0.0
+     }
+    },
+    {
+     "name": "Toumani Camara",
+     "nba": "POR",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 112,
+     "gp": 69,
+     "mpg": 33.0,
+     "value": 1.88,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      70,
+      78,
+      82
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.84,
+      "REB": -0.17,
+      "AST": -0.83,
+      "STL": 0.75,
+      "BLK": -0.27,
+      "3PM": 0.5,
+      "TOV": 0.44,
+      "FG_IMPACT": -0.64,
+      "FT_IMPACT": -0.48
+     }
+    },
+    {
+     "name": "Fred VanVleet",
+     "nba": "HOU",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 129,
+     "gp": 59,
+     "mpg": 35.8,
+     "value": 3.15,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      73,
+      60
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.41,
+      "REB": -1.0,
+      "AST": 1.19,
+      "STL": 0.96,
+      "BLK": -0.3,
+      "3PM": 1.08,
+      "TOV": 0.5,
+      "FG_IMPACT": -1.8,
+      "FT_IMPACT": 0.38
+     }
+    },
+    {
+     "name": "Dillon Brooks",
+     "nba": "PHO",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 136,
+     "gp": 61,
+     "mpg": 25.4,
+     "value": -0.69,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      72,
+      75,
+      56
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.74,
+      "REB": -1.27,
+      "AST": -1.28,
+      "STL": -1.04,
+      "BLK": -1.05,
+      "3PM": 0.1,
+      "TOV": 1.21,
+      "FG_IMPACT": -0.92,
+      "FT_IMPACT": 0.28
+     }
+    },
+    {
+     "name": "Tre Jones",
+     "nba": "CHI",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 153,
+     "gp": 59,
+     "mpg": 20.1,
+     "value": 0.08,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      77,
+      46,
+      65
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.44,
+      "REB": -1.42,
+      "AST": 0.13,
+      "STL": -0.67,
+      "BLK": -1.06,
+      "3PM": -1.22,
+      "TOV": 1.22,
+      "FG_IMPACT": 0.45,
+      "FT_IMPACT": 0.34
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 8,
+    "FT%": 3,
+    "3PM": 6,
+    "PTS": 9,
+    "REB": 11,
+    "AST": 5,
+    "STL": 11,
+    "BLK": 8,
+    "TO": 3
+   }
+  },
+  {
+   "name": "Gökhan's Groovy Team",
+   "slot": 10,
+   "means": {
+    "FG%": 0.5020768572653995,
+    "FT%": 0.758941513210743,
+    "3PM": 56.70133333333333,
+    "PTS": 606.7336110440533,
+    "REB": 280.4395,
+    "AST": 128.855,
+    "STL": 41.337666666666664,
+    "BLK": 33.6625,
+    "TO": 71.0395,
+    "G": 45.91983333333334
+   },
+   "cat_win": {
+    "FG%": 0.7055757575757575,
+    "FT%": 0.2616742424242424,
+    "3PM": 0.17918939393939393,
+    "PTS": 0.2101363636363636,
+    "REB": 0.7736969696969695,
+    "AST": 0.14366666666666664,
+    "STL": 0.40771212121212125,
+    "BLK": 0.7180606060606061,
+    "TO": 0.7026742424242425
+   },
+   "exp_cats_vs_field": 4.102386363636364,
+   "p_week_vs_field": 0.37011363636363637,
+   "roster": [
+    {
+     "name": "Cooper Flagg",
+     "nba": "DAL",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 10,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 3.6,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      70
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.65,
+      "REB": 0.17,
+      "AST": 0.22,
+      "STL": 0.49,
+      "BLK": 0.33,
+      "3PM": -0.7,
+      "TOV": -0.34,
+      "FG_IMPACT": -0.43,
+      "FT_IMPACT": 0.44
+     }
+    },
+    {
+     "name": "Karl-Anthony Towns",
+     "nba": "NYK",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 15,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 4.91,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      62,
+      72,
+      75
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.8,
+      "REB": 2.13,
+      "AST": -0.47,
+      "STL": -0.61,
+      "BLK": -0.11,
+      "3PM": 0.05,
+      "TOV": -0.81,
+      "FG_IMPACT": 0.7,
+      "FT_IMPACT": 0.83
+     }
+    },
+    {
+     "name": "Walker Kessler",
+     "nba": "LAL",
+     "pos": [
+      "C"
+     ],
+     "pick": 34,
+     "gp": 66,
+     "mpg": 30.0,
+     "value": 4.07,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      64,
+      58,
+      5
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.08,
+      "REB": 2.0,
+      "AST": -1.15,
+      "STL": -1.0,
+      "BLK": 3.4,
+      "3PM": -1.55,
+      "TOV": 0.49,
+      "FG_IMPACT": 2.11,
+      "FT_IMPACT": -1.95
+     }
+    },
+    {
+     "name": "Donovan Clingan",
+     "nba": "POR",
+     "pos": [
+      "C"
+     ],
+     "pick": 39,
+     "gp": 66,
+     "mpg": 28.6,
+     "value": 4.25,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      67,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.84,
+      "REB": 2.5,
+      "AST": -0.88,
+      "STL": -1.07,
+      "BLK": 2.5,
+      "3PM": -0.78,
+      "TOV": 0.65,
+      "FG_IMPACT": 0.73,
+      "FT_IMPACT": -1.3
+     }
+    },
+    {
+     "name": "Kon Knueppel",
+     "nba": "CHO",
+     "pos": [
+      "SF",
+      "SG"
+     ],
+     "pick": 58,
+     "gp": 69,
+     "mpg": 33.0,
+     "value": 4.14,
+     "inj": "Hamstring; questionable for opening night",
+     "note": "",
+     "games_hist": [
+      81
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.56,
+      "REB": -0.1,
+      "AST": -0.12,
+      "STL": -0.65,
+      "BLK": -0.72,
+      "3PM": 2.02,
+      "TOV": -0.24,
+      "FG_IMPACT": -0.27,
+      "FT_IMPACT": 0.66
+     }
+    },
+    {
+     "name": "Ausar Thompson",
+     "nba": "DET",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 63,
+     "gp": 62,
+     "mpg": 28.8,
+     "value": 2.82,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      63,
+      59,
+      73
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.0,
+      "REB": 0.25,
+      "AST": -0.39,
+      "STL": 3.03,
+      "BLK": 0.62,
+      "3PM": -1.53,
+      "TOV": 0.36,
+      "FG_IMPACT": 0.44,
+      "FT_IMPACT": -1.82
+     }
+    },
+    {
+     "name": "Darryn Peterson",
+     "nba": "UTA",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 82,
+     "gp": 55,
+     "mpg": null,
+     "value": null,
+     "inj": "",
+     "note": "rookie stand-in: average of 3 projected guards with ADP 90-114",
+     "games_hist": [],
+     "added": false,
+     "z": null
+    },
+    {
+     "name": "Zion Williamson",
+     "nba": "NOP",
+     "pos": [
+      "C",
+      "PF"
+     ],
+     "pick": 87,
+     "gp": 54,
+     "mpg": 31.1,
+     "value": 1.95,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      70,
+      30,
+      62
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.1,
+      "REB": 0.09,
+      "AST": 0.12,
+      "STL": 0.25,
+      "BLK": -0.02,
+      "3PM": -1.7,
+      "TOV": -0.68,
+      "FG_IMPACT": 2.11,
+      "FT_IMPACT": -2.11
+     }
+    },
+    {
+     "name": "Rui Hachimura",
+     "nba": "LAC",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 106,
+     "gp": 61,
+     "mpg": 22.9,
+     "value": -0.95,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      59,
+      68
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.37,
+      "REB": -1.18,
+      "AST": -1.56,
+      "STL": -1.69,
+      "BLK": -0.77,
+      "3PM": -0.43,
+      "TOV": 1.92,
+      "FG_IMPACT": 0.33,
+      "FT_IMPACT": -0.3
+     }
+    },
+    {
+     "name": "Yaxel Lendeborg",
+     "nba": "GSW",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 111,
+     "gp": 56,
+     "mpg": null,
+     "value": null,
+     "inj": "",
+     "note": "rookie stand-in: average of 12 projected wings with ADP 134-158",
+     "games_hist": [],
+     "added": false,
+     "z": null
+    },
+    {
+     "name": "Collin Gillespie",
+     "nba": "PHO",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 130,
+     "gp": 54,
+     "mpg": 19.6,
+     "value": -0.13,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      24,
+      33,
+      80
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.54,
+      "REB": -1.3,
+      "AST": -0.4,
+      "STL": -0.62,
+      "BLK": -1.08,
+      "3PM": 0.23,
+      "TOV": 1.2,
+      "FG_IMPACT": -0.73,
+      "FT_IMPACT": 0.26
+     }
+    },
+    {
+     "name": "Jrue Holiday",
+     "nba": "POR",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 135,
+     "gp": 51,
+     "mpg": 29.9,
+     "value": 1.22,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      69,
+      62,
+      53
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.73,
+      "REB": -0.65,
+      "AST": 0.46,
+      "STL": -0.43,
+      "BLK": -0.69,
+      "3PM": 0.41,
+      "TOV": 0.01,
+      "FG_IMPACT": -0.58,
+      "FT_IMPACT": 0.38
+     }
+    },
+    {
+     "name": "Moussa Diabate",
+     "nba": "CHO",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 154,
+     "gp": 58,
+     "mpg": 18.7,
+     "value": -0.66,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      11,
+      71,
+      73
+     ],
+     "added": false,
+     "z": {
+      "PTS": -2.03,
+      "REB": 0.13,
+      "AST": -1.34,
+      "STL": -1.35,
+      "BLK": 0.03,
+      "3PM": -1.75,
+      "TOV": 1.59,
+      "FG_IMPACT": 0.92,
+      "FT_IMPACT": -0.92
+     }
+    }
+   ],
+   "rank": {
+    "FG%": 1,
+    "FT%": 12,
+    "3PM": 12,
+    "PTS": 12,
+    "REB": 1,
+    "AST": 12,
+    "STL": 9,
+    "BLK": 2,
+    "TO": 1
+   }
+  },
+  {
+   "name": "OJ7",
+   "slot": 11,
+   "means": {
+    "FG%": 0.4710880419778594,
+    "FT%": 0.8180728382788944,
+    "3PM": 85.572,
+    "PTS": 714.8671081691359,
+    "REB": 212.4215,
+    "AST": 184.50783333333334,
+    "STL": 46.18,
+    "BLK": 23.5505,
+    "TO": 78.6885,
+    "G": 45.91766666666667
+   },
+   "cat_win": {
+    "FG%": 0.32729545454545456,
+    "FT%": 0.7213939393939394,
+    "3PM": 0.8194242424242425,
+    "PTS": 0.6172424242424243,
+    "REB": 0.13924242424242422,
+    "AST": 0.7787424242424243,
+    "STL": 0.601310606060606,
+    "BLK": 0.3017272727272728,
+    "TO": 0.5103181818181819
+   },
+   "exp_cats_vs_field": 4.816696969696969,
+   "p_week_vs_field": 0.6047272727272728,
+   "roster": [
+    {
+     "name": "Donovan Mitchell",
+     "nba": "CLE",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 11,
+     "gp": 62,
+     "mpg": 33.0,
+     "value": 5.35,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      55,
+      71,
+      70
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.58,
+      "REB": -0.63,
+      "AST": 0.72,
+      "STL": 1.11,
+      "BLK": -0.74,
+      "3PM": 1.54,
+      "TOV": -0.72,
+      "FG_IMPACT": -0.62,
+      "FT_IMPACT": 1.07
+     }
+    },
+    {
+     "name": "Tyrese Haliburton",
+     "nba": "IND",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 14,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 6.93,
+     "inj": "Returning from Achilles tear (missed all of 2025-26); Indiana may ease him in",
+     "note": "",
+     "games_hist": [
+      69,
+      73
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.41,
+      "REB": -0.93,
+      "AST": 2.93,
+      "STL": 1.16,
+      "BLK": -0.02,
+      "3PM": 1.32,
+      "TOV": -0.06,
+      "FG_IMPACT": -0.37,
+      "FT_IMPACT": 0.65
+     }
+    },
+    {
+     "name": "Brandon Miller",
+     "nba": "CHO",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 35,
+     "gp": 55,
+     "mpg": 31.9,
+     "value": 2.69,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      74,
+      27,
+      65
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.58,
+      "REB": -0.46,
+      "AST": -0.34,
+      "STL": 0.09,
+      "BLK": -0.01,
+      "3PM": 1.54,
+      "TOV": -0.6,
+      "FG_IMPACT": -1.33,
+      "FT_IMPACT": 0.78
+     }
+    },
+    {
+     "name": "James Harden",
+     "nba": "CLE",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 38,
+     "gp": 58,
+     "mpg": 35.0,
+     "value": 4.06,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      72,
+      79,
+      70
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.73,
+      "REB": -0.44,
+      "AST": 2.08,
+      "STL": 0.28,
+      "BLK": -0.33,
+      "3PM": 1.17,
+      "TOV": -1.95,
+      "FG_IMPACT": -1.46,
+      "FT_IMPACT": 1.88
+     }
+    },
+    {
+     "name": "Dejounte Murray",
+     "nba": "NOP",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 59,
+     "gp": 41,
+     "mpg": 33.0,
+     "value": 2.18,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      78,
+      31,
+      14
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.41,
+      "REB": -0.22,
+      "AST": 1.3,
+      "STL": 1.58,
+      "BLK": -0.75,
+      "3PM": 0.35,
+      "TOV": -1.32,
+      "FG_IMPACT": -1.08,
+      "FT_IMPACT": 0.31
+     }
+    },
+    {
+     "name": "Pascal Siakam",
+     "nba": "IND",
+     "pos": [
+      "C",
+      "PF",
+      "SF"
+     ],
+     "pick": 62,
+     "gp": 62,
+     "mpg": 33.0,
+     "value": 2.28,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      80,
+      78,
+      62
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.85,
+      "REB": 0.25,
+      "AST": -0.12,
+      "STL": -0.45,
+      "BLK": -0.53,
+      "3PM": -0.21,
+      "TOV": 0.21,
+      "FG_IMPACT": 0.51,
+      "FT_IMPACT": -1.27
+     }
+    },
+    {
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 83,
+     "gp": 71,
+     "mpg": 33.0,
+     "value": 2.7,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      82,
+      82,
+      82
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.31,
+      "REB": -1.01,
+      "AST": -0.24,
+      "STL": -0.04,
+      "BLK": -0.3,
+      "3PM": 0.29,
+      "TOV": 0.9,
+      "FG_IMPACT": -0.1,
+      "FT_IMPACT": 0.17
+     }
+    },
+    {
+     "name": "Ty Jerome",
+     "nba": "MEM",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 86,
+     "gp": 39,
+     "mpg": 26.4,
+     "value": 2.32,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      2,
+      70,
+      15
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.18,
+      "REB": -1.11,
+      "AST": 0.51,
+      "STL": 0.75,
+      "BLK": -1.01,
+      "3PM": 0.73,
+      "TOV": 0.27,
+      "FG_IMPACT": 0.06,
+      "FT_IMPACT": 0.72
+     }
+    },
+    {
+     "name": "Keegan Murray",
+     "nba": "SAC",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 107,
+     "gp": 51,
+     "mpg": 34.4,
+     "value": 2.2,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      77,
+      76,
+      23
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.57,
+      "REB": 0.07,
+      "AST": -1.18,
+      "STL": -0.25,
+      "BLK": 0.66,
+      "3PM": 0.34,
+      "TOV": 1.39,
+      "FG_IMPACT": -0.83,
+      "FT_IMPACT": 0.12
+     }
+    },
+    {
+     "name": "Kevin Porter Jr.",
+     "nba": "MIL",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 110,
+     "gp": 54,
+     "mpg": 30.4,
+     "value": null,
+     "inj": "",
+     "note": "released by his NBA team; replaced by the average of the ten best undrafted players",
+     "games_hist": [
+      75,
+      38
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.2,
+      "REB": -0.39,
+      "AST": 1.07,
+      "STL": 2.39,
+      "BLK": -0.64,
+      "3PM": -0.56,
+      "TOV": -0.99,
+      "FG_IMPACT": -0.62,
+      "FT_IMPACT": 0.5
+     }
+    },
+    {
+     "name": "Egor Demin",
+     "nba": "BRK",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 131,
+     "gp": 53,
+     "mpg": 29.1,
+     "value": 0.96,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      52
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.82,
+      "REB": -0.92,
+      "AST": 0.06,
+      "STL": -0.02,
+      "BLK": -0.65,
+      "3PM": 1.15,
+      "TOV": -0.18,
+      "FG_IMPACT": -1.23,
+      "FT_IMPACT": 0.32
+     }
+    },
+    {
+     "name": "DeMar DeRozan",
+     "nba": "DEN",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 134,
+     "gp": 61,
+     "mpg": 33.0,
+     "value": 2.19,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      79,
+      77,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.31,
+      "REB": -1.13,
+      "AST": 0.09,
+      "STL": -0.61,
+      "BLK": -0.61,
+      "3PM": -0.98,
+      "TOV": 0.96,
+      "FG_IMPACT": 0.0,
+      "FT_IMPACT": 1.15
+     }
+    },
+    {
+     "name": "Keaton Wagler",
+     "nba": "LAC",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 155,
+     "gp": 58,
+     "mpg": null,
+     "value": null,
+     "inj": "",
+     "note": "rookie stand-in: average of 5 projected guards with ADP 141-165",
+     "games_hist": [],
+     "added": false,
+     "z": null
+    }
+   ],
+   "rank": {
+    "FG%": 11,
+    "FT%": 1,
+    "3PM": 1,
+    "PTS": 3,
+    "REB": 12,
+    "AST": 1,
+    "STL": 4,
+    "BLK": 10,
+    "TO": 7
+   }
+  },
+  {
+   "name": "BC Blemba Normaliai's Team",
+   "slot": 12,
+   "means": {
+    "FG%": 0.4855376109133244,
+    "FT%": 0.7856858672407371,
+    "3PM": 68.26683333333334,
+    "PTS": 631.4446531154445,
+    "REB": 254.38066666666666,
+    "AST": 152.17016666666666,
+    "STL": 46.5635,
+    "BLK": 32.5735,
+    "TO": 74.0175,
+    "G": 45.86866666666667
+   },
+   "cat_win": {
+    "FG%": 0.5102196969696969,
+    "FT%": 0.45781060606060603,
+    "3PM": 0.4510075757575758,
+    "PTS": 0.2981515151515151,
+    "REB": 0.5474621212121212,
+    "AST": 0.43376515151515155,
+    "STL": 0.6126969696969696,
+    "BLK": 0.6857651515151516,
+    "TO": 0.6265530303030302
+   },
+   "exp_cats_vs_field": 4.6234318181818175,
+   "p_week_vs_field": 0.5203712121212122,
+   "roster": [
+    {
+     "name": "Jalen Johnson",
+     "nba": "ATL",
+     "pos": [
+      "PF",
+      "SF"
+     ],
+     "pick": 12,
+     "gp": 56,
+     "mpg": 35.4,
+     "value": 4.5,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      56,
+      36,
+      72
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.74,
+      "REB": 1.6,
+      "AST": 1.37,
+      "STL": 1.01,
+      "BLK": -0.08,
+      "3PM": -0.15,
+      "TOV": -1.51,
+      "FG_IMPACT": 0.17,
+      "FT_IMPACT": -0.34
+     }
+    },
+    {
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": [
+      "C",
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 13,
+     "gp": 64,
+     "mpg": 33.0,
+     "value": 4.87,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      60,
+      65,
+      80
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.27,
+      "REB": 0.61,
+      "AST": 0.94,
+      "STL": 1.14,
+      "BLK": 1.16,
+      "3PM": -0.66,
+      "TOV": -0.92,
+      "FG_IMPACT": -0.04,
+      "FT_IMPACT": -0.05
+     }
+    },
+    {
+     "name": "Kawhi Leonard",
+     "nba": "TOR",
+     "pos": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "pick": 36,
+     "gp": 51,
+     "mpg": 32.0,
+     "value": 5.24,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      37,
+      65
+     ],
+     "added": false,
+     "z": {
+      "PTS": 1.32,
+      "REB": -0.07,
+      "AST": -0.3,
+      "STL": 1.61,
+      "BLK": -0.43,
+      "3PM": 0.63,
+      "TOV": 0.15,
+      "FG_IMPACT": 0.51,
+      "FT_IMPACT": 1.24
+     }
+    },
+    {
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 37,
+     "gp": 65,
+     "mpg": 34.0,
+     "value": 3.91,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      73,
+      76,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.23,
+      "REB": -0.72,
+      "AST": 0.53,
+      "STL": -0.18,
+      "BLK": 0.75,
+      "3PM": 1.24,
+      "TOV": 0.42,
+      "FG_IMPACT": -1.36,
+      "FT_IMPACT": 0.72
+     }
+    },
+    {
+     "name": "OG Anunoby",
+     "nba": "NYK",
+     "pos": [
+      "SF",
+      "PF"
+     ],
+     "pick": 60,
+     "gp": 61,
+     "mpg": 33.0,
+     "value": 3.18,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      50,
+      74,
+      67
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.22,
+      "REB": -0.54,
+      "AST": -0.95,
+      "STL": 1.05,
+      "BLK": 0.07,
+      "3PM": 0.48,
+      "TOV": 0.57,
+      "FG_IMPACT": -0.09,
+      "FT_IMPACT": 0.12
+     }
+    },
+    {
+     "name": "Kel'el Ware",
+     "nba": "MIL",
+     "pos": [
+      "C"
+     ],
+     "pick": 61,
+     "gp": 65,
+     "mpg": 21.4,
+     "value": 1.97,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      64,
+      77
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.26,
+      "REB": 0.82,
+      "AST": -1.56,
+      "STL": -1.08,
+      "BLK": 0.72,
+      "3PM": -0.8,
+      "TOV": 1.5,
+      "FG_IMPACT": 0.74,
+      "FT_IMPACT": -0.38
+     }
+    },
+    {
+     "name": "Immanuel Quickley",
+     "nba": "TOR",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 84,
+     "gp": 57,
+     "mpg": 33.0,
+     "value": 3.08,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      68,
+      33,
+      70
+     ],
+     "added": false,
+     "z": {
+      "PTS": 0.16,
+      "REB": -0.74,
+      "AST": 1.04,
+      "STL": 0.43,
+      "BLK": -1.12,
+      "3PM": 1.1,
+      "TOV": 0.37,
+      "FG_IMPACT": -1.11,
+      "FT_IMPACT": 0.51
+     }
+    },
+    {
+     "name": "Zach Edey",
+     "nba": "MEM",
+     "pos": [
+      "C"
+     ],
+     "pick": 85,
+     "gp": 41,
+     "mpg": 27.2,
+     "value": 1.92,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      66,
+      11
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.83,
+      "REB": 1.83,
+      "AST": -1.32,
+      "STL": -0.91,
+      "BLK": 1.85,
+      "3PM": -1.43,
+      "TOV": 0.11,
+      "FG_IMPACT": 1.46,
+      "FT_IMPACT": -0.69
+     }
+    },
+    {
+     "name": "Jalen Suggs",
+     "nba": "ORL",
+     "pos": [
+      "PG",
+      "SG"
+     ],
+     "pick": 108,
+     "gp": 54,
+     "mpg": 30.5,
+     "value": 3.36,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      75,
+      35,
+      57
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.21,
+      "REB": -0.76,
+      "AST": 0.5,
+      "STL": 2.56,
+      "BLK": 0.17,
+      "3PM": 0.74,
+      "TOV": -1.1,
+      "FG_IMPACT": -0.98,
+      "FT_IMPACT": 0.39
+     }
+    },
+    {
+     "name": "Darius Acuff Jr.",
+     "nba": "SAC",
+     "pos": [
+      "PG"
+     ],
+     "pick": 109,
+     "gp": 53,
+     "mpg": null,
+     "value": null,
+     "inj": "",
+     "note": "rookie stand-in: average of 6 projected guards with ADP 102-126",
+     "games_hist": [],
+     "added": false,
+     "z": null
+    },
+    {
+     "name": "Nic Claxton",
+     "nba": "CHI",
+     "pos": [
+      "C"
+     ],
+     "pick": 132,
+     "gp": 61,
+     "mpg": 30.2,
+     "value": 2.15,
+     "inj": "Hamstring; re-evaluation in two weeks",
+     "note": "",
+     "games_hist": [
+      71,
+      70,
+      69
+     ],
+     "added": false,
+     "z": {
+      "PTS": -0.74,
+      "REB": 1.08,
+      "AST": -0.34,
+      "STL": -0.6,
+      "BLK": 1.73,
+      "3PM": -1.7,
+      "TOV": 0.57,
+      "FG_IMPACT": 1.52,
+      "FT_IMPACT": -2.4
+     }
+    },
+    {
+     "name": "Sandro Mamukelashvili",
+     "nba": "LAL",
+     "pos": [
+      "PF",
+      "C"
+     ],
+     "pick": 133,
+     "gp": 78,
+     "mpg": 16.0,
+     "value": -0.88,
+     "inj": "",
+     "note": "",
+     "games_hist": [
+      46,
+      61,
+      80
+     ],
+     "added": false,
+     "z": {
+      "PTS": -1.63,
+      "REB": -0.87,
+      "AST": -1.3,
+      "STL": -1.59,
+      "BLK": -0.55,
+      "3PM": -0.66,
+      "TOV": 1.81,
+      "FG_IMPACT": 0.38,
+      "FT_IMPACT": -0.28
+     }
+    },
+    {
+     "name": "Mikel Brown Jr.",
+     "nba": "BRK",
+     "pos": [
+      "PG"
+     ],
+     "pick": 156,
+     "gp": 61,
+     "mpg": null,
+     "value": null,
+     "inj": "",
+     "note": "rookie stand-in: average of 8 projected guards with ADP 155-179",
+     "games_hist": [],
+     "added": false,
+     "z": null
+    }
+   ],
+   "rank": {
+    "FG%": 6,
+    "FT%": 8,
+    "3PM": 7,
+    "PTS": 11,
+    "REB": 6,
+    "AST": 9,
+    "STL": 3,
+    "BLK": 3,
+    "TO": 2
+   }
+  }
+ ],
+ "matrix": {
+  "teams": [
+   "Dominykas's Expert Team",
+   "Z - 12T",
+   "Chop'em Down",
+   "Μαριος's Nice Team",
+   "MVP",
+   "…",
+   "Benius's Marvelous Team",
+   "Du po 50",
+   "Θανος's Neat Team",
+   "Gökhan's Groovy Team",
+   "OJ7",
+   "BC Blemba Normaliai's Team"
+  ],
+  "exp_cats": [
+   [
+    0.0,
+    4.516,
+    4.577,
+    4.692,
+    4.906,
+    4.643,
+    4.882,
+    5.077,
+    5.015,
+    5.015,
+    4.358,
+    4.651
+   ],
+   [
+    4.484,
+    0.0,
+    4.59,
+    4.697,
+    4.883,
+    4.629,
+    4.757,
+    4.916,
+    4.915,
+    5.161,
+    4.348,
+    4.639
+   ],
+   [
+    4.423,
+    4.41,
+    0.0,
+    4.642,
+    4.804,
+    4.585,
+    4.828,
+    5.056,
+    4.984,
+    4.97,
+    4.327,
+    4.6
+   ],
+   [
+    4.308,
+    4.303,
+    4.358,
+    0.0,
+    4.644,
+    4.399,
+    4.686,
+    4.947,
+    4.86,
+    4.919,
+    4.359,
+    4.412
+   ],
+   [
+    4.094,
+    4.117,
+    4.196,
+    4.356,
+    0.0,
+    4.218,
+    4.492,
+    4.758,
+    4.659,
+    4.773,
+    4.122,
+    4.261
+   ],
+   [
+    4.357,
+    4.371,
+    4.415,
+    4.601,
+    4.782,
+    0.0,
+    4.76,
+    4.99,
+    4.865,
+    4.912,
+    4.285,
+    4.494
+   ],
+   [
+    4.118,
+    4.243,
+    4.172,
+    4.314,
+    4.508,
+    4.24,
+    0.0,
+    4.751,
+    4.644,
+    4.748,
+    4.07,
+    4.277
+   ],
+   [
+    3.923,
+    4.084,
+    3.944,
+    4.053,
+    4.242,
+    4.01,
+    4.249,
+    0.0,
+    4.406,
+    4.657,
+    3.877,
+    4.052
+   ],
+   [
+    3.985,
+    4.085,
+    4.016,
+    4.14,
+    4.341,
+    4.135,
+    4.356,
+    4.594,
+    0.0,
+    4.668,
+    3.947,
+    4.127
+   ],
+   [
+    3.985,
+    3.839,
+    4.03,
+    4.081,
+    4.227,
+    4.088,
+    4.252,
+    4.343,
+    4.332,
+    0.0,
+    3.995,
+    3.956
+   ],
+   [
+    4.642,
+    4.652,
+    4.673,
+    4.641,
+    4.878,
+    4.715,
+    4.93,
+    5.123,
+    5.053,
+    5.005,
+    0.0,
+    4.673
+   ],
+   [
+    4.349,
+    4.361,
+    4.4,
+    4.588,
+    4.739,
+    4.506,
+    4.723,
+    4.948,
+    4.873,
+    5.044,
+    4.327,
+    0.0
+   ]
+  ],
+  "p_week": [
+   [
+    0.0,
+    0.515,
+    0.516,
+    0.56,
+    0.598,
+    0.537,
+    0.608,
+    0.666,
+    0.642,
+    0.658,
+    0.448,
+    0.56
+   ],
+   [
+    0.485,
+    0.0,
+    0.511,
+    0.542,
+    0.595,
+    0.52,
+    0.551,
+    0.597,
+    0.602,
+    0.667,
+    0.437,
+    0.532
+   ],
+   [
+    0.484,
+    0.489,
+    0.0,
+    0.556,
+    0.579,
+    0.517,
+    0.587,
+    0.652,
+    0.636,
+    0.643,
+    0.445,
+    0.545
+   ],
+   [
+    0.44,
+    0.458,
+    0.444,
+    0.0,
+    0.522,
+    0.464,
+    0.546,
+    0.604,
+    0.589,
+    0.63,
+    0.445,
+    0.482
+   ],
+   [
+    0.402,
+    0.405,
+    0.421,
+    0.478,
+    0.0,
+    0.417,
+    0.511,
+    0.575,
+    0.554,
+    0.588,
+    0.397,
+    0.458
+   ],
+   [
+    0.463,
+    0.48,
+    0.483,
+    0.536,
+    0.583,
+    0.0,
+    0.569,
+    0.631,
+    0.608,
+    0.625,
+    0.424,
+    0.513
+   ],
+   [
+    0.392,
+    0.449,
+    0.413,
+    0.454,
+    0.489,
+    0.431,
+    0.0,
+    0.565,
+    0.546,
+    0.591,
+    0.364,
+    0.447
+   ],
+   [
+    0.334,
+    0.403,
+    0.348,
+    0.396,
+    0.425,
+    0.369,
+    0.435,
+    0.0,
+    0.491,
+    0.592,
+    0.343,
+    0.397
+   ],
+   [
+    0.358,
+    0.398,
+    0.364,
+    0.411,
+    0.446,
+    0.392,
+    0.454,
+    0.509,
+    0.0,
+    0.565,
+    0.342,
+    0.414
+   ],
+   [
+    0.342,
+    0.333,
+    0.357,
+    0.37,
+    0.412,
+    0.375,
+    0.409,
+    0.408,
+    0.435,
+    0.0,
+    0.274,
+    0.356
+   ],
+   [
+    0.552,
+    0.563,
+    0.555,
+    0.555,
+    0.603,
+    0.576,
+    0.636,
+    0.657,
+    0.658,
+    0.726,
+    0.0,
+    0.571
+   ],
+   [
+    0.44,
+    0.468,
+    0.455,
+    0.518,
+    0.542,
+    0.487,
+    0.553,
+    0.603,
+    0.586,
+    0.644,
+    0.429,
+    0.0
+   ]
+  ]
+ },
+ "my_matchups": {
+  "Dominykas's Expert Team": {
+   "exp_cats": 4.4230833333333335,
+   "p_week": 0.48375,
+   "per": {
+    "FG%": 0.26525,
+    "FT%": 0.46791666666666665,
+    "3PM": 0.7081666666666667,
+    "PTS": 0.539,
+    "REB": 0.46608333333333335,
+    "AST": 0.3425,
+    "STL": 0.5125,
+    "BLK": 0.7649166666666667,
+    "TO": 0.35675
+   }
+  },
+  "Z - 12T": {
+   "exp_cats": 4.40975,
+   "p_week": 0.489,
+   "per": {
+    "FG%": 0.35425,
+    "FT%": 0.3918333333333333,
+    "3PM": 0.6948333333333333,
+    "PTS": 0.7095,
+    "REB": 0.41308333333333336,
+    "AST": 0.8160833333333334,
+    "STL": 0.44358333333333333,
+    "BLK": 0.3451666666666667,
+    "TO": 0.24141666666666667
+   }
+  },
+  "Μαριος's Nice Team": {
+   "exp_cats": 4.6418333333333335,
+   "p_week": 0.5558333333333333,
+   "per": {
+    "FG%": 0.38008333333333333,
+    "FT%": 0.36983333333333335,
+    "3PM": 0.8025,
+    "PTS": 0.6525,
+    "REB": 0.6729166666666667,
+    "AST": 0.5831666666666667,
+    "STL": 0.3925,
+    "BLK": 0.5174166666666666,
+    "TO": 0.27091666666666664
+   }
+  },
+  "MVP": {
+   "exp_cats": 4.804083333333334,
+   "p_week": 0.5793333333333334,
+   "per": {
+    "FG%": 0.49075,
+    "FT%": 0.6098333333333333,
+    "3PM": 0.7871666666666667,
+    "PTS": 0.5705,
+    "REB": 0.5875,
+    "AST": 0.4663333333333333,
+    "STL": 0.34058333333333335,
+    "BLK": 0.56375,
+    "TO": 0.38766666666666666
+   }
+  },
+  "…": {
+   "exp_cats": 4.585166666666667,
+   "p_week": 0.51675,
+   "per": {
+    "FG%": 0.40308333333333335,
+    "FT%": 0.5709166666666666,
+    "3PM": 0.568,
+    "PTS": 0.42383333333333334,
+    "REB": 0.4671666666666667,
+    "AST": 0.6474166666666666,
+    "STL": 0.5905833333333333,
+    "BLK": 0.51225,
+    "TO": 0.40191666666666664
+   }
+  },
+  "Benius's Marvelous Team": {
+   "exp_cats": 4.827833333333333,
+   "p_week": 0.5871666666666666,
+   "per": {
+    "FG%": 0.25466666666666665,
+    "FT%": 0.52875,
+    "3PM": 0.6060833333333333,
+    "PTS": 0.43966666666666665,
+    "REB": 0.6705,
+    "AST": 0.6293333333333333,
+    "STL": 0.61875,
+    "BLK": 0.8313333333333334,
+    "TO": 0.24875
+   }
+  },
+  "Du po 50": {
+   "exp_cats": 5.056333333333333,
+   "p_week": 0.6518333333333334,
+   "per": {
+    "FG%": 0.5975833333333334,
+    "FT%": 0.42141666666666666,
+    "3PM": 0.4891666666666667,
+    "PTS": 0.5273333333333333,
+    "REB": 0.8141666666666667,
+    "AST": 0.6999166666666666,
+    "STL": 0.302,
+    "BLK": 0.84525,
+    "TO": 0.3595
+   }
+  },
+  "Θανος's Neat Team": {
+   "exp_cats": 4.983583333333334,
+   "p_week": 0.63575,
+   "per": {
+    "FG%": 0.43266666666666664,
+    "FT%": 0.38216666666666665,
+    "3PM": 0.6111666666666666,
+    "PTS": 0.6508333333333334,
+    "REB": 0.7948333333333333,
+    "AST": 0.5391666666666667,
+    "STL": 0.6038333333333333,
+    "BLK": 0.7484166666666666,
+    "TO": 0.2205
+   }
+  },
+  "Gökhan's Groovy Team": {
+   "exp_cats": 4.97,
+   "p_week": 0.64325,
+   "per": {
+    "FG%": 0.22541666666666665,
+    "FT%": 0.7125,
+    "3PM": 0.8921666666666667,
+    "PTS": 0.8423333333333334,
+    "REB": 0.31483333333333335,
+    "AST": 0.8953333333333333,
+    "STL": 0.5559166666666666,
+    "BLK": 0.37925,
+    "TO": 0.15225
+   }
+  },
+  "OJ7": {
+   "exp_cats": 4.326666666666667,
+   "p_week": 0.44533333333333336,
+   "per": {
+    "FG%": 0.5729166666666666,
+    "FT%": 0.26508333333333334,
+    "3PM": 0.3144166666666667,
+    "PTS": 0.49016666666666664,
+    "REB": 0.9204166666666667,
+    "AST": 0.3055833333333333,
+    "STL": 0.3755,
+    "BLK": 0.7914166666666667,
+    "TO": 0.2911666666666667
+   }
+  },
+  "BC Blemba Normaliai's Team": {
+   "exp_cats": 4.60025,
+   "p_week": 0.545,
+   "per": {
+    "FG%": 0.3915,
+    "FT%": 0.5283333333333333,
+    "3PM": 0.6973333333333334,
+    "PTS": 0.7695,
+    "REB": 0.56375,
+    "AST": 0.66775,
+    "STL": 0.3595833333333333,
+    "BLK": 0.42025,
+    "TO": 0.20225
+   }
+  }
+ },
+ "variants": [
+  {
+   "label": "LaRavia for Kyshawn George",
+   "spec": "+Jake LaRavia;-Kyshawn George",
+   "vs": {
+    "Dominykas's Expert Team": {
+     "exp_cats": 4.537166666666667,
+     "p_week": 0.5170833333333333,
+     "per": {
+      "FG%": 0.27666666666666667,
+      "FT%": 0.4568333333333333,
+      "3PM": 0.7013333333333334,
+      "PTS": 0.5525,
+      "REB": 0.5039166666666667,
+      "AST": 0.34425,
+      "STL": 0.5893333333333334,
+      "BLK": 0.762,
+      "TO": 0.35033333333333333
+     }
+    },
+    "Z - 12T": {
+     "exp_cats": 4.517916666666666,
+     "p_week": 0.5173333333333333,
+     "per": {
+      "FG%": 0.36241666666666666,
+      "FT%": 0.375,
+      "3PM": 0.69025,
+      "PTS": 0.7155,
+      "REB": 0.45216666666666666,
+      "AST": 0.811,
+      "STL": 0.5246666666666666,
+      "BLK": 0.34391666666666665,
+      "TO": 0.243
+     }
+    },
+    "Μαριος's Nice Team": {
+     "exp_cats": 4.753416666666666,
+     "p_week": 0.5840833333333333,
+     "per": {
+      "FG%": 0.39591666666666664,
+      "FT%": 0.35325,
+      "3PM": 0.7913333333333333,
+      "PTS": 0.66,
+      "REB": 0.7075,
+      "AST": 0.57925,
+      "STL": 0.47775,
+      "BLK": 0.5145,
+      "TO": 0.27391666666666664
+     }
+    },
+    "MVP": {
+     "exp_cats": 4.9205,
+     "p_week": 0.6063333333333333,
+     "per": {
+      "FG%": 0.49983333333333335,
+      "FT%": 0.5943333333333334,
+      "3PM": 0.7801666666666667,
+      "PTS": 0.5838333333333333,
+      "REB": 0.6263333333333333,
+      "AST": 0.4661666666666667,
+      "STL": 0.42233333333333334,
+      "BLK": 0.5590833333333334,
+      "TO": 0.3884166666666667
+     }
+    },
+    "…": {
+     "exp_cats": 4.681916666666667,
+     "p_week": 0.5476666666666666,
+     "per": {
+      "FG%": 0.414,
+      "FT%": 0.55525,
+      "3PM": 0.56175,
+      "PTS": 0.43566666666666665,
+      "REB": 0.50425,
+      "AST": 0.63875,
+      "STL": 0.66875,
+      "BLK": 0.505,
+      "TO": 0.3985
+     }
+    },
+    "Benius's Marvelous Team": {
+     "exp_cats": 4.9225,
+     "p_week": 0.61425,
+     "per": {
+      "FG%": 0.25616666666666665,
+      "FT%": 0.52175,
+      "3PM": 0.59775,
+      "PTS": 0.448,
+      "REB": 0.7048333333333333,
+      "AST": 0.6198333333333333,
+      "STL": 0.69525,
+      "BLK": 0.8315833333333333,
+      "TO": 0.24733333333333332
+     }
+    },
+    "Du po 50": {
+     "exp_cats": 5.146833333333333,
+     "p_week": 0.6739166666666667,
+     "per": {
+      "FG%": 0.6095,
+      "FT%": 0.40408333333333335,
+      "3PM": 0.4870833333333333,
+      "PTS": 0.5381666666666667,
+      "REB": 0.8401666666666666,
+      "AST": 0.6901666666666667,
+      "STL": 0.37816666666666665,
+      "BLK": 0.84075,
+      "TO": 0.35875
+     }
+    },
+    "Θανος's Neat Team": {
+     "exp_cats": 5.071416666666667,
+     "p_week": 0.6545833333333333,
+     "per": {
+      "FG%": 0.4390833333333333,
+      "FT%": 0.36766666666666664,
+      "3PM": 0.6076666666666667,
+      "PTS": 0.6561666666666667,
+      "REB": 0.8210833333333334,
+      "AST": 0.5351666666666667,
+      "STL": 0.6775,
+      "BLK": 0.7479166666666667,
+      "TO": 0.21916666666666668
+     }
+    },
+    "Gökhan's Groovy Team": {
+     "exp_cats": 5.06375,
+     "p_week": 0.675,
+     "per": {
+      "FG%": 0.23058333333333333,
+      "FT%": 0.6993333333333334,
+      "3PM": 0.88775,
+      "PTS": 0.8455,
+      "REB": 0.3448333333333333,
+      "AST": 0.8900833333333333,
+      "STL": 0.637,
+      "BLK": 0.37983333333333336,
+      "TO": 0.14883333333333335
+     }
+    },
+    "OJ7": {
+     "exp_cats": 4.409166666666667,
+     "p_week": 0.46975,
+     "per": {
+      "FG%": 0.58025,
+      "FT%": 0.2534166666666667,
+      "3PM": 0.3110833333333333,
+      "PTS": 0.5036666666666667,
+      "REB": 0.93425,
+      "AST": 0.2995833333333333,
+      "STL": 0.45408333333333334,
+      "BLK": 0.7880833333333334,
+      "TO": 0.28475
+     }
+    },
+    "BC Blemba Normaliai's Team": {
+     "exp_cats": 4.70175,
+     "p_week": 0.573,
+     "per": {
+      "FG%": 0.39808333333333334,
+      "FT%": 0.50925,
+      "3PM": 0.6911666666666667,
+      "PTS": 0.7805,
+      "REB": 0.6014166666666667,
+      "AST": 0.6640833333333334,
+      "STL": 0.43533333333333335,
+      "BLK": 0.42141666666666666,
+      "TO": 0.2005
+     }
+    }
+   },
+   "exp_cats_vs_field": 4.79330303030303,
+   "p_week_vs_field": 0.5848181818181818
+  },
+  {
+   "label": "Plus Ingram back for Carter (November)",
+   "spec": "+Jake LaRavia;-Kyshawn George;+Brandon Ingram;-Wendell Carter Jr.",
+   "vs": {
+    "Dominykas's Expert Team": {
+     "exp_cats": 4.653666666666667,
+     "p_week": 0.5450833333333334,
+     "per": {
+      "FG%": 0.2715,
+      "FT%": 0.4746666666666667,
+      "3PM": 0.7466666666666667,
+      "PTS": 0.631,
+      "REB": 0.47108333333333335,
+      "AST": 0.40358333333333335,
+      "STL": 0.5971666666666666,
+      "BLK": 0.7684166666666666,
+      "TO": 0.28958333333333336
+     }
+    },
+    "Z - 12T": {
+     "exp_cats": 4.6234166666666665,
+     "p_week": 0.543,
+     "per": {
+      "FG%": 0.3545,
+      "FT%": 0.3938333333333333,
+      "3PM": 0.73425,
+      "PTS": 0.7833333333333333,
+      "REB": 0.41975,
+      "AST": 0.8526666666666667,
+      "STL": 0.5403333333333333,
+      "BLK": 0.3473333333333333,
+      "TO": 0.19741666666666666
+     }
+    },
+    "Μαριος's Nice Team": {
+     "exp_cats": 4.863916666666666,
+     "p_week": 0.61625,
+     "per": {
+      "FG%": 0.38458333333333333,
+      "FT%": 0.374,
+      "3PM": 0.828,
+      "PTS": 0.7333333333333333,
+      "REB": 0.6729166666666667,
+      "AST": 0.6375833333333333,
+      "STL": 0.48583333333333334,
+      "BLK": 0.5235833333333333,
+      "TO": 0.22408333333333333
+     }
+    },
+    "MVP": {
+     "exp_cats": 5.051416666666666,
+     "p_week": 0.6405833333333333,
+     "per": {
+      "FG%": 0.49225,
+      "FT%": 0.6205,
+      "3PM": 0.8178333333333333,
+      "PTS": 0.664,
+      "REB": 0.5976666666666667,
+      "AST": 0.5295833333333333,
+      "STL": 0.4395,
+      "BLK": 0.5628333333333333,
+      "TO": 0.32725
+     }
+    },
+    "…": {
+     "exp_cats": 4.8036666666666665,
+     "p_week": 0.5793333333333334,
+     "per": {
+      "FG%": 0.4041666666666667,
+      "FT%": 0.5773333333333334,
+      "3PM": 0.60625,
+      "PTS": 0.52,
+      "REB": 0.471,
+      "AST": 0.6983333333333334,
+      "STL": 0.675,
+      "BLK": 0.5115833333333333,
+      "TO": 0.34
+     }
+    },
+    "Benius's Marvelous Team": {
+     "exp_cats": 5.056166666666667,
+     "p_week": 0.6488333333333334,
+     "per": {
+      "FG%": 0.24841666666666667,
+      "FT%": 0.538,
+      "3PM": 0.6444166666666666,
+      "PTS": 0.529,
+      "REB": 0.6735833333333333,
+      "AST": 0.6839166666666666,
+      "STL": 0.7074166666666667,
+      "BLK": 0.83425,
+      "TO": 0.19716666666666666
+     }
+    },
+    "Du po 50": {
+     "exp_cats": 5.298583333333333,
+     "p_week": 0.7111666666666666,
+     "per": {
+      "FG%": 0.5991666666666666,
+      "FT%": 0.4325,
+      "3PM": 0.53975,
+      "PTS": 0.6205,
+      "REB": 0.81375,
+      "AST": 0.7569166666666667,
+      "STL": 0.3893333333333333,
+      "BLK": 0.84525,
+      "TO": 0.30141666666666667
+     }
+    },
+    "Θανος's Neat Team": {
+     "exp_cats": 5.219416666666667,
+     "p_week": 0.6895,
+     "per": {
+      "FG%": 0.43366666666666664,
+      "FT%": 0.3899166666666667,
+      "3PM": 0.6539166666666667,
+      "PTS": 0.7245,
+      "REB": 0.8004166666666667,
+      "AST": 0.5969166666666667,
+      "STL": 0.6904166666666667,
+      "BLK": 0.7521666666666667,
+      "TO": 0.1775
+     }
+    },
+    "Gökhan's Groovy Team": {
+     "exp_cats": 5.13325,
+     "p_week": 0.7005833333333333,
+     "per": {
+      "FG%": 0.22225,
+      "FT%": 0.7214166666666667,
+      "3PM": 0.913,
+      "PTS": 0.8926666666666667,
+      "REB": 0.31833333333333336,
+      "AST": 0.9176666666666666,
+      "STL": 0.653,
+      "BLK": 0.38108333333333333,
+      "TO": 0.11383333333333333
+     }
+    },
+    "OJ7": {
+     "exp_cats": 4.560833333333333,
+     "p_week": 0.5123333333333333,
+     "per": {
+      "FG%": 0.574,
+      "FT%": 0.2683333333333333,
+      "3PM": 0.3531666666666667,
+      "PTS": 0.583,
+      "REB": 0.923,
+      "AST": 0.35625,
+      "STL": 0.468,
+      "BLK": 0.7974166666666667,
+      "TO": 0.23766666666666666
+     }
+    },
+    "BC Blemba Normaliai's Team": {
+     "exp_cats": 4.815666666666667,
+     "p_week": 0.602,
+     "per": {
+      "FG%": 0.38975,
+      "FT%": 0.5308333333333334,
+      "3PM": 0.73275,
+      "PTS": 0.8325,
+      "REB": 0.5721666666666667,
+      "AST": 0.7205,
+      "STL": 0.4474166666666667,
+      "BLK": 0.42775,
+      "TO": 0.162
+     }
+    }
+   },
+   "exp_cats_vs_field": 4.916363636363637,
+   "p_week_vs_field": 0.6171515151515151
+  },
+  {
+   "label": "Dunn for Carter",
+   "spec": "+Kris Dunn;-Wendell Carter Jr.",
+   "vs": {
+    "Dominykas's Expert Team": {
+     "exp_cats": 4.39225,
+     "p_week": 0.4756666666666667,
+     "per": {
+      "FG%": 0.25758333333333333,
+      "FT%": 0.47375,
+      "3PM": 0.7194166666666667,
+      "PTS": 0.512,
+      "REB": 0.3815,
+      "AST": 0.3905,
+      "STL": 0.576,
+      "BLK": 0.73375,
+      "TO": 0.34775
+     }
+    },
+    "Z - 12T": {
+     "exp_cats": 4.383916666666667,
+     "p_week": 0.47908333333333336,
+     "per": {
+      "FG%": 0.3388333333333333,
+      "FT%": 0.39808333333333334,
+      "3PM": 0.7078333333333333,
+      "PTS": 0.6856666666666666,
+      "REB": 0.33308333333333334,
+      "AST": 0.8503333333333334,
+      "STL": 0.5141666666666667,
+      "BLK": 0.31675,
+      "TO": 0.23916666666666667
+     }
+    },
+    "Μαριος's Nice Team": {
+     "exp_cats": 4.586,
+     "p_week": 0.5433333333333333,
+     "per": {
+      "FG%": 0.36483333333333334,
+      "FT%": 0.3744166666666667,
+      "3PM": 0.8113333333333334,
+      "PTS": 0.626,
+      "REB": 0.579,
+      "AST": 0.62875,
+      "STL": 0.4608333333333333,
+      "BLK": 0.477,
+      "TO": 0.2638333333333333
+     }
+    },
+    "MVP": {
+     "exp_cats": 4.774416666666666,
+     "p_week": 0.5685833333333333,
+     "per": {
+      "FG%": 0.47783333333333333,
+      "FT%": 0.6173333333333333,
+      "3PM": 0.7968333333333333,
+      "PTS": 0.5453333333333333,
+      "REB": 0.49933333333333335,
+      "AST": 0.517,
+      "STL": 0.41175,
+      "BLK": 0.52925,
+      "TO": 0.37975
+     }
+    },
+    "…": {
+     "exp_cats": 4.517166666666666,
+     "p_week": 0.5045,
+     "per": {
+      "FG%": 0.38233333333333336,
+      "FT%": 0.5709166666666666,
+      "3PM": 0.5785833333333333,
+      "PTS": 0.398,
+      "REB": 0.37533333333333335,
+      "AST": 0.6943333333333334,
+      "STL": 0.6508333333333334,
+      "BLK": 0.47325,
+      "TO": 0.39358333333333334
+     }
+    },
+    "Benius's Marvelous Team": {
+     "exp_cats": 4.803416666666666,
+     "p_week": 0.5806666666666667,
+     "per": {
+      "FG%": 0.23966666666666667,
+      "FT%": 0.5311666666666667,
+      "3PM": 0.6185,
+      "PTS": 0.41583333333333333,
+      "REB": 0.5864166666666667,
+      "AST": 0.6755833333333333,
+      "STL": 0.68575,
+      "BLK": 0.8079166666666666,
+      "TO": 0.24258333333333335
+     }
+    },
+    "Du po 50": {
+     "exp_cats": 5.036416666666667,
+     "p_week": 0.6448333333333334,
+     "per": {
+      "FG%": 0.576,
+      "FT%": 0.42983333333333335,
+      "3PM": 0.5066666666666667,
+      "PTS": 0.49783333333333335,
+      "REB": 0.7404166666666666,
+      "AST": 0.7455833333333334,
+      "STL": 0.36716666666666664,
+      "BLK": 0.8210833333333334,
+      "TO": 0.35183333333333333
+     }
+    },
+    "Θανος's Neat Team": {
+     "exp_cats": 4.9695833333333335,
+     "p_week": 0.6303333333333333,
+     "per": {
+      "FG%": 0.41275,
+      "FT%": 0.39166666666666666,
+      "3PM": 0.62175,
+      "PTS": 0.6256666666666667,
+      "REB": 0.7229166666666667,
+      "AST": 0.5891666666666666,
+      "STL": 0.6673333333333333,
+      "BLK": 0.7214166666666667,
+      "TO": 0.21691666666666667
+     }
+    },
+    "Gökhan's Groovy Team": {
+     "exp_cats": 4.9245833333333335,
+     "p_week": 0.64175,
+     "per": {
+      "FG%": 0.21383333333333332,
+      "FT%": 0.7121666666666666,
+      "3PM": 0.9004166666666666,
+      "PTS": 0.8251666666666667,
+      "REB": 0.23875,
+      "AST": 0.9195833333333333,
+      "STL": 0.6219166666666667,
+      "BLK": 0.345,
+      "TO": 0.14775
+     }
+    },
+    "OJ7": {
+     "exp_cats": 4.329083333333333,
+     "p_week": 0.45058333333333334,
+     "per": {
+      "FG%": 0.5525833333333333,
+      "FT%": 0.27258333333333334,
+      "3PM": 0.32416666666666666,
+      "PTS": 0.46116666666666667,
+      "REB": 0.8761666666666666,
+      "AST": 0.34475,
+      "STL": 0.44733333333333336,
+      "BLK": 0.7640833333333333,
+      "TO": 0.28625
+     }
+    },
+    "BC Blemba Normaliai's Team": {
+     "exp_cats": 4.564166666666667,
+     "p_week": 0.5336666666666666,
+     "per": {
+      "FG%": 0.37966666666666665,
+      "FT%": 0.52925,
+      "3PM": 0.7075,
+      "PTS": 0.7465,
+      "REB": 0.47333333333333333,
+      "AST": 0.7135,
+      "STL": 0.43091666666666667,
+      "BLK": 0.3864166666666667,
+      "TO": 0.19708333333333333
+     }
+    }
+   },
+   "exp_cats_vs_field": 4.661909090909091,
+   "p_week_vs_field": 0.5502727272727272
+  }
+ ],
+ "free_agents": {
+  "targets": [
+   "Wendell Carter Jr.",
+   "Kyshawn George",
+   "Jakob Poeltl"
+  ],
+  "list": [
+   {
+    "name": "Kristaps Porzingis",
+    "nba": "GSW",
+    "pos": [
+     "PF",
+     "C"
+    ],
+    "gp": 36,
+    "mpg": 26.0,
+    "note": "",
+    "adp": 103.0,
+    "inj": "Out indefinitely, undisclosed illness; missed ~55% of games the last two seasons",
+    "games_hist": [
+     57,
+     42,
+     32
+    ],
+    "gain": 0.15228030303030238,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.14048484848484843,
+     "Kyshawn George": 0.15228030303030238,
+     "Jakob Poeltl": 0.042681818181818265
+    },
+    "z": {
+     "PTS": 0.06,
+     "REB": -0.01,
+     "AST": -0.91,
+     "STL": -1.32,
+     "BLK": 1.26,
+     "3PM": 0.2,
+     "TOV": 0.91,
+     "FG_IMPACT": 0.17,
+     "FT_IMPACT": 0.36
+    }
+   },
+   {
+    "name": "Kelly Oubre Jr.",
+    "nba": "IND",
+    "pos": [
+     "PF",
+     "SF",
+     "SG"
+    ],
+    "gp": 56,
+    "mpg": 33.0,
+    "note": "",
+    "adp": 127.0,
+    "inj": "",
+    "games_hist": [
+     68,
+     60,
+     50
+    ],
+    "gain": 0.10953030303030253,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.09703030303030324,
+     "Kyshawn George": 0.10953030303030253,
+     "Jakob Poeltl": -0.001977272727273771
+    },
+    "z": {
+     "PTS": -0.34,
+     "REB": -0.21,
+     "AST": -1.11,
+     "STL": 0.97,
+     "BLK": -0.33,
+     "3PM": -0.16,
+     "TOV": 0.76,
+     "FG_IMPACT": -0.47,
+     "FT_IMPACT": -0.36
+    }
+   },
+   {
+    "name": "Tobias Harris",
+    "nba": "SAS",
+    "pos": [
+     "PF",
+     "SF"
+    ],
+    "gp": 58,
+    "mpg": 29.3,
+    "note": "minutes cut from the flat 33 to 29.3 (veteran with a recent drop: 27.7, 31.6 mpg)",
+    "adp": 132.0,
+    "inj": "",
+    "games_hist": [
+     70,
+     73,
+     63
+    ],
+    "gain": 0.10901515151515095,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.09598484848484912,
+     "Kyshawn George": 0.10901515151515095,
+     "Jakob Poeltl": -0.0016818181818187838
+    },
+    "z": {
+     "PTS": -0.39,
+     "REB": -0.05,
+     "AST": -0.63,
+     "STL": -0.26,
+     "BLK": -0.19,
+     "3PM": -0.34,
+     "TOV": 1.06,
+     "FG_IMPACT": -0.2,
+     "FT_IMPACT": 0.63
+    }
+   },
+   {
+    "name": "Jake LaRavia",
+    "nba": "LAL",
+    "pos": [
+     "PF",
+     "SF"
+    ],
+    "gp": 80,
+    "mpg": 30.0,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     35,
+     66,
+     82
+    ],
+    "gain": 0.09979545454545402,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.08604545454545409,
+     "Kyshawn George": 0.09979545454545402,
+     "Jakob Poeltl": -0.011386363636363583
+    },
+    "z": {
+     "PTS": -1.19,
+     "REB": -0.4,
+     "AST": -0.74,
+     "STL": 1.28,
+     "BLK": -0.26,
+     "3PM": -0.44,
+     "TOV": 0.64,
+     "FG_IMPACT": -0.38,
+     "FT_IMPACT": -0.41
+    }
+   },
+   {
+    "name": "Mark Williams",
+    "nba": "PHO",
+    "pos": [
+     "C"
+    ],
+    "gp": 19,
+    "mpg": 28.9,
+    "note": "",
+    "adp": 118.0,
+    "inj": "Torn labrum, surgery; out until at least Feb 3",
+    "games_hist": [
+     19,
+     44,
+     60
+    ],
+    "gain": 0.09911363636363646,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.08820454545454481,
+     "Kyshawn George": 0.09911363636363646,
+     "Jakob Poeltl": -0.008742424242424107
+    },
+    "z": {
+     "PTS": -0.36,
+     "REB": 1.67,
+     "AST": -1.12,
+     "STL": -0.1,
+     "BLK": 1.01,
+     "3PM": -1.74,
+     "TOV": 0.63,
+     "FG_IMPACT": 2.15,
+     "FT_IMPACT": -0.36
+    }
+   },
+   {
+    "name": "Aaron Nesmith",
+    "nba": "IND",
+    "pos": [
+     "PF",
+     "SF",
+     "SG"
+    ],
+    "gp": 52,
+    "mpg": 30.4,
+    "note": "",
+    "adp": 122.0,
+    "inj": "",
+    "games_hist": [
+     72,
+     45,
+     45
+    ],
+    "gain": 0.09465151515151504,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.07738636363636342,
+     "Kyshawn George": 0.09465151515151504,
+     "Jakob Poeltl": -0.020439393939394535
+    },
+    "z": {
+     "PTS": -0.55,
+     "REB": -0.66,
+     "AST": -1.08,
+     "STL": -0.74,
+     "BLK": -0.24,
+     "3PM": 0.61,
+     "TOV": 0.99,
+     "FG_IMPACT": -0.46,
+     "FT_IMPACT": 0.33
+    }
+   },
+   {
+    "name": "Nikola Vucevic",
+    "nba": "ORL",
+    "pos": [
+     "C"
+    ],
+    "gp": 58,
+    "mpg": 24.0,
+    "note": "",
+    "adp": 140.0,
+    "inj": "",
+    "games_hist": [
+     76,
+     73,
+     64
+    ],
+    "gain": 0.09242424242424185,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.08522727272727249,
+     "Kyshawn George": 0.09242424242424185,
+     "Jakob Poeltl": -0.016575757575758132
+    },
+    "z": {
+     "PTS": -0.85,
+     "REB": 0.36,
+     "AST": -0.71,
+     "STL": -1.77,
+     "BLK": -0.34,
+     "3PM": -0.58,
+     "TOV": 1.2,
+     "FG_IMPACT": 0.38,
+     "FT_IMPACT": 0.08
+    }
+   },
+   {
+    "name": "Jusuf Nurkic",
+    "nba": "UTA",
+    "pos": [
+     "C"
+    ],
+    "gp": 46,
+    "mpg": 26.0,
+    "note": "",
+    "adp": 141.0,
+    "inj": "Plantar plate tear; out until at least Nov 4",
+    "games_hist": [
+     76,
+     51,
+     41
+    ],
+    "gain": 0.09237878787878806,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.08222727272727237,
+     "Kyshawn George": 0.09237878787878806,
+     "Jakob Poeltl": -0.01418939393939489
+    },
+    "z": {
+     "PTS": -1.15,
+     "REB": 1.61,
+     "AST": -0.03,
+     "STL": -0.01,
+     "BLK": 0.14,
+     "3PM": -1.19,
+     "TOV": -0.42,
+     "FG_IMPACT": 0.32,
+     "FT_IMPACT": -1.81
+    }
+   },
+   {
+    "name": "Santi Aldama",
+    "nba": "DAL",
+    "pos": [
+     "PF",
+     "SF",
+     "C"
+    ],
+    "gp": 54,
+    "mpg": 24.8,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     61,
+     65,
+     43
+    ],
+    "gain": 0.08778787878787853,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.0753257575757571,
+     "Kyshawn George": 0.08778787878787853,
+     "Jakob Poeltl": -0.023022727272727472
+    },
+    "z": {
+     "PTS": -0.92,
+     "REB": -0.04,
+     "AST": -0.66,
+     "STL": -0.8,
+     "BLK": -0.13,
+     "3PM": -0.04,
+     "TOV": 1.13,
+     "FG_IMPACT": -0.23,
+     "FT_IMPACT": -0.82
+    }
+   },
+   {
+    "name": "Paul Reed",
+    "nba": "DET",
+    "pos": [
+     "C",
+     "PF"
+    ],
+    "gp": 59,
+    "mpg": 18.8,
+    "note": "",
+    "adp": 133.0,
+    "inj": "",
+    "games_hist": [
+     82,
+     45,
+     65
+    ],
+    "gain": 0.07982575757575816,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.06900757575757499,
+     "Kyshawn George": 0.07982575757575816,
+     "Jakob Poeltl": -0.0262954545454539
+    },
+    "z": {
+     "PTS": -1.48,
+     "REB": -0.07,
+     "AST": -1.19,
+     "STL": 0.09,
+     "BLK": 0.78,
+     "3PM": -1.48,
+     "TOV": 1.25,
+     "FG_IMPACT": 0.92,
+     "FT_IMPACT": -0.6
+    }
+   },
+   {
+    "name": "Jalen Smith",
+    "nba": "CHI",
+    "pos": [
+     "C",
+     "PF"
+    ],
+    "gp": 56,
+    "mpg": 20.1,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     61,
+     64,
+     53
+    ],
+    "gain": 0.07033333333333314,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.05940909090909052,
+     "Kyshawn George": 0.07033333333333314,
+     "Jakob Poeltl": -0.04114393939394123
+    },
+    "z": {
+     "PTS": -1.19,
+     "REB": 0.29,
+     "AST": -1.34,
+     "STL": -1.96,
+     "BLK": 0.24,
+     "3PM": -0.28,
+     "TOV": 1.4,
+     "FG_IMPACT": 0.34,
+     "FT_IMPACT": -0.34
+    }
+   },
+   {
+    "name": "Draymond Green",
+    "nba": "GSW",
+    "pos": [
+     "PF",
+     "C"
+    ],
+    "gp": 55,
+    "mpg": 28.2,
+    "note": "",
+    "adp": 106.0,
+    "inj": "",
+    "games_hist": [
+     55,
+     68,
+     68
+    ],
+    "gain": 0.06774242424242338,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.05277272727272653,
+     "Kyshawn George": 0.06774242424242338,
+     "Jakob Poeltl": -0.04537878787878746
+    },
+    "z": {
+     "PTS": -1.59,
+     "REB": -0.14,
+     "AST": 0.73,
+     "STL": -0.24,
+     "BLK": 0.01,
+     "3PM": -0.46,
+     "TOV": -0.62,
+     "FG_IMPACT": -0.59,
+     "FT_IMPACT": -0.52
+    }
+   },
+   {
+    "name": "Christian Braun",
+    "nba": "DEN",
+    "pos": [
+     "PF",
+     "SF",
+     "SG"
+    ],
+    "gp": 59,
+    "mpg": 29.3,
+    "note": "",
+    "adp": 178.0,
+    "inj": "",
+    "games_hist": [
+     82,
+     79,
+     44
+    ],
+    "gain": 0.06756060606060466,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.052143939393939576,
+     "Kyshawn George": 0.06756060606060466,
+     "Jakob Poeltl": -0.04686363636363655
+    },
+    "z": {
+     "PTS": -0.91,
+     "REB": -0.56,
+     "AST": -0.77,
+     "STL": -0.76,
+     "BLK": -0.58,
+     "3PM": -0.72,
+     "TOV": 1.38,
+     "FG_IMPACT": 0.6,
+     "FT_IMPACT": -0.02
+    }
+   },
+   {
+    "name": "De'Andre Hunter",
+    "nba": "SAC",
+    "pos": [
+     "SF",
+     "PF"
+    ],
+    "gp": 53,
+    "mpg": 29.8,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     57,
+     64,
+     45
+    ],
+    "gain": 0.0660151515151517,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.0539318181818178,
+     "Kyshawn George": 0.0660151515151517,
+     "Jakob Poeltl": -0.04408333333333392
+    },
+    "z": {
+     "PTS": -0.11,
+     "REB": -0.67,
+     "AST": -1.05,
+     "STL": -0.78,
+     "BLK": -0.89,
+     "3PM": 0.53,
+     "TOV": 0.48,
+     "FG_IMPACT": -0.77,
+     "FT_IMPACT": 0.7
+    }
+   },
+   {
+    "name": "Brook Lopez",
+    "nba": "LAC",
+    "pos": [
+     "C"
+    ],
+    "gp": 60,
+    "mpg": 25.8,
+    "note": "minutes cut from the flat 33 to 25.8 (veteran with a recent drop: 21.8, 31.8 mpg)",
+    "adp": 112.0,
+    "inj": "",
+    "games_hist": [
+     79,
+     80,
+     75
+    ],
+    "gain": 0.0567803030303029,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.041772727272727295,
+     "Kyshawn George": 0.0567803030303029,
+     "Jakob Poeltl": -0.05718939393939415
+    },
+    "z": {
+     "PTS": -0.93,
+     "REB": -0.42,
+     "AST": -1.1,
+     "STL": -1.25,
+     "BLK": 1.9,
+     "3PM": 0.16,
+     "TOV": 1.2,
+     "FG_IMPACT": -0.09,
+     "FT_IMPACT": -0.02
+    }
+   },
+   {
+    "name": "Malachi Smith",
+    "nba": "TOR",
+    "pos": [
+     "SG",
+     "PG"
+    ],
+    "gp": 31,
+    "mpg": 26.3,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     15
+    ],
+    "gain": 0.05418181818181811,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.04369696969696957,
+     "Kyshawn George": 0.05418181818181811,
+     "Jakob Poeltl": -0.05598484848484908
+    },
+    "z": {
+     "PTS": -1.24,
+     "REB": -0.95,
+     "AST": -0.2,
+     "STL": -0.39,
+     "BLK": -0.7,
+     "3PM": -0.1,
+     "TOV": 0.92,
+     "FG_IMPACT": -0.29,
+     "FT_IMPACT": 0.66
+    }
+   },
+   {
+    "name": "De'Anthony Melton",
+    "nba": "GSW",
+    "pos": [
+     "PG",
+     "SG"
+    ],
+    "gp": 42,
+    "mpg": 24.1,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     38,
+     6,
+     49
+    ],
+    "gain": 0.05387878787878719,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.03998484848484729,
+     "Kyshawn George": 0.05387878787878719,
+     "Jakob Poeltl": -0.057954545454546036
+    },
+    "z": {
+     "PTS": -0.89,
+     "REB": -1.07,
+     "AST": -0.58,
+     "STL": 1.42,
+     "BLK": -0.54,
+     "3PM": -0.02,
+     "TOV": 0.33,
+     "FG_IMPACT": -1.24,
+     "FT_IMPACT": 0.25
+    }
+   },
+   {
+    "name": "Deandre Ayton",
+    "nba": "WAS",
+    "pos": [
+     "C"
+    ],
+    "gp": 57,
+    "mpg": 23.4,
+    "note": "",
+    "adp": 125.0,
+    "inj": "",
+    "games_hist": [
+     55,
+     40,
+     72
+    ],
+    "gain": 0.05091666666666583,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.04437878787878713,
+     "Kyshawn George": 0.05091666666666583,
+     "Jakob Poeltl": -0.05189393939393927
+    },
+    "z": {
+     "PTS": -1.03,
+     "REB": 0.58,
+     "AST": -1.49,
+     "STL": -1.45,
+     "BLK": 0.2,
+     "3PM": -1.73,
+     "TOV": 1.07,
+     "FG_IMPACT": 1.87,
+     "FT_IMPACT": -0.6
+    }
+   },
+   {
+    "name": "Jaylon Tyson",
+    "nba": "CLE",
+    "pos": [
+     "SG",
+     "PG"
+    ],
+    "gp": 57,
+    "mpg": 24.6,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     47,
+     66
+    ],
+    "gain": 0.04810606060606126,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.03265151515151388,
+     "Kyshawn George": 0.04810606060606126,
+     "Jakob Poeltl": -0.06540151515151571
+    },
+    "z": {
+     "PTS": -0.92,
+     "REB": -0.54,
+     "AST": -0.88,
+     "STL": -0.75,
+     "BLK": -0.6,
+     "3PM": 0.1,
+     "TOV": 0.76,
+     "FG_IMPACT": -0.14,
+     "FT_IMPACT": -0.17
+    }
+   },
+   {
+    "name": "Bobby Portis",
+    "nba": "MIA",
+    "pos": [
+     "PF",
+     "C"
+    ],
+    "gp": 59,
+    "mpg": 21.7,
+    "note": "",
+    "adp": 123.0,
+    "inj": "",
+    "games_hist": [
+     82,
+     49,
+     67
+    ],
+    "gain": 0.047931818181818464,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.0370681818181815,
+     "Kyshawn George": 0.047931818181818464,
+     "Jakob Poeltl": -0.059954545454545816
+    },
+    "z": {
+     "PTS": -0.85,
+     "REB": 0.11,
+     "AST": -1.24,
+     "STL": -1.4,
+     "BLK": -0.75,
+     "3PM": -0.2,
+     "TOV": 1.38,
+     "FG_IMPACT": 0.02,
+     "FT_IMPACT": -0.17
+    }
+   },
+   {
+    "name": "Al Horford",
+    "nba": "GSW",
+    "pos": [
+     "PF",
+     "C"
+    ],
+    "gp": 44,
+    "mpg": 22.1,
+    "note": "",
+    "adp": 107.0,
+    "inj": "",
+    "games_hist": [
+     65,
+     60,
+     45
+    ],
+    "gain": 0.04668939393939375,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.03263636363636291,
+     "Kyshawn George": 0.04668939393939375,
+     "Jakob Poeltl": -0.06578787878787828
+    },
+    "z": {
+     "PTS": -1.81,
+     "REB": -0.52,
+     "AST": -0.96,
+     "STL": -1.46,
+     "BLK": 0.42,
+     "3PM": -0.29,
+     "TOV": 1.7,
+     "FG_IMPACT": -0.22,
+     "FT_IMPACT": 0.16
+    }
+   },
+   {
+    "name": "Cam Spencer",
+    "nba": "MEM",
+    "pos": [
+     "SG",
+     "PG"
+    ],
+    "gp": 54,
+    "mpg": 21.5,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     25,
+     72
+    ],
+    "gain": 0.04315151515151516,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.026674242424242323,
+     "Kyshawn George": 0.04315151515151516,
+     "Jakob Poeltl": -0.07453030303030328
+    },
+    "z": {
+     "PTS": -1.28,
+     "REB": -1.47,
+     "AST": 0.4,
+     "STL": -1.17,
+     "BLK": -1.03,
+     "3PM": 0.11,
+     "TOV": 1.14,
+     "FG_IMPACT": -0.26,
+     "FT_IMPACT": 0.78
+    }
+   },
+   {
+    "name": "Daniel Gafford",
+    "nba": "DAL",
+    "pos": [
+     "C"
+    ],
+    "gp": 57,
+    "mpg": 18.5,
+    "note": "",
+    "adp": 186.0,
+    "inj": "",
+    "games_hist": [
+     74,
+     57,
+     55
+    ],
+    "gain": 0.03794696969696876,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.026318181818180797,
+     "Kyshawn George": 0.03794696969696876,
+     "Jakob Poeltl": -0.07138636363636408
+    },
+    "z": {
+     "PTS": -1.49,
+     "REB": -0.09,
+     "AST": -1.44,
+     "STL": -1.46,
+     "BLK": 1.17,
+     "3PM": -1.76,
+     "TOV": 1.42,
+     "FG_IMPACT": 1.69,
+     "FT_IMPACT": -0.89
+    }
+   },
+   {
+    "name": "Donte DiVincenzo",
+    "nba": "MIN",
+    "pos": [
+     "PG",
+     "SF",
+     "SG"
+    ],
+    "gp": 10,
+    "mpg": 23.6,
+    "note": "",
+    "adp": null,
+    "inj": "Achilles; out until at least Apr 1",
+    "games_hist": [
+     81,
+     62,
+     82
+    ],
+    "gain": 0.03503030303030297,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": 0.021946969696968743,
+     "Kyshawn George": 0.03503030303030297,
+     "Jakob Poeltl": -0.07823484848484785
+    },
+    "z": {
+     "PTS": -1.21,
+     "REB": -1.16,
+     "AST": -0.55,
+     "STL": -0.13,
+     "BLK": -0.71,
+     "3PM": 0.83,
+     "TOV": 1.06,
+     "FG_IMPACT": -0.95,
+     "FT_IMPACT": -0.13
+    }
+   },
+   {
+    "name": "Jordan Goodwin",
+    "nba": "PHO",
+    "pos": [
+     "PG",
+     "SG"
+    ],
+    "gp": 55,
+    "mpg": 21.6,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     57,
+     29,
+     70
+    ],
+    "gain": 0.009022727272727238,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.004636363636364216,
+     "Kyshawn George": 0.009022727272727238,
+     "Jakob Poeltl": -0.10105303030303059
+    },
+    "z": {
+     "PTS": -1.65,
+     "REB": -0.59,
+     "AST": -0.86,
+     "STL": 0.72,
+     "BLK": -0.86,
+     "3PM": -0.36,
+     "TOV": 1.25,
+     "FG_IMPACT": -0.9,
+     "FT_IMPACT": -0.21
+    }
+   },
+   {
+    "name": "Isaac Okoro",
+    "nba": "CHI",
+    "pos": [
+     "SG",
+     "PG",
+     "SF"
+    ],
+    "gp": 59,
+    "mpg": 28.4,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     69,
+     55,
+     63
+    ],
+    "gain": 0.008719696969696322,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.007575757575758679,
+     "Kyshawn George": 0.008719696969696322,
+     "Jakob Poeltl": -0.10762878787878893
+    },
+    "z": {
+     "PTS": -1.28,
+     "REB": -1.14,
+     "AST": -1.02,
+     "STL": -0.5,
+     "BLK": -0.39,
+     "3PM": -0.35,
+     "TOV": 1.53,
+     "FG_IMPACT": -0.28,
+     "FT_IMPACT": -0.23
+    }
+   },
+   {
+    "name": "Mitchell Robinson",
+    "nba": "BOS",
+    "pos": [
+     "C"
+    ],
+    "gp": 46,
+    "mpg": 19.0,
+    "note": "",
+    "adp": 113.0,
+    "inj": "",
+    "games_hist": [
+     31,
+     17,
+     60
+    ],
+    "gain": 0.008431818181816375,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.0028484848484851,
+     "Kyshawn George": 0.008431818181816375,
+     "Jakob Poeltl": -0.09680303030303072
+    },
+    "z": {
+     "PTS": -2.14,
+     "REB": 0.62,
+     "AST": -1.58,
+     "STL": -0.58,
+     "BLK": 0.67,
+     "3PM": -1.75,
+     "TOV": 1.73,
+     "FG_IMPACT": 1.2,
+     "FT_IMPACT": -1.75
+    }
+   },
+   {
+    "name": "Scotty Pippen Jr.",
+    "nba": "MEM",
+    "pos": [
+     "PG",
+     "SG"
+    ],
+    "gp": 41,
+    "mpg": 19.2,
+    "note": "",
+    "adp": 149.0,
+    "inj": "",
+    "games_hist": [
+     21,
+     79,
+     10
+    ],
+    "gain": 0.008409090909090366,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.006825757575757763,
+     "Kyshawn George": 0.008409090909090366,
+     "Jakob Poeltl": -0.10522727272727295
+    },
+    "z": {
+     "PTS": -1.4,
+     "REB": -1.33,
+     "AST": 0.01,
+     "STL": 0.54,
+     "BLK": -0.7,
+     "3PM": -0.7,
+     "TOV": 0.3,
+     "FG_IMPACT": -0.19,
+     "FT_IMPACT": -0.31
+    }
+   },
+   {
+    "name": "Naji Marshall",
+    "nba": "DAL",
+    "pos": [
+     "SF",
+     "PF"
+    ],
+    "gp": 64,
+    "mpg": 25.6,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     66,
+     69,
+     74
+    ],
+    "gain": 0.006628787878788067,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.0057878787878795634,
+     "Kyshawn George": 0.006628787878788067,
+     "Jakob Poeltl": -0.10633333333333361
+    },
+    "z": {
+     "PTS": -0.82,
+     "REB": -0.7,
+     "AST": -0.59,
+     "STL": -0.18,
+     "BLK": -1.07,
+     "3PM": -0.91,
+     "TOV": 0.73,
+     "FG_IMPACT": 0.21,
+     "FT_IMPACT": -0.11
+    }
+   },
+   {
+    "name": "Kyle Filipowski",
+    "nba": "UTA",
+    "pos": [
+     "C",
+     "PF"
+    ],
+    "gp": 67,
+    "mpg": 19.3,
+    "note": "",
+    "adp": 148.0,
+    "inj": "",
+    "games_hist": [
+     72,
+     77
+    ],
+    "gain": 0.006174242424242138,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.005946969696969617,
+     "Kyshawn George": 0.006174242424242138,
+     "Jakob Poeltl": -0.10691666666666677
+    },
+    "z": {
+     "PTS": -1.35,
+     "REB": 0.02,
+     "AST": -0.91,
+     "STL": -0.92,
+     "BLK": -0.48,
+     "3PM": -0.85,
+     "TOV": 0.81,
+     "FG_IMPACT": 0.27,
+     "FT_IMPACT": -0.62
+    }
+   },
+   {
+    "name": "Jaylin Williams",
+    "nba": "OKC",
+    "pos": [
+     "PF",
+     "C"
+    ],
+    "gp": 58,
+    "mpg": 17.4,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     69,
+     47,
+     65
+    ],
+    "gain": -0.00706818181818214,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.02345454545454473,
+     "Kyshawn George": -0.00706818181818214,
+     "Jakob Poeltl": -0.11950000000000038
+    },
+    "z": {
+     "PTS": -1.96,
+     "REB": -0.43,
+     "AST": -0.84,
+     "STL": -1.79,
+     "BLK": -0.22,
+     "3PM": -0.42,
+     "TOV": 1.55,
+     "FG_IMPACT": -0.43,
+     "FT_IMPACT": -0.04
+    }
+   },
+   {
+    "name": "Isaiah Stewart",
+    "nba": "MEM",
+    "pos": [
+     "C",
+     "PF"
+    ],
+    "gp": 57,
+    "mpg": 18.9,
+    "note": "",
+    "adp": 138.0,
+    "inj": "Ankle sprain; out until at least Oct 23",
+    "games_hist": [
+     46,
+     72,
+     58
+    ],
+    "gain": -0.009113636363636601,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.02405303030303152,
+     "Kyshawn George": -0.009113636363636601,
+     "Jakob Poeltl": -0.12037121212121349
+    },
+    "z": {
+     "PTS": -1.76,
+     "REB": -0.55,
+     "AST": -1.37,
+     "STL": -2.31,
+     "BLK": 0.95,
+     "3PM": -1.18,
+     "TOV": 1.37,
+     "FG_IMPACT": 0.54,
+     "FT_IMPACT": -0.25
+    }
+   },
+   {
+    "name": "Max Christie",
+    "nba": "DAL",
+    "pos": [
+     "SG",
+     "PG"
+    ],
+    "gp": 67,
+    "mpg": 25.4,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     67,
+     78,
+     77
+    ],
+    "gain": -0.010234848484849124,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.022659090909091795,
+     "Kyshawn George": -0.010234848484849124,
+     "Jakob Poeltl": -0.1250984848484853
+    },
+    "z": {
+     "PTS": -1.25,
+     "REB": -1.18,
+     "AST": -1.06,
+     "STL": -1.18,
+     "BLK": -0.63,
+     "3PM": 0.11,
+     "TOV": 1.18,
+     "FG_IMPACT": -0.68,
+     "FT_IMPACT": 0.48
+    }
+   },
+   {
+    "name": "Anfernee Simons",
+    "nba": "PHI",
+    "pos": [
+     "PG",
+     "SG"
+    ],
+    "gp": 56,
+    "mpg": 21.7,
+    "note": "",
+    "adp": 120.0,
+    "inj": "",
+    "games_hist": [
+     46,
+     70,
+     55
+    ],
+    "gain": -0.01175000000000015,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.030022727272728034,
+     "Kyshawn George": -0.01175000000000015,
+     "Jakob Poeltl": -0.12749242424242446
+    },
+    "z": {
+     "PTS": -0.72,
+     "REB": -1.59,
+     "AST": -0.57,
+     "STL": -1.73,
+     "BLK": -1.14,
+     "3PM": 0.54,
+     "TOV": 0.92,
+     "FG_IMPACT": -0.89,
+     "FT_IMPACT": 0.62
+    }
+   },
+   {
+    "name": "Collin Sexton",
+    "nba": "LAL",
+    "pos": [
+     "PG",
+     "SG"
+    ],
+    "gp": 72,
+    "mpg": 21.0,
+    "note": "",
+    "adp": 161.0,
+    "inj": "",
+    "games_hist": [
+     78,
+     63,
+     68
+    ],
+    "gain": -0.015704545454545915,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.034348484848485406,
+     "Kyshawn George": -0.015704545454545915,
+     "Jakob Poeltl": -0.13340151515151533
+    },
+    "z": {
+     "PTS": -0.62,
+     "REB": -1.62,
+     "AST": -0.42,
+     "STL": -0.88,
+     "BLK": -1.07,
+     "3PM": -0.33,
+     "TOV": 0.34,
+     "FG_IMPACT": -0.1,
+     "FT_IMPACT": 0.67
+    }
+   },
+   {
+    "name": "Kris Dunn",
+    "nba": "LAC",
+    "pos": [
+     "PG",
+     "SG"
+    ],
+    "gp": 65,
+    "mpg": 24.3,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     66,
+     74,
+     82
+    ],
+    "gain": -0.016689393939394392,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.0315984848484856,
+     "Kyshawn George": -0.016689393939394392,
+     "Jakob Poeltl": -0.12912878787878768
+    },
+    "z": {
+     "PTS": -1.94,
+     "REB": -1.2,
+     "AST": -0.34,
+     "STL": 0.93,
+     "BLK": -0.88,
+     "3PM": -0.82,
+     "TOV": 1.05,
+     "FG_IMPACT": -0.24,
+     "FT_IMPACT": -0.17
+    }
+   },
+   {
+    "name": "Terance Mann",
+    "nba": "BRK",
+    "pos": [
+     "SG",
+     "PG",
+     "SF"
+    ],
+    "gp": 62,
+    "mpg": 28.0,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     75,
+     67,
+     63
+    ],
+    "gain": -0.0245151515151516,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.03745454545454496,
+     "Kyshawn George": -0.0245151515151516,
+     "Jakob Poeltl": -0.13727272727272766
+    },
+    "z": {
+     "PTS": -1.48,
+     "REB": -0.97,
+     "AST": -0.64,
+     "STL": -0.99,
+     "BLK": -0.83,
+     "3PM": -0.66,
+     "TOV": 1.25,
+     "FG_IMPACT": -0.11,
+     "FT_IMPACT": -0.07
+    }
+   },
+   {
+    "name": "Bilal Coulibaly",
+    "nba": "WAS",
+    "pos": [
+     "SG",
+     "SF"
+    ],
+    "gp": 57,
+    "mpg": 21.8,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     63,
+     59,
+     56
+    ],
+    "gain": -0.024712121212122184,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.037363636363637376,
+     "Kyshawn George": -0.024712121212122184,
+     "Jakob Poeltl": -0.13618181818181796
+    },
+    "z": {
+     "PTS": -1.48,
+     "REB": -1.01,
+     "AST": -0.9,
+     "STL": -0.18,
+     "BLK": -0.1,
+     "3PM": -0.85,
+     "TOV": 0.93,
+     "FG_IMPACT": -0.73,
+     "FT_IMPACT": -0.37
+    }
+   },
+   {
+    "name": "Javonte Green",
+    "nba": "DET",
+    "pos": [
+     "SG",
+     "SF"
+    ],
+    "gp": 57,
+    "mpg": 20.1,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     9,
+     68,
+     82
+    ],
+    "gain": -0.028128787878788586,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.039553030303030035,
+     "Kyshawn George": -0.028128787878788586,
+     "Jakob Poeltl": -0.1383257575757577
+    },
+    "z": {
+     "PTS": -1.84,
+     "REB": -1.14,
+     "AST": -1.55,
+     "STL": 0.12,
+     "BLK": -0.66,
+     "3PM": -0.65,
+     "TOV": 1.87,
+     "FG_IMPACT": -0.36,
+     "FT_IMPACT": 0.07
+    }
+   },
+   {
+    "name": "Marcus Sasser",
+    "nba": "DAL",
+    "pos": [
+     "PG",
+     "SG"
+    ],
+    "gp": 52,
+    "mpg": 19.9,
+    "note": "",
+    "adp": null,
+    "inj": "",
+    "games_hist": [
+     71,
+     57,
+     38
+    ],
+    "gain": -0.029969696969697424,
+    "replace": "Kyshawn George",
+    "gains": {
+     "Wendell Carter Jr.": -0.04503030303030364,
+     "Kyshawn George": -0.029969696969697424,
+     "Jakob Poeltl": -0.1433712121212123
+    },
+    "z": {
+     "PTS": -1.45,
+     "REB": -1.68,
+     "AST": -0.26,
+     "STL": -0.66,
+     "BLK": -1.04,
+     "3PM": -0.12,
+     "TOV": 0.78,
+     "FG_IMPACT": -0.7,
+     "FT_IMPACT": 0.27
+    }
+   }
+  ]
+ },
+ "backfill": 1.0,
+ "notes": {
+  "antetgi01": "minutes cut from the flat 33 to 31.0 (veteran with a recent drop: 28.9, 34.2 mpg)",
+  "harrito02": "minutes cut from the flat 33 to 29.3 (veteran with a recent drop: 27.7, 31.6 mpg)",
+  "lopezbr01": "minutes cut from the flat 33 to 25.8 (veteran with a recent drop: 21.8, 31.8 mpg)",
+  "mccolcj01": "minutes cut from the flat 33 to 31.0 (veteran with a recent drop: 29.8, 32.7 mpg)",
+  "powelno01": "minutes cut from the flat 33 to 30.8 (veteran with a recent drop: 29.6, 32.6 mpg)",
+  "np_cameron_boozer": "rookie stand-in: average of 9 projected wings with ADP 44-68",
+  "np_mikel_brown": "rookie stand-in: average of 8 projected guards with ADP 155-179",
+  "np_caleb_wilson": "rookie stand-in: average of 7 projected wings with ADP 67-91",
+  "np_aj_dybantsa": "rookie stand-in: average of 7 projected wings with ADP 66-90",
+  "np_darius_acuff": "rookie stand-in: average of 6 projected guards with ADP 102-126",
+  "np_yaxel_lendeborg": "rookie stand-in: average of 12 projected wings with ADP 134-158",
+  "np_keaton_wagler": "rookie stand-in: average of 5 projected guards with ADP 141-165",
+  "np_darryn_peterson": "rookie stand-in: average of 3 projected guards with ADP 90-114",
+  "porteke02": "released by his NBA team; replaced by the average of the ten best undrafted players"
+ }
+}
